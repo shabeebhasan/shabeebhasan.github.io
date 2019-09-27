@@ -1468,3 +1468,12 @@ body, p, h1, h2, h3, h4, h5, h6 {
 /*---------------------------------------------------- */
 
 /*# sourceMappingURL=style.css.map */
+
+.instagram_area ul li a img {
+  max-width: 100%;
+  height: 120px;
+  width: 100%;
+  background-position: center center;
+  object-fit: cover;
+  overflow: hidden;
+}
