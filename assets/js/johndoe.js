@@ -151,27 +151,34 @@ function initMap() {
 
 $("#contact-form").submit(function (e) {
 
-  e.preventDefault(); // avoid to execute the actual submit of the form.
+  e.preventDefault();
 
   var form = $(this);
   var actionUrl = form.attr('action');
-  console.log("actionUrl:", actionUrl)
-  console.log("data:", form.serialize())
+  var button = form.find('button[type="submit"]');
+
+  $("#sendmessage").hide();
+  $("#errormessage").hide().text("");
+  button.prop("disabled", true).text("Sending...");
+
   $.ajax({
     type: "POST",
     url: actionUrl,
-    data: form.serialize(), // serializes the form's elements.
+    data: form.serialize(),
+    dataType: "json",
     success: function (data) {
-      form.find('input:text, input:password, input:file, select, textarea').val('');
-      form.find('input:radio, input:checkbox')
-        .removeAttr('checked').removeAttr('selected');
-      alert('Thanks for contacting me, I will response soon on your email address.');
-      form.find('input:text, input:password, input:file, select, textarea').val('');
-      $("#email-field").val("");
+      if (data.success) {
+        form[0].reset();
+        $("#sendmessage").fadeIn();
+      } else {
+        $("#errormessage").text(data.message || "Something went wrong. Please try again.").fadeIn();
+      }
     },
-    error: function (data) {
-      console.log('An error occurred.');
-      console.log(data);
+    error: function () {
+      $("#errormessage").text("Something went wrong. Please email me directly at shabeebhasan@gmail.com.").fadeIn();
+    },
+    complete: function () {
+      button.prop("disabled", false).text("Request a Consultation");
     },
   });
 

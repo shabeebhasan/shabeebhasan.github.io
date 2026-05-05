@@ -337,8 +337,36 @@ a {
   display: -webkit-box;
   overflow: hidden;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 7;
+  -webkit-line-clamp: 5;
   line-height: 1.62;
+}
+
+.service-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 12px 0 18px;
+}
+
+.service-tags span {
+  padding: 6px 10px;
+  color: var(--portfolio-ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 999px;
+  background: var(--portfolio-soft);
+}
+
+.solution-list {
+  margin: 14px 0 20px;
+  padding-left: 18px;
+  color: var(--portfolio-muted);
+  line-height: 1.65;
+}
+
+.solution-list li {
+  margin-bottom: 6px;
 }
 
 #service .card .card-body > div:last-child,
@@ -449,6 +477,10 @@ a {
   color: var(--portfolio-primary);
 }
 
+.price-card .price-card-cost .num {
+  word-break: break-word;
+}
+
 .price-card.price-card-requried {
   border-color: rgba(239, 71, 111, 0.45);
 }
@@ -456,6 +488,144 @@ a {
 .price-card.price-card-requried:after {
   content: "Popular";
   background: var(--portfolio-accent);
+}
+
+.testimonials-section {
+  background: var(--portfolio-soft);
+}
+
+.testimonials-section .section-header {
+  max-width: 780px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.testimonials-section .section-header p {
+  color: var(--portfolio-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.review-proof {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 14px;
+  margin-bottom: 24px;
+}
+
+.review-proof div,
+.review-card {
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--portfolio-shadow);
+}
+
+.review-proof div {
+  padding: 20px;
+  text-align: center;
+}
+
+.review-proof strong {
+  display: block;
+  color: var(--portfolio-primary);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.review-proof span {
+  display: block;
+  margin-top: 8px;
+  color: var(--portfolio-muted);
+  font-weight: 800;
+}
+
+.review-skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 28px;
+}
+
+.review-skills span {
+  padding: 8px 12px;
+  color: var(--portfolio-ink);
+  font-size: 0.84rem;
+  font-weight: 900;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 999px;
+  background: #ffffff;
+}
+
+.review-card {
+  height: calc(100% - 30px);
+  margin-bottom: 30px;
+  padding: 28px;
+}
+
+.review-stars {
+  display: inline-flex;
+  margin-bottom: 16px;
+  padding: 7px 11px;
+  color: #126b4f;
+  font-weight: 900;
+  border-radius: 999px;
+  background: rgba(6, 167, 125, 0.12);
+}
+
+.review-card p {
+  color: var(--portfolio-ink);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.review-card h5 {
+  color: var(--portfolio-ink);
+  font-weight: 900;
+}
+
+.review-card span {
+  color: var(--portfolio-muted);
+  font-weight: 800;
+}
+
+.process-section {
+  background: #ffffff;
+}
+
+.process-card {
+  height: 100%;
+  min-height: 230px;
+  padding: 28px;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--portfolio-shadow);
+}
+
+.process-card span {
+  display: inline-flex;
+  width: 46px;
+  height: 46px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 18px;
+  color: #ffffff;
+  font-weight: 900;
+  border-radius: 50%;
+  background: var(--portfolio-primary);
+}
+
+.process-card h5 {
+  color: var(--portfolio-ink);
+  font-weight: 900;
+}
+
+.process-card p {
+  margin-bottom: 0;
+  color: var(--portfolio-muted);
+  line-height: 1.65;
 }
 
 #team .card {
@@ -474,10 +644,107 @@ a {
   background: var(--portfolio-soft);
 }
 
+.baydot-contact .section-header {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.baydot-contact .section-header p {
+  color: var(--portfolio-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
 .contact .contact-form-card,
 .contact .contact-info-card {
   min-height: 0;
   height: 100%;
+}
+
+.contact-cards {
+  display: grid;
+  gap: 16px;
+}
+
+.contact-card,
+.contact-email {
+  padding: 24px;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--portfolio-shadow);
+}
+
+.contact-card h4 {
+  margin-bottom: 10px;
+  color: var(--portfolio-ink);
+  font-weight: 900;
+}
+
+.contact-card p {
+  margin-bottom: 8px;
+  color: var(--portfolio-ink);
+  line-height: 1.6;
+}
+
+.contact-card span {
+  color: var(--portfolio-muted);
+  font-weight: 800;
+}
+
+.contact-email {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.contact-email i {
+  width: 42px;
+  height: 42px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  border-radius: 50%;
+  background: var(--portfolio-primary);
+}
+
+.contact-email a {
+  color: var(--portfolio-ink) !important;
+  font-weight: 900;
+}
+
+.consultation-form {
+  padding: 34px;
+}
+
+#sendmessage,
+#errormessage {
+  display: none;
+  margin-bottom: 18px;
+  padding: 14px 16px;
+  border-radius: 8px;
+  font-weight: 800;
+}
+
+#sendmessage {
+  color: #126b4f;
+  background: rgba(6, 167, 125, 0.12);
+  border: 1px solid rgba(6, 167, 125, 0.24);
+}
+
+#errormessage {
+  color: #9b1c31;
+  background: rgba(239, 71, 111, 0.12);
+  border: 1px solid rgba(239, 71, 111, 0.24);
+}
+
+.validation {
+  min-height: 0;
+  color: var(--portfolio-primary);
+  font-size: 0.84rem;
 }
 
 .form-control {
@@ -555,7 +822,16 @@ textarea.form-control {
     grid-template-columns: 1fr;
   }
 
+  .review-proof {
+    grid-template-columns: 1fr 1fr;
+  }
+
   .portfolio .filters {
     border-radius: 8px;
+  }
+
+  .consultation-form {
+    margin-top: 24px;
+    padding: 24px;
   }
 }
