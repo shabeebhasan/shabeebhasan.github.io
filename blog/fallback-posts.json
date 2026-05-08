@@ -1,40 +1,344 @@
-{
-  "posts": [
-    {
-      "title": "AI Automation Roadmap for Small Teams",
-      "slug": "ai-automation-roadmap-small-teams",
-      "excerpt": "A practical 30-day roadmap to start automation without over-engineering your stack.",
-      "content": "# AI Automation Roadmap for Small Teams\n\nSmall teams can ship AI automation quickly by focusing on one business KPI first.\n\n## Week 1: Pick one process\n\nChoose a repetitive workflow such as lead qualification or support triage.\n\n## Week 2: Build a minimal workflow\n\nConnect one input, one model step, and one output.\n\n## Week 3: Add quality checks\n\nUse human review on sensitive outputs and log errors.\n\n## Week 4: Measure and iterate\n\nTrack response time, conversion, or cost reduction and improve each week.",
-      "cover_image": "/assets/imgs/IMG_7856.JPG",
-      "tags": ["ai", "automation", "small-team"],
-      "status": "published",
-      "seo_title": "AI Automation Roadmap for Small Teams",
-      "seo_description": "30-day implementation plan for AI automation in lean teams.",
-      "published_at": "2026-05-08T10:00:00.000Z"
-    },
-    {
-      "title": "How to Modernize a Legacy Yii2 App Safely",
-      "slug": "modernize-legacy-yii2-app-safely",
-      "excerpt": "Reduce risk while upgrading old Yii2 codebases with an incremental delivery approach.",
-      "content": "# How to Modernize a Legacy Yii2 App Safely\n\nLegacy systems should be modernized in slices, not big-bang rewrites.\n\n## Start with high-impact modules\n\nPick areas that improve customer experience or reduce support load.\n\n## Add API boundaries\n\nWrap old logic behind stable endpoints before moving deeper layers.\n\n## Keep regression checks\n\nAdd smoke tests and monitoring for each deployed slice.\n\n## Deliver in milestones\n\nShort milestones reduce risk and keep business stakeholders aligned.",
-      "cover_image": "/assets/imgs/IMG_7856.JPG",
-      "tags": ["yii2", "legacy", "modernization"],
-      "status": "published",
-      "seo_title": "How to Modernize a Legacy Yii2 App Safely",
-      "seo_description": "A low-risk migration strategy for legacy Yii2 applications.",
-      "published_at": "2026-05-07T10:00:00.000Z"
-    },
-    {
-      "title": "Pinterest + Blog Content Engine: End-to-End Setup",
-      "slug": "pinterest-blog-content-engine-setup",
-      "excerpt": "Generate, publish, and distribute content through one automation pipeline.",
-      "content": "# Pinterest + Blog Content Engine: End-to-End Setup\n\nA single content pipeline can generate images, publish blogs, and push Pinterest pins.\n\n## Content generation\n\nUse an AI writer to create title, excerpt, and markdown article.\n\n## Image generation\n\nGenerate vertical images optimized for Pinterest discovery.\n\n## Publishing\n\nSave post metadata in Supabase and publish to your blog endpoint.\n\n## Distribution\n\nCreate pins with link-back to the blog article and monitor click-through rate.",
-      "cover_image": "/assets/imgs/IMG_7856.JPG",
-      "tags": ["pinterest", "content", "ai-agent"],
-      "status": "published",
-      "seo_title": "Pinterest + Blog Content Engine Setup",
-      "seo_description": "Automate content creation and Pinterest distribution from one workflow.",
-      "published_at": "2026-05-06T10:00:00.000Z"
-    }
-  ]
+﻿{
+    "posts":  [
+                  {
+                      "title":  "Mobile Banking App UX Optimization",
+                      "slug":  "mobile-banking-app-ux-optimization",
+                      "excerpt":  "Practical playbook for shipping Mobile Banking App UX Optimization with measurable product outcomes.",
+                      "content":  "# Mobile Banking App UX Optimization\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/rider-share-app.png",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Mobile Banking App UX Optimization",
+                      "seo_description":  "Practical playbook for shipping Mobile Banking App UX Optimization with measurable product outcomes.",
+                      "published_at":  "2026-05-08T23:16:09.1622917+05:00"
+                  },
+                  {
+                      "title":  "Telemedicine Mobile App Triage Flow",
+                      "slug":  "telemedicine-mobile-app-triage-flow",
+                      "excerpt":  "Practical playbook for shipping Telemedicine Mobile App Triage Flow with measurable product outcomes.",
+                      "content":  "# Telemedicine Mobile App Triage Flow\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/casana.png",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Telemedicine Mobile App Triage Flow",
+                      "seo_description":  "Practical playbook for shipping Telemedicine Mobile App Triage Flow with measurable product outcomes.",
+                      "published_at":  "2026-05-07T23:16:09.1962359+05:00"
+                  },
+                  {
+                      "title":  "Ecommerce Mobile Checkout Speed",
+                      "slug":  "ecommerce-mobile-checkout-speed",
+                      "excerpt":  "Practical playbook for shipping Ecommerce Mobile Checkout Speed with measurable product outcomes.",
+                      "content":  "# Ecommerce Mobile Checkout Speed\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/triviarat.png",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Ecommerce Mobile Checkout Speed",
+                      "seo_description":  "Practical playbook for shipping Ecommerce Mobile Checkout Speed with measurable product outcomes.",
+                      "published_at":  "2026-05-06T23:16:09.1972386+05:00"
+                  },
+                  {
+                      "title":  "Fitness Tracking App Retention",
+                      "slug":  "fitness-tracking-app-retention",
+                      "excerpt":  "Practical playbook for shipping Fitness Tracking App Retention with measurable product outcomes.",
+                      "content":  "# Fitness Tracking App Retention\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-1.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Fitness Tracking App Retention",
+                      "seo_description":  "Practical playbook for shipping Fitness Tracking App Retention with measurable product outcomes.",
+                      "published_at":  "2026-05-05T23:16:09.1972386+05:00"
+                  },
+                  {
+                      "title":  "Food Delivery App Dispatch Logic",
+                      "slug":  "food-delivery-app-dispatch-logic",
+                      "excerpt":  "Practical playbook for shipping Food Delivery App Dispatch Logic with measurable product outcomes.",
+                      "content":  "# Food Delivery App Dispatch Logic\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-2.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Food Delivery App Dispatch Logic",
+                      "seo_description":  "Practical playbook for shipping Food Delivery App Dispatch Logic with measurable product outcomes.",
+                      "published_at":  "2026-05-04T23:16:09.1982307+05:00"
+                  },
+                  {
+                      "title":  "Travel Companion App Personalization",
+                      "slug":  "travel-companion-app-personalization",
+                      "excerpt":  "Practical playbook for shipping Travel Companion App Personalization with measurable product outcomes.",
+                      "content":  "# Travel Companion App Personalization\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-3.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Travel Companion App Personalization",
+                      "seo_description":  "Practical playbook for shipping Travel Companion App Personalization with measurable product outcomes.",
+                      "published_at":  "2026-05-03T23:16:09.1982307+05:00"
+                  },
+                  {
+                      "title":  "EdTech Mobile Learning Journeys",
+                      "slug":  "edtech-mobile-learning-journeys",
+                      "excerpt":  "Practical playbook for shipping EdTech Mobile Learning Journeys with measurable product outcomes.",
+                      "content":  "# EdTech Mobile Learning Journeys\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-4.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "EdTech Mobile Learning Journeys",
+                      "seo_description":  "Practical playbook for shipping EdTech Mobile Learning Journeys with measurable product outcomes.",
+                      "published_at":  "2026-05-02T23:16:09.1992309+05:00"
+                  },
+                  {
+                      "title":  "Real Estate Mobile Lead Funnel",
+                      "slug":  "real-estate-mobile-lead-funnel",
+                      "excerpt":  "Practical playbook for shipping Real Estate Mobile Lead Funnel with measurable product outcomes.",
+                      "content":  "# Real Estate Mobile Lead Funnel\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/advertising-1.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Real Estate Mobile Lead Funnel",
+                      "seo_description":  "Practical playbook for shipping Real Estate Mobile Lead Funnel with measurable product outcomes.",
+                      "published_at":  "2026-05-01T23:16:09.1992309+05:00"
+                  },
+                  {
+                      "title":  "Fintech KYC Mobile Onboarding",
+                      "slug":  "fintech-kyc-mobile-onboarding",
+                      "excerpt":  "Practical playbook for shipping Fintech KYC Mobile Onboarding with measurable product outcomes.",
+                      "content":  "# Fintech KYC Mobile Onboarding\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/advertising-2.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Fintech KYC Mobile Onboarding",
+                      "seo_description":  "Practical playbook for shipping Fintech KYC Mobile Onboarding with measurable product outcomes.",
+                      "published_at":  "2026-04-30T23:16:09.2012335+05:00"
+                  },
+                  {
+                      "title":  "Ride Share Mobile Safety Features",
+                      "slug":  "ride-share-mobile-safety-features",
+                      "excerpt":  "Practical playbook for shipping Ride Share Mobile Safety Features with measurable product outcomes.",
+                      "content":  "# Ride Share Mobile Safety Features\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/advertising-3.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Ride Share Mobile Safety Features",
+                      "seo_description":  "Practical playbook for shipping Ride Share Mobile Safety Features with measurable product outcomes.",
+                      "published_at":  "2026-04-29T23:16:09.2022335+05:00"
+                  },
+                  {
+                      "title":  "Marketplace App Trust Signals",
+                      "slug":  "marketplace-app-trust-signals",
+                      "excerpt":  "Practical playbook for shipping Marketplace App Trust Signals with measurable product outcomes.",
+                      "content":  "# Marketplace App Trust Signals\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/rider-share-app.png",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Marketplace App Trust Signals",
+                      "seo_description":  "Practical playbook for shipping Marketplace App Trust Signals with measurable product outcomes.",
+                      "published_at":  "2026-04-28T23:16:09.2032352+05:00"
+                  },
+                  {
+                      "title":  "Healthcare Appointment Mobile UX",
+                      "slug":  "healthcare-appointment-mobile-ux",
+                      "excerpt":  "Practical playbook for shipping Healthcare Appointment Mobile UX with measurable product outcomes.",
+                      "content":  "# Healthcare Appointment Mobile UX\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/casana.png",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Healthcare Appointment Mobile UX",
+                      "seo_description":  "Practical playbook for shipping Healthcare Appointment Mobile UX with measurable product outcomes.",
+                      "published_at":  "2026-04-27T23:16:09.2042335+05:00"
+                  },
+                  {
+                      "title":  "Social Commerce App Conversion",
+                      "slug":  "social-commerce-app-conversion",
+                      "excerpt":  "Practical playbook for shipping Social Commerce App Conversion with measurable product outcomes.",
+                      "content":  "# Social Commerce App Conversion\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/triviarat.png",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Social Commerce App Conversion",
+                      "seo_description":  "Practical playbook for shipping Social Commerce App Conversion with measurable product outcomes.",
+                      "published_at":  "2026-04-26T23:16:09.2042335+05:00"
+                  },
+                  {
+                      "title":  "Last Mile Delivery Driver App",
+                      "slug":  "last-mile-delivery-driver-app",
+                      "excerpt":  "Practical playbook for shipping Last Mile Delivery Driver App with measurable product outcomes.",
+                      "content":  "# Last Mile Delivery Driver App\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-1.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Last Mile Delivery Driver App",
+                      "seo_description":  "Practical playbook for shipping Last Mile Delivery Driver App with measurable product outcomes.",
+                      "published_at":  "2026-04-25T23:16:09.2052325+05:00"
+                  },
+                  {
+                      "title":  "Micro SaaS Mobile Analytics",
+                      "slug":  "micro-saas-mobile-analytics",
+                      "excerpt":  "Practical playbook for shipping Micro SaaS Mobile Analytics with measurable product outcomes.",
+                      "content":  "# Micro SaaS Mobile Analytics\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-2.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Micro SaaS Mobile Analytics",
+                      "seo_description":  "Practical playbook for shipping Micro SaaS Mobile Analytics with measurable product outcomes.",
+                      "published_at":  "2026-04-24T23:16:09.2052325+05:00"
+                  },
+                  {
+                      "title":  "Loyalty Rewards Mobile Wallet",
+                      "slug":  "loyalty-rewards-mobile-wallet",
+                      "excerpt":  "Practical playbook for shipping Loyalty Rewards Mobile Wallet with measurable product outcomes.",
+                      "content":  "# Loyalty Rewards Mobile Wallet\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-3.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Loyalty Rewards Mobile Wallet",
+                      "seo_description":  "Practical playbook for shipping Loyalty Rewards Mobile Wallet with measurable product outcomes.",
+                      "published_at":  "2026-04-23T23:16:09.2062364+05:00"
+                  },
+                  {
+                      "title":  "AI Chat Assistant for Mobile Apps",
+                      "slug":  "ai-chat-assistant-for-mobile-apps",
+                      "excerpt":  "Practical playbook for shipping AI Chat Assistant for Mobile Apps with measurable product outcomes.",
+                      "content":  "# AI Chat Assistant for Mobile Apps\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/web-4.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "AI Chat Assistant for Mobile Apps",
+                      "seo_description":  "Practical playbook for shipping AI Chat Assistant for Mobile Apps with measurable product outcomes.",
+                      "published_at":  "2026-04-22T23:16:09.2062364+05:00"
+                  },
+                  {
+                      "title":  "Subscription App Churn Reduction",
+                      "slug":  "subscription-app-churn-reduction",
+                      "excerpt":  "Practical playbook for shipping Subscription App Churn Reduction with measurable product outcomes.",
+                      "content":  "# Subscription App Churn Reduction\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/advertising-1.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Subscription App Churn Reduction",
+                      "seo_description":  "Practical playbook for shipping Subscription App Churn Reduction with measurable product outcomes.",
+                      "published_at":  "2026-04-21T23:16:09.2072464+05:00"
+                  },
+                  {
+                      "title":  "Event Ticketing Mobile Platform",
+                      "slug":  "event-ticketing-mobile-platform",
+                      "excerpt":  "Practical playbook for shipping Event Ticketing Mobile Platform with measurable product outcomes.",
+                      "content":  "# Event Ticketing Mobile Platform\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/advertising-2.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Event Ticketing Mobile Platform",
+                      "seo_description":  "Practical playbook for shipping Event Ticketing Mobile Platform with measurable product outcomes.",
+                      "published_at":  "2026-04-20T23:16:09.2072464+05:00"
+                  },
+                  {
+                      "title":  "Property Management Tenant App",
+                      "slug":  "property-management-tenant-app",
+                      "excerpt":  "Practical playbook for shipping Property Management Tenant App with measurable product outcomes.",
+                      "content":  "# Property Management Tenant App\nMost mobile teams improve outcomes faster when they focus on one metric and one user flow per sprint.\n## Product challenge\nTeams often ship features without clear measurement, which increases release risk and slows growth.\n## Delivery strategy\n- Map one critical mobile journey end-to-end.\n- Add event tracking before feature rollout.\n- Ship in short increments with rollback safety.\n- Validate performance on low-end devices.\n## Implementation notes\nUse API boundaries, analytics dashboards, and QA checklists to keep quality high while moving quickly.\n## Expected outcome\nFaster releases, lower drop-off, and more predictable mobile conversion improvements.",
+                      "cover_image":  "/assets/imgs/advertising-3.jpg",
+                      "tags":  [
+                                   "mobile-app",
+                                   "product",
+                                   "automation",
+                                   "growth"
+                               ],
+                      "status":  "published",
+                      "seo_title":  "Property Management Tenant App",
+                      "seo_description":  "Practical playbook for shipping Property Management Tenant App with measurable product outcomes.",
+                      "published_at":  "2026-04-19T23:16:09.2072464+05:00"
+                  }
+              ]
 }

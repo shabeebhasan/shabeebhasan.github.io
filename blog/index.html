@@ -37,9 +37,11 @@
           const date = post.published_at ? new Date(post.published_at).toLocaleDateString() : "";
           const excerpt = window.BlogApi.escapeHtml(post.excerpt || "");
           const title = window.BlogApi.escapeHtml(post.title || "Untitled");
+          const coverImage = window.BlogApi.escapeHtml(post.cover_image || "/assets/imgs/IMG_7856.JPG");
           return `
             <div class="col-md-6 col-lg-4">
               <div class="card mb-4">
+                <img src="${coverImage}" class="card-img-top" alt="${title}" style="height:220px;object-fit:cover;">
                 <div class="card-body">
                   <h5 class="card-title">${title}</h5>
                   <p class="subtitle">${excerpt}</p>
