@@ -45,48 +45,23 @@
       <h3>Delivery</h3>
       <p>Architecture, implementation, evaluation, and deployment with measurable KPIs.</p>
       <h3>Tech Stack</h3>
-      <p>OpenAI, LangChain, Vector DBs, Supabase, Python, Node.js</p>
-      <h3>Pinterest + Blog Auto Agent (Ready Setup)</h3>
+      <p>OpenAI, LangChain, Python, Node.js, SEO content systems</p>
+      <h3>Static Content System</h3>
       <p>
-        Your project now includes an automation endpoint at
-        <code>/api/agents/pinterest-blog</code> that:
-        generates a blog post, generates a cover image, publishes to your blog,
-        and posts the same content on Pinterest.
+        This website now runs in full static mode for speed and SEO stability.
+        Blog articles and case studies are published as static content with crawlable URLs.
       </p>
-      <p><strong>Required env vars:</strong></p>
+      <p><strong>Current setup includes:</strong></p>
       <ul>
-        <li><code>OPENAI_API_KEY</code></li>
-        <li><code>SUPABASE_URL</code></li>
-        <li><code>SUPABASE_SERVICE_ROLE_KEY</code></li>
-        <li><code>BLOG_IMAGE_BUCKET</code> (public bucket name in Supabase Storage)</li>
-        <li><code>PINTEREST_ACCESS_TOKEN</code></li>
-        <li><code>PINTEREST_BOARD_ID</code></li>
-        <li><code>AI_AGENT_TOKEN</code> (custom security token)</li>
-        <li><code>SITE_URL</code> (example: https://shabeeb.baydot.net)</li>
+        <li>Static blog article listing with image cards</li>
+        <li>Static blog detail rendering from local content data</li>
+        <li>15 mobile-focused static case studies with images</li>
+        <li>SEO-friendly public pages included in sitemap</li>
       </ul>
-      <p><strong>Manual trigger example:</strong></p>
-      <pre><code>curl -X POST https://your-domain.com/api/agents/pinterest-blog \
-  -H "Content-Type: application/json" \
-  -H "x-agent-token: YOUR_AI_AGENT_TOKEN" \
-  -d '{"topic":"AI tools for ecommerce","audience":"shop owners","tone":"simple and actionable"}'</code></pre>
       <p>
-        A daily cron is configured in <code>vercel.json</code> to trigger this endpoint automatically.
+        If you want, I can also convert each blog post into its own dedicated static URL
+        (instead of query-string based URL) for stronger SEO indexing.
       </p>
-      <h3>Bulk 15-20 Blogs (With Your Photo)</h3>
-      <p>
-        Use <code>/api/agents/bulk-blog-seed</code> to create up to 20 posts quickly.
-        Default cover image is your photo: <code>/assets/imgs/IMG_7856.JPG</code>.
-      </p>
-      <pre><code>curl -X POST https://your-domain.com/api/agents/bulk-blog-seed \
-  -H "Content-Type: application/json" \
-  -H "x-agent-token: YOUR_AI_AGENT_TOKEN" \
-  -d '{"topic":"AI automation for ecommerce","count":20}'</code></pre>
-      <h3>Bulk Pinterest Publish</h3>
-      <p>After posts are created, publish them in bulk using <code>/api/agents/pinterest-bulk-publish</code>.</p>
-      <pre><code>curl -X POST https://your-domain.com/api/agents/pinterest-bulk-publish \
-  -H "Content-Type: application/json" \
-  -H "x-agent-token: YOUR_AI_AGENT_TOKEN" \
-  -d '{"limit":20}'</code></pre>
     </div>
   </section>
   <section class="section contact" id="contact">

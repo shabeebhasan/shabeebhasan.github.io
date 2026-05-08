@@ -118,6 +118,8 @@ a {
 }
 
 .header .social-icons {
+  position: relative;
+  z-index: 6;
   justify-content: flex-start;
   gap: 12px;
   padding-left: 0;
@@ -254,6 +256,8 @@ a {
 .navbar .brand .brand-img {
   border: 4px solid #ffffff;
   box-shadow: 0 10px 26px rgba(15, 27, 45, 0.16);
+  z-index: 1;
+  pointer-events: none;
 }
 
 .navbar .brand-title {
