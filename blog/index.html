@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Blog | Shabeeb Hasan</title>
+  <meta name="description" content="Technical articles on Yii2 modernization, AI agents, automation, and full-stack delivery.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/blog/">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <h1><span class="text-danger">Blog</span> Articles</h1>
+      <p>Insights on AI systems, automation, and software modernization.</p>
+      <div id="blog-list" class="row"></div>
+      <div id="blog-empty" style="display:none">No published posts yet.</div>
+    </div>
+  </section>
+
+  <script src="/js/blog.js"></script>
+  <script>
+    (async function () {
+      const list = document.getElementById("blog-list");
+      const empty = document.getElementById("blog-empty");
+      try {
+        const posts = await window.BlogApi.fetchPosts();
+        if (!posts.length) {
+          empty.style.display = "block";
+          return;
+        }
+        list.innerHTML = posts.map((post) => {
+          const date = post.published_at ? new Date(post.published_at).toLocaleDateString() : "";
+          const excerpt = window.BlogApi.escapeHtml(post.excerpt || "");
+          const title = window.BlogApi.escapeHtml(post.title || "Untitled");
+          return `
+            <div class="col-md-6 col-lg-4">
+              <div class="card mb-4">
+                <div class="card-body">
+                  <h5 class="card-title">${title}</h5>
+                  <p class="subtitle">${excerpt}</p>
+                  <p class="mb-3"><small>${date}</small></p>
+                  <a class="btn btn-primary btn-rounded" href="/blog/post.html?slug=${encodeURIComponent(post.slug)}">Read Article</a>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join("");
+      } catch (e) {
+        empty.style.display = "block";
+        empty.textContent = e.message;
+      }
+    })();
+  </script>
+</body>
+</html>
+
