@@ -1,0 +1,117 @@
+﻿.studio-list-page {
+  background: radial-gradient(circle at 0% 0%, #f8fbff 0, #ffffff 40%), linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+}
+
+.content-page {
+  background: radial-gradient(circle at 100% 0%, #f5f3ff 0, #ffffff 40%), linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+}
+
+.studio-intro,
+.content-excerpt,
+.content-meta,
+.case-points p,
+.content-article p,
+.content-article li {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  color: #334155;
+  line-height: 1.9;
+  font-size: 1.03rem;
+}
+
+h1, h2, h3, .content-title, .studio-card h3 {
+  font-family: "Merriweather", Georgia, serif;
+  letter-spacing: -0.01em;
+}
+
+.studio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.studio-card {
+  border: 1px solid #e2e8f0;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 12px 36px rgba(15, 23, 42, 0.08);
+}
+
+.studio-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  background: #0f172a;
+}
+
+.studio-card-body {
+  padding: 18px;
+}
+
+.studio-card-body p {
+  min-height: 88px;
+}
+
+.content-wrap {
+  max-width: 940px;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 16px;
+  font-weight: 700;
+  font-family: "Manrope", sans-serif;
+}
+
+.content-title {
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  margin-bottom: 10px;
+}
+
+.hero-image {
+  width: 100%;
+  border-radius: 14px;
+  margin: 18px 0 20px;
+  border: 1px solid #e2e8f0;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 24px;
+}
+
+.tag-row span {
+  background: #eef2ff;
+  color: #3730a3;
+  border: 1px solid #c7d2fe;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.82rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+}
+
+.content-article h2 {
+  margin-top: 28px;
+  margin-bottom: 12px;
+  font-size: 1.55rem;
+}
+
+.content-article h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 1.22rem;
+}
+
+.content-article p {
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  .studio-card-body p {
+    min-height: 0;
+  }
+}

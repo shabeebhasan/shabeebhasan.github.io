@@ -1,55 +1,21 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Blog Post | Shabeeb Hasan</title>
-  <meta name="description" content="Technical article by Shabeeb Hasan.">
-  <link rel="stylesheet" href="/assets/css/johndoe.css">
-  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
-</head>
-<body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-    <div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div>
-  </nav>
-  <section class="section">
-    <div class="container">
-      <a href="/blog/">Back to Blog</a>
-      <h1 id="post-title">Loading...</h1>
-      <p id="post-date"></p>
-      <p id="post-excerpt" class="subtitle"></p>
-      <img id="post-image" src="/assets/imgs/IMG_7856.JPG" alt="Blog cover" style="width:100%;max-height:420px;object-fit:cover;border-radius:10px;margin:12px 0 20px;display:none;">
-      <article id="post-content"></article>
-    </div>
-  </section>
-
-  <script src="/js/blog.js"></script>
+  <title>Blog Redirect | Shabeeb Hasan</title>
+  <meta name="robots" content="index,follow">
   <script>
-    (async function () {
-      const params = new URLSearchParams(window.location.search);
-      const slug = params.get("slug");
-      if (!slug) {
-        document.getElementById("post-title").textContent = "Post not found";
-        return;
-      }
-      try {
-        const post = await window.BlogApi.fetchPostBySlug(slug);
-        document.title = `${post.seo_title || post.title} | Shabeeb Hasan`;
-        document.getElementById("post-title").textContent = post.title || "Untitled";
-        document.getElementById("post-date").textContent = post.published_at ? new Date(post.published_at).toLocaleDateString() : "";
-        document.getElementById("post-excerpt").textContent = post.excerpt || "";
-        const img = document.getElementById("post-image");
-        if (post.cover_image) {
-          img.src = post.cover_image;
-          img.alt = post.title || "Blog cover";
-          img.style.display = "block";
-        }
-        document.getElementById("post-content").innerHTML = window.BlogApi.renderSimpleMarkdown(post.content || "");
-      } catch (e) {
-        document.getElementById("post-title").textContent = e.message;
+    (function () {
+      var p = new URLSearchParams(window.location.search);
+      var slug = p.get('slug');
+      if (slug) {
+        window.location.replace('/blog/' + encodeURIComponent(slug) + '/');
+      } else {
+        window.location.replace('/blog/');
       }
     })();
   </script>
-</body>
+</head>
+<body></body>
 </html>
-
