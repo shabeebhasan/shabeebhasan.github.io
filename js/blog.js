@@ -27,16 +27,30 @@ function renderSimpleMarkdown(markdown) {
 
 async function fetchPosts() {
   const res = await fetch(`${getApiBase()}/api/blogs?status=published&limit=30`);
-  if (!res.ok) throw new Error("Could not load blog posts.");
-  const data = await res.json();
-  return data.posts || [];
+  if (res.ok) {
+    const data = await res.json();
+    return data.posts || [];
+  }
+
+  const fallbackRes = await fetch("/blog/fallback-posts.json");
+  if (!fallbackRes.ok) throw new Error("Could not load blog posts.");
+  const fallbackData = await fallbackRes.json();
+  return fallbackData.posts || [];
 }
 
 async function fetchPostBySlug(slug) {
   const res = await fetch(`${getApiBase()}/api/blogs/${encodeURIComponent(slug)}`);
-  if (!res.ok) throw new Error("Could not load blog post.");
-  const data = await res.json();
-  return data.post;
+  if (res.ok) {
+    const data = await res.json();
+    return data.post;
+  }
+
+  const fallbackRes = await fetch("/blog/fallback-posts.json");
+  if (!fallbackRes.ok) throw new Error("Could not load blog post.");
+  const fallbackData = await fallbackRes.json();
+  const post = (fallbackData.posts || []).find((item) => item.slug === slug);
+  if (!post) throw new Error("Could not load blog post.");
+  return post;
 }
 
 window.BlogApi = { fetchPosts, fetchPostBySlug, renderSimpleMarkdown, escapeHtml };

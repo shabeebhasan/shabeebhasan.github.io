@@ -1,0 +1,40 @@
+{
+  "posts": [
+    {
+      "title": "AI Automation Roadmap for Small Teams",
+      "slug": "ai-automation-roadmap-small-teams",
+      "excerpt": "A practical 30-day roadmap to start automation without over-engineering your stack.",
+      "content": "# AI Automation Roadmap for Small Teams\n\nSmall teams can ship AI automation quickly by focusing on one business KPI first.\n\n## Week 1: Pick one process\n\nChoose a repetitive workflow such as lead qualification or support triage.\n\n## Week 2: Build a minimal workflow\n\nConnect one input, one model step, and one output.\n\n## Week 3: Add quality checks\n\nUse human review on sensitive outputs and log errors.\n\n## Week 4: Measure and iterate\n\nTrack response time, conversion, or cost reduction and improve each week.",
+      "cover_image": "/assets/imgs/IMG_7856.JPG",
+      "tags": ["ai", "automation", "small-team"],
+      "status": "published",
+      "seo_title": "AI Automation Roadmap for Small Teams",
+      "seo_description": "30-day implementation plan for AI automation in lean teams.",
+      "published_at": "2026-05-08T10:00:00.000Z"
+    },
+    {
+      "title": "How to Modernize a Legacy Yii2 App Safely",
+      "slug": "modernize-legacy-yii2-app-safely",
+      "excerpt": "Reduce risk while upgrading old Yii2 codebases with an incremental delivery approach.",
+      "content": "# How to Modernize a Legacy Yii2 App Safely\n\nLegacy systems should be modernized in slices, not big-bang rewrites.\n\n## Start with high-impact modules\n\nPick areas that improve customer experience or reduce support load.\n\n## Add API boundaries\n\nWrap old logic behind stable endpoints before moving deeper layers.\n\n## Keep regression checks\n\nAdd smoke tests and monitoring for each deployed slice.\n\n## Deliver in milestones\n\nShort milestones reduce risk and keep business stakeholders aligned.",
+      "cover_image": "/assets/imgs/IMG_7856.JPG",
+      "tags": ["yii2", "legacy", "modernization"],
+      "status": "published",
+      "seo_title": "How to Modernize a Legacy Yii2 App Safely",
+      "seo_description": "A low-risk migration strategy for legacy Yii2 applications.",
+      "published_at": "2026-05-07T10:00:00.000Z"
+    },
+    {
+      "title": "Pinterest + Blog Content Engine: End-to-End Setup",
+      "slug": "pinterest-blog-content-engine-setup",
+      "excerpt": "Generate, publish, and distribute content through one automation pipeline.",
+      "content": "# Pinterest + Blog Content Engine: End-to-End Setup\n\nA single content pipeline can generate images, publish blogs, and push Pinterest pins.\n\n## Content generation\n\nUse an AI writer to create title, excerpt, and markdown article.\n\n## Image generation\n\nGenerate vertical images optimized for Pinterest discovery.\n\n## Publishing\n\nSave post metadata in Supabase and publish to your blog endpoint.\n\n## Distribution\n\nCreate pins with link-back to the blog article and monitor click-through rate.",
+      "cover_image": "/assets/imgs/IMG_7856.JPG",
+      "tags": ["pinterest", "content", "ai-agent"],
+      "status": "published",
+      "seo_title": "Pinterest + Blog Content Engine Setup",
+      "seo_description": "Automate content creation and Pinterest distribution from one workflow.",
+      "published_at": "2026-05-06T10:00:00.000Z"
+    }
+  ]
+}
