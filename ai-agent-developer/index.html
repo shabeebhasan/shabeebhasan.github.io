@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AI Agent Developer for Hire | LangChain & RAG | Shabeeb Hasan</title>
+  <meta name="description" content="Build production AI agents with LangChain, OpenAI, RAG, and human-review workflows for support and operations.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/ai-agent-developer/">
+  <meta property="og:title" content="AI Agent Developer for Hire | Shabeeb Hasan">
+  <meta property="og:description" content="Production AI agent systems with RAG, automation, and measurable outcomes.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shabeeb.baydot.net/ai-agent-developer/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/IMG_7856.JPG">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/vendors/themify-icons/css/themify-icons.css">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "AI Agent Development",
+      "name": "AI Agent Developer for Hire",
+      "description": "Production AI agents with LangChain, OpenAI, RAG, and human-in-the-loop controls.",
+      "provider": {
+        "@type": "Person",
+        "name": "Shabeeb Hasan",
+        "url": "https://shabeeb.baydot.net/"
+      },
+      "areaServed": ["USA", "Canada", "Europe", "Middle East", "Pakistan"],
+      "url": "https://shabeeb.baydot.net/ai-agent-developer/"
+    }
+  </script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
+    <div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div>
+  </nav>
+  <section class="section">
+    <div class="container">
+      <h1>AI Agent Developer for Hire</h1>
+      <p>I design AI agents that automate support, knowledge retrieval, and internal operations.</p>
+      <h3>Capabilities</h3>
+      <ul><li>RAG chat assistants</li><li>Multi-step agent workflows</li><li>Human-in-the-loop quality controls</li></ul>
+      <h3>Delivery</h3>
+      <p>Architecture, implementation, evaluation, and deployment with measurable KPIs.</p>
+      <h3>Tech Stack</h3>
+      <p>OpenAI, LangChain, Vector DBs, Supabase, Python, Node.js</p>
+      <h3>Pinterest + Blog Auto Agent (Ready Setup)</h3>
+      <p>
+        Your project now includes an automation endpoint at
+        <code>/api/agents/pinterest-blog</code> that:
+        generates a blog post, generates a cover image, publishes to your blog,
+        and posts the same content on Pinterest.
+      </p>
+      <p><strong>Required env vars:</strong></p>
+      <ul>
+        <li><code>OPENAI_API_KEY</code></li>
+        <li><code>SUPABASE_URL</code></li>
+        <li><code>SUPABASE_SERVICE_ROLE_KEY</code></li>
+        <li><code>BLOG_IMAGE_BUCKET</code> (public bucket name in Supabase Storage)</li>
+        <li><code>PINTEREST_ACCESS_TOKEN</code></li>
+        <li><code>PINTEREST_BOARD_ID</code></li>
+        <li><code>AI_AGENT_TOKEN</code> (custom security token)</li>
+        <li><code>SITE_URL</code> (example: https://shabeeb.baydot.net)</li>
+      </ul>
+      <p><strong>Manual trigger example:</strong></p>
+      <pre><code>curl -X POST https://your-domain.com/api/agents/pinterest-blog \
+  -H "Content-Type: application/json" \
+  -H "x-agent-token: YOUR_AI_AGENT_TOKEN" \
+  -d '{"topic":"AI tools for ecommerce","audience":"shop owners","tone":"simple and actionable"}'</code></pre>
+      <p>
+        A daily cron is configured in <code>vercel.json</code> to trigger this endpoint automatically.
+      </p>
+      <h3>Bulk 15-20 Blogs (With Your Photo)</h3>
+      <p>
+        Use <code>/api/agents/bulk-blog-seed</code> to create up to 20 posts quickly.
+        Default cover image is your photo: <code>/assets/imgs/IMG_7856.JPG</code>.
+      </p>
+      <pre><code>curl -X POST https://your-domain.com/api/agents/bulk-blog-seed \
+  -H "Content-Type: application/json" \
+  -H "x-agent-token: YOUR_AI_AGENT_TOKEN" \
+  -d '{"topic":"AI automation for ecommerce","count":20}'</code></pre>
+      <h3>Bulk Pinterest Publish</h3>
+      <p>After posts are created, publish them in bulk using <code>/api/agents/pinterest-bulk-publish</code>.</p>
+      <pre><code>curl -X POST https://your-domain.com/api/agents/pinterest-bulk-publish \
+  -H "Content-Type: application/json" \
+  -H "x-agent-token: YOUR_AI_AGENT_TOKEN" \
+  -d '{"limit":20}'</code></pre>
+    </div>
+  </section>
+  <section class="section contact" id="contact">
+    <div class="container text-center">
+      <h2>Start Your Project</h2>
+      <p>Email: <a href="mailto:shabeebhasan@gmail.com">shabeebhasan@gmail.com</a> | WhatsApp: <a href="https://wa.me/923222254819" target="_blank" rel="noopener noreferrer">+92 322 2254819</a></p>
+      <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book 15-min Free Call</a>
+    </div>
+  </section>
+</body>
+</html>
