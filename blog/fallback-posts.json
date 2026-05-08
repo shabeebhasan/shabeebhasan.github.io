@@ -1,544 +1,196 @@
 ﻿{
     "posts":  [
                   {
-                      "title":  "Telepsychiatry Intake Triage: Implementation Guide for Healthcare Teams",
-                      "slug":  "telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Telepsychiatry Intake Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "How to Build an AI Lead Generation System for Agencies Step by Step",
+                      "slug":  "how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step",
+                      "excerpt":  "High-intent SEO article on How to Build an AI Lead Generation System for Agencies Step by Step for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Telepsychiatry Intake Triage: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Telepsychiatry Intake Triage with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9424058+05:00"
+                      "seo_title":  "How to Build an AI Lead Generation System for Agencies Step by Step",
+                      "seo_description":  "High-intent SEO article on How to Build an AI Lead Generation System for Agencies Step by Step for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.3242201+05:00"
                   },
                   {
-                      "title":  "Crisis Hotline Escalation: Implementation Guide for Healthcare Teams",
-                      "slug":  "crisis-hotline-escalation-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Crisis Hotline Escalation, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/crisis-hotline-escalation-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/crisis-hotline-escalation-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms",
+                      "slug":  "nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms",
+                      "excerpt":  "High-intent SEO article on Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Crisis Hotline Escalation: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Crisis Hotline Escalation with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9546070+05:00"
+                      "seo_title":  "Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms",
+                      "seo_description":  "High-intent SEO article on Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.3498985+05:00"
                   },
                   {
-                      "title":  "Rural Mental Health Access: Implementation Guide for Healthcare Teams",
-                      "slug":  "rural-mental-health-access-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Rural Mental Health Access, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/rural-mental-health-access-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/rural-mental-health-access-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "BullMQ for Lead Automation Queue Design Retries and Idempotency",
+                      "slug":  "bullmq-for-lead-automation-queue-design-retries-and-idempotency",
+                      "excerpt":  "High-intent SEO article on BullMQ for Lead Automation Queue Design Retries and Idempotency for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/bullmq-for-lead-automation-queue-design-retries-and-idempotency/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/bullmq-for-lead-automation-queue-design-retries-and-idempotency.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Rural Mental Health Access: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Rural Mental Health Access with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9556060+05:00"
+                      "seo_title":  "BullMQ for Lead Automation Queue Design Retries and Idempotency",
+                      "seo_description":  "High-intent SEO article on BullMQ for Lead Automation Queue Design Retries and Idempotency for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.3608999+05:00"
                   },
                   {
-                      "title":  "Behavioral Health Follow-Up Routing: Implementation Guide for Healthcare Teams",
-                      "slug":  "behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Behavioral Health Follow-Up Routing, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "AI Lead Scoring Framework Fit Score Confidence and Outreach Angles",
+                      "slug":  "ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles",
+                      "excerpt":  "High-intent SEO article on AI Lead Scoring Framework Fit Score Confidence and Outreach Angles for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Behavioral Health Follow-Up Routing: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Behavioral Health Follow-Up Routing with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9556060+05:00"
+                      "seo_title":  "AI Lead Scoring Framework Fit Score Confidence and Outreach Angles",
+                      "seo_description":  "High-intent SEO article on AI Lead Scoring Framework Fit Score Confidence and Outreach Angles for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.3710739+05:00"
                   },
                   {
-                      "title":  "Nurse Call Center QA: Implementation Guide for Healthcare Teams",
-                      "slug":  "nurse-call-center-qa-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Nurse Call Center QA, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/nurse-call-center-qa-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/nurse-call-center-qa-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "Cold Email Automation Architecture for Service Businesses",
+                      "slug":  "cold-email-automation-architecture-for-service-businesses",
+                      "excerpt":  "High-intent SEO article on Cold Email Automation Architecture for Service Businesses for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/cold-email-automation-architecture-for-service-businesses/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/cold-email-automation-architecture-for-service-businesses.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Nurse Call Center QA: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Nurse Call Center QA with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9566054+05:00"
+                      "seo_title":  "Cold Email Automation Architecture for Service Businesses",
+                      "seo_description":  "High-intent SEO article on Cold Email Automation Architecture for Service Businesses for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.4063935+05:00"
                   },
                   {
-                      "title":  "ER De-Escalation Coaching: Implementation Guide for Healthcare Teams",
-                      "slug":  "er-de-escalation-coaching-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for ER De-Escalation Coaching, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/er-de-escalation-coaching-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/er-de-escalation-coaching-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS",
+                      "slug":  "hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas",
+                      "excerpt":  "High-intent SEO article on HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "ER De-Escalation Coaching: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on ER De-Escalation Coaching with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9566054+05:00"
+                      "seo_title":  "HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS",
+                      "seo_description":  "High-intent SEO article on HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.4199698+05:00"
                   },
                   {
-                      "title":  "Post-Discharge Wellness Monitoring: Implementation Guide for Healthcare Teams",
-                      "slug":  "post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Post-Discharge Wellness Monitoring, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "AI Receptionist for Appointment Booking Voice Workflow Blueprint",
+                      "slug":  "ai-receptionist-for-appointment-booking-voice-workflow-blueprint",
+                      "excerpt":  "High-intent SEO article on AI Receptionist for Appointment Booking Voice Workflow Blueprint for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/ai-receptionist-for-appointment-booking-voice-workflow-blueprint/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/ai-receptionist-for-appointment-booking-voice-workflow-blueprint.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Post-Discharge Wellness Monitoring: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Post-Discharge Wellness Monitoring with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9586074+05:00"
+                      "seo_title":  "AI Receptionist for Appointment Booking Voice Workflow Blueprint",
+                      "seo_description":  "High-intent SEO article on AI Receptionist for Appointment Booking Voice Workflow Blueprint for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.4299709+05:00"
                   },
                   {
-                      "title":  "University Counseling Triage: Implementation Guide for Healthcare Teams",
-                      "slug":  "university-counseling-triage-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for University Counseling Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/university-counseling-triage-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/university-counseling-triage-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "How to Add Retell AI Outbound Calling into a Next.js App",
+                      "slug":  "how-to-add-retell-ai-outbound-calling-into-a-nextjs-app",
+                      "excerpt":  "High-intent SEO article on How to Add Retell AI Outbound Calling into a Next.js App for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/how-to-add-retell-ai-outbound-calling-into-a-nextjs-app/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/how-to-add-retell-ai-outbound-calling-into-a-nextjs-app.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "University Counseling Triage: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on University Counseling Triage with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9596050+05:00"
+                      "seo_title":  "How to Add Retell AI Outbound Calling into a Next.js App",
+                      "seo_description":  "High-intent SEO article on How to Add Retell AI Outbound Calling into a Next.js App for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.4471159+05:00"
                   },
                   {
-                      "title":  "Womenâ€™s Telehealth Communication Safety: Implementation Guide for Healthcare Teams",
-                      "slug":  "womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Womenâ€™s Telehealth Communication Safety, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "MCP Server Use Cases for AI Assistants in Sales Operations",
+                      "slug":  "mcp-server-use-cases-for-ai-assistants-in-sales-operations",
+                      "excerpt":  "High-intent SEO article on MCP Server Use Cases for AI Assistants in Sales Operations for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/mcp-server-use-cases-for-ai-assistants-in-sales-operations/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/mcp-server-use-cases-for-ai-assistants-in-sales-operations.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Womenâ€™s Telehealth Communication Safety: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Womenâ€™s Telehealth Communication Safety with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9606071+05:00"
+                      "seo_title":  "MCP Server Use Cases for AI Assistants in Sales Operations",
+                      "seo_description":  "High-intent SEO article on MCP Server Use Cases for AI Assistants in Sales Operations for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.4563228+05:00"
                   },
                   {
-                      "title":  "Elderly Virtual Care Support: Implementation Guide for Healthcare Teams",
-                      "slug":  "elderly-virtual-care-support-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Elderly Virtual Care Support, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/elderly-virtual-care-support-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/elderly-virtual-care-support-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "Designing a Secure Multi-Tenant Database Model with Supabase RLS",
+                      "slug":  "designing-a-secure-multi-tenant-database-model-with-supabase-rls",
+                      "excerpt":  "High-intent SEO article on Designing a Secure Multi-Tenant Database Model with Supabase RLS for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/designing-a-secure-multi-tenant-database-model-with-supabase-rls/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/designing-a-secure-multi-tenant-database-model-with-supabase-rls.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Elderly Virtual Care Support: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Elderly Virtual Care Support with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9606071+05:00"
+                      "seo_title":  "Designing a Secure Multi-Tenant Database Model with Supabase RLS",
+                      "seo_description":  "High-intent SEO article on Designing a Secure Multi-Tenant Database Model with Supabase RLS for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.4673206+05:00"
                   },
                   {
-                      "title":  "Oncology Emotional Distress Flagging: Implementation Guide for Healthcare Teams",
-                      "slug":  "oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Oncology Emotional Distress Flagging, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "Lead Deduplication Strategy Source Provenance Merging and Data Quality",
+                      "slug":  "lead-deduplication-strategy-source-provenance-merging-and-data-quality",
+                      "excerpt":  "High-intent SEO article on Lead Deduplication Strategy Source Provenance Merging and Data Quality for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/lead-deduplication-strategy-source-provenance-merging-and-data-quality/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/lead-deduplication-strategy-source-provenance-merging-and-data-quality.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Oncology Emotional Distress Flagging: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Oncology Emotional Distress Flagging with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9616060+05:00"
+                      "seo_title":  "Lead Deduplication Strategy Source Provenance Merging and Data Quality",
+                      "seo_description":  "High-intent SEO article on Lead Deduplication Strategy Source Provenance Merging and Data Quality for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.5101818+05:00"
                   },
                   {
-                      "title":  "Rehab Progress Communication Tracking: Implementation Guide for Healthcare Teams",
-                      "slug":  "rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Rehab Progress Communication Tracking, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams.svg",
+                      "title":  "From ICP to Campaign Building an End-to-End B2B Outbound Engine",
+                      "slug":  "from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine",
+                      "excerpt":  "High-intent SEO article on From ICP to Campaign Building an End-to-End B2B Outbound Engine for agencies, SaaS founders, and outbound teams.",
+                      "content":  "See full article at /blog/from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine/",
+                      "cover_image":  "/assets/imgs/generated/job-blogs/from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine.svg",
                       "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
+                                   "ai lead generation",
+                                   "b2b outreach platform",
+                                   "sales workflow automation"
                                ],
                       "status":  "published",
-                      "seo_title":  "Rehab Progress Communication Tracking: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Rehab Progress Communication Tracking with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9616060+05:00"
-                  },
-                  {
-                      "title":  "Digital Therapeutics Companion Triage: Implementation Guide for Healthcare Teams",
-                      "slug":  "digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Digital Therapeutics Companion Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Digital Therapeutics Companion Triage: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Digital Therapeutics Companion Triage with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9626069+05:00"
-                  },
-                  {
-                      "title":  "Insurance Care Management Audits: Implementation Guide for Healthcare Teams",
-                      "slug":  "insurance-care-management-audits-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Insurance Care Management Audits, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/insurance-care-management-audits-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/insurance-care-management-audits-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Insurance Care Management Audits: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Insurance Care Management Audits with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9626069+05:00"
-                  },
-                  {
-                      "title":  "Home Healthcare Video Handoffs: Implementation Guide for Healthcare Teams",
-                      "slug":  "home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Home Healthcare Video Handoffs, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Home Healthcare Video Handoffs: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Home Healthcare Video Handoffs with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9626069+05:00"
-                  },
-                  {
-                      "title":  "Clinical Trial Participant Support: Implementation Guide for Healthcare Teams",
-                      "slug":  "clinical-trial-participant-support-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Clinical Trial Participant Support, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/clinical-trial-participant-support-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/clinical-trial-participant-support-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Clinical Trial Participant Support: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Clinical Trial Participant Support with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9637877+05:00"
-                  },
-                  {
-                      "title":  "Employee Assistance Program (EAP): Implementation Guide for Healthcare Teams",
-                      "slug":  "employee-assistance-program-eap-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Employee Assistance Program (EAP), focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/employee-assistance-program-eap-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/employee-assistance-program-eap-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Employee Assistance Program (EAP): Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Employee Assistance Program (EAP) with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9647920+05:00"
-                  },
-                  {
-                      "title":  "NGO Crisis Counseling Scale-Up: Implementation Guide for Healthcare Teams",
-                      "slug":  "ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for NGO Crisis Counseling Scale-Up, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "NGO Crisis Counseling Scale-Up: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on NGO Crisis Counseling Scale-Up with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9647920+05:00"
-                  },
-                  {
-                      "title":  "Pediatric Counseling Training: Implementation Guide for Healthcare Teams",
-                      "slug":  "pediatric-counseling-training-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Pediatric Counseling Training, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/pediatric-counseling-training-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/pediatric-counseling-training-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Pediatric Counseling Training: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Pediatric Counseling Training with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9657935+05:00"
-                  },
-                  {
-                      "title":  "Multi-Lingual Intake Workflows: Implementation Guide for Healthcare Teams",
-                      "slug":  "multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Multi-Lingual Intake Workflows, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Multi-Lingual Intake Workflows: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Multi-Lingual Intake Workflows with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9657935+05:00"
-                  },
-                  {
-                      "title":  "Virtual Primary Care Quality Layer: Implementation Guide for Healthcare Teams",
-                      "slug":  "virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Virtual Primary Care Quality Layer, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Virtual Primary Care Quality Layer: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Virtual Primary Care Quality Layer with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9667897+05:00"
-                  },
-                  {
-                      "title":  "Readmission Risk Communication Lens: Implementation Guide for Healthcare Teams",
-                      "slug":  "readmission-risk-communication-lens-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Readmission Risk Communication Lens, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/readmission-risk-communication-lens-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/readmission-risk-communication-lens-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Readmission Risk Communication Lens: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Readmission Risk Communication Lens with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9667897+05:00"
-                  },
-                  {
-                      "title":  "Psychiatric Intake Standardization: Implementation Guide for Healthcare Teams",
-                      "slug":  "psychiatric-intake-standardization-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Psychiatric Intake Standardization, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/psychiatric-intake-standardization-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/psychiatric-intake-standardization-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Psychiatric Intake Standardization: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Psychiatric Intake Standardization with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9677923+05:00"
-                  },
-                  {
-                      "title":  "Hospital Complaint Reduction Program: Implementation Guide for Healthcare Teams",
-                      "slug":  "hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Hospital Complaint Reduction Program, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Hospital Complaint Reduction Program: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Hospital Complaint Reduction Program with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9687890+05:00"
-                  },
-                  {
-                      "title":  "Telehealth Supervisor Copilot: Implementation Guide for Healthcare Teams",
-                      "slug":  "telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Telehealth Supervisor Copilot, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Telehealth Supervisor Copilot: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Telehealth Supervisor Copilot with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9687890+05:00"
-                  },
-                  {
-                      "title":  "Family Therapy Session Consistency: Implementation Guide for Healthcare Teams",
-                      "slug":  "family-therapy-session-consistency-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Family Therapy Session Consistency, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/family-therapy-session-consistency-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/family-therapy-session-consistency-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Family Therapy Session Consistency: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Family Therapy Session Consistency with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9697924+05:00"
-                  },
-                  {
-                      "title":  "Substance Recovery Check-In Assist: Implementation Guide for Healthcare Teams",
-                      "slug":  "substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Substance Recovery Check-In Assist, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Substance Recovery Check-In Assist: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Substance Recovery Check-In Assist with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9707896+05:00"
-                  },
-                  {
-                      "title":  "Value-Based Care Communication KPI: Implementation Guide for Healthcare Teams",
-                      "slug":  "value-based-care-communication-kpi-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Value-Based Care Communication KPI, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/value-based-care-communication-kpi-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/value-based-care-communication-kpi-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Value-Based Care Communication KPI: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Value-Based Care Communication KPI with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9707896+05:00"
-                  },
-                  {
-                      "title":  "Community Clinic Intake Automation: Implementation Guide for Healthcare Teams",
-                      "slug":  "community-clinic-intake-automation-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Community Clinic Intake Automation, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/community-clinic-intake-automation-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/community-clinic-intake-automation-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Community Clinic Intake Automation: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Community Clinic Intake Automation with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9717888+05:00"
-                  },
-                  {
-                      "title":  "Enterprise Mental Health SaaS Pilot: Implementation Guide for Healthcare Teams",
-                      "slug":  "enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Enterprise Mental Health SaaS Pilot, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "content":  "See full article at /blog/enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams/",
-                      "cover_image":  "/assets/imgs/generated/medical-blogs/enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams.svg",
-                      "tags":  [
-                                   "healthcare-ai-saas",
-                                   "telehealth-ai",
-                                   "mental-health-ai-screening",
-                                   "clinical-ai-workflows",
-                                   "hipaa-ready-ai"
-                               ],
-                      "status":  "published",
-                      "seo_title":  "Enterprise Mental Health SaaS Pilot: Implementation Guide for Healthcare Teams",
-                      "seo_description":  "Healthcare AI blog on Enterprise Mental Health SaaS Pilot with deployment strategy, governance, and telehealth operations optimization.",
-                      "published_at":  "2026-05-09T02:39:10.9727894+05:00"
+                      "seo_title":  "From ICP to Campaign Building an End-to-End B2B Outbound Engine",
+                      "seo_description":  "High-intent SEO article on From ICP to Campaign Building an End-to-End B2B Outbound Engine for agencies, SaaS founders, and outbound teams.",
+                      "published_at":  "2026-05-09T03:18:35.5281810+05:00"
                   }
               ]
 }
