@@ -968,3 +968,12 @@ textarea.form-control {
     padding: 24px;
   }
 }
+
+.also-available-service .card {
+  transform: scale(0.97);
+  opacity: 0.92;
+}
+
+.also-available-service .card .card-body {
+  font-size: 0.95rem;
+}
