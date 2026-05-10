@@ -82,6 +82,7 @@
         <div class="hero-actions">
           <a class="btn btn-primary btn-rounded" href="#portfolio"><i class="ti-layout-grid2 pr-2"></i>View Work</a>
           <a class="btn btn-outline-light btn-rounded" href="#contact"><i class="ti-email pr-2"></i>Start a Project</a>
+          <button class="btn btn-outline-light btn-rounded" type="button" data-toggle="modal" data-target="#cvDownloadModal"><i class="ti-download pr-2"></i>Download 5 CVs</button>
         </div>
         <p class="hero-trust-line">5.0 Upwork Rating | 116 Completed Jobs | Top Rated Plus | Usually responds within 2
           hours</p>
@@ -130,6 +131,9 @@
           </li>
           <li class="nav-item">
             <a href="/blog/" class="nav-link">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a href="/resumes/" class="nav-link">CV Pack</a>
           </li>
           <li class="nav-item">
             <a href="#price" class="nav-link">Packages</a>
@@ -1208,6 +1212,32 @@
     <i class="ti-comment-alt" aria-hidden="true"></i>
     <span>WhatsApp</span>
   </a>
+
+  <div class="modal fade" id="cvDownloadModal" tabindex="-1" role="dialog" aria-labelledby="cvDownloadModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cvDownloadModalLabel">Download CV (PDF)</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="list-group">
+            <a href="/resumes/files/01-ai-engineer-cv.pdf" class="list-group-item list-group-item-action" download>AI Engineer CV (PDF)</a>
+            <a href="/resumes/files/02-data-scientist-cv.pdf" class="list-group-item list-group-item-action" download>Data Scientist CV (PDF)</a>
+            <a href="/resumes/files/03-react-native-cv.pdf" class="list-group-item list-group-item-action" download>React Native Developer CV (PDF)</a>
+            <a href="/resumes/files/04-fullstack-ai-hybrid-cv.pdf" class="list-group-item list-group-item-action" download>Full Stack + AI Hybrid CV (PDF)</a>
+            <a href="/resumes/files/05-ats-one-page-cv.pdf" class="list-group-item list-group-item-action" download>ATS One-Page CV (PDF)</a>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <a href="/resumes/" class="btn btn-secondary">View CV Hub</a>
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- core  -->
   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
