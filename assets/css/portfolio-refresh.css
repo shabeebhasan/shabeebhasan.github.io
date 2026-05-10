@@ -175,19 +175,22 @@ a {
 }
 
 .header .header-content .header-title {
-  font-size: 5rem;
-  line-height: 0.95;
-  margin-bottom: 24px;
+  max-width: 15ch;
+  font-size: clamp(2.1rem, 5.4vw, 4.35rem);
+  line-height: 1.04;
+  margin-bottom: 18px;
   letter-spacing: 0;
+  text-wrap: balance;
 }
 
 .header .header-content .header-mono {
   max-width: 760px;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   letter-spacing: 0;
-  font-size: 1.45rem;
-  line-height: 1.35;
+  font-size: clamp(1.02rem, 2.15vw, 1.26rem);
+  line-height: 1.5;
   font-weight: 700;
+  text-wrap: pretty;
 }
 
 .hero-summary {
@@ -902,7 +905,7 @@ textarea.form-control {
   }
 
   .header .header-content .header-title {
-    font-size: 3.8rem;
+    max-width: 17ch;
   }
 
   .navbar .brand {
@@ -932,11 +935,13 @@ textarea.form-control {
   }
 
   .header .header-content .header-title {
-    font-size: 3rem;
+    font-size: clamp(1.75rem, 9vw, 2.55rem);
+    line-height: 1.1;
   }
 
   .header .header-content .header-mono {
-    font-size: 1.15rem;
+    font-size: 1rem;
+    line-height: 1.45;
   }
 
   .hero-summary {
