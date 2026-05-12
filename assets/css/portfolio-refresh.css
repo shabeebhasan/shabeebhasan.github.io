@@ -96,6 +96,18 @@ a {
   border-color: #ffffff;
 }
 
+.btn-outline-dark {
+  color: var(--portfolio-ink) !important;
+  border-color: var(--portfolio-line);
+  background: #ffffff;
+}
+
+.btn-outline-dark:hover {
+  color: #ffffff !important;
+  background: var(--portfolio-ink);
+  border-color: var(--portfolio-ink);
+}
+
 .header {
   min-height: 720px;
   height: 92vh;
@@ -175,7 +187,7 @@ a {
 }
 
 .header .header-content .header-title {
-  max-width: 15ch;
+  max-width: 16ch;
   font-size: clamp(2.1rem, 5.4vw, 4.35rem);
   line-height: 1.04;
   margin-bottom: 18px;
@@ -217,8 +229,8 @@ a {
 
 .hero-proof {
   display: grid;
-  grid-template-columns: repeat(3, minmax(130px, 1fr));
-  max-width: 640px;
+  grid-template-columns: repeat(4, minmax(118px, 1fr));
+  max-width: 760px;
   gap: 12px;
 }
 
@@ -311,6 +323,55 @@ a {
   letter-spacing: 0;
 }
 
+.proof-band {
+  position: relative;
+  z-index: 4;
+  margin-top: -42px;
+  padding: 0 0 26px;
+}
+
+.proof-panel {
+  display: grid;
+  grid-template-columns: 1.2fr 0.9fr 1fr;
+  gap: 1px;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+  background: var(--portfolio-line);
+  box-shadow: var(--portfolio-shadow);
+}
+
+.proof-panel div {
+  padding: 24px;
+  background: #ffffff;
+}
+
+.proof-panel span,
+.section-kicker,
+.outcome-card span {
+  display: block;
+  margin-bottom: 8px;
+  color: var(--portfolio-primary);
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.proof-panel strong {
+  display: block;
+  color: var(--portfolio-ink);
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.proof-panel a {
+  color: var(--portfolio-ink);
+  text-decoration: underline;
+  text-decoration-color: rgba(37, 99, 235, 0.35);
+  text-underline-offset: 4px;
+}
+
 .about-section {
   background: #ffffff;
   box-shadow: var(--portfolio-shadow);
@@ -365,7 +426,8 @@ a {
 }
 
 #service .card,
-#projects .card {
+#projects .card,
+.price-card {
   height: calc(100% - 3rem);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
@@ -452,6 +514,67 @@ a {
   background: rgba(255, 255, 255, 0.06);
 }
 
+.outcomes-section {
+  background: #ffffff;
+}
+
+.outcomes-section .section-header,
+#price .section-header {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.outcomes-section .section-header p,
+#price .section-header p,
+.cv-pack-section p {
+  color: var(--portfolio-muted);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.outcome-card {
+  height: 100%;
+  overflow: hidden;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 8px;
+  background: #ffffff;
+  box-shadow: var(--portfolio-shadow);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.outcome-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 24px 60px rgba(15, 27, 45, 0.16);
+}
+
+.outcome-card img {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.outcome-card div {
+  padding: 24px;
+}
+
+.outcome-card h3 {
+  color: var(--portfolio-ink);
+  font-size: 1.22rem;
+  font-weight: 900;
+  line-height: 1.25;
+}
+
+.outcome-card p {
+  color: var(--portfolio-muted);
+  line-height: 1.65;
+}
+
+.outcome-card a {
+  color: var(--portfolio-primary);
+  font-weight: 900;
+}
+
 .portfolio .filters {
   display: inline-flex;
   flex-wrap: wrap;
@@ -518,6 +641,10 @@ a {
 .price-card {
   background: #ffffff;
   transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.price-card .list {
+  min-height: 178px;
 }
 
 .price-card .price-card-title {
@@ -690,6 +817,56 @@ a {
 
 .review-carousel .carousel-indicators .active {
   background: var(--portfolio-primary);
+}
+
+.cv-pack-section {
+  background:
+    linear-gradient(120deg, rgba(11, 18, 32, 0.96), rgba(20, 41, 74, 0.94)),
+    url(../imgs/web-1.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cv-pack-section h1,
+.cv-pack-section p {
+  color: #ffffff;
+}
+
+.cv-pack-section p {
+  color: rgba(255, 255, 255, 0.76);
+}
+
+.cv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.cv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.cv-grid a {
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #ffffff !important;
+  font-weight: 900;
+  line-height: 1.35;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(8px);
+}
+
+.cv-grid a:hover {
+  color: var(--portfolio-ink) !important;
+  background: #ffffff;
+  text-decoration: none;
 }
 
 .process-section {
@@ -908,6 +1085,12 @@ textarea.form-control {
     max-width: 17ch;
   }
 
+  .hero-proof,
+  .proof-panel,
+  .cv-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .navbar .brand {
     display: none;
   }
@@ -952,12 +1135,28 @@ textarea.form-control {
     width: 100%;
   }
 
-  .hero-proof {
+  .hero-proof,
+  .proof-panel,
+  .cv-grid {
     grid-template-columns: 1fr;
+  }
+
+  .proof-band {
+    margin-top: 0;
+    padding-top: 20px;
+  }
+
+  .proof-panel div,
+  .outcome-card div {
+    padding: 20px;
   }
 
   .review-proof {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .cv-actions .btn {
+    width: 100%;
   }
 
   .review-carousel {
