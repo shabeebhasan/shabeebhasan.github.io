@@ -1,8 +1,72 @@
 ﻿{
-    "posts":  [
-                  {
-                      "title":  "How to Build an AI Lead Generation System for Agencies Step by Step",
-                      "slug":  "how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step",
+  "posts":  [
+                {
+                    "title":  "How to Build a RAG Chatbot for Business Documents",
+                    "slug":  "how-to-build-a-rag-chatbot-for-business-documents",
+                    "excerpt":  "Practical guide to designing a RAG chatbot for policies, SOPs, support docs, and internal knowledge bases.",
+                    "content":  "See full article at /blog/how-to-build-a-rag-chatbot-for-business-documents/",
+                    "cover_image":  "/assets/imgs/generated/blogs/how-to-build-a-rag-chatbot-for-business-documents.svg",
+                    "tags":  [
+                                 "rag",
+                                 "vector search",
+                                 "knowledge base"
+                             ],
+                    "status":  "published",
+                    "seo_title":  "How to Build a RAG Chatbot for Business Documents",
+                    "seo_description":  "Practical guide to designing a RAG chatbot for policies, SOPs, support docs, and internal knowledge bases.",
+                    "published_at":  "2026-07-07T00:00:00+05:00"
+                },
+                {
+                    "title":  "AI Integration vs AI Automation: What Your Business Actually Needs",
+                    "slug":  "ai-integration-vs-ai-automation-what-your-business-actually-needs",
+                    "excerpt":  "A clear breakdown of when you need AI integration, when you need automation, and how to scope both correctly.",
+                    "content":  "See full article at /blog/ai-integration-vs-ai-automation-what-your-business-actually-needs/",
+                    "cover_image":  "/assets/imgs/generated/blogs/ai-integration-vs-ai-automation-what-your-business-actually-needs.svg",
+                    "tags":  [
+                                 "ai integration",
+                                 "automation",
+                                 "scope planning"
+                             ],
+                    "status":  "published",
+                    "seo_title":  "AI Integration vs AI Automation: What Your Business Actually Needs",
+                    "seo_description":  "A clear breakdown of when you need AI integration, when you need automation, and how to scope both correctly.",
+                    "published_at":  "2026-07-07T00:00:00+05:00"
+                },
+                {
+                    "title":  "How AI Agents Can Automate CRM and Operations Workflows",
+                    "slug":  "how-ai-agents-can-automate-crm-and-operations-workflows",
+                    "excerpt":  "Practical patterns for AI agents that handle CRM updates, routing, follow-up, and internal operations safely.",
+                    "content":  "See full article at /blog/how-ai-agents-can-automate-crm-and-operations-workflows/",
+                    "cover_image":  "/assets/imgs/generated/blogs/how-ai-agents-can-automate-crm-and-operations-workflows.svg",
+                    "tags":  [
+                                 "ai agents",
+                                 "crm",
+                                 "operations"
+                             ],
+                    "status":  "published",
+                    "seo_title":  "How AI Agents Can Automate CRM and Operations Workflows",
+                    "seo_description":  "Practical patterns for AI agents that handle CRM updates, routing, follow-up, and internal operations safely.",
+                    "published_at":  "2026-07-07T00:00:00+05:00"
+                },
+                {
+                    "title":  "Why Most AI Apps Fail After the Demo",
+                    "slug":  "why-most-ai-apps-fail-after-the-demo",
+                    "excerpt":  "Common reasons AI products stall after proof-of-concept and how to ship something production-ready instead.",
+                    "content":  "See full article at /blog/why-most-ai-apps-fail-after-the-demo/",
+                    "cover_image":  "/assets/imgs/generated/blogs/why-most-ai-apps-fail-after-the-demo.svg",
+                    "tags":  [
+                                 "ai app development",
+                                 "mvp",
+                                 "production launch"
+                             ],
+                    "status":  "published",
+                    "seo_title":  "Why Most AI Apps Fail After the Demo",
+                    "seo_description":  "Common reasons AI products stall after proof-of-concept and how to ship something production-ready instead.",
+                    "published_at":  "2026-07-07T00:00:00+05:00"
+                },
+                {
+                    "title":  "How to Build an AI Lead Generation System for Agencies Step by Step",
+                    "slug":  "how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step",
                       "excerpt":  "High-intent SEO article on How to Build an AI Lead Generation System for Agencies Step by Step for agencies, SaaS founders, and outbound teams.",
                       "content":  "See full article at /blog/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step/",
                       "cover_image":  "/assets/imgs/generated/job-blogs/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step.svg",

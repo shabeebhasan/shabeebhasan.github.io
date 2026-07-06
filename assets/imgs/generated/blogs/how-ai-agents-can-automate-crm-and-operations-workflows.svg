@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <rect width="1600" height="900" fill="#111827"/>
+  <rect x="100" y="100" width="1400" height="700" rx="30" fill="#0f172a" stroke="#334155" stroke-width="2"/>
+  <rect x="190" y="190" width="340" height="470" rx="24" fill="#e2e8f0"/>
+  <rect x="585" y="190" width="430" height="470" rx="24" fill="#e2e8f0"/>
+  <rect x="1070" y="190" width="340" height="470" rx="24" fill="#e2e8f0"/>
+  <rect x="240" y="240" width="240" height="22" rx="11" fill="#1d4ed8"/>
+  <rect x="630" y="240" width="300" height="22" rx="11" fill="#0f766e"/>
+  <rect x="1120" y="240" width="240" height="22" rx="11" fill="#d97706"/>
+  <rect x="240" y="290" width="200" height="100" rx="16" fill="#bfdbfe"/>
+  <rect x="240" y="410" width="200" height="100" rx="16" fill="#c7f9cc"/>
+  <rect x="635" y="300" width="300" height="44" rx="22" fill="#dbeafe"/>
+  <rect x="635" y="360" width="260" height="44" rx="22" fill="#dcfce7"/>
+  <rect x="635" y="420" width="220" height="44" rx="22" fill="#fef3c7"/>
+  <rect x="1120" y="290" width="180" height="100" rx="16" fill="#fed7aa"/>
+  <rect x="1120" y="410" width="180" height="100" rx="16" fill="#ddd6fe"/>
+  <text x="180" y="705" fill="#ffffff" font-family="Arial, sans-serif" font-size="40" font-weight="700">AI Agents for CRM and Ops</text>
+  <text x="180" y="750" fill="#cbd5e1" font-family="Arial, sans-serif" font-size="24">Routing, follow-up, and internal workflows</text>
+</svg>

@@ -1,8 +1,36 @@
 ﻿{
-    "items":  [
-                  {
-                      "title":  "AI Lead Scoring Framework Fit Score Confidence and Outreach Angles",
-                      "excerpt":  "High-intent SEO article on AI Lead Scoring Framework Fit Score Confidence and Outreach Angles for agencies, SaaS founders, and outbound teams.",
+  "items":  [
+                {
+                    "title":  "How to Build a RAG Chatbot for Business Documents",
+                    "excerpt":  "Practical guide to designing a RAG chatbot for policies, SOPs, support docs, and internal knowledge bases.",
+                    "image":  "/assets/imgs/generated/blogs/how-to-build-a-rag-chatbot-for-business-documents.svg",
+                    "url":  "/blog/how-to-build-a-rag-chatbot-for-business-documents/",
+                    "category":  "ai"
+                },
+                {
+                    "title":  "AI Integration vs AI Automation: What Your Business Actually Needs",
+                    "excerpt":  "A clear breakdown of when you need AI integration, when you need automation, and how to scope both correctly.",
+                    "image":  "/assets/imgs/generated/blogs/ai-integration-vs-ai-automation-what-your-business-actually-needs.svg",
+                    "url":  "/blog/ai-integration-vs-ai-automation-what-your-business-actually-needs/",
+                    "category":  "ai"
+                },
+                {
+                    "title":  "How AI Agents Can Automate CRM and Operations Workflows",
+                    "excerpt":  "Practical patterns for AI agents that handle CRM updates, routing, follow-up, and internal operations safely.",
+                    "image":  "/assets/imgs/generated/blogs/how-ai-agents-can-automate-crm-and-operations-workflows.svg",
+                    "url":  "/blog/how-ai-agents-can-automate-crm-and-operations-workflows/",
+                    "category":  "ai"
+                },
+                {
+                    "title":  "Why Most AI Apps Fail After the Demo",
+                    "excerpt":  "Common reasons AI products stall after proof-of-concept and how to ship something production-ready instead.",
+                    "image":  "/assets/imgs/generated/blogs/why-most-ai-apps-fail-after-the-demo.svg",
+                    "url":  "/blog/why-most-ai-apps-fail-after-the-demo/",
+                    "category":  "ai"
+                },
+                {
+                    "title":  "AI Lead Scoring Framework Fit Score Confidence and Outreach Angles",
+                    "excerpt":  "High-intent SEO article on AI Lead Scoring Framework Fit Score Confidence and Outreach Angles for agencies, SaaS founders, and outbound teams.",
                       "image":  "/assets/imgs/generated/job-blogs/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles.svg",
                       "url":  "/blog/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles/",
                       "category":  "ai"
