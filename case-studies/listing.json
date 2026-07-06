@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Behavioral AI Authentication",
+      "excerpt": "Anonymized case study for mobile sensor-based behavioral AI authentication with handoff detection and owner validation.",
+      "image": "/assets/imgs/web-3.jpg",
+      "url": "/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
+      "category": "ai"
+    },
+    {
       "title": "Agri Supply Chain Farmer App",
       "excerpt": "Mobile app case study for Agri Supply Chain Farmer App with strategy, UX, architecture, and measurable outcomes.",
       "image": "/assets/imgs/generated/case-studies/agri-supply-chain-farmer-app.svg",

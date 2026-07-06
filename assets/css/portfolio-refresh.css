@@ -473,6 +473,23 @@ a {
   background: var(--portfolio-soft);
 }
 
+.service-tags a {
+  padding: 6px 10px;
+  color: var(--portfolio-ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  border: 1px solid var(--portfolio-line);
+  border-radius: 999px;
+  background: var(--portfolio-soft);
+  text-decoration: none;
+}
+
+.service-tags a:hover {
+  color: var(--portfolio-primary);
+  border-color: rgba(37, 99, 235, 0.3);
+  background: #ffffff;
+}
+
 .solution-list {
   margin: 14px 0 20px;
   padding-left: 18px;
