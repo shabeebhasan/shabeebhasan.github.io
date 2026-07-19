@@ -1125,12 +1125,25 @@ textarea.form-control {
   }
 
   .header {
-    min-height: 760px;
+    min-height: 0;
+    height: auto;
+    padding-top: 24px;
+  }
+
+  .header .container {
     height: auto;
   }
 
+  .header .social-icons {
+    position: relative;
+    z-index: 2;
+    margin-bottom: 12px;
+  }
+
   .header .header-content {
-    top: 54%;
+    position: static;
+    top: auto;
+    transform: none;
     padding: 16px;
   }
 
