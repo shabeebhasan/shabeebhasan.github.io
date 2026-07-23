@@ -1,6 +1,13 @@
 ﻿{
   "items":  [
                 {
+                    "title":  "Continuous Authentication with Phone Sensors: What Actually Works",
+                    "excerpt":  "An honest look at behavioral biometrics and continuous authentication using phone motion sensors: what the signals can and cannot prove, and how to ship it responsibly.",
+                    "image":  "/assets/imgs/generated/blogs/continuous-authentication-with-phone-sensors-what-actually-works.svg",
+                    "url":  "/blog/continuous-authentication-with-phone-sensors-what-actually-works/",
+                    "category":  "ai"
+                },
+                {
                     "title":  "How to Build a RAG Chatbot for Business Documents",
                     "excerpt":  "Practical guide to designing a RAG chatbot for policies, SOPs, support docs, and internal knowledge bases.",
                     "image":  "/assets/imgs/generated/blogs/how-to-build-a-rag-chatbot-for-business-documents.svg",
