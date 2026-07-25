@@ -205,7 +205,9 @@
   }
   function escapeAttr(s) { return (s || "").replace(/[<>&"]/g, ""); }
   function track(action, label) {
-    try { if (window.clarity) window.clarity("event", "assistant_" + action + (label ? "_" + label : "")); } catch (e) {}
+    var name = "assistant_" + action + (label ? "_" + label : "");
+    try { if (window.clarity) window.clarity("event", name); } catch (e) {}
+    try { if (window.gtag) window.gtag("event", name); } catch (e) {}
   }
   function openPanel() {
     panel.classList.add("bda-open");
