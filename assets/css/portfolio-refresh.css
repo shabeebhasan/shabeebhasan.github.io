@@ -1,18 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap');
 /*
  * Portfolio refresh layer.
  * Keeps the original DevCRUD/Bootstrap template intact and modernizes the visible portfolio UI.
+ * Theme: Indigo & Cyan (professional).
  */
 
 :root {
   --portfolio-ink: #0f172a;
-  --portfolio-muted: #5b6475;
-  --portfolio-soft: #f3f6fb;
-  --portfolio-line: #d5ddec;
-  --portfolio-primary: #2563eb;
-  --portfolio-primary-dark: #1e4fc7;
-  --portfolio-accent: #f59e0b;
-  --portfolio-navy: #0b1220;
-  --portfolio-shadow: 0 18px 45px rgba(11, 18, 32, 0.12);
+  --portfolio-muted: #55617a;
+  --portfolio-soft: #f6f7fb;
+  --portfolio-line: #e4e9f2;
+  --portfolio-primary: #4f46e5;
+  --portfolio-primary-dark: #4338ca;
+  --portfolio-accent: #06b6d4;
+  --portfolio-navy: #0b1120;
+  --portfolio-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  --portfolio-shadow: 0 18px 45px rgba(15, 23, 42, 0.10);
+  --portfolio-shadow-sm: 0 4px 16px rgba(15, 23, 42, 0.06);
+  /* Assistant widget accent (matches theme) */
+  --accent-gradient: linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%);
+  --accent: #22d3ee;
+  --accent-cyan: #06b6d4;
+  --accent-purple: #4f46e5;
+}
+
+/* Professional type system */
+body,
+p, span, li, a, input, textarea, select, button, .subtitle, .hero-summary {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+h1, h2, h3, h4, h5, h6,
+.header-title, .content-title, .section-header h1, .section-header h2 {
+  font-family: 'Space Grotesk', 'Inter', sans-serif;
+  letter-spacing: -0.01em;
 }
 
 html {
@@ -523,10 +543,16 @@ a {
   align-items: center;
   justify-content: center;
   color: #ffffff !important;
-  background: var(--portfolio-primary);
+  background: var(--portfolio-gradient);
   border: 8px solid #ffffff;
   border-radius: 18px;
-  box-shadow: 0 12px 28px rgba(239, 71, 111, 0.28);
+  box-shadow: 0 12px 28px rgba(79, 70, 229, 0.28);
+}
+
+/* Icon boxes pop above the card top — prevent the card clipping them */
+#service .card,
+#projects .card {
+  overflow: visible;
 }
 
 .section.bg-dark .row > [class*="col-"] > .row {
@@ -1220,3 +1246,84 @@ textarea.form-control {
 .also-available-service .card .card-body {
   font-size: 0.95rem;
 }
+
+/* ============================================================
+   Professional polish layer — Indigo & Cyan theme
+   ============================================================ */
+
+/* Premium gradient primary CTAs */
+.btn-primary,
+.btn-get-started,
+.contactForm button[type="submit"],
+button.btn-primary {
+  background-image: var(--portfolio-gradient) !important;
+  border: none !important;
+  box-shadow: 0 8px 22px rgba(79, 70, 229, 0.28) !important;
+  transition: transform .2s ease, box-shadow .2s ease, filter .2s ease;
+}
+.btn-primary:hover,
+.btn-get-started:hover,
+.contactForm button[type="submit"]:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 12px 30px rgba(6, 182, 212, 0.35) !important;
+}
+
+/* Accent word in headings uses the gradient */
+.text-danger {
+  background: var(--portfolio-gradient);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent !important;
+}
+
+/* Consistent card surface + soft shadow + hover lift */
+#service .card,
+#projects .card,
+.price-card,
+.outcome-card,
+.about-card,
+.contact-card,
+.process-card {
+  border: 1px solid var(--portfolio-line);
+  border-radius: 18px;
+  box-shadow: var(--portfolio-shadow-sm);
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+}
+#service .card:hover,
+#projects .card:hover,
+.price-card:hover,
+.outcome-card:hover,
+.process-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--portfolio-shadow);
+  border-color: rgba(79, 70, 229, 0.35);
+}
+
+/* Service tag chips + hero pill use tinted accent */
+.service-tags span,
+.tag-pill,
+.hero-kicker {
+  background: rgba(79, 70, 229, 0.08);
+  color: var(--portfolio-primary);
+  border: 1px solid rgba(79, 70, 229, 0.18);
+}
+
+/* Section rhythm + heading polish */
+.section { padding-top: 96px; padding-bottom: 96px; }
+.section-header h1,
+.section-header h2,
+h2.mb-5 { line-height: 1.15; }
+.section-header p { color: var(--portfolio-muted); }
+
+/* Images: never distort, always crisp */
+img { max-width: 100%; height: auto; }
+.brand-img,
+.team-photo img { object-fit: cover; }
+.outcome-card img,
+.portfolio-item img { object-fit: cover; }
+
+/* Links use the indigo accent consistently */
+a { color: var(--portfolio-primary); }
+a:hover { color: var(--portfolio-primary-dark); }
