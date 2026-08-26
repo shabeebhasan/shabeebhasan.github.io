@@ -452,7 +452,7 @@ a {
 #service .card,
 #projects .card,
 .price-card {
-  height: calc(100% - 3rem);
+  min-height: calc(100% - 3rem);
   transition: transform 180ms ease, box-shadow 180ms ease;
 }
 
@@ -1404,3 +1404,24 @@ a:hover { color: var(--portfolio-primary-dark); }
 .header .header-content .header-title { max-width: 18ch; }
 .header .header-content .header-mono,
 .hero-summary { max-width: 640px; }
+
+
+/* Icon glyphs must not inherit the gradient-text treatment from .text-danger —
+   it makes -webkit-text-fill-color transparent and the glyph disappears. */
+i.text-danger,
+[class*="ti-"].text-danger,
+[class*="fa-"].text-danger {
+  background-image: none;
+  -webkit-background-clip: border-box;
+  background-clip: border-box;
+  -webkit-text-fill-color: currentColor;
+}
+.card .card-header.has-icon i.text-danger {
+  background-image: var(--portfolio-gradient);
+  color: #ffffff !important;
+  -webkit-text-fill-color: #ffffff;
+}
+
+/* clearance so the protruding icon box never touches the row above */
+#service .card,
+#projects .card { margin-top: 14px; }
