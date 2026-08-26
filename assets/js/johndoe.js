@@ -31,27 +31,21 @@ $(document).ready(function () {
   });
 });
 
-// protfolio filters
+// portfolio filters (Isotope v3 API — itemSelector is required, and the
+// v1 "animationOptions" option is ignored by v3)
 $(window).on("load", function () {
   var t = $(".portfolio-container");
+  if (!t.length) return;
   t.isotope({
-    filter: ".new",
-    animationOptions: {
-      duration: 750,
-      easing: "linear",
-      queue: !1
-    }
-  }), $(".filters a").click(function () {
-    $(".filters .active").removeClass("active"), $(this).addClass("active");
-    var i = $(this).attr("data-filter");
-    return t.isotope({
-      filter: i,
-      animationOptions: {
-        duration: 750,
-        easing: "linear",
-        queue: !1
-      }
-    }), !1
+    itemSelector: ".portfolio-container > div",
+    layoutMode: "fitRows",
+    transitionDuration: 0
+  });
+  $(".filters a").on("click", function () {
+    $(".filters .active").removeClass("active");
+    $(this).addClass("active");
+    t.isotope({ filter: $(this).attr("data-filter") });
+    return false;
   });
 });
 
