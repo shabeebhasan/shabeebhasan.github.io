@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1120"/><stop offset="1" stop-color="#182247"/></linearGradient>
+    <linearGradient id="g6549" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+  </defs>
+  <rect width="720" height="540" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="#7c8bd0" stroke-width="1"><line x1="0" y1="60" x2="720" y2="60"/><line x1="0" y1="120" x2="720" y2="120"/><line x1="0" y1="180" x2="720" y2="180"/><line x1="0" y1="240" x2="720" y2="240"/><line x1="0" y1="300" x2="720" y2="300"/><line x1="0" y1="360" x2="720" y2="360"/><line x1="0" y1="420" x2="720" y2="420"/><line x1="0" y1="480" x2="720" y2="480"/><line x1="60" y1="0" x2="60" y2="540"/><line x1="120" y1="0" x2="120" y2="540"/><line x1="180" y1="0" x2="180" y2="540"/><line x1="240" y1="0" x2="240" y2="540"/><line x1="300" y1="0" x2="300" y2="540"/><line x1="360" y1="0" x2="360" y2="540"/><line x1="420" y1="0" x2="420" y2="540"/><line x1="480" y1="0" x2="480" y2="540"/><line x1="540" y1="0" x2="540" y2="540"/><line x1="600" y1="0" x2="600" y2="540"/><line x1="660" y1="0" x2="660" y2="540"/></g>
+  <rect x="56" y="120" width="64" height="6" rx="3" fill="url(#g6549)"/>
+  <text x="56" y="285" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">Roam Reality</text>
+  <text x="56" y="452" fill="#7dd3fc" font-family="Arial, Helvetica, sans-serif" font-size="19" font-weight="700" letter-spacing="2">AR · IOS · ANDROID</text>
+  <path d="M 520 260 L 520 260 L 530 275 L 540 290 L 550 303 L 560 314 L 570 322 L 580 328 L 590 329 L 600 328 L 610 323 L 620 315 L 630 304 L 640 292 L 650 277 L 660 262 L 670 246 L 680 231 L 690 218 L 700 207 L 710 198" fill="none" stroke="url(#g6549)" stroke-width="5" stroke-linecap="round" opacity="0.85"/>
+</svg>
