@@ -3,16 +3,30 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Behavioral AI Authentication | Mobile Sensor Signals | Shabeeb Hasan</title>
-  <meta name="description" content="An anonymized case study on behavioral AI authentication using mobile sensor signals, handoff detection, and owner validation.">
+  <title>Continuous Authentication from Phone Sensors | Shabeeb Hasan</title>
+  <meta name="description" content="An anonymized case study: hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring it honestly (0.82 in-session AUC, ~0.78 replicated cross-day).">
   <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/behavioral-ai-authentication-mobile-sensor-signals/">
-  <meta property="og:title" content="Behavioral AI Authentication | Shabeeb Hasan">
-  <meta property="og:description" content="Mobile sensor-based authentication with handoff detection and owner validation.">
+  <meta property="og:title" content="Continuous Authentication from Phone Sensors | Shabeeb Hasan">
+  <meta property="og:description" content="An anonymized case study: hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring it honestly (0.82 in-session AUC, ~0.78 replicated cross-day).">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/behavioral-ai-authentication-mobile-sensor-signals/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/johndoe.css">
   <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Continuous Authentication from Phone Sensors",
+      "description": "An anonymized case study: hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring it honestly (0.82 in-session AUC, ~0.78 replicated cross-day).",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg"
+    }
+  </script>
   <!-- Microsoft Clarity -->
   <script type="text/javascript">
     (function(c,l,a,r,i,t,y){
@@ -27,23 +41,63 @@
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
 </head>
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white">
-    <div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div>
-  </nav>
-  <section class="section">
-    <div class="container">
-      <h1>Behavioral AI Authentication</h1>
-      <p>An anonymized mobile security system that used sensor signals to detect handoff events, score confidence, and revoke or restore access based on owner behavior.</p>
-      <h3>What It Did</h3>
-      <ul><li>Detected live handoff and control changes</li><li>Separated owner and non-owner confidence</li><li>Recovered access only when the owner returned</li></ul>
-      <h3>Outcome</h3>
-      <p>The workflow enforced immediate response to unauthorized control and kept recovery behavior consistent under real use.</p>
-      <h3>Scope</h3>
-      <p>Mobile sensor processing, scoring logic, state transitions, and protected-action gating.</p>
-      <div class="mt-4">
-        <a class="btn btn-primary btn-rounded" href="/case-studies/">Back to Case Studies</a>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Continuous Authentication from Phone Sensors</h1>
+    <p class="content-excerpt">A security startup needed a phone to keep checking who is holding it, not just who unlocked it. I hardened the runtime, rewrote the trust rules so a calm attacker cannot wait the system out, and then measured what the sensors can actually prove.</p>
+    <img src="/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg" alt="Continuous Authentication from Phone Sensors" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>behavioral biometrics</span><span>on-device ml</span><span>sensor signal processing</span><span>python / fastapi</span><span>security engineering</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>A security startup had a working prototype of an idea they called continuous execution governance: instead of authenticating a person once at unlock, the phone should keep asking, quietly, whether the enrolled owner is still the one holding it. If the device changes hands mid-session, sensitive actions should stop within seconds. If it is put down on a table, it should stop too. And it should come back only for the real owner.</p>
+      <p>The prototype could tell owner from stranger in a calm demo. It could not survive a sceptical one. My brief was to harden it into something a client could put in front of investors and defend under questioning, without rebuilding the codebase.</p>
+
+      <h2>The Constraint I Put in Writing on Day One</h2>
+      <div class="cs-note"><p>Phone motion sensors are probabilistic. They are excellent at detecting <em>change</em> and weak at <em>certifying identity</em>. Any promise of biometric certainty from an accelerometer would not survive contact with a real user, and saying so early is cheaper than saying it after launch.</p></div>
+      <p>That single framing reshaped the product. The system stopped trying to answer "who is this?" and started answering "has control of this session changed, and do I have positive evidence the owner is back?" That question sensors can actually answer.</p>
+
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>A runtime scoring engine</strong> that extracts a few hundred live features per decision window from motion, orientation, touch cadence, scroll and typing rhythm, and scores them against an enrolled owner profile.</li>
+        <li><strong>A six-state holder machine</strong> — owner, check, non-owner, table/unattended, calibrating, and awaiting owner re-anchor — driving a heartbeat under a second, so a handoff is caught in seconds rather than minutes.</li>
+        <li><strong>Protected-action gating</strong>: every sensitive route consults session state, so the security decision is enforced server-side, not just reflected in the UI.</li>
+        <li><strong>One source of truth for every threshold</strong>, so tuning is a config change with a documented business effect instead of a hunt through the codebase.</li>
+      </ul>
+
+      <h3>The Rules That Made It a Security System</h3>
+      <table class="cs-table">
+        <thead><tr><th>Situation</th><th>Naive behaviour</th><th>What I shipped</th></tr></thead>
+        <tbody>
+          <tr><td>Stranger holds the phone still until the signal calms</td><td>Score recovers, session turns green</td><td>Calm never restores trust — a settled signal is not owner evidence</td></tr>
+          <tr><td>Phone left flat on a desk</td><td>Low-motion state treated as ambiguous</td><td>Hard block; unattended is never a permissive state</td></tr>
+          <tr><td>Owner picks the phone back up</td><td>Fast single-window recovery</td><td>Recovery only through a positive owner-evidence path</td></tr>
+          <tr><td>Grip angle and posture look distinctive</td><td>Model leans on them because they separate well in a demo</td><td>Deliberately demoted; micro-motion, jerk and touch rhythm carry the decision</td></tr>
+        </tbody>
+      </table>
+      <p>The fourth row cost the most and mattered the most. Angle and posture features look spectacular in a controlled demo and fall apart the moment someone sits differently. Pushing the decision onto micro-behaviour made the demo slightly less dramatic and the system considerably more real.</p>
+
+      <h2>Then I Measured It Instead of Claiming It</h2>
+      <p>Rather than tuning until the demo looked good, the next phase was a structured separability study: how much identity signal is actually present in this data, and does it survive across days rather than just within one sitting?</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>0.82</strong><span>AUC separating owner from non-owner within a session</span></div>
+        <div class="metric"><strong>~0.78</strong><span>Cross-day owner AUC, replicated on two independent splits</span></div>
+        <div class="metric"><strong>60 Hz</strong><span>Platform sensor ceiling identified as the real limiting factor</span></div>
+        <div class="metric"><strong>Passed</strong><span>Independent third-party audit of the study and its claims</span></div>
       </div>
-    </div>
-  </section>
+      <p>The cross-day result was the one that mattered. Within-session separation can come from a session artefact — the same lighting, the same posture, the same walk. Holding up across days, twice, on independent splits, is evidence of genuine personal signal. And the honest ceiling finding — that the delivery platform capped the sensor sample rate, capping the achievable accuracy — pointed to the next investment rather than pretending the model needed more tuning.</p>
+
+      <h2>Outcome</h2>
+      <p>The demo held up under hostile questioning, which was the actual goal. An independent audit of the methodology and the claims passed. The client funded three follow-on contracts covering the measurement campaign, the runtime, and a native on-device implementation to break through the sampling ceiling the study exposed.</p>
+      <div class="cs-note"><p>The commercially useful lesson: the honest report — "here is what this proves, here is what it does not, here is the ceiling and what it would cost to lift" — was worth more to the client than an optimistic one. It is what turned one milestone into a continuing engagement.</p></div>
+
+      <h2>Stack and Scope</h2>
+      <p>Python / FastAPI backend, NumPy and scikit-learn model bundle with one-class and owner-cluster scoring, SQLite, sensor capture in mobile Safari over HTTPS, SVM-based enrollment profiling, a documented threshold policy, and a business-facing change log kept current with every behavioural change. Scope covered runtime hardening, the session and handoff state machine, enrollment and session-state correctness, the separability study, and the client-facing validation reporting.</p>
+
+      <h3>What This Approach Does Not Do</h3>
+      <p>It does not replace a password or a fingerprint, it does not certify identity, and it does not claim production biometric certification. It raises the cost of an unattended or handed-off session considerably — which, for the risk the client cared about, was the point.</p>
+    </article>
+    <section class="lead-box"><h2>Need a Sensor or ML System That Survives Scrutiny?</h2><p>I build on-device behavioral ML and real-time signal systems, and I report what the data actually supports. If you are scoping continuous authentication, anomaly detection, or any sensor-driven product, let's talk.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Behavioral%20Sensor%20ML%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
 </body>
 </html>

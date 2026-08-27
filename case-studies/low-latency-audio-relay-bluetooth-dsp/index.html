@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Low-Latency Bluetooth Audio Relay | Shabeeb Hasan</title>
+  <meta name="description" content="Case study: a real-time mic-to-speaker relay app with a portable C++ DSP core, custom GCC-PHAT and NLMS echo cancellation for long Bluetooth echo paths, and an adaptive low-latency Android audio engine.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/low-latency-audio-relay-bluetooth-dsp/">
+  <meta property="og:title" content="Low-Latency Bluetooth Audio Relay | Shabeeb Hasan">
+  <meta property="og:description" content="Case study: a real-time mic-to-speaker relay app with a portable C++ DSP core, custom GCC-PHAT and NLMS echo cancellation for long Bluetooth echo paths, and an adaptive low-latency Android audio engine.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/low-latency-audio-relay-bluetooth-dsp/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Low-Latency Bluetooth Audio Relay",
+      "description": "Case study: a real-time mic-to-speaker relay app with a portable C++ DSP core, custom GCC-PHAT and NLMS echo cancellation for long Bluetooth echo paths, and an adaptive low-latency Android audio engine.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/low-latency-audio-relay-bluetooth-dsp/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Low-Latency Bluetooth Audio Relay</h1>
+    <p class="content-excerpt">Turning a phone into a live PA system means beating three things the mobile audio stack is not built for: latency, routing, and howling feedback. This one needed its own echo canceller, because the platform's could not reach across a room.</p>
+    <img src="/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg" alt="Low-Latency Bluetooth Audio Relay" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>real-time audio</span><span>c++ dsp</span><span>echo cancellation</span><span>android / oboe</span><span>low latency</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Turn a phone into a live public-address relay: speak into a Bluetooth microphone, hear it come out of a Bluetooth speaker across the room, with latency low enough that a speaker's own voice does not distract them and without the howling that normally ends this experiment in about four seconds.</p>
+      <p>This is a deceptively hard product. Every part of the mobile audio stack — Bluetooth codecs, buffer sizes, routing APIs, background execution policy — is designed for phone calls and media playback, not for a low-latency live loop between two wireless devices in the same room.</p>
+
+      <h2>Architecture: a Portable Core, Thin Platform Shells</h2>
+      <p>All the signal processing lives in a platform-independent C++ core, so the DSP is written and tested once and each platform only contributes its audio I/O and routing. The chain runs echo control, then noise suppression, gain, feedback suppression, and a limiter, and reports its own algorithmic latency.</p>
+      <ul>
+        <li><strong>Lock-free ring buffer</strong> between input and output callbacks — no allocation, no locks, no logging on the audio thread, which is where most real-time audio bugs are actually born.</li>
+        <li><strong>Look-ahead brickwall limiter</strong> at -1 dBFS and a smoothed 20 ms gain ramp, so nothing clips and nothing zippers.</li>
+        <li><strong>Feedback suppressor</strong>: 2048-point FFT, a howl detected by narrowness and persistence rather than loudness alone, answered with a narrow notch that auto-releases after five seconds instead of permanently dulling the sound.</li>
+        <li><strong>Noise suppressor</strong>: STFT spectral gating with a minimum-statistics floor, adding about 5 ms of latency — cheap enough to keep in the live path.</li>
+      </ul>
+
+      <h2>The Hard Problem: Echo the Platform Cannot Cancel</h2>
+      <p>Field testing produced heavy echo and howling whenever the microphone and the PA speaker shared a room. The platform's built-in echo canceller is designed for handset-length echo paths, a few tens of milliseconds. A Bluetooth speaker on the far side of a room is 150 to 400 ms away — an order of magnitude outside what it handles.</p>
+      <p>The relay knows exactly what it sent to the speaker, so the echo is that known signal, delayed and coloured. I built a three-stage canceller around that fact:</p>
+      <ul>
+        <li><strong>Delay estimation with GCC-PHAT.</strong> Plain cross-correlation smears periodic audio into a ridge of false peaks; phase-transform whitening produces a sharp impulse at the true lag. It locks onto an exact delay even under heavy double talk, and is guarded by sharpness gating and a two-agreeing-estimates rule before it accepts anything.</li>
+        <li><strong>An NLMS adaptive filter</strong> anchored so most of its coverage sits on the reverb tail, with leaky norm-capped weights and a freeze-and-decay rule: if the filter ever <em>adds</em> energy, adaptation stops. It cannot make things worse than doing nothing.</li>
+        <li><strong>A residual suppressor</strong> that ducks only what survives, only in echo-dominated moments, gated by a double-talk detector — so someone speaking near the mic is never chopped up.</li>
+      </ul>
+      <div class="cs-note"><p>Every stage has a failure-safe rule attached. In real-time audio, an adaptive component without a guard rail does not degrade gracefully; it screams.</p></div>
+
+      <h2>Making the Platform Cooperate</h2>
+      <p>The Android engine opens a full-duplex low-latency path, requesting exclusive mode with automatic fallback, and adapts its buffer at runtime: it grows after repeated underruns and shrinks again after clean minutes, so a bad device gets stability and a good device keeps its latency. Excess buffering above the target is dropped rather than accumulated into drift.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>25</strong><span>Automated DSP test cases, all green</span></div>
+        <div class="metric"><strong>150-400 ms</strong><span>Echo path length handled, far beyond platform AEC</span></div>
+        <div class="metric"><strong>~5 ms</strong><span>Added latency from the noise suppressor</span></div>
+        <div class="metric"><strong>+-20 ms</strong><span>Accuracy of the in-app round-trip latency test</span></div>
+      </div>
+      <p>Routing covers LE Audio, Bluetooth SCO, A2DP, wired and USB, with codec badges so the user can see what they are actually connected on, verified route confirmation with retry, and a graceful path when a device silently falls back to classic Bluetooth. Disconnects pause and auto-resume within a minute; an unstable link raises a banner instead of failing silently. A foreground service, audio focus, wake lock, phone-call pause and resume, and sticky session restore keep a long session alive against Android's power management.</p>
+
+      <h2>Verification</h2>
+      <p>The DSP core is covered by automated tests that assert behaviour, not just execution: the limiter never exceeds its ceiling, gain stays monotonic with no zipper, the feedback detector fires on howls and ignores bursts and then releases, noise suppression clears a measurable margin on stationary noise while preserving transients, and the delay estimator locks the correct lag under double talk. The app also ships an in-app round-trip latency test using normalised cross-correlation.</p>
+      <div class="cs-note"><p>Honest status: the DSP and engine are verified in automated tests and on emulator, with an in-app latency estimator in the field. The definitive hardware round-trip benchmark across real Bluetooth devices is in progress — that number will be published when it is measured, not before.</p></div>
+
+      <h2>Why It Matters Commercially</h2>
+      <p>The same portable core is the asset. The signal processing is not tied to Android, so an iOS build reuses the tested DSP and adds only its own audio I/O layer — and the identical architecture applies to hearing assistance, tour-guide systems, live translation relays, and any product where audio has to move between devices in real time.</p>
+    </article>
+    <section class="lead-box"><h2>Building Something Real-Time?</h2><p>Audio, sensors, streaming, or any system where milliseconds and failure modes both matter. I write the portable core, test it properly, and make the platform behave. Let's talk about your build.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Real-Time%20Audio%20/%20DSP%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
+</body>
+</html>

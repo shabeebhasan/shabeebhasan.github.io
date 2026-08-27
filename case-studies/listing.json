@@ -8,10 +8,24 @@
       "category": "ai"
     },
     {
-      "title": "Behavioral AI Authentication",
-      "excerpt": "Anonymized case study for mobile sensor-based behavioral AI authentication with handoff detection and owner validation.",
-      "image": "/assets/imgs/web-3.jpg",
+      "title": "Continuous Authentication from Phone Sensors",
+      "excerpt": "Hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring what the sensors actually prove: 0.82 in-session AUC, ~0.78 replicated cross-day.",
+      "image": "/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg",
       "url": "/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
+      "category": "ai"
+    },
+    {
+      "title": "Low-Latency Bluetooth Audio Relay",
+      "excerpt": "A real-time mic-to-speaker relay with a portable C++ DSP core and a custom GCC-PHAT + NLMS echo canceller for room-length Bluetooth echo paths the platform AEC cannot reach.",
+      "image": "/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg",
+      "url": "/case-studies/low-latency-audio-relay-bluetooth-dsp/",
+      "category": "ai"
+    },
+    {
+      "title": "On-Device Video Compression Pipeline",
+      "excerpt": "A reusable React Native native module that compresses, trims, merges and edits video entirely on the phone across iOS and Android, with a documented platform-limitation matrix.",
+      "image": "/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg",
+      "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
       "category": "ai"
     },
     {

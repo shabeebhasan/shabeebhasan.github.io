@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>On-Device Video Compression Pipeline | Shabeeb Hasan</title>
+  <meta name="description" content="Case study: a reusable React Native native module that compresses, trims, merges and edits video entirely on the phone across iOS and Android, with bitrate-accurate encoding and a documented platform-limitation matrix.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/on-device-video-compression-mobile-pipeline/">
+  <meta property="og:title" content="On-Device Video Compression Pipeline | Shabeeb Hasan">
+  <meta property="og:description" content="Case study: a reusable React Native native module that compresses, trims, merges and edits video entirely on the phone across iOS and Android, with bitrate-accurate encoding and a documented platform-limitation matrix.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/on-device-video-compression-mobile-pipeline/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "On-Device Video Compression Pipeline",
+      "description": "Case study: a reusable React Native native module that compresses, trims, merges and edits video entirely on the phone across iOS and Android, with bitrate-accurate encoding and a documented platform-limitation matrix.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/on-device-video-compression-mobile-pipeline/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">On-Device Video Compression Pipeline</h1>
+    <p class="content-excerpt">Compressing video on the phone means no upload, no server bill, and no privacy conversation. It also means writing the pipeline twice, in Swift and Kotlin, behind one honest JavaScript API.</p>
+    <img src="/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg" alt="On-Device Video Compression Pipeline" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>react native</span><span>native modules</span><span>video encoding</span><span>swift / kotlin</span><span>on-device processing</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Let people shrink a video on their phone, reliably, without uploading it anywhere. No server, no queue, no cloud bill, and no privacy conversation — the file never leaves the device. The catch is that React Native has no native media pipeline of its own, and the two platforms underneath it disagree about almost everything.</p>
+
+      <h2>Approach: One JavaScript API, Two Native Implementations</h2>
+      <p>I built the compression engine as a self-contained native module with a single typed JavaScript surface, implemented separately in Swift and Kotlin against each platform's own encoder. The app code calls one function; the module absorbs the platform differences.</p>
+      <ul>
+        <li><strong>Bitrate-accurate H.264 encoding</strong> on both platforms, with explicit control over resolution, video bitrate, frame rate and audio bitrate — so an output size can be targeted rather than hoped for.</li>
+        <li><strong>Quality presets</strong> over that low-level API for users who just want "smaller", plus an advanced panel for users who want the dials.</li>
+        <li><strong>Progress and completion events</strong> that are cancel-safe, so a user backing out mid-encode does not leave a dangling job or a corrupt file.</li>
+        <li><strong>Text overlay</strong> with nine anchor positions, source and output metadata, native permission handling, and save-to-gallery on both platforms.</li>
+      </ul>
+
+      <h2>Editing Without Re-Encoding</h2>
+      <p>Trim, rotate, mute, merge and speed changes are all implemented as remux operations rather than re-encodes: the compressed streams are copied into a new container with adjusted timing or orientation metadata. The result is effectively instant and lossless, where a naive re-encode would cost minutes of battery and a generation of quality.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>2 platforms</strong><span>iOS and Android behind one typed API</span></div>
+        <div class="metric"><strong>0</strong><span>Server cost, upload time, and files leaving the device</span></div>
+        <div class="metric"><strong>23</strong><span>Unit tests covering the compression surface</span></div>
+        <div class="metric"><strong>Remux</strong><span>Trim, merge, rotate and speed with no re-encode</span></div>
+      </div>
+
+      <h2>The Part Most Modules Skip: Documenting the Edges</h2>
+      <p>Cross-platform media work is full of asymmetries, and the failure mode is a module that pretends they do not exist until an app ships a bug. This one ships a platform support matrix instead: which calls behave identically, which differ, and exactly where. Text overlay sizing behaves differently on one encoder. Merging on Android requires matching codec and resolution. A speed change preserves audio on one platform and not the other. Every one of those is written down next to the API that has the limitation.</p>
+      <div class="cs-note"><p>A documented limitation is a feature. An undocumented one is a support ticket in three months, filed by someone who trusted the API signature.</p></div>
+
+      <h2>Delivery</h2>
+      <p>The module is packaged for reuse — it drops into another React Native or Expo project as a local dependency with an integration guide covering every exported function — and it has already been reused across more than one product. The app around it ships a themed light and dark interface, quality presets, live progress with cancel, before-and-after stats, and gallery export.</p>
+
+      <h2>Why On-Device Was the Right Call</h2>
+      <table class="cs-table">
+        <thead><tr><th></th><th>Server-side compression</th><th>On-device</th></tr></thead>
+        <tbody>
+          <tr><td>Cost per video</td><td>Bandwidth plus compute, forever</td><td>Zero</td></tr>
+          <tr><td>Time to result</td><td>Upload, queue, encode, download</td><td>Encode only</td></tr>
+          <tr><td>Privacy posture</td><td>User video sits on your infrastructure</td><td>Nothing leaves the phone</td></tr>
+          <tr><td>Offline</td><td>Does not work</td><td>Works</td></tr>
+          <tr><td>Cost of the approach</td><td>Low — one implementation</td><td>Real native work on two platforms</td></tr>
+        </tbody>
+      </table>
+      <p>The last row is the honest trade. On-device media costs more engineering up front and pays it back in every unit of scale, which makes it the right choice for a consumer product and the wrong one for a low-volume internal tool.</p>
+    </article>
+    <section class="lead-box"><h2>Need Native Performance Inside a React Native App?</h2><p>Media, sensors, background processing — the work that does not fit in JavaScript. I build reusable native modules with a clean typed API and documentation your team can actually rely on.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=React%20Native%20Native%20Module%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
+</body>
+</html>

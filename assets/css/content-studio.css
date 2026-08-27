@@ -203,3 +203,72 @@ h1, h2, h3, .content-title, .studio-card h3 {
     min-height: 0;
   }
 }
+
+.metric-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 14px;
+  margin: 22px 0 6px;
+}
+
+.metric {
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  padding: 16px 18px;
+}
+
+.metric strong {
+  display: block;
+  font-family: "Merriweather", Georgia, serif;
+  font-size: 1.5rem;
+  color: #1e1b4b;
+  line-height: 1.2;
+}
+
+.metric span {
+  display: block;
+  margin-top: 6px;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.86rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.cs-note {
+  border-left: 4px solid #6366f1;
+  background: #f8fafc;
+  border-radius: 0 12px 12px 0;
+  padding: 14px 18px;
+  margin: 20px 0;
+}
+
+.cs-note p {
+  margin-bottom: 0 !important;
+  font-size: 0.97rem !important;
+  color: #475569 !important;
+}
+
+.cs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 18px 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.95rem;
+}
+
+.cs-table th,
+.cs-table td {
+  border: 1px solid #e2e8f0;
+  padding: 10px 14px;
+  text-align: left;
+  vertical-align: top;
+  color: #334155;
+}
+
+.cs-table th {
+  background: #eef2ff;
+  color: #312e81;
+  font-weight: 700;
+}
