@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Ethos Guard — Responsible Speech Analytics",
+      "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, advisory by design.",
+      "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",
+      "url": "/case-studies/ethos-guard-responsible-speech-analytics/",
+      "category": "ai"
+    },
+    {
       "title": "Behavioral AI Authentication",
       "excerpt": "Anonymized case study for mobile sensor-based behavioral AI authentication with handoff detection and owner validation.",
       "image": "/assets/imgs/web-3.jpg",
