@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Medicine Donation Marketplace, Privacy by Design | Shabeeb Hasan</title>
+  <meta name="description" content="Case study: a bilingual medicine-sharing marketplace built with Expo and Supabase, where a donor's exact address and the handover code live behind database policies rather than UI conditionals.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/medicine-donation-marketplace-privacy-by-design/">
+  <meta property="og:title" content="Medicine Donation Marketplace, Privacy by Design | Shabeeb Hasan">
+  <meta property="og:description" content="Case study: a bilingual medicine-sharing marketplace built with Expo and Supabase, where a donor's exact address and the handover code live behind database policies rather than UI conditionals.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/medicine-donation-marketplace-privacy-by-design/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/medishare/medishare-hero.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Medicine Donation Marketplace, Privacy by Design",
+      "description": "Case study: a bilingual medicine-sharing marketplace built with Expo and Supabase, where a donor's exact address and the handover code live behind database policies rather than UI conditionals.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/medicine-donation-marketplace-privacy-by-design/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/case-studies/medishare/medishare-hero.jpg"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Medicine Donation Marketplace, Privacy by Design</h1>
+    <p class="content-excerpt">Households throw away sealed, in-date medicine while someone two kilometres away cannot afford it. The hard part is not the marketplace — it is handing a stranger a medicine, and an address, without either person losing control of what they gave away.</p>
+    <img src="/assets/imgs/case-studies/medishare/medishare-hero.jpg" alt="MediShare running as a desktop web app and as a phone app side by side" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>expo / react native</span><span>supabase</span><span>postgres rls</span><span>claude vision</span><span>responsive web</span><span>bilingual en / ur</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Take a product spec for a community medicine-sharing platform and ship the whole of it: donors list sealed medicine they will not finish, receivers search nearby, the two meet, the handover is verified, and a moderator can see everything that moved. One codebase, iPhone and Android and a real desktop web app, in English and Urdu, for a market where a text message costs money and a lot of users are on a mid-range Android.</p>
+      <p>The product question underneath it is trust. A medicine marketplace fails in two directions: it fails if people will not give their address to a stranger, and it fails much worse if it becomes a channel for expired or prescription-only drugs. Almost every engineering decision here answers one of those two.</p>
+
+      <h2>Privacy Enforced in the Database, Not the Interface</h2>
+      <p>The tempting shortcut is to fetch the listing with the donor's address attached and simply not render the address until a claim is approved. That is not privacy — that is a hidden div, and anyone reading the network tab has the address.</p>
+      <p>Instead, the exact address and the handover code live in their own tables with their own row-level security policies. The listing table carries only a neighbourhood and a coordinate deliberately blurred to roughly a one-kilometre grid, which is enough to sort by distance and not enough to find a house. The precise address becomes readable to exactly one receiver at exactly one moment: when the donor approves that person's claim. The server decides. The client never had it to hide.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>~1 km</strong><span>Grid the public map pin is snapped to</span></div>
+        <div class="metric"><strong>2 tables</strong><span>Address and handover secret, separately policed</span></div>
+        <div class="metric"><strong>24</strong><span>Screens, from listing to moderation queue</span></div>
+        <div class="metric"><strong>EN / UR</strong><span>Full bilingual interface with RTL layout</span></div>
+      </div>
+
+      <h2>The Handover Is the Product</h2>
+      <p>Everything before the meeting is a search problem. The meeting is where the platform either earns trust or loses it, so it is the part that got the most attention.</p>
+      <p>A claim moves through explicit states — requested, approved, pickup scheduled, handed over, completed — and each transition is a database function rather than a client-side status write, so a step cannot be skipped by a crafted request. At the meeting, the receiver shows a six-digit code, also rendered as a QR so nobody has to read digits aloud in a stairwell, and the donor confirms it. Both sides then rate the exchange, and those ratings feed a visible trust score that is the only reputation signal in the product.</p>
+      <img src="/assets/imgs/case-studies/medishare/medishare-phones-journey.jpg" alt="Search results, a listing detail with verification and prescription warning, and a completed claim with its progress trail" class="hero-image" width="1600" height="900" loading="lazy">
+
+      <h2>Safety Rails That Fail Closed</h2>
+      <p>A donation platform that treats every medicine the same is a liability. This one does not.</p>
+      <ul>
+        <li><strong>A prohibited list</strong> that blocks controlled and high-risk categories at listing time, held in the database so it can be updated without shipping an app release.</li>
+        <li><strong>A prescription gate</strong> — a database trigger, not a form validation — that refuses to complete a claim on a prescription-only medicine unless a prescription photo is attached.</li>
+        <li><strong>Expiry rules</strong> applied at listing, with the remaining shelf life shown on every card so a receiver is never surprised.</li>
+        <li><strong>Photo verification</strong> using a vision model in an edge function, which reads the pack for the medicine name, strength and printed expiry and compares them against what the donor typed.</li>
+      </ul>
+      <p>The last one is where it would have been easy to cheat. When the model is unavailable or unsure, the listing does not quietly pass and it does not claim a check that never happened — it goes to the human review queue labelled as unverified. An automatic check that fails open is worse than no automatic check, because it launders a guess into a badge.</p>
+      <div class="cs-note"><p>Every safety rule in this product is enforced on the server. A rule that only exists in the app is a suggestion, and it stops applying the moment someone talks to the API directly.</p></div>
+      <img src="/assets/imgs/case-studies/medishare/medishare-phones-admin.jpg" alt="Moderation queue with automatic-check confidence, user management with masked identifiers, and platform analytics" class="hero-image" width="1600" height="900" loading="lazy">
+
+      <h2>A Cost Decision That Changed the Architecture</h2>
+      <p>The original design signed users in by SMS one-time code. In Pakistan every one of those messages is billed, which turns sign-up — the one action you want to be frictionless — into a per-user cost that scales with the exact thing you are trying to grow.</p>
+      <p>So sign-in became channel-aware. Email leads, because email codes cost nothing; phone stays available for people who do not use email. That is not a screen change: the client interface, both backends, the profile schema and the account-matching rules all had to stop assuming a phone number was the identity. One account per identifier, whichever channel it arrived on, with the other identifier backfilled if the user later adds it.</p>
+
+      <h2>Two Backends Behind One Interface</h2>
+      <p>The app talks to a single typed data client. One implementation is the real one — Postgres, row-level security, security-definer functions, storage, auth. The other keeps the entire product working on-device with seeded data and no network at all.</p>
+      <p>That second implementation is not a mock for tests. It is how the public demo runs, which means the product can be shown to a stakeholder on a phone in a meeting room with bad wifi, with no account, no cost, and no risk of a demo writing to real data. Because both implementations satisfy the same interface, the demo cannot drift away from the product — a feature that does not exist in both does not compile.</p>
+      <img src="/assets/imgs/case-studies/medishare/medishare-responsive.jpg" alt="The same search screen as a desktop web layout with sidebar navigation and as a phone screen" class="hero-image" width="1600" height="900" loading="lazy">
+
+      <h2>One Codebase, Not One Layout</h2>
+      <p>React Native for Web makes a phone app run in a browser. It does not make it a web app — a 375-pixel column stretched across a monitor reads as a port, not a product. The desktop build swaps the bottom tab bar for a persistent sidebar, moves lists into a real grid, and caps reading-width content so a paragraph is never 1400 pixels wide, from the same components. Light and dark are both first-class, and the whole interface mirrors correctly for Urdu.</p>
+      <img src="/assets/imgs/case-studies/medishare/medishare-phones-themes.jpg" alt="The same home screen in dark and light themes" class="hero-image" width="1600" height="900" loading="lazy">
+
+      <h2>Status and Honest Limits</h2>
+      <p>What exists is a complete, working product build: the full donor-to-receiver journey, volunteer-assisted pickups, moderation, analytics, account deletion, and a live public demo. Two things are worth stating plainly rather than implying otherwise.</p>
+      <p>The public link runs in demo mode — real data stays on the device — so it is a product walkthrough, not a live service with users. And the cloud path, while fully written and migrated, has not yet carried production traffic; the first real deployment is where the interesting row-level-security edge cases usually surface, and that work is scoped, not finished. Everything above describes what is built, not what is promised.</p>
+    </article>
+    <section class="lead-box"><h2>Building a Marketplace Where Trust Is the Hard Part?</h2><p>Two-sided products live or die on the safety model, not the feature list. I design the data boundaries first — who can see what, enforced where it cannot be bypassed — then build the product on top of them.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Marketplace%20App%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
+</body>
+</html>

@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "Medicine Donation Marketplace, Privacy by Design",
+      "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals — with server-enforced prescription and expiry rules and a vision check that fails to human review.",
+      "image": "/assets/imgs/case-studies/medishare/medishare-hero.jpg",
+      "url": "/case-studies/medicine-donation-marketplace-privacy-by-design/",
+      "category": "health"
+    },
+    {
       "title": "Ethos Guard — Responsible Speech Analytics",
       "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, advisory by design.",
       "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",

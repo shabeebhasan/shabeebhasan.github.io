@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="540" viewBox="0 0 720 540">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1120"/><stop offset="1" stop-color="#182247"/></linearGradient>
+    <linearGradient id="gff" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#06b6d4"/></linearGradient>
+  </defs>
+  <rect width="720" height="540" fill="url(#bg)"/>
+  <g opacity="0.05" stroke="#7c8bd0" stroke-width="1"><line x1="0" y1="59" x2="720" y2="59"/><line x1="0" y1="118" x2="720" y2="118"/><line x1="0" y1="177" x2="720" y2="177"/><line x1="0" y1="236" x2="720" y2="236"/><line x1="0" y1="295" x2="720" y2="295"/><line x1="0" y1="354" x2="720" y2="354"/><line x1="0" y1="413" x2="720" y2="413"/><line x1="0" y1="472" x2="720" y2="472"/><line x1="0" y1="531" x2="720" y2="531"/><line x1="59" y1="0" x2="59" y2="540"/><line x1="118" y1="0" x2="118" y2="540"/><line x1="177" y1="0" x2="177" y2="540"/><line x1="236" y1="0" x2="236" y2="540"/><line x1="295" y1="0" x2="295" y2="540"/><line x1="354" y1="0" x2="354" y2="540"/><line x1="413" y1="0" x2="413" y2="540"/><line x1="472" y1="0" x2="472" y2="540"/><line x1="531" y1="0" x2="531" y2="540"/><line x1="590" y1="0" x2="590" y2="540"/><line x1="649" y1="0" x2="649" y2="540"/><line x1="708" y1="0" x2="708" y2="540"/></g>
+  <rect x="56" y="118" width="64" height="6" rx="3" fill="url(#gff)"/>
+  <text x="56" y="248" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">Franco-fun</text><text x="56" y="310" fill="#f8fafc" font-family="Arial, Helvetica, sans-serif" font-size="50" font-weight="700">Referral Platform</text>
+  <text x="56" y="451" fill="#7dd3fc" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" letter-spacing="2">REACT · DJANGO · POSTGRESQL</text>
+  <g><line x1="576" y1="270" x2="646" y2="190" stroke="url(#gff)" stroke-width="2.5" opacity="0.65"/><line x1="576" y1="270" x2="646" y2="270" stroke="url(#gff)" stroke-width="2.5" opacity="0.65"/><line x1="576" y1="270" x2="646" y2="350" stroke="url(#gff)" stroke-width="2.5" opacity="0.65"/><circle cx="576" cy="270" r="14" fill="url(#gff)"/><circle cx="646" cy="190" r="8" fill="url(#gff)"/><circle cx="646" cy="270" r="8" fill="url(#gff)"/><circle cx="646" cy="350" r="8" fill="url(#gff)"/></g>
+</svg>
