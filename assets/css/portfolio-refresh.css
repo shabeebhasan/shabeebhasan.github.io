@@ -480,6 +480,16 @@ a {
   line-height: 1.62;
 }
 
+/* cards stack below lg — no need to clamp, show the full pitch */
+@media (max-width: 991.98px) {
+  #service .card .subtitle,
+  #projects .card .subtitle {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+  }
+}
+
 .service-tags {
   display: flex;
   flex-wrap: wrap;
@@ -1425,3 +1435,15 @@ i.text-danger,
 /* clearance so the protruding icon box never touches the row above */
 #service .card,
 #projects .card { margin-top: 14px; }
+
+/* mobile tap targets: standalone card CTAs and contact links */
+@media (max-width: 767.98px) {
+  .outcome-card a,
+  .contact-email a,
+  .service-page-link {
+    display: inline-block;
+    padding: 7px 0;
+    min-height: 36px;
+    line-height: 22px;
+  }
+}
