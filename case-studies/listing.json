@@ -30,8 +30,8 @@
     },
     {
       "title": "On-Device Video Compression Pipeline",
-      "excerpt": "A reusable React Native native module that compresses, trims, merges and edits video entirely on the phone across iOS and Android, with a documented platform-limitation matrix.",
-      "image": "/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg",
+      "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone — one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
+      "image": "/assets/imgs/case-studies/clip-studio/clip-studio-card.jpg",
       "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
       "category": "ai"
     },

@@ -10,7 +10,7 @@
   <meta property="og:description" content="Case study: a reusable React Native native module that compresses, trims, merges and edits video entirely on the phone across iOS and Android, with bitrate-accurate encoding and a documented platform-limitation matrix.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/on-device-video-compression-mobile-pipeline/">
-  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/clip-studio/clip-studio-hero.jpg">
   <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/assets/css/johndoe.css">
   <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
@@ -24,7 +24,7 @@
       "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
       "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
       "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/on-device-video-compression-mobile-pipeline/",
-      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg"
+      "image": "https://shabeeb.baydot.net/assets/imgs/case-studies/clip-studio/clip-studio-hero.jpg"
     }
   </script>
   <!-- Microsoft Clarity -->
@@ -46,7 +46,7 @@
     <a href="/case-studies/" class="back-link">Back to Case Studies</a>
     <h1 class="content-title">On-Device Video Compression Pipeline</h1>
     <p class="content-excerpt">Compressing video on the phone means no upload, no server bill, and no privacy conversation. It also means writing the pipeline twice, in Swift and Kotlin, behind one honest JavaScript API.</p>
-    <img src="/assets/imgs/generated/case-studies/on-device-video-compression-mobile-pipeline.svg" alt="On-Device Video Compression Pipeline" class="hero-image" width="1600" height="900">
+    <img src="/assets/imgs/case-studies/clip-studio/clip-studio-hero.jpg" alt="Baydot Clip Studio: dashboard, export result and export settings on iPhone" class="hero-image" width="1600" height="900">
     <div class="tag-row"><span>react native</span><span>native modules</span><span>video encoding</span><span>swift / kotlin</span><span>on-device processing</span></div>
     <article class="content-article">
       <h2>The Brief</h2>
@@ -61,18 +61,38 @@
         <li><strong>Text overlay</strong> with nine anchor positions, source and output metadata, native permission handling, and save-to-gallery on both platforms.</li>
       </ul>
 
+      <h2>What It Measures on a Real Export</h2>
+      <p>The app reports its own before-and-after, so the numbers below are readings rather than estimates. A 1.8&nbsp;MB
+      720p clip taken down to 480p HEVC lands at 748.6&nbsp;KB — and a 63.5&nbsp;MB 4K source is handled on the handset
+      without a server anywhere in the path.</p>
+      <img src="/assets/imgs/case-studies/clip-studio/clip-studio-export-flow.jpg" alt="Export settings with live size estimate, encoding progress with cancel, and the finished export reporting 59% size reduction" class="hero-image" width="1600" height="900" loading="lazy">
+      <p>Before the encode starts, a live estimate does the bitrate arithmetic; during it, progress is visible and
+      cancellable; after it, the result states exactly what changed. Codec choice is exposed rather than hidden —
+      HEVC for size, H.264 for compatibility, or the platform default.</p>
+
       <h2>Editing Without Re-Encoding</h2>
       <p>Trim, rotate, mute, merge and speed changes are all implemented as remux operations rather than re-encodes: the compressed streams are copied into a new container with adjusted timing or orientation metadata. The result is effectively instant and lossless, where a naive re-encode would cost minutes of battery and a generation of quality.</p>
       <div class="metric-grid">
-        <div class="metric"><strong>2 platforms</strong><span>iOS and Android behind one typed API</span></div>
-        <div class="metric"><strong>0</strong><span>Server cost, upload time, and files leaving the device</span></div>
-        <div class="metric"><strong>23</strong><span>Unit tests covering the compression surface</span></div>
-        <div class="metric"><strong>Remux</strong><span>Trim, merge, rotate and speed with no re-encode</span></div>
+        <div class="metric"><strong>59% smaller</strong><span>1.8 MB to 748.6 KB, measured on device</span></div>
+        <div class="metric"><strong>3840 &times; 2160</strong><span>4K source handled with no server in the path</span></div>
+        <div class="metric"><strong>0</strong><span>Server cost, upload time, and files leaving the phone</span></div>
+        <div class="metric"><strong>Remux</strong><span>Trim, rotate and mute with no re-encode</span></div>
       </div>
+      <img src="/assets/imgs/case-studies/clip-studio/clip-studio-editing.jpg" alt="Trim handles with live selection, rotate and merge tools with GIF export, and the preview player" class="hero-image" width="1600" height="900" loading="lazy">
 
       <h2>The Part Most Modules Skip: Documenting the Edges</h2>
-      <p>Cross-platform media work is full of asymmetries, and the failure mode is a module that pretends they do not exist until an app ships a bug. This one ships a platform support matrix instead: which calls behave identically, which differ, and exactly where. Text overlay sizing behaves differently on one encoder. Merging on Android requires matching codec and resolution. A speed change preserves audio on one platform and not the other. Every one of those is written down next to the API that has the limitation.</p>
+      <p>Cross-platform media work is full of asymmetries, and the failure mode is a module that pretends they do not exist until an app ships a bug. This one ships a platform support matrix instead: which calls behave identically, which differ, and exactly where. Text overlay sizing behaves differently on one encoder. Merging on Android requires matching codec and resolution. A speed change preserves audio on one platform and not the other. Every one of those is written down next to the API that has the limitation. GIF export is the sharpest example: iOS hands frames to ImageIO in a few lines, while Android has no equivalent at all, so that platform carries a hand-written GIF89a encoder — palette quantiser, LZW compressor and writer — to produce the same output.</p>
       <div class="cs-note"><p>A documented limitation is a feature. An undocumented one is a support ticket in three months, filed by someone who trusted the API signature.</p></div>
+
+      <h2>The Interface Around It</h2>
+      <p>Two complete themes built from one token set — designed, not inverted — with a shared component layer for
+      cards, chrome and controls. Every colour that sits on top of video comes from a dedicated on-media palette, so
+      captions stay legible over any frame. Preview posters use real decoded frames rather than placeholder art.</p>
+      <img src="/assets/imgs/case-studies/clip-studio/clip-studio-themes.jpg" alt="The same screens in light and dark themes" class="hero-image" width="1600" height="900" loading="lazy">
+      <p>Finished exports persist for seven days and survive a restart, with entries dropped automatically once their
+      file leaves the cache. An offline command surface accepts typed or spoken instructions — "compress this video",
+      "save to library" — parsed on the device.</p>
+      <img src="/assets/imgs/case-studies/clip-studio/clip-studio-workspace.jpg" alt="Navigation drawer, offline command assistant, and the projects screen" class="hero-image" width="1600" height="900" loading="lazy">
 
       <h2>Delivery</h2>
       <p>The module is packaged for reuse — it drops into another React Native or Expo project as a local dependency with an integration guide covering every exported function — and it has already been reused across more than one product. The app around it ships a themed light and dark interface, quality presets, live progress with cancel, before-and-after stats, and gallery export.</p>
