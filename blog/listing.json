@@ -1,459 +1,466 @@
-﻿{
-  "items":  [
-                {
-                    "title":  "Continuous Authentication with Phone Sensors: What Actually Works",
-                    "excerpt":  "An honest look at behavioral biometrics and continuous authentication using phone motion sensors: what the signals can and cannot prove, and how to ship it responsibly.",
-                    "image":  "/assets/imgs/generated/blogs/continuous-authentication-with-phone-sensors-what-actually-works.svg",
-                    "url":  "/blog/continuous-authentication-with-phone-sensors-what-actually-works/",
-                    "category":  "ai"
-                },
-                {
-                    "title":  "How to Build a RAG Chatbot for Business Documents",
-                    "excerpt":  "Practical guide to designing a RAG chatbot for policies, SOPs, support docs, and internal knowledge bases.",
-                    "image":  "/assets/imgs/generated/blogs/how-to-build-a-rag-chatbot-for-business-documents.svg",
-                    "url":  "/blog/how-to-build-a-rag-chatbot-for-business-documents/",
-                    "category":  "ai"
-                },
-                {
-                    "title":  "AI Integration vs AI Automation: What Your Business Actually Needs",
-                    "excerpt":  "A clear breakdown of when you need AI integration, when you need automation, and how to scope both correctly.",
-                    "image":  "/assets/imgs/generated/blogs/ai-integration-vs-ai-automation-what-your-business-actually-needs.svg",
-                    "url":  "/blog/ai-integration-vs-ai-automation-what-your-business-actually-needs/",
-                    "category":  "ai"
-                },
-                {
-                    "title":  "How AI Agents Can Automate CRM and Operations Workflows",
-                    "excerpt":  "Practical patterns for AI agents that handle CRM updates, routing, follow-up, and internal operations safely.",
-                    "image":  "/assets/imgs/generated/blogs/how-ai-agents-can-automate-crm-and-operations-workflows.svg",
-                    "url":  "/blog/how-ai-agents-can-automate-crm-and-operations-workflows/",
-                    "category":  "ai"
-                },
-                {
-                    "title":  "Why Most AI Apps Fail After the Demo",
-                    "excerpt":  "Common reasons AI products stall after proof-of-concept and how to ship something production-ready instead.",
-                    "image":  "/assets/imgs/generated/blogs/why-most-ai-apps-fail-after-the-demo.svg",
-                    "url":  "/blog/why-most-ai-apps-fail-after-the-demo/",
-                    "category":  "ai"
-                },
-                {
-                    "title":  "AI Lead Scoring Framework Fit Score Confidence and Outreach Angles",
-                    "excerpt":  "High-intent SEO article on AI Lead Scoring Framework Fit Score Confidence and Outreach Angles for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles.svg",
-                      "url":  "/blog/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "AI Receptionist for Appointment Booking Voice Workflow Blueprint",
-                      "excerpt":  "High-intent SEO article on AI Receptionist for Appointment Booking Voice Workflow Blueprint for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/ai-receptionist-for-appointment-booking-voice-workflow-blueprint.svg",
-                      "url":  "/blog/ai-receptionist-for-appointment-booking-voice-workflow-blueprint/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Behavioral Health Follow-Up Routing: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Behavioral Health Follow-Up Routing, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "BullMQ for Lead Automation Queue Design Retries and Idempotency",
-                      "excerpt":  "High-intent SEO article on BullMQ for Lead Automation Queue Design Retries and Idempotency for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/bullmq-for-lead-automation-queue-design-retries-and-idempotency.svg",
-                      "url":  "/blog/bullmq-for-lead-automation-queue-design-retries-and-idempotency/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Clinical Trial Participant Support: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Clinical Trial Participant Support, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/clinical-trial-participant-support-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/clinical-trial-participant-support-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Cold Email Automation Architecture for Service Businesses",
-                      "excerpt":  "High-intent SEO article on Cold Email Automation Architecture for Service Businesses for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/cold-email-automation-architecture-for-service-businesses.svg",
-                      "url":  "/blog/cold-email-automation-architecture-for-service-businesses/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Community Clinic Intake Automation: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Community Clinic Intake Automation, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/community-clinic-intake-automation-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/community-clinic-intake-automation-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Creator Economy App Monetization",
-                      "excerpt":  "A practical, measurable mobile app playbook for Creator Economy App Monetization with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/creator-economy-app-monetization.svg",
-                      "url":  "/blog/creator-economy-app-monetization/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Crisis Hotline Escalation: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Crisis Hotline Escalation, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/crisis-hotline-escalation-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/crisis-hotline-escalation-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Designing a Secure Multi-Tenant Database Model with Supabase RLS",
-                      "excerpt":  "High-intent SEO article on Designing a Secure Multi-Tenant Database Model with Supabase RLS for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/designing-a-secure-multi-tenant-database-model-with-supabase-rls.svg",
-                      "url":  "/blog/designing-a-secure-multi-tenant-database-model-with-supabase-rls/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Digital Therapeutics Companion Triage: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Digital Therapeutics Companion Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Ecommerce App Checkout Conversion",
-                      "excerpt":  "A practical, measurable mobile app playbook for Ecommerce App Checkout Conversion with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/ecommerce-app-checkout-conversion.svg",
-                      "url":  "/blog/ecommerce-app-checkout-conversion/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "EdTech App Learning Path Design",
-                      "excerpt":  "A practical, measurable mobile app playbook for EdTech App Learning Path Design with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/edtech-app-learning-path-design.svg",
-                      "url":  "/blog/edtech-app-learning-path-design/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Elderly Virtual Care Support: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Elderly Virtual Care Support, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/elderly-virtual-care-support-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/elderly-virtual-care-support-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Employee Assistance Program (EAP): Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Employee Assistance Program (EAP), focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/employee-assistance-program-eap-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/employee-assistance-program-eap-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Enterprise Mental Health SaaS Pilot: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Enterprise Mental Health SaaS Pilot, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "ER De-Escalation Coaching: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for ER De-Escalation Coaching, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/er-de-escalation-coaching-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/er-de-escalation-coaching-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Event App Engagement Architecture",
-                      "excerpt":  "A practical, measurable mobile app playbook for Event App Engagement Architecture with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/event-app-engagement-architecture.svg",
-                      "url":  "/blog/event-app-engagement-architecture/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Family Therapy Session Consistency: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Family Therapy Session Consistency, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/family-therapy-session-consistency-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/family-therapy-session-consistency-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Fintech App KYC Funnel",
-                      "excerpt":  "A practical, measurable mobile app playbook for Fintech App KYC Funnel with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/fintech-app-kyc-funnel.svg",
-                      "url":  "/blog/fintech-app-kyc-funnel/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Fitness App Retention Strategy",
-                      "excerpt":  "A practical, measurable mobile app playbook for Fitness App Retention Strategy with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/fitness-app-retention-strategy.svg",
-                      "url":  "/blog/fitness-app-retention-strategy/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Food Delivery App Dispatch Intelligence",
-                      "excerpt":  "A practical, measurable mobile app playbook for Food Delivery App Dispatch Intelligence with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/food-delivery-app-dispatch-intelligence.svg",
-                      "url":  "/blog/food-delivery-app-dispatch-intelligence/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "From ICP to Campaign Building an End-to-End B2B Outbound Engine",
-                      "excerpt":  "High-intent SEO article on From ICP to Campaign Building an End-to-End B2B Outbound Engine for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine.svg",
-                      "url":  "/blog/from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Healthcare App Appointment Flow",
-                      "excerpt":  "A practical, measurable mobile app playbook for Healthcare App Appointment Flow with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/healthcare-app-appointment-flow.svg",
-                      "url":  "/blog/healthcare-app-appointment-flow/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Home Healthcare Video Handoffs: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Home Healthcare Video Handoffs, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Hospital Complaint Reduction Program: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Hospital Complaint Reduction Program, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "How to Add Retell AI Outbound Calling into a Next.js App",
-                      "excerpt":  "High-intent SEO article on How to Add Retell AI Outbound Calling into a Next.js App for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/how-to-add-retell-ai-outbound-calling-into-a-nextjs-app.svg",
-                      "url":  "/blog/how-to-add-retell-ai-outbound-calling-into-a-nextjs-app/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "How to Build an AI Lead Generation System for Agencies Step by Step",
-                      "excerpt":  "High-intent SEO article on How to Build an AI Lead Generation System for Agencies Step by Step for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step.svg",
-                      "url":  "/blog/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS",
-                      "excerpt":  "High-intent SEO article on HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas.svg",
-                      "url":  "/blog/hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Insurance Care Management Audits: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Insurance Care Management Audits, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/insurance-care-management-audits-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/insurance-care-management-audits-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Lead Deduplication Strategy Source Provenance Merging and Data Quality",
-                      "excerpt":  "High-intent SEO article on Lead Deduplication Strategy Source Provenance Merging and Data Quality for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/lead-deduplication-strategy-source-provenance-merging-and-data-quality.svg",
-                      "url":  "/blog/lead-deduplication-strategy-source-provenance-merging-and-data-quality/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Logistics Driver App Productivity",
-                      "excerpt":  "A practical, measurable mobile app playbook for Logistics Driver App Productivity with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/logistics-driver-app-productivity.svg",
-                      "url":  "/blog/logistics-driver-app-productivity/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Marketplace App Trust Framework",
-                      "excerpt":  "A practical, measurable mobile app playbook for Marketplace App Trust Framework with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/marketplace-app-trust-framework.svg",
-                      "url":  "/blog/marketplace-app-trust-framework/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "MCP Server Use Cases for AI Assistants in Sales Operations",
-                      "excerpt":  "High-intent SEO article on MCP Server Use Cases for AI Assistants in Sales Operations for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/mcp-server-use-cases-for-ai-assistants-in-sales-operations.svg",
-                      "url":  "/blog/mcp-server-use-cases-for-ai-assistants-in-sales-operations/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Mobile Banking App UX Optimization",
-                      "excerpt":  "A practical, measurable mobile app playbook for Mobile Banking App UX Optimization with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/mobile-banking-app-ux-optimization.svg",
-                      "url":  "/blog/mobile-banking-app-ux-optimization/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Multi-Lingual Intake Workflows: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Multi-Lingual Intake Workflows, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms",
-                      "excerpt":  "High-intent SEO article on Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms for agencies, SaaS founders, and outbound teams.",
-                      "image":  "/assets/imgs/generated/job-blogs/nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms.svg",
-                      "url":  "/blog/nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "NGO Crisis Counseling Scale-Up: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for NGO Crisis Counseling Scale-Up, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Nurse Call Center QA: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Nurse Call Center QA, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/nurse-call-center-qa-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/nurse-call-center-qa-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Oncology Emotional Distress Flagging: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Oncology Emotional Distress Flagging, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Pediatric Counseling Training: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Pediatric Counseling Training, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/pediatric-counseling-training-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/pediatric-counseling-training-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Post-Discharge Wellness Monitoring: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Post-Discharge Wellness Monitoring, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Property Management App Automation",
-                      "excerpt":  "A practical, measurable mobile app playbook for Property Management App Automation with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/property-management-app-automation.svg",
-                      "url":  "/blog/property-management-app-automation/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Psychiatric Intake Standardization: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Psychiatric Intake Standardization, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/psychiatric-intake-standardization-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/psychiatric-intake-standardization-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Readmission Risk Communication Lens: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Readmission Risk Communication Lens, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/readmission-risk-communication-lens-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/readmission-risk-communication-lens-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Real Estate App Lead Activation",
-                      "excerpt":  "A practical, measurable mobile app playbook for Real Estate App Lead Activation with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/real-estate-app-lead-activation.svg",
-                      "url":  "/blog/real-estate-app-lead-activation/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Rehab Progress Communication Tracking: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Rehab Progress Communication Tracking, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Ride Share App Safety System",
-                      "excerpt":  "A practical, measurable mobile app playbook for Ride Share App Safety System with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/ride-share-app-safety-system.svg",
-                      "url":  "/blog/ride-share-app-safety-system/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Rural Mental Health Access: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Rural Mental Health Access, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/rural-mental-health-access-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/rural-mental-health-access-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Social Commerce App Growth Loop",
-                      "excerpt":  "A practical, measurable mobile app playbook for Social Commerce App Growth Loop with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/social-commerce-app-growth-loop.svg",
-                      "url":  "/blog/social-commerce-app-growth-loop/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Subscription App Churn Reduction",
-                      "excerpt":  "A practical, measurable mobile app playbook for Subscription App Churn Reduction with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/subscription-app-churn-reduction.svg",
-                      "url":  "/blog/subscription-app-churn-reduction/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "Substance Recovery Check-In Assist: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Substance Recovery Check-In Assist, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Telehealth Supervisor Copilot: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Telehealth Supervisor Copilot, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Telemedicine App Patient Journey",
-                      "excerpt":  "A practical, measurable mobile app playbook for Telemedicine App Patient Journey with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/telemedicine-app-patient-journey.svg",
-                      "url":  "/blog/telemedicine-app-patient-journey/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Telepsychiatry Intake Triage: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Telepsychiatry Intake Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Travel App Personalization Engine",
-                      "excerpt":  "A practical, measurable mobile app playbook for Travel App Personalization Engine with product, UX, architecture, performance, and growth guidance.",
-                      "image":  "/assets/imgs/generated/blogs/travel-app-personalization-engine.svg",
-                      "url":  "/blog/travel-app-personalization-engine/",
-                      "category":  "ai"
-                  },
-                  {
-                      "title":  "University Counseling Triage: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for University Counseling Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/university-counseling-triage-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/university-counseling-triage-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Value-Based Care Communication KPI: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Value-Based Care Communication KPI, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/value-based-care-communication-kpi-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/value-based-care-communication-kpi-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Virtual Primary Care Quality Layer: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Virtual Primary Care Quality Layer, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  },
-                  {
-                      "title":  "Women’s Telehealth Communication Safety: Implementation Guide for Healthcare Teams",
-                      "excerpt":  "Practical healthcare AI blueprint for Women’s Telehealth Communication Safety, focused on safe deployment, triage quality, and measurable clinical operations.",
-                      "image":  "/assets/imgs/generated/medical-blogs/womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams.svg",
-                      "url":  "/blog/womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams/",
-                      "category":  "health"
-                  }
-              ]
+{
+ "items": [
+  {
+   "title": "Why 71% of My Clients Come Back: A Freelance Delivery System",
+   "excerpt": "Across 133 completed Upwork contracts, 71% came from repeat clients \u2014 one hired me 21 times. The delivery habits behind that number, spelled out.",
+   "image": "/assets/imgs/generated/blogs/why-71-percent-of-my-clients-come-back-freelance-delivery-system.svg",
+   "url": "/blog/why-71-percent-of-my-clients-come-back-freelance-delivery-system/",
+   "category": "ai"
+  },
+  {
+   "title": "Continuous Authentication with Phone Sensors: What Actually Works",
+   "excerpt": "An honest look at behavioral biometrics and continuous authentication using phone motion sensors: what the signals can and cannot prove, and how to ship it responsibly.",
+   "image": "/assets/imgs/generated/blogs/continuous-authentication-with-phone-sensors-what-actually-works.svg",
+   "url": "/blog/continuous-authentication-with-phone-sensors-what-actually-works/",
+   "category": "ai"
+  },
+  {
+   "title": "How to Build a RAG Chatbot for Business Documents",
+   "excerpt": "Practical guide to designing a RAG chatbot for policies, SOPs, support docs, and internal knowledge bases.",
+   "image": "/assets/imgs/generated/blogs/how-to-build-a-rag-chatbot-for-business-documents.svg",
+   "url": "/blog/how-to-build-a-rag-chatbot-for-business-documents/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Integration vs AI Automation: What Your Business Actually Needs",
+   "excerpt": "A clear breakdown of when you need AI integration, when you need automation, and how to scope both correctly.",
+   "image": "/assets/imgs/generated/blogs/ai-integration-vs-ai-automation-what-your-business-actually-needs.svg",
+   "url": "/blog/ai-integration-vs-ai-automation-what-your-business-actually-needs/",
+   "category": "ai"
+  },
+  {
+   "title": "How AI Agents Can Automate CRM and Operations Workflows",
+   "excerpt": "Practical patterns for AI agents that handle CRM updates, routing, follow-up, and internal operations safely.",
+   "image": "/assets/imgs/generated/blogs/how-ai-agents-can-automate-crm-and-operations-workflows.svg",
+   "url": "/blog/how-ai-agents-can-automate-crm-and-operations-workflows/",
+   "category": "ai"
+  },
+  {
+   "title": "Why Most AI Apps Fail After the Demo",
+   "excerpt": "Common reasons AI products stall after proof-of-concept and how to ship something production-ready instead.",
+   "image": "/assets/imgs/generated/blogs/why-most-ai-apps-fail-after-the-demo.svg",
+   "url": "/blog/why-most-ai-apps-fail-after-the-demo/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Lead Scoring Framework Fit Score Confidence and Outreach Angles",
+   "excerpt": "High-intent SEO article on AI Lead Scoring Framework Fit Score Confidence and Outreach Angles for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles.svg",
+   "url": "/blog/ai-lead-scoring-framework-fit-score-confidence-and-outreach-angles/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Receptionist for Appointment Booking Voice Workflow Blueprint",
+   "excerpt": "High-intent SEO article on AI Receptionist for Appointment Booking Voice Workflow Blueprint for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/ai-receptionist-for-appointment-booking-voice-workflow-blueprint.svg",
+   "url": "/blog/ai-receptionist-for-appointment-booking-voice-workflow-blueprint/",
+   "category": "ai"
+  },
+  {
+   "title": "Behavioral Health Follow-Up Routing: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Behavioral Health Follow-Up Routing, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/behavioral-health-follow-up-routing-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "BullMQ for Lead Automation Queue Design Retries and Idempotency",
+   "excerpt": "High-intent SEO article on BullMQ for Lead Automation Queue Design Retries and Idempotency for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/bullmq-for-lead-automation-queue-design-retries-and-idempotency.svg",
+   "url": "/blog/bullmq-for-lead-automation-queue-design-retries-and-idempotency/",
+   "category": "ai"
+  },
+  {
+   "title": "Clinical Trial Participant Support: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Clinical Trial Participant Support, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/clinical-trial-participant-support-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/clinical-trial-participant-support-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Cold Email Automation Architecture for Service Businesses",
+   "excerpt": "High-intent SEO article on Cold Email Automation Architecture for Service Businesses for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/cold-email-automation-architecture-for-service-businesses.svg",
+   "url": "/blog/cold-email-automation-architecture-for-service-businesses/",
+   "category": "ai"
+  },
+  {
+   "title": "Community Clinic Intake Automation: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Community Clinic Intake Automation, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/community-clinic-intake-automation-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/community-clinic-intake-automation-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Creator Economy App Monetization",
+   "excerpt": "A practical, measurable mobile app playbook for Creator Economy App Monetization with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/creator-economy-app-monetization.svg",
+   "url": "/blog/creator-economy-app-monetization/",
+   "category": "ai"
+  },
+  {
+   "title": "Crisis Hotline Escalation: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Crisis Hotline Escalation, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/crisis-hotline-escalation-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/crisis-hotline-escalation-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Designing a Secure Multi-Tenant Database Model with Supabase RLS",
+   "excerpt": "High-intent SEO article on Designing a Secure Multi-Tenant Database Model with Supabase RLS for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/designing-a-secure-multi-tenant-database-model-with-supabase-rls.svg",
+   "url": "/blog/designing-a-secure-multi-tenant-database-model-with-supabase-rls/",
+   "category": "ai"
+  },
+  {
+   "title": "Digital Therapeutics Companion Triage: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Digital Therapeutics Companion Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/digital-therapeutics-companion-triage-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Ecommerce App Checkout Conversion",
+   "excerpt": "A practical, measurable mobile app playbook for Ecommerce App Checkout Conversion with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/ecommerce-app-checkout-conversion.svg",
+   "url": "/blog/ecommerce-app-checkout-conversion/",
+   "category": "ai"
+  },
+  {
+   "title": "EdTech App Learning Path Design",
+   "excerpt": "A practical, measurable mobile app playbook for EdTech App Learning Path Design with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/edtech-app-learning-path-design.svg",
+   "url": "/blog/edtech-app-learning-path-design/",
+   "category": "ai"
+  },
+  {
+   "title": "Elderly Virtual Care Support: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Elderly Virtual Care Support, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/elderly-virtual-care-support-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/elderly-virtual-care-support-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Employee Assistance Program (EAP): Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Employee Assistance Program (EAP), focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/employee-assistance-program-eap-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/employee-assistance-program-eap-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Enterprise Mental Health SaaS Pilot: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Enterprise Mental Health SaaS Pilot, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/enterprise-mental-health-saas-pilot-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "ER De-Escalation Coaching: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for ER De-Escalation Coaching, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/er-de-escalation-coaching-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/er-de-escalation-coaching-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Event App Engagement Architecture",
+   "excerpt": "A practical, measurable mobile app playbook for Event App Engagement Architecture with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/event-app-engagement-architecture.svg",
+   "url": "/blog/event-app-engagement-architecture/",
+   "category": "ai"
+  },
+  {
+   "title": "Family Therapy Session Consistency: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Family Therapy Session Consistency, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/family-therapy-session-consistency-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/family-therapy-session-consistency-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Fintech App KYC Funnel",
+   "excerpt": "A practical, measurable mobile app playbook for Fintech App KYC Funnel with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/fintech-app-kyc-funnel.svg",
+   "url": "/blog/fintech-app-kyc-funnel/",
+   "category": "ai"
+  },
+  {
+   "title": "Fitness App Retention Strategy",
+   "excerpt": "A practical, measurable mobile app playbook for Fitness App Retention Strategy with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/fitness-app-retention-strategy.svg",
+   "url": "/blog/fitness-app-retention-strategy/",
+   "category": "ai"
+  },
+  {
+   "title": "Food Delivery App Dispatch Intelligence",
+   "excerpt": "A practical, measurable mobile app playbook for Food Delivery App Dispatch Intelligence with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/food-delivery-app-dispatch-intelligence.svg",
+   "url": "/blog/food-delivery-app-dispatch-intelligence/",
+   "category": "ai"
+  },
+  {
+   "title": "From ICP to Campaign Building an End-to-End B2B Outbound Engine",
+   "excerpt": "High-intent SEO article on From ICP to Campaign Building an End-to-End B2B Outbound Engine for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine.svg",
+   "url": "/blog/from-icp-to-campaign-building-an-end-to-end-b2b-outbound-engine/",
+   "category": "ai"
+  },
+  {
+   "title": "Healthcare App Appointment Flow",
+   "excerpt": "A practical, measurable mobile app playbook for Healthcare App Appointment Flow with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/healthcare-app-appointment-flow.svg",
+   "url": "/blog/healthcare-app-appointment-flow/",
+   "category": "health"
+  },
+  {
+   "title": "Home Healthcare Video Handoffs: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Home Healthcare Video Handoffs, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/home-healthcare-video-handoffs-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Hospital Complaint Reduction Program: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Hospital Complaint Reduction Program, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/hospital-complaint-reduction-program-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "How to Add Retell AI Outbound Calling into a Next.js App",
+   "excerpt": "High-intent SEO article on How to Add Retell AI Outbound Calling into a Next.js App for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/how-to-add-retell-ai-outbound-calling-into-a-nextjs-app.svg",
+   "url": "/blog/how-to-add-retell-ai-outbound-calling-into-a-nextjs-app/",
+   "category": "ai"
+  },
+  {
+   "title": "How to Build an AI Lead Generation System for Agencies Step by Step",
+   "excerpt": "High-intent SEO article on How to Build an AI Lead Generation System for Agencies Step by Step for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step.svg",
+   "url": "/blog/how-to-build-an-ai-lead-generation-system-for-agencies-step-by-step/",
+   "category": "ai"
+  },
+  {
+   "title": "HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS",
+   "excerpt": "High-intent SEO article on HubSpot and GoHighLevel CRM Sync Patterns for Custom SaaS for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas.svg",
+   "url": "/blog/hubspot-and-gohighlevel-crm-sync-patterns-for-custom-saas/",
+   "category": "ai"
+  },
+  {
+   "title": "Insurance Care Management Audits: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Insurance Care Management Audits, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/insurance-care-management-audits-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/insurance-care-management-audits-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Lead Deduplication Strategy Source Provenance Merging and Data Quality",
+   "excerpt": "High-intent SEO article on Lead Deduplication Strategy Source Provenance Merging and Data Quality for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/lead-deduplication-strategy-source-provenance-merging-and-data-quality.svg",
+   "url": "/blog/lead-deduplication-strategy-source-provenance-merging-and-data-quality/",
+   "category": "ai"
+  },
+  {
+   "title": "Logistics Driver App Productivity",
+   "excerpt": "A practical, measurable mobile app playbook for Logistics Driver App Productivity with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/logistics-driver-app-productivity.svg",
+   "url": "/blog/logistics-driver-app-productivity/",
+   "category": "ai"
+  },
+  {
+   "title": "Marketplace App Trust Framework",
+   "excerpt": "A practical, measurable mobile app playbook for Marketplace App Trust Framework with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/marketplace-app-trust-framework.svg",
+   "url": "/blog/marketplace-app-trust-framework/",
+   "category": "ai"
+  },
+  {
+   "title": "MCP Server Use Cases for AI Assistants in Sales Operations",
+   "excerpt": "High-intent SEO article on MCP Server Use Cases for AI Assistants in Sales Operations for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/mcp-server-use-cases-for-ai-assistants-in-sales-operations.svg",
+   "url": "/blog/mcp-server-use-cases-for-ai-assistants-in-sales-operations/",
+   "category": "ai"
+  },
+  {
+   "title": "Mobile Banking App UX Optimization",
+   "excerpt": "A practical, measurable mobile app playbook for Mobile Banking App UX Optimization with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/mobile-banking-app-ux-optimization.svg",
+   "url": "/blog/mobile-banking-app-ux-optimization/",
+   "category": "ai"
+  },
+  {
+   "title": "Multi-Lingual Intake Workflows: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Multi-Lingual Intake Workflows, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/multi-lingual-intake-workflows-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms",
+   "excerpt": "High-intent SEO article on Next.js and Supabase SaaS Boilerplate for Multi-Tenant Lead Platforms for agencies, SaaS founders, and outbound teams.",
+   "image": "/assets/imgs/generated/job-blogs/nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms.svg",
+   "url": "/blog/nextjs-and-supabase-saas-boilerplate-for-multi-tenant-lead-platforms/",
+   "category": "ai"
+  },
+  {
+   "title": "NGO Crisis Counseling Scale-Up: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for NGO Crisis Counseling Scale-Up, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/ngo-crisis-counseling-scale-up-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Nurse Call Center QA: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Nurse Call Center QA, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/nurse-call-center-qa-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/nurse-call-center-qa-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Oncology Emotional Distress Flagging: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Oncology Emotional Distress Flagging, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/oncology-emotional-distress-flagging-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Pediatric Counseling Training: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Pediatric Counseling Training, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/pediatric-counseling-training-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/pediatric-counseling-training-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Post-Discharge Wellness Monitoring: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Post-Discharge Wellness Monitoring, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/post-discharge-wellness-monitoring-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Property Management App Automation",
+   "excerpt": "A practical, measurable mobile app playbook for Property Management App Automation with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/property-management-app-automation.svg",
+   "url": "/blog/property-management-app-automation/",
+   "category": "ai"
+  },
+  {
+   "title": "Psychiatric Intake Standardization: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Psychiatric Intake Standardization, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/psychiatric-intake-standardization-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/psychiatric-intake-standardization-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Readmission Risk Communication Lens: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Readmission Risk Communication Lens, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/readmission-risk-communication-lens-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/readmission-risk-communication-lens-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Real Estate App Lead Activation",
+   "excerpt": "A practical, measurable mobile app playbook for Real Estate App Lead Activation with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/real-estate-app-lead-activation.svg",
+   "url": "/blog/real-estate-app-lead-activation/",
+   "category": "ai"
+  },
+  {
+   "title": "Rehab Progress Communication Tracking: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Rehab Progress Communication Tracking, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/rehab-progress-communication-tracking-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Ride Share App Safety System",
+   "excerpt": "A practical, measurable mobile app playbook for Ride Share App Safety System with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/ride-share-app-safety-system.svg",
+   "url": "/blog/ride-share-app-safety-system/",
+   "category": "ai"
+  },
+  {
+   "title": "Rural Mental Health Access: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Rural Mental Health Access, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/rural-mental-health-access-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/rural-mental-health-access-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Social Commerce App Growth Loop",
+   "excerpt": "A practical, measurable mobile app playbook for Social Commerce App Growth Loop with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/social-commerce-app-growth-loop.svg",
+   "url": "/blog/social-commerce-app-growth-loop/",
+   "category": "ai"
+  },
+  {
+   "title": "Subscription App Churn Reduction",
+   "excerpt": "A practical, measurable mobile app playbook for Subscription App Churn Reduction with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/subscription-app-churn-reduction.svg",
+   "url": "/blog/subscription-app-churn-reduction/",
+   "category": "ai"
+  },
+  {
+   "title": "Substance Recovery Check-In Assist: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Substance Recovery Check-In Assist, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/substance-recovery-check-in-assist-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Telehealth Supervisor Copilot: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Telehealth Supervisor Copilot, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/telehealth-supervisor-copilot-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Telemedicine App Patient Journey",
+   "excerpt": "A practical, measurable mobile app playbook for Telemedicine App Patient Journey with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/telemedicine-app-patient-journey.svg",
+   "url": "/blog/telemedicine-app-patient-journey/",
+   "category": "health"
+  },
+  {
+   "title": "Telepsychiatry Intake Triage: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Telepsychiatry Intake Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/telepsychiatry-intake-triage-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Travel App Personalization Engine",
+   "excerpt": "A practical, measurable mobile app playbook for Travel App Personalization Engine with product, UX, architecture, performance, and growth guidance.",
+   "image": "/assets/imgs/generated/blogs/travel-app-personalization-engine.svg",
+   "url": "/blog/travel-app-personalization-engine/",
+   "category": "ai"
+  },
+  {
+   "title": "University Counseling Triage: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for University Counseling Triage, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/university-counseling-triage-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/university-counseling-triage-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Value-Based Care Communication KPI: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Value-Based Care Communication KPI, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/value-based-care-communication-kpi-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/value-based-care-communication-kpi-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Virtual Primary Care Quality Layer: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Virtual Primary Care Quality Layer, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/virtual-primary-care-quality-layer-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  },
+  {
+   "title": "Women\u2019s Telehealth Communication Safety: Implementation Guide for Healthcare Teams",
+   "excerpt": "Practical healthcare AI blueprint for Women\u2019s Telehealth Communication Safety, focused on safe deployment, triage quality, and measurable clinical operations.",
+   "image": "/assets/imgs/generated/medical-blogs/womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams.svg",
+   "url": "/blog/womens-telehealth-communication-safety-implementation-guide-for-healthcare-teams/",
+   "category": "health"
+  }
+ ]
 }

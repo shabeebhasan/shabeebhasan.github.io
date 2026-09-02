@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1120"/><stop offset="1" stop-color="#161f3d"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/><stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="1300" cy="170" r="230" fill="#4f46e5" opacity="0.16"/>
+  <circle cx="240" cy="760" r="260" fill="#06b6d4" opacity="0.12"/>
+  <rect x="120" y="150" width="14" height="600" rx="7" fill="url(#acc)"/>
+  <text x="180" y="300" font-family="Georgia, serif" font-size="120" font-weight="700" fill="#ffffff">71%</text>
+  <text x="180" y="410" font-family="Georgia, serif" font-size="58" font-weight="700" fill="#ffffff">Why My Clients Come Back</text>
+  <text x="180" y="480" font-family="Arial, sans-serif" font-size="32" fill="#cbd5e1">A freelance delivery system, from 133 completed contracts</text>
+  <text x="180" y="560" font-family="Arial, sans-serif" font-size="28" fill="#93c5fd">21 contracts from one client &#183; 20 from another &#183; 71-month longest engagement</text>
+  <text x="180" y="740" font-family="Arial, sans-serif" font-size="26" fill="#64748b">shabeeb.baydot.net</text>
+</svg>
