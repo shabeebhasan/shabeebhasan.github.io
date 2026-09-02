@@ -51,24 +51,24 @@
     <article class="content-article">
       <h2>The Brief</h2>
       <p>Turn a phone into a live public-address relay: speak into a Bluetooth microphone, hear it come out of a Bluetooth speaker across the room, with latency low enough that a speaker's own voice does not distract them and without the howling that normally ends this experiment in about four seconds.</p>
-      <p>This is a deceptively hard product. Every part of the mobile audio stack — Bluetooth codecs, buffer sizes, routing APIs, background execution policy — is designed for phone calls and media playback, not for a low-latency live loop between two wireless devices in the same room.</p>
+      <p>This is a deceptively hard product. Every part of the mobile audio stack (Bluetooth codecs, buffer sizes, routing APIs, background execution policy) is designed for phone calls and media playback, not for a low-latency live loop between two wireless devices in the same room.</p>
 
       <h2>Architecture: a Portable Core, Thin Platform Shells</h2>
       <p>All the signal processing lives in a platform-independent C++ core, so the DSP is written and tested once and each platform only contributes its audio I/O and routing. The chain runs echo control, then noise suppression, gain, feedback suppression, and a limiter, and reports its own algorithmic latency.</p>
       <ul>
-        <li><strong>Lock-free ring buffer</strong> between input and output callbacks — no allocation, no locks, no logging on the audio thread, which is where most real-time audio bugs are actually born.</li>
+        <li><strong>Lock-free ring buffer</strong> between input and output callbacks. No allocation, no locks, no logging on the audio thread, which is where most real-time audio bugs are actually born.</li>
         <li><strong>Look-ahead brickwall limiter</strong> at -1 dBFS and a smoothed 20 ms gain ramp, so nothing clips and nothing zippers.</li>
         <li><strong>Feedback suppressor</strong>: 2048-point FFT, a howl detected by narrowness and persistence rather than loudness alone, answered with a narrow notch that auto-releases after five seconds instead of permanently dulling the sound.</li>
-        <li><strong>Noise suppressor</strong>: STFT spectral gating with a minimum-statistics floor, adding about 5 ms of latency — cheap enough to keep in the live path.</li>
+        <li><strong>Noise suppressor</strong>: STFT spectral gating with a minimum-statistics floor, adding about 5 ms of latency, cheap enough to keep in the live path.</li>
       </ul>
 
       <h2>The Hard Problem: Echo the Platform Cannot Cancel</h2>
-      <p>Field testing produced heavy echo and howling whenever the microphone and the PA speaker shared a room. The platform's built-in echo canceller is designed for handset-length echo paths, a few tens of milliseconds. A Bluetooth speaker on the far side of a room is 150 to 400 ms away — an order of magnitude outside what it handles.</p>
+      <p>Field testing produced heavy echo and howling whenever the microphone and the PA speaker shared a room. The platform's built-in echo canceller is designed for handset-length echo paths, a few tens of milliseconds. A Bluetooth speaker on the far side of a room is 150 to 400 ms away. An order of magnitude outside what it handles.</p>
       <p>The relay knows exactly what it sent to the speaker, so the echo is that known signal, delayed and coloured. I built a three-stage canceller around that fact:</p>
       <ul>
         <li><strong>Delay estimation with GCC-PHAT.</strong> Plain cross-correlation smears periodic audio into a ridge of false peaks; phase-transform whitening produces a sharp impulse at the true lag. It locks onto an exact delay even under heavy double talk, and is guarded by sharpness gating and a two-agreeing-estimates rule before it accepts anything.</li>
         <li><strong>An NLMS adaptive filter</strong> anchored so most of its coverage sits on the reverb tail, with leaky norm-capped weights and a freeze-and-decay rule: if the filter ever <em>adds</em> energy, adaptation stops. It cannot make things worse than doing nothing.</li>
-        <li><strong>A residual suppressor</strong> that ducks only what survives, only in echo-dominated moments, gated by a double-talk detector — so someone speaking near the mic is never chopped up.</li>
+        <li><strong>A residual suppressor</strong> that ducks only what survives, only in echo-dominated moments, gated by a double-talk detector, so someone speaking near the mic is never chopped up.</li>
       </ul>
       <div class="cs-note"><p>Every stage has a failure-safe rule attached. In real-time audio, an adaptive component without a guard rail does not degrade gracefully; it screams.</p></div>
 
@@ -84,10 +84,10 @@
 
       <h2>Verification</h2>
       <p>The DSP core is covered by automated tests that assert behaviour, not just execution: the limiter never exceeds its ceiling, gain stays monotonic with no zipper, the feedback detector fires on howls and ignores bursts and then releases, noise suppression clears a measurable margin on stationary noise while preserving transients, and the delay estimator locks the correct lag under double talk. The app also ships an in-app round-trip latency test using normalised cross-correlation.</p>
-      <div class="cs-note"><p>Honest status: the DSP and engine are verified in automated tests and on emulator, with an in-app latency estimator in the field. The definitive hardware round-trip benchmark across real Bluetooth devices is in progress — that number will be published when it is measured, not before.</p></div>
+      <div class="cs-note"><p>Honest status: the DSP and engine are verified in automated tests and on emulator, with an in-app latency estimator in the field. The definitive hardware round-trip benchmark across real Bluetooth devices is in progress. That number will be published when it is measured, not before.</p></div>
 
       <h2>Why It Matters Commercially</h2>
-      <p>The same portable core is the asset. The signal processing is not tied to Android, so an iOS build reuses the tested DSP and adds only its own audio I/O layer — and the identical architecture applies to hearing assistance, tour-guide systems, live translation relays, and any product where audio has to move between devices in real time.</p>
+      <p>The same portable core is the asset. The signal processing is not tied to Android, so an iOS build reuses the tested DSP and adds only its own audio I/O layer, and the identical architecture applies to hearing assistance, tour-guide systems, live translation relays, and any product where audio has to move between devices in real time.</p>
     </article>
     <section class="lead-box"><h2>Building Something Real-Time?</h2><p>Audio, sensors, streaming, or any system where milliseconds and failure modes both matter. I write the portable core, test it properly, and make the platform behave. Let's talk about your build.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Real-Time%20Audio%20/%20DSP%20Consultation">Email for Proposal</a></div></section>
   </div></section>

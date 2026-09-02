@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Ethos Guard — Responsible Speech Analytics for Urdu &amp; Roman Urdu</title>
-  <meta name="description" content="A PhD research prototype: a multimodal dashboard that flags hostile language in code-switched Urdu, Roman Urdu and English speech — advisory only.">
+  <title>Ethos Guard | Responsible Speech Analytics for Urdu &amp; Roman Urdu</title>
+  <meta name="description" content="A PhD research prototype: a multimodal dashboard that flags hostile language in code-switched Urdu, Roman Urdu and English speech, advisory only.">
   <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/ethos-guard-responsible-speech-analytics/">
-  <meta property="og:title" content="Ethos Guard — Responsible Speech Analytics for Urdu &amp; Roman Urdu | Shabeeb Hasan">
-  <meta property="og:description" content="A PhD research prototype: a multimodal dashboard that flags hostile language in code-switched Urdu, Roman Urdu and English speech — advisory only.">
+  <meta property="og:title" content="Ethos Guard | Responsible Speech Analytics for Urdu &amp; Roman Urdu | Shabeeb Hasan">
+  <meta property="og:description" content="A PhD research prototype: a multimodal dashboard that flags hostile language in code-switched Urdu, Roman Urdu and English speech, advisory only.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/ethos-guard-responsible-speech-analytics/">
   <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg">
@@ -19,8 +19,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Ethos Guard — Responsible Speech Analytics for Urdu & Roman Urdu",
-      "description": "My PhD research prototype: a multimodal dashboard that flags hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, and advisory by design.",
+      "headline": "Ethos Guard: Responsible Speech Analytics for Urdu & Roman Urdu",
+      "description": "My PhD research prototype: a multimodal dashboard that flags hostile language in code-switched Urdu / Roman Urdu / English speech, negation-aware, identity-safe, and advisory by design.",
       "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
       "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
       "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/ethos-guard-responsible-speech-analytics/",
@@ -44,19 +44,19 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
   <section class="section content-page"><div class="container content-wrap">
     <a href="/case-studies/" class="back-link">Back to Case Studies</a>
-    <h1 class="content-title">Ethos Guard — Responsible Speech Analytics for Urdu &amp; Roman Urdu</h1>
-    <p class="content-excerpt">My doctoral research prototype at the University of Karachi: a multimodal system that reviews a recorded speech session — words, tone and facial cues — and gives the speaker explained, advisory feedback before they publish. Built for the code-switched Urdu / Roman Urdu / English register that mainstream tooling handles badly.</p>
+    <h1 class="content-title">Ethos Guard: Responsible Speech Analytics for Urdu &amp; Roman Urdu</h1>
+    <p class="content-excerpt">My doctoral research prototype at the University of Karachi: a multimodal system that reviews a recorded speech session (words, tone and facial cues) and gives the speaker explained, advisory feedback before they publish. Built for the code-switched Urdu / Roman Urdu / English register that mainstream tooling handles badly.</p>
     <img src="/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg" alt="Ethos Guard dashboard overview with live risk tiles" class="hero-image" width="1600" height="1000">
     <div class="tag-row"><span>nlp</span><span>multimodal ml</span><span>roman urdu</span><span>python / fastapi</span><span>react</span><span>phd research</span></div>
     <article class="content-article">
       <h2>The Problem</h2>
-      <p>Hate-speech detection research exists for English, and lately for Urdu text in isolation. But Pakistani public speech — talk shows, lectures, vlogs — happens in a code-switched mix of Urdu, Roman Urdu and English, spoken aloud, where harm is carried jointly by the words, the delivery and the face. No public system or corpus covers that register. My PhD (Computer Science, University of Karachi) is building both; Ethos Guard is the working prototype.</p>
+      <p>Hate-speech detection research exists for English, and lately for Urdu text in isolation. But Pakistani public speech (talk shows, lectures, vlogs) happens in a code-switched mix of Urdu, Roman Urdu and English, spoken aloud, where harm is carried jointly by the words, the delivery and the face. No public system or corpus covers that register. My PhD (Computer Science, University of Karachi) is building both; Ethos Guard is the working prototype.</p>
 
       <h2>Three Design Rules, Enforced in Code</h2>
       <ul>
-        <li><strong>Identity is not harm.</strong> Ethnic, religious and gender terms never raise a flag on their own. Only <em>group reference + hostile predicate + generaliser</em> ("yeh sab… ghaddar hain") produces a group-targeting flag. This rule exists because early lexicon systems — including the one I inherited — listed ordinary identity words as slurs, which is exactly the bias the research critiques.</li>
-        <li><strong>Negation is respected, in Urdu grammar too.</strong> "Hum nafrat <em>ke khilaf</em> hain" is counter-speech, and the analyzer knows it — Urdu negation is largely post-positional, which forward-window keyword systems miss. The classic failure of flagging "we reject hatred and violence" as incitement is fixed and pinned by regression tests.</li>
-        <li><strong>Advisory, never a verdict.</strong> The system tells a speaker that a segment touches a sensitive area and should be reviewed before publishing. It never cites statutes and never issues determinations — in the Pakistani context a false accusation is a safety risk, so this constraint is written into the code and the thesis alike.</li>
+        <li><strong>Identity is not harm.</strong> Ethnic, religious and gender terms never raise a flag on their own. Only <em>group reference + hostile predicate + generaliser</em> ("yeh sab… ghaddar hain") produces a group-targeting flag. This rule exists because early lexicon systems (including the one I inherited) listed ordinary identity words as slurs, which is exactly the bias the research critiques.</li>
+        <li><strong>Negation is respected, in Urdu grammar too.</strong> "Hum nafrat <em>ke khilaf</em> hain" is counter-speech, and the analyzer knows it, Urdu negation is largely post-positional, which forward-window keyword systems miss. The classic failure of flagging "we reject hatred and violence" as incitement is fixed and pinned by regression tests.</li>
+        <li><strong>Advisory, never a verdict.</strong> The system tells a speaker that a segment touches a sensitive area and should be reviewed before publishing. It never cites statutes and never issues determinations, in the Pakistani context a false accusation is a safety risk, so this constraint is written into the code and the thesis alike.</li>
       </ul>
 
       <h2>What the Speaker Sees</h2>
@@ -68,20 +68,20 @@
 
       <h2>The Engineering</h2>
       <ul>
-        <li><strong>Analysis engine</strong> — negation-aware, identity-safe lexicon analysis with a pluggable toxicity-model interface (a transparent heuristic today, a fine-tuned encoder next; nothing is called a transformer until it is one).</li>
-        <li><strong>FastAPI + React</strong> — the dashboard consumes live per-segment findings from the same pipeline the CLI and notebook use.</li>
-        <li><strong>Research pipeline</strong> — Whisper transcription and segmentation, a rule-based Urdu-script → Roman Urdu transliterator, spelling normalisation, eGeMAPS prosody and facial action-unit extraction, and a Krippendorff's-alpha agreement calculator verified against the textbook example.</li>
-        <li><strong>Evaluation harness</strong> — grouped cross-validation (a video never spans folds), macro-F1 with bootstrap confidence intervals, subset analysis for implicit and sarcastic harm, paired significance tests. Benchmark runners for text-only baselines, LLM zero-shot, and multimodal fusion ablations.</li>
+        <li><strong>Analysis engine</strong>, negation-aware, identity-safe lexicon analysis with a pluggable toxicity-model interface (a transparent heuristic today, a fine-tuned encoder next; nothing is called a transformer until it is one).</li>
+        <li><strong>FastAPI + React</strong>. The dashboard consumes live per-segment findings from the same pipeline the CLI and notebook use.</li>
+        <li><strong>Research pipeline</strong>, Whisper transcription and segmentation, a rule-based Urdu-script → Roman Urdu transliterator, spelling normalisation, eGeMAPS prosody and facial action-unit extraction, and a Krippendorff's-alpha agreement calculator verified against the textbook example.</li>
+        <li><strong>Evaluation harness</strong>, grouped cross-validation (a video never spans folds), macro-F1 with bootstrap confidence intervals, subset analysis for implicit and sarcastic harm, paired significance tests. Benchmark runners for text-only baselines, LLM zero-shot, and multimodal fusion ablations.</li>
         <li><strong>56 automated tests</strong>, including ones that fail the build if counter-speech ever flags or a statute name ever appears in output.</li>
       </ul>
 
       <h2>Where the Research Goes Next</h2>
-      <p>The prototype anchors a three-part study: a failure taxonomy of current text-only systems (including frontier LLMs) on code-switched Pakistani speech; a tri-modal annotated corpus of public speech with honestly reported inter-annotator agreement; and an ablation measuring what prosody and facial evidence actually add over text. The corpus — features, timestamps and labels, never raw video or face imagery — is the contribution the field can reuse.</p>
+      <p>The prototype anchors a three-part study: a failure taxonomy of current text-only systems (including frontier LLMs) on code-switched Pakistani speech; a tri-modal annotated corpus of public speech with honestly reported inter-annotator agreement; and an ablation measuring what prosody and facial evidence actually add over text. The corpus (features, timestamps and labels, never raw video or face imagery) is the contribution the field can reuse.</p>
 
       <h3>What This System Does Not Do</h3>
-      <p>It does not moderate other people's content, it does not judge legality, and it excludes religious-domain content from its corpus by design. It is a mirror for the speaker, not a gavel — and that framing is what makes it defensible.</p>
+      <p>It does not moderate other people's content, it does not judge legality, and it excludes religious-domain content from its corpus by design. It is a mirror for the speaker, not a gavel, and that framing is what makes it defensible.</p>
     </article>
-    <section class="lead-box"><h2>Working on NLP Beyond English?</h2><p>I build and evaluate language systems for code-switched and low-resource settings — with claims the data actually supports. If you are scoping speech analytics, content-risk review, or Urdu/Roman Urdu NLP, let's talk.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Speech%20Analytics%20%2F%20NLP%20Consultation">Email for Proposal</a></div></section>
+    <section class="lead-box"><h2>Working on NLP Beyond English?</h2><p>I build and evaluate language systems for code-switched and low-resource settings, with claims the data actually supports. If you are scoping speech analytics, content-risk review, or Urdu/Roman Urdu NLP, let's talk.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Speech%20Analytics%20%2F%20NLP%20Consultation">Email for Proposal</a></div></section>
   </div></section>
 </body>
 </html>

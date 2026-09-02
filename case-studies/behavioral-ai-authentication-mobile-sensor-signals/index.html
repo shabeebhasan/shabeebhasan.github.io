@@ -60,7 +60,7 @@
       <h2>What I Built</h2>
       <ul>
         <li><strong>A runtime scoring engine</strong> that extracts a few hundred live features per decision window from motion, orientation, touch cadence, scroll and typing rhythm, and scores them against an enrolled owner profile.</li>
-        <li><strong>A six-state holder machine</strong> — owner, check, non-owner, table/unattended, calibrating, and awaiting owner re-anchor — driving a heartbeat under a second, so a handoff is caught in seconds rather than minutes.</li>
+        <li><strong>A six-state holder machine</strong>, owner, check, non-owner, table/unattended, calibrating, and awaiting owner re-anchor, driving a heartbeat under a second, so a handoff is caught in seconds rather than minutes.</li>
         <li><strong>Protected-action gating</strong>: every sensitive route consults session state, so the security decision is enforced server-side, not just reflected in the UI.</li>
         <li><strong>One source of truth for every threshold</strong>, so tuning is a config change with a documented business effect instead of a hunt through the codebase.</li>
       </ul>
@@ -69,7 +69,7 @@
       <table class="cs-table">
         <thead><tr><th>Situation</th><th>Naive behaviour</th><th>What I shipped</th></tr></thead>
         <tbody>
-          <tr><td>Stranger holds the phone still until the signal calms</td><td>Score recovers, session turns green</td><td>Calm never restores trust — a settled signal is not owner evidence</td></tr>
+          <tr><td>Stranger holds the phone still until the signal calms</td><td>Score recovers, session turns green</td><td>Calm never restores trust. A settled signal is not owner evidence</td></tr>
           <tr><td>Phone left flat on a desk</td><td>Low-motion state treated as ambiguous</td><td>Hard block; unattended is never a permissive state</td></tr>
           <tr><td>Owner picks the phone back up</td><td>Fast single-window recovery</td><td>Recovery only through a positive owner-evidence path</td></tr>
           <tr><td>Grip angle and posture look distinctive</td><td>Model leans on them because they separate well in a demo</td><td>Deliberately demoted; micro-motion, jerk and touch rhythm carry the decision</td></tr>
@@ -85,17 +85,17 @@
         <div class="metric"><strong>60 Hz</strong><span>Platform sensor ceiling identified as the real limiting factor</span></div>
         <div class="metric"><strong>Passed</strong><span>Independent third-party audit of the study and its claims</span></div>
       </div>
-      <p>The cross-day result was the one that mattered. Within-session separation can come from a session artefact — the same lighting, the same posture, the same walk. Holding up across days, twice, on independent splits, is evidence of genuine personal signal. And the honest ceiling finding — that the delivery platform capped the sensor sample rate, capping the achievable accuracy — pointed to the next investment rather than pretending the model needed more tuning.</p>
+      <p>The cross-day result was the one that mattered. Within-session separation can come from a session artefact. The same lighting, the same posture, the same walk. Holding up across days, twice, on independent splits, is evidence of genuine personal signal. And the honest ceiling finding. That the delivery platform capped the sensor sample rate, capping the achievable accuracy, pointed to the next investment rather than pretending the model needed more tuning.</p>
 
       <h2>Outcome</h2>
       <p>The demo held up under hostile questioning, which was the actual goal. An independent audit of the methodology and the claims passed. The client funded three follow-on contracts covering the measurement campaign, the runtime, and a native on-device implementation to break through the sampling ceiling the study exposed.</p>
-      <div class="cs-note"><p>The commercially useful lesson: the honest report — "here is what this proves, here is what it does not, here is the ceiling and what it would cost to lift" — was worth more to the client than an optimistic one. It is what turned one milestone into a continuing engagement.</p></div>
+      <div class="cs-note"><p>The commercially useful lesson: the honest report, "here is what this proves, here is what it does not, here is the ceiling and what it would cost to lift", was worth more to the client than an optimistic one. It is what turned one milestone into a continuing engagement.</p></div>
 
       <h2>Stack and Scope</h2>
       <p>Python / FastAPI backend, NumPy and scikit-learn model bundle with one-class and owner-cluster scoring, SQLite, sensor capture in mobile Safari over HTTPS, SVM-based enrollment profiling, a documented threshold policy, and a business-facing change log kept current with every behavioural change. Scope covered runtime hardening, the session and handoff state machine, enrollment and session-state correctness, the separability study, and the client-facing validation reporting.</p>
 
       <h3>What This Approach Does Not Do</h3>
-      <p>It does not replace a password or a fingerprint, it does not certify identity, and it does not claim production biometric certification. It raises the cost of an unattended or handed-off session considerably — which, for the risk the client cared about, was the point.</p>
+      <p>It does not replace a password or a fingerprint, it does not certify identity, and it does not claim production biometric certification. It raises the cost of an unattended or handed-off session considerably, which, for the risk the client cared about, was the point.</p>
     </article>
     <section class="lead-box"><h2>Need a Sensor or ML System That Survives Scrutiny?</h2><p>I build on-device behavioral ML and real-time signal systems, and I report what the data actually supports. If you are scoping continuous authentication, anomaly detection, or any sensor-driven product, let's talk.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Behavioral%20Sensor%20ML%20Consultation">Email for Proposal</a></div></section>
   </div></section>
