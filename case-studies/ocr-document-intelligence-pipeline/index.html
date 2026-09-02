@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>OCR That Outlived Its Rewrite Cycles | Shabeeb Hasan</title>
+  <meta name="description" content="A document-scan pipeline maintained for six years for one client, plus a Tesseract / Google Cloud Vision OCR API for business cards — extraction work measured in years of production, not demos.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/">
+  <meta property="og:title" content="OCR That Outlived Its Rewrite Cycles | Shabeeb Hasan">
+  <meta property="og:description" content="A document-scan pipeline maintained for six years for one client, plus a Tesseract / Google Cloud Vision OCR API for business cards — extraction work measured in years of production, not demos.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "OCR That Outlived Its Rewrite Cycles",
+      "description": "A document-scan pipeline maintained for six years for one client, plus a Tesseract / Google Cloud Vision OCR API for business cards — extraction work measured in years of production, not demos.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">OCR That Outlived Its Rewrite Cycles</h1>
+    <p class="content-excerpt">A document-scan pipeline maintained for six years for one client, plus a Tesseract / Google Cloud Vision OCR API for business cards — extraction work measured in years of production, not demos.</p>
+    <img src="/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg" alt="OCR That Outlived Its Rewrite Cycles" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>ocr</span><span>tesseract</span><span>google cloud vision</span><span>document extraction</span><span>python</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Two clients, one theme: turn messy real-world documents into structured data and keep doing it reliably. One needed business cards parsed into clean contact records; the other needed a document-scan pipeline that their operation could depend on for years.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>An OCR API</strong> combining Tesseract with Google Cloud Vision — using each engine where it wins, with cleanup and field-structuring logic on top so output is data, not text soup.</li>
+        <li><strong>A document-scan pipeline</strong> that entered production in 2020 and stayed under my maintenance until 2026 — six years of format drift, edge cases and quiet fixes.</li>
+        <li><strong>Validation and exception paths</strong>: when confidence is low the document routes to a human, because a wrong extraction is worse than a slow one.</li>
+      </ul>
+      <div class="metric-grid">
+        <div class="metric"><strong>6 yrs</strong><span>one document pipeline in continuous production</span></div>
+        <div class="metric"><strong>2</strong><span>OCR engines blended per document type</span></div>
+        <div class="metric"><strong>100%</strong><span>low-confidence documents routed to human review</span></div>
+        <div class="metric"><strong>5.0</strong><span>client rating across the engagements</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>OCR demos are easy; OCR operations are not. The engineering that matters is in the failure paths — confidence thresholds, exception queues, format drift — and that is exactly the part that kept these clients for years.</p>
+    </article>
+    <section class="lead-box"><h2>Drowning in PDFs, Cards or Scans?</h2><p>I build OCR and document-extraction pipelines that run for years, not demos — Tesseract, Cloud Vision, and LLM-assisted structuring with human review where it counts.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Project%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
+</body>
+</html>

@@ -1,480 +1,515 @@
 {
-  "items": [
-    {
-      "title": "Medicine Donation Marketplace, Privacy by Design",
-      "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals — with server-enforced prescription and expiry rules and a vision check that fails to human review.",
-      "image": "/assets/imgs/case-studies/medishare/medishare-hero.jpg",
-      "url": "/case-studies/medicine-donation-marketplace-privacy-by-design/",
-      "category": "health"
-    },
-    {
-      "title": "Ethos Guard — Responsible Speech Analytics",
-      "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, advisory by design.",
-      "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",
-      "url": "/case-studies/ethos-guard-responsible-speech-analytics/",
-      "category": "ai"
-    },
-    {
-      "title": "Continuous Authentication from Phone Sensors",
-      "excerpt": "Hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring what the sensors actually prove: 0.82 in-session AUC, ~0.78 replicated cross-day.",
-      "image": "/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg",
-      "url": "/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
-      "category": "ai"
-    },
-    {
-      "title": "Low-Latency Bluetooth Audio Relay",
-      "excerpt": "A real-time mic-to-speaker relay with a portable C++ DSP core and a custom GCC-PHAT + NLMS echo canceller for room-length Bluetooth echo paths the platform AEC cannot reach.",
-      "image": "/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg",
-      "url": "/case-studies/low-latency-audio-relay-bluetooth-dsp/",
-      "category": "ai"
-    },
-    {
-      "title": "On-Device Video Compression Pipeline",
-      "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone — one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
-      "image": "/assets/imgs/case-studies/clip-studio/clip-studio-card.jpg",
-      "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
-      "category": "ai"
-    },
-    {
-      "title": "Agri Supply Chain Farmer App",
-      "excerpt": "Mobile app case study for Agri Supply Chain Farmer App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/agri-supply-chain-farmer-app.svg",
-      "url": "/case-studies/agri-supply-chain-farmer-app/",
-      "category": "ai"
-    },
-    {
-      "title": "AI Lead Generation System for Local Service Businesses",
-      "excerpt": "Case study: AI Lead Generation System for Local Service Businesses. Faster lead pipeline creation with better-fit prospects and reduced manual screening.",
-      "image": "/assets/imgs/generated/job-case-studies/ai-lead-generation-system-for-local-service-businesses.svg",
-      "url": "/case-studies/ai-lead-generation-system-for-local-service-businesses/",
-      "category": "ai"
-    },
-    {
-      "title": "AI Lead Scoring and Qualification for Better Sales Targeting",
-      "excerpt": "Case study: AI Lead Scoring and Qualification for Better Sales Targeting. Higher-quality lead prioritization and better campaign focus.",
-      "image": "/assets/imgs/generated/job-case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting.svg",
-      "url": "/case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting/",
-      "category": "ai"
-    },
-    {
-      "title": "AI Proposal Generation Workflow for Freelancers and Agencies",
-      "excerpt": "Case study: AI Proposal Generation Workflow for Freelancers and Agencies. Quicker proposal turnaround with more consistent positioning.",
-      "image": "/assets/imgs/generated/job-case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies.svg",
-      "url": "/case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies/",
-      "category": "ai"
-    },
-    {
-      "title": "AI Receptionist for Appointment Booking",
-      "excerpt": "Case study: AI Receptionist for Appointment Booking. 24/7 appointment capture workflow and reduced front-desk load.",
-      "image": "/assets/imgs/generated/job-case-studies/ai-receptionist-for-appointment-booking.svg",
-      "url": "/case-studies/ai-receptionist-for-appointment-booking/",
-      "category": "ai"
-    },
-    {
-      "title": "Automated B2B Prospecting Pipeline with BullMQ",
-      "excerpt": "Case study: Automated B2B Prospecting Pipeline with BullMQ. Consistent throughput and reliable retry/backoff behavior for production workloads.",
-      "image": "/assets/imgs/generated/job-case-studies/automated-b2b-prospecting-pipeline-with-bullmq.svg",
-      "url": "/case-studies/automated-b2b-prospecting-pipeline-with-bullmq/",
-      "category": "ai"
-    },
-    {
-      "title": "B2b Procurement Mobile Suite",
-      "excerpt": "Mobile app case study for B2b Procurement Mobile Suite with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/b2b-procurement-mobile-suite.svg",
-      "url": "/case-studies/b2b-procurement-mobile-suite/",
-      "category": "ai"
-    },
-    {
-      "title": "Beauty Booking Marketplace App",
-      "excerpt": "Mobile app case study for Beauty Booking Marketplace App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/beauty-booking-marketplace-app.svg",
-      "url": "/case-studies/beauty-booking-marketplace-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Behavioral Health Follow-Up Routing",
-      "excerpt": "Healthcare AI case study: Behavioral Health Follow-Up Routing. Better follow-up adherence and lower drop-off.",
-      "image": "/assets/imgs/generated/medical-case-studies/behavioral-health-follow-up-routing.svg",
-      "url": "/case-studies/behavioral-health-follow-up-routing/",
-      "category": "health"
-    },
-    {
-      "title": "Clinical Trial Participant Support",
-      "excerpt": "Healthcare AI case study: Clinical Trial Participant Support. More consistent protocol communication.",
-      "image": "/assets/imgs/generated/medical-case-studies/clinical-trial-participant-support.svg",
-      "url": "/case-studies/clinical-trial-participant-support/",
-      "category": "health"
-    },
-    {
-      "title": "Cold Email Campaign Automation Platform",
-      "excerpt": "Case study: Cold Email Campaign Automation Platform. Predictable follow-up cadence and improved outbound consistency.",
-      "image": "/assets/imgs/generated/job-case-studies/cold-email-campaign-automation-platform.svg",
-      "url": "/case-studies/cold-email-campaign-automation-platform/",
-      "category": "ai"
-    },
-    {
-      "title": "Community Clinic Intake Automation",
-      "excerpt": "Healthcare AI case study: Community Clinic Intake Automation. Higher throughput with clinician-in-the-loop safety.",
-      "image": "/assets/imgs/generated/medical-case-studies/community-clinic-intake-automation.svg",
-      "url": "/case-studies/community-clinic-intake-automation/",
-      "category": "health"
-    },
-    {
-      "title": "Community Creator Membership App",
-      "excerpt": "Mobile app case study for Community Creator Membership App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/community-creator-membership-app.svg",
-      "url": "/case-studies/community-creator-membership-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Crisis Hotline Escalation",
-      "excerpt": "Healthcare AI case study: Crisis Hotline Escalation. Faster escalation handoff and fewer missed high-risk sessions.",
-      "image": "/assets/imgs/generated/medical-case-studies/crisis-hotline-escalation.svg",
-      "url": "/case-studies/crisis-hotline-escalation/",
-      "category": "health"
-    },
-    {
-      "title": "CRM Integration Layer for HubSpot and GoHighLevel",
-      "excerpt": "Case study: CRM Integration Layer for HubSpot and GoHighLevel. Unified data flow between outbound engine and client CRM systems.",
-      "image": "/assets/imgs/generated/job-case-studies/crm-integration-layer-for-hubspot-and-gohighlevel.svg",
-      "url": "/case-studies/crm-integration-layer-for-hubspot-and-gohighlevel/",
-      "category": "ai"
-    },
-    {
-      "title": "Digital Clinic Mobile Care Platform",
-      "excerpt": "Mobile app case study for Digital Clinic Mobile Care Platform with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/digital-clinic-mobile-care-platform.svg",
-      "url": "/case-studies/digital-clinic-mobile-care-platform/",
-      "category": "ai"
-    },
-    {
-      "title": "Digital Therapeutics Companion Triage",
-      "excerpt": "Healthcare AI case study: Digital Therapeutics Companion Triage. Faster signal-to-action in care teams.",
-      "image": "/assets/imgs/generated/medical-case-studies/digital-therapeutics-companion-triage.svg",
-      "url": "/case-studies/digital-therapeutics-companion-triage/",
-      "category": "health"
-    },
-    {
-      "title": "Elderly Virtual Care Support",
-      "excerpt": "Healthcare AI case study: Elderly Virtual Care Support. Improved transparency and caregiver trust.",
-      "image": "/assets/imgs/generated/medical-case-studies/elderly-virtual-care-support.svg",
-      "url": "/case-studies/elderly-virtual-care-support/",
-      "category": "health"
-    },
-    {
-      "title": "Employee Assistance Program (EAP)",
-      "excerpt": "Healthcare AI case study: Employee Assistance Program (EAP). Better program reporting and intervention timing.",
-      "image": "/assets/imgs/generated/medical-case-studies/employee-assistance-program-eap.svg",
-      "url": "/case-studies/employee-assistance-program-eap/",
-      "category": "health"
-    },
-    {
-      "title": "End-to-End Lead-to-Booking Automation Stack",
-      "excerpt": "Case study: End-to-End Lead-to-Booking Automation Stack. Full-funnel automation from prospect capture to booked conversation.",
-      "image": "/assets/imgs/generated/job-case-studies/end-to-end-lead-to-booking-automation-stack.svg",
-      "url": "/case-studies/end-to-end-lead-to-booking-automation-stack/",
-      "category": "ai"
-    },
-    {
-      "title": "Enterprise Mental Health SaaS Pilot",
-      "excerpt": "Healthcare AI case study: Enterprise Mental Health SaaS Pilot. Faster pilot-to-contract conversion discussions.",
-      "image": "/assets/imgs/generated/medical-case-studies/enterprise-mental-health-saas-pilot.svg",
-      "url": "/case-studies/enterprise-mental-health-saas-pilot/",
-      "category": "health"
-    },
-    {
-      "title": "ER De-Escalation Coaching",
-      "excerpt": "Healthcare AI case study: ER De-Escalation Coaching. Better de-escalation communication under pressure.",
-      "image": "/assets/imgs/generated/medical-case-studies/er-de-escalation-coaching.svg",
-      "url": "/case-studies/er-de-escalation-coaching/",
-      "category": "health"
-    },
-    {
-      "title": "Ev Charging Mobile Experience",
-      "excerpt": "Mobile app case study for Ev Charging Mobile Experience with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/ev-charging-mobile-experience.svg",
-      "url": "/case-studies/ev-charging-mobile-experience/",
-      "category": "ai"
-    },
-    {
-      "title": "Family Therapy Session Consistency",
-      "excerpt": "Healthcare AI case study: Family Therapy Session Consistency. Better consistency in care delivery.",
-      "image": "/assets/imgs/generated/medical-case-studies/family-therapy-session-consistency.svg",
-      "url": "/case-studies/family-therapy-session-consistency/",
-      "category": "health"
-    },
-    {
-      "title": "Grocery Delivery Operations App",
-      "excerpt": "Mobile app case study for Grocery Delivery Operations App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/grocery-delivery-operations-app.svg",
-      "url": "/case-studies/grocery-delivery-operations-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Home Healthcare Video Handoffs",
-      "excerpt": "Healthcare AI case study: Home Healthcare Video Handoffs. Better continuity between providers.",
-      "image": "/assets/imgs/generated/medical-case-studies/home-healthcare-video-handoffs.svg",
-      "url": "/case-studies/home-healthcare-video-handoffs/",
-      "category": "health"
-    },
-    {
-      "title": "Hospital Complaint Reduction Program",
-      "excerpt": "Healthcare AI case study: Hospital Complaint Reduction Program. Reduced avoidable complaint incidents.",
-      "image": "/assets/imgs/generated/medical-case-studies/hospital-complaint-reduction-program.svg",
-      "url": "/case-studies/hospital-complaint-reduction-program/",
-      "category": "health"
-    },
-    {
-      "title": "Hospitality Guest Journey App",
-      "excerpt": "Mobile app case study for Hospitality Guest Journey App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/hospitality-guest-journey-app.svg",
-      "url": "/case-studies/hospitality-guest-journey-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Insurance Care Management Audits",
-      "excerpt": "Healthcare AI case study: Insurance Care Management Audits. Better external review readiness.",
-      "image": "/assets/imgs/generated/medical-case-studies/insurance-care-management-audits.svg",
-      "url": "/case-studies/insurance-care-management-audits/",
-      "category": "health"
-    },
-    {
-      "title": "Insurance Claims Field App",
-      "excerpt": "Mobile app case study for Insurance Claims Field App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/insurance-claims-field-app.svg",
-      "url": "/case-studies/insurance-claims-field-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Language Learning Mobile Platform",
-      "excerpt": "Mobile app case study for Language Learning Mobile Platform with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/language-learning-mobile-platform.svg",
-      "url": "/case-studies/language-learning-mobile-platform/",
-      "category": "ai"
-    },
-    {
-      "title": "Last Mile Courier Intelligence App",
-      "excerpt": "Mobile app case study for Last Mile Courier Intelligence App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/last-mile-courier-intelligence-app.svg",
-      "url": "/case-studies/last-mile-courier-intelligence-app/",
-      "category": "ai"
-    },
-    {
-      "title": "MCP-Powered AI Receptionist Tooling for Agent Workflows",
-      "excerpt": "Case study: MCP-Powered AI Receptionist Tooling for Agent Workflows. Cleaner orchestration for AI agents and extensible automation paths.",
-      "image": "/assets/imgs/generated/job-case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows.svg",
-      "url": "/case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows/",
-      "category": "ai"
-    },
-    {
-      "title": "Micro Lending Mobile System",
-      "excerpt": "Mobile app case study for Micro Lending Mobile System with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/micro-lending-mobile-system.svg",
-      "url": "/case-studies/micro-lending-mobile-system/",
-      "category": "ai"
-    },
-    {
-      "title": "Multi-Lingual Intake Workflows",
-      "excerpt": "Healthcare AI case study: Multi-Lingual Intake Workflows. Reliable triage support in multilingual contexts.",
-      "image": "/assets/imgs/generated/medical-case-studies/multi-lingual-intake-workflows.svg",
-      "url": "/case-studies/multi-lingual-intake-workflows/",
-      "category": "health"
-    },
-    {
-      "title": "Multi-Tenant Lead Engine for Agencies",
-      "excerpt": "Case study: Multi-Tenant Lead Engine for Agencies. Secure client separation and scalable outbound operations under one platform.",
-      "image": "/assets/imgs/generated/job-case-studies/multi-tenant-lead-engine-for-agencies.svg",
-      "url": "/case-studies/multi-tenant-lead-engine-for-agencies/",
-      "category": "ai"
-    },
-    {
-      "title": "Neobank Onboarding Rebuild",
-      "excerpt": "Mobile app case study for Neobank Onboarding Rebuild with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/neobank-onboarding-rebuild.svg",
-      "url": "/case-studies/neobank-onboarding-rebuild/",
-      "category": "ai"
-    },
-    {
-      "title": "Next.js App Router Dashboard for Lead Operations",
-      "excerpt": "Case study: Next.js App Router Dashboard for Lead Operations. Centralized workflow management and improved operator visibility.",
-      "image": "/assets/imgs/generated/job-case-studies/nextjs-app-router-dashboard-for-lead-operations.svg",
-      "url": "/case-studies/nextjs-app-router-dashboard-for-lead-operations/",
-      "category": "ai"
-    },
-    {
-      "title": "NGO Crisis Counseling Scale-Up",
-      "excerpt": "Healthcare AI case study: NGO Crisis Counseling Scale-Up. Safer and more consistent response quality.",
-      "image": "/assets/imgs/generated/medical-case-studies/ngo-crisis-counseling-scale-up.svg",
-      "url": "/case-studies/ngo-crisis-counseling-scale-up/",
-      "category": "health"
-    },
-    {
-      "title": "Nurse Call Center QA",
-      "excerpt": "Healthcare AI case study: Nurse Call Center QA. Near-full coverage with targeted human review.",
-      "image": "/assets/imgs/generated/medical-case-studies/nurse-call-center-qa.svg",
-      "url": "/case-studies/nurse-call-center-qa/",
-      "category": "health"
-    },
-    {
-      "title": "Oncology Emotional Distress Flagging",
-      "excerpt": "Healthcare AI case study: Oncology Emotional Distress Flagging. Earlier psychosocial referrals in care plans.",
-      "image": "/assets/imgs/generated/medical-case-studies/oncology-emotional-distress-flagging.svg",
-      "url": "/case-studies/oncology-emotional-distress-flagging/",
-      "category": "health"
-    },
-    {
-      "title": "Outbound Voice Demo System with Retell AI",
-      "excerpt": "Case study: Outbound Voice Demo System with Retell AI. Faster demo activation and stronger sales conversations with real voice proof.",
-      "image": "/assets/imgs/generated/job-case-studies/outbound-voice-demo-system-with-retell-ai.svg",
-      "url": "/case-studies/outbound-voice-demo-system-with-retell-ai/",
-      "category": "ai"
-    },
-    {
-      "title": "Pediatric Counseling Training",
-      "excerpt": "Healthcare AI case study: Pediatric Counseling Training. Faster onboarding to acceptable quality standards.",
-      "image": "/assets/imgs/generated/medical-case-studies/pediatric-counseling-training.svg",
-      "url": "/case-studies/pediatric-counseling-training/",
-      "category": "health"
-    },
-    {
-      "title": "Post-Discharge Wellness Monitoring",
-      "excerpt": "Healthcare AI case study: Post-Discharge Wellness Monitoring. Earlier intervention for vulnerable patients.",
-      "image": "/assets/imgs/generated/medical-case-studies/post-discharge-wellness-monitoring.svg",
-      "url": "/case-studies/post-discharge-wellness-monitoring/",
-      "category": "health"
-    },
-    {
-      "title": "Property Inspection Mobile Toolkit",
-      "excerpt": "Mobile app case study for Property Inspection Mobile Toolkit with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/property-inspection-mobile-toolkit.svg",
-      "url": "/case-studies/property-inspection-mobile-toolkit/",
-      "category": "ai"
-    },
-    {
-      "title": "Psychiatric Intake Standardization",
-      "excerpt": "Healthcare AI case study: Psychiatric Intake Standardization. More consistent first-assessment quality.",
-      "image": "/assets/imgs/generated/medical-case-studies/psychiatric-intake-standardization.svg",
-      "url": "/case-studies/psychiatric-intake-standardization/",
-      "category": "health"
-    },
-    {
-      "title": "Queue-First Outreach Architecture with Failure Recovery",
-      "excerpt": "Case study: Queue-First Outreach Architecture with Failure Recovery. More resilient outbound execution and clearer operational auditability.",
-      "image": "/assets/imgs/generated/job-case-studies/queue-first-outreach-architecture-with-failure-recovery.svg",
-      "url": "/case-studies/queue-first-outreach-architecture-with-failure-recovery/",
-      "category": "ai"
-    },
-    {
-      "title": "Readmission Risk Communication Lens",
-      "excerpt": "Healthcare AI case study: Readmission Risk Communication Lens. Improved callback targeting for at-risk patients.",
-      "image": "/assets/imgs/generated/medical-case-studies/readmission-risk-communication-lens.svg",
-      "url": "/case-studies/readmission-risk-communication-lens/",
-      "category": "health"
-    },
-    {
-      "title": "Rehab Progress Communication Tracking",
-      "excerpt": "Healthcare AI case study: Rehab Progress Communication Tracking. More personalized therapy adjustments.",
-      "image": "/assets/imgs/generated/medical-case-studies/rehab-progress-communication-tracking.svg",
-      "url": "/case-studies/rehab-progress-communication-tracking/",
-      "category": "health"
-    },
-    {
-      "title": "Rural Mental Health Access",
-      "excerpt": "Healthcare AI case study: Rural Mental Health Access. Consistent screening despite unstable internet.",
-      "image": "/assets/imgs/generated/medical-case-studies/rural-mental-health-access.svg",
-      "url": "/case-studies/rural-mental-health-access/",
-      "category": "health"
-    },
-    {
-      "title": "Smart Classroom Parent App",
-      "excerpt": "Mobile app case study for Smart Classroom Parent App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/smart-classroom-parent-app.svg",
-      "url": "/case-studies/smart-classroom-parent-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Substance Recovery Check-In Assist",
-      "excerpt": "Healthcare AI case study: Substance Recovery Check-In Assist. Earlier intervention triggers for counselors.",
-      "image": "/assets/imgs/generated/medical-case-studies/substance-recovery-check-in-assist.svg",
-      "url": "/case-studies/substance-recovery-check-in-assist/",
-      "category": "health"
-    },
-    {
-      "title": "Supabase-Powered SaaS Backend with Tenant Isolation",
-      "excerpt": "Case study: Supabase-Powered SaaS Backend with Tenant Isolation. Production-ready foundation for scaling SaaS workflows safely.",
-      "image": "/assets/imgs/generated/job-case-studies/supabase-powered-saas-backend-with-tenant-isolation.svg",
-      "url": "/case-studies/supabase-powered-saas-backend-with-tenant-isolation/",
-      "category": "ai"
-    },
-    {
-      "title": "Telehealth Supervisor Copilot",
-      "excerpt": "Healthcare AI case study: Telehealth Supervisor Copilot. Review efficiency improved substantially.",
-      "image": "/assets/imgs/generated/medical-case-studies/telehealth-supervisor-copilot.svg",
-      "url": "/case-studies/telehealth-supervisor-copilot/",
-      "category": "health"
-    },
-    {
-      "title": "Telepsychiatry Intake Triage",
-      "excerpt": "Healthcare AI case study: Telepsychiatry Intake Triage. Priority cases surfaced same day for clinical review.",
-      "image": "/assets/imgs/generated/medical-case-studies/telepsychiatry-intake-triage.svg",
-      "url": "/case-studies/telepsychiatry-intake-triage/",
-      "category": "health"
-    },
-    {
-      "title": "Travel Concierge Ar Companion",
-      "excerpt": "Mobile app case study for Travel Concierge Ar Companion with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/travel-concierge-ar-companion.svg",
-      "url": "/case-studies/travel-concierge-ar-companion/",
-      "category": "ai"
-    },
-    {
-      "title": "University Counseling Triage",
-      "excerpt": "Healthcare AI case study: University Counseling Triage. Faster student routing without replacing clinicians.",
-      "image": "/assets/imgs/generated/medical-case-studies/university-counseling-triage.svg",
-      "url": "/case-studies/university-counseling-triage/",
-      "category": "health"
-    },
-    {
-      "title": "Usage-Limit and Plan-Controlled SaaS Monetization",
-      "excerpt": "Case study: Usage-Limit and Plan-Controlled SaaS Monetization. Better cost governance and cleaner pricing-tier enforcement.",
-      "image": "/assets/imgs/generated/job-case-studies/usage-limit-and-plan-controlled-saas-monetization.svg",
-      "url": "/case-studies/usage-limit-and-plan-controlled-saas-monetization/",
-      "category": "ai"
-    },
-    {
-      "title": "Value-Based Care Communication KPI",
-      "excerpt": "Healthcare AI case study: Value-Based Care Communication KPI. Better quality reporting in value-based models.",
-      "image": "/assets/imgs/generated/medical-case-studies/value-based-care-communication-kpi.svg",
-      "url": "/case-studies/value-based-care-communication-kpi/",
-      "category": "health"
-    },
-    {
-      "title": "Virtual Primary Care Quality Layer",
-      "excerpt": "Healthcare AI case study: Virtual Primary Care Quality Layer. Supervisor time focused on highest-impact sessions.",
-      "image": "/assets/imgs/generated/medical-case-studies/virtual-primary-care-quality-layer.svg",
-      "url": "/case-studies/virtual-primary-care-quality-layer/",
-      "category": "health"
-    },
-    {
-      "title": "Warehouse Picking Mobile Workflow",
-      "excerpt": "Mobile app case study for Warehouse Picking Mobile Workflow with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/warehouse-picking-mobile-workflow.svg",
-      "url": "/case-studies/warehouse-picking-mobile-workflow/",
-      "category": "ai"
-    },
-    {
-      "title": "Women Wellness Habit Mobile App",
-      "excerpt": "Mobile app case study for Women Wellness Habit Mobile App with strategy, UX, architecture, and measurable outcomes.",
-      "image": "/assets/imgs/generated/case-studies/women-wellness-habit-mobile-app.svg",
-      "url": "/case-studies/women-wellness-habit-mobile-app/",
-      "category": "ai"
-    },
-    {
-      "title": "Women’s Telehealth Communication Safety",
-      "excerpt": "Healthcare AI case study: Women’s Telehealth Communication Safety. Better supervisor visibility on patient experience quality.",
-      "image": "/assets/imgs/generated/medical-case-studies/womens-telehealth-communication-safety.svg",
-      "url": "/case-studies/womens-telehealth-communication-safety/",
-      "category": "health"
-    }
-  ]
+ "items": [
+  {
+   "title": "Medicine Donation Marketplace, Privacy by Design",
+   "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals \u2014 with server-enforced prescription and expiry rules and a vision check that fails to human review.",
+   "image": "/assets/imgs/case-studies/medishare/medishare-hero.jpg",
+   "url": "/case-studies/medicine-donation-marketplace-privacy-by-design/",
+   "category": "health"
+  },
+  {
+   "title": "Ethos Guard \u2014 Responsible Speech Analytics",
+   "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech \u2014 negation-aware, identity-safe, advisory by design.",
+   "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",
+   "url": "/case-studies/ethos-guard-responsible-speech-analytics/",
+   "category": "ai"
+  },
+  {
+   "title": "Continuous Authentication from Phone Sensors",
+   "excerpt": "Hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring what the sensors actually prove: 0.82 in-session AUC, ~0.78 replicated cross-day.",
+   "image": "/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg",
+   "url": "/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
+   "category": "ai"
+  },
+  {
+   "title": "Low-Latency Bluetooth Audio Relay",
+   "excerpt": "A real-time mic-to-speaker relay with a portable C++ DSP core and a custom GCC-PHAT + NLMS echo canceller for room-length Bluetooth echo paths the platform AEC cannot reach.",
+   "image": "/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg",
+   "url": "/case-studies/low-latency-audio-relay-bluetooth-dsp/",
+   "category": "ai"
+  },
+  {
+   "title": "On-Device Video Compression Pipeline",
+   "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone \u2014 one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
+   "image": "/assets/imgs/case-studies/clip-studio/clip-studio-card.jpg",
+   "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
+   "category": "ai"
+  },
+  {
+   "title": "A Referral Rewards SaaS, Built Solo to Production",
+   "excerpt": "francofunrewards.ca, live: a bilingual partner-referral platform for a Canadian tutoring company \u2014 React 18 + TypeScript, Django 5/DRF, PostgreSQL and Stripe, architected, built, deployed and maintained by one engineer.",
+   "image": "/assets/imgs/generated/case-studies/francofun-referral-rewards-platform.svg",
+   "url": "/case-studies/francofun-referral-rewards-platform/",
+   "category": "ai"
+  },
+  {
+   "title": "Video at Serverless Scale: FFmpeg on AWS Lambda",
+   "excerpt": "Five years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
+   "image": "/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg",
+   "url": "/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/",
+   "category": "ai"
+  },
+  {
+   "title": "OCR That Outlived Its Rewrite Cycles",
+   "excerpt": "A document-scan pipeline maintained for six years for one client, plus a Tesseract / Google Cloud Vision OCR API for business cards \u2014 extraction work measured in years of production, not demos.",
+   "image": "/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg",
+   "url": "/case-studies/ocr-document-intelligence-pipeline/",
+   "category": "ai"
+  },
+  {
+   "title": "Three Years Inside One Laravel Codebase",
+   "excerpt": "A production Laravel application on AWS, maintained and extended continuously from 2018 to 2021 for the same client \u2014 plus a Laravel backend for a doctor-patient mobile app and enterprise PHP with SAP integration.",
+   "image": "/assets/imgs/generated/case-studies/laravel-platform-three-year-engagement.svg",
+   "url": "/case-studies/laravel-platform-three-year-engagement/",
+   "category": "ai"
+  },
+  {
+   "title": "Django at Scale: 21 Contracts for One Platform",
+   "excerpt": "Between 2019 and 2025 one platform company hired me 21 separate times for Django/DRF product work \u2014 parallel client apps, shared standards, and delivery consistent enough to keep earning the next contract.",
+   "image": "/assets/imgs/generated/case-studies/django-at-scale-21-contracts.svg",
+   "url": "/case-studies/django-at-scale-21-contracts/",
+   "category": "ai"
+  },
+  {
+   "title": "Agri Supply Chain Farmer App",
+   "excerpt": "Mobile app case study for Agri Supply Chain Farmer App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/agri-supply-chain-farmer-app.svg",
+   "url": "/case-studies/agri-supply-chain-farmer-app/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Lead Generation System for Local Service Businesses",
+   "excerpt": "Case study: AI Lead Generation System for Local Service Businesses. Faster lead pipeline creation with better-fit prospects and reduced manual screening.",
+   "image": "/assets/imgs/generated/job-case-studies/ai-lead-generation-system-for-local-service-businesses.svg",
+   "url": "/case-studies/ai-lead-generation-system-for-local-service-businesses/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Lead Scoring and Qualification for Better Sales Targeting",
+   "excerpt": "Case study: AI Lead Scoring and Qualification for Better Sales Targeting. Higher-quality lead prioritization and better campaign focus.",
+   "image": "/assets/imgs/generated/job-case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting.svg",
+   "url": "/case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Proposal Generation Workflow for Freelancers and Agencies",
+   "excerpt": "Case study: AI Proposal Generation Workflow for Freelancers and Agencies. Quicker proposal turnaround with more consistent positioning.",
+   "image": "/assets/imgs/generated/job-case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies.svg",
+   "url": "/case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies/",
+   "category": "ai"
+  },
+  {
+   "title": "AI Receptionist for Appointment Booking",
+   "excerpt": "Case study: AI Receptionist for Appointment Booking. 24/7 appointment capture workflow and reduced front-desk load.",
+   "image": "/assets/imgs/generated/job-case-studies/ai-receptionist-for-appointment-booking.svg",
+   "url": "/case-studies/ai-receptionist-for-appointment-booking/",
+   "category": "ai"
+  },
+  {
+   "title": "Automated B2B Prospecting Pipeline with BullMQ",
+   "excerpt": "Case study: Automated B2B Prospecting Pipeline with BullMQ. Consistent throughput and reliable retry/backoff behavior for production workloads.",
+   "image": "/assets/imgs/generated/job-case-studies/automated-b2b-prospecting-pipeline-with-bullmq.svg",
+   "url": "/case-studies/automated-b2b-prospecting-pipeline-with-bullmq/",
+   "category": "ai"
+  },
+  {
+   "title": "B2b Procurement Mobile Suite",
+   "excerpt": "Mobile app case study for B2b Procurement Mobile Suite with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/b2b-procurement-mobile-suite.svg",
+   "url": "/case-studies/b2b-procurement-mobile-suite/",
+   "category": "ai"
+  },
+  {
+   "title": "Beauty Booking Marketplace App",
+   "excerpt": "Mobile app case study for Beauty Booking Marketplace App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/beauty-booking-marketplace-app.svg",
+   "url": "/case-studies/beauty-booking-marketplace-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Behavioral Health Follow-Up Routing",
+   "excerpt": "Healthcare AI case study: Behavioral Health Follow-Up Routing. Better follow-up adherence and lower drop-off.",
+   "image": "/assets/imgs/generated/medical-case-studies/behavioral-health-follow-up-routing.svg",
+   "url": "/case-studies/behavioral-health-follow-up-routing/",
+   "category": "health"
+  },
+  {
+   "title": "Clinical Trial Participant Support",
+   "excerpt": "Healthcare AI case study: Clinical Trial Participant Support. More consistent protocol communication.",
+   "image": "/assets/imgs/generated/medical-case-studies/clinical-trial-participant-support.svg",
+   "url": "/case-studies/clinical-trial-participant-support/",
+   "category": "health"
+  },
+  {
+   "title": "Cold Email Campaign Automation Platform",
+   "excerpt": "Case study: Cold Email Campaign Automation Platform. Predictable follow-up cadence and improved outbound consistency.",
+   "image": "/assets/imgs/generated/job-case-studies/cold-email-campaign-automation-platform.svg",
+   "url": "/case-studies/cold-email-campaign-automation-platform/",
+   "category": "ai"
+  },
+  {
+   "title": "Community Clinic Intake Automation",
+   "excerpt": "Healthcare AI case study: Community Clinic Intake Automation. Higher throughput with clinician-in-the-loop safety.",
+   "image": "/assets/imgs/generated/medical-case-studies/community-clinic-intake-automation.svg",
+   "url": "/case-studies/community-clinic-intake-automation/",
+   "category": "health"
+  },
+  {
+   "title": "Community Creator Membership App",
+   "excerpt": "Mobile app case study for Community Creator Membership App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/community-creator-membership-app.svg",
+   "url": "/case-studies/community-creator-membership-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Crisis Hotline Escalation",
+   "excerpt": "Healthcare AI case study: Crisis Hotline Escalation. Faster escalation handoff and fewer missed high-risk sessions.",
+   "image": "/assets/imgs/generated/medical-case-studies/crisis-hotline-escalation.svg",
+   "url": "/case-studies/crisis-hotline-escalation/",
+   "category": "health"
+  },
+  {
+   "title": "CRM Integration Layer for HubSpot and GoHighLevel",
+   "excerpt": "Case study: CRM Integration Layer for HubSpot and GoHighLevel. Unified data flow between outbound engine and client CRM systems.",
+   "image": "/assets/imgs/generated/job-case-studies/crm-integration-layer-for-hubspot-and-gohighlevel.svg",
+   "url": "/case-studies/crm-integration-layer-for-hubspot-and-gohighlevel/",
+   "category": "ai"
+  },
+  {
+   "title": "Digital Clinic Mobile Care Platform",
+   "excerpt": "Mobile app case study for Digital Clinic Mobile Care Platform with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/digital-clinic-mobile-care-platform.svg",
+   "url": "/case-studies/digital-clinic-mobile-care-platform/",
+   "category": "ai"
+  },
+  {
+   "title": "Digital Therapeutics Companion Triage",
+   "excerpt": "Healthcare AI case study: Digital Therapeutics Companion Triage. Faster signal-to-action in care teams.",
+   "image": "/assets/imgs/generated/medical-case-studies/digital-therapeutics-companion-triage.svg",
+   "url": "/case-studies/digital-therapeutics-companion-triage/",
+   "category": "health"
+  },
+  {
+   "title": "Elderly Virtual Care Support",
+   "excerpt": "Healthcare AI case study: Elderly Virtual Care Support. Improved transparency and caregiver trust.",
+   "image": "/assets/imgs/generated/medical-case-studies/elderly-virtual-care-support.svg",
+   "url": "/case-studies/elderly-virtual-care-support/",
+   "category": "health"
+  },
+  {
+   "title": "Employee Assistance Program (EAP)",
+   "excerpt": "Healthcare AI case study: Employee Assistance Program (EAP). Better program reporting and intervention timing.",
+   "image": "/assets/imgs/generated/medical-case-studies/employee-assistance-program-eap.svg",
+   "url": "/case-studies/employee-assistance-program-eap/",
+   "category": "health"
+  },
+  {
+   "title": "End-to-End Lead-to-Booking Automation Stack",
+   "excerpt": "Case study: End-to-End Lead-to-Booking Automation Stack. Full-funnel automation from prospect capture to booked conversation.",
+   "image": "/assets/imgs/generated/job-case-studies/end-to-end-lead-to-booking-automation-stack.svg",
+   "url": "/case-studies/end-to-end-lead-to-booking-automation-stack/",
+   "category": "ai"
+  },
+  {
+   "title": "Enterprise Mental Health SaaS Pilot",
+   "excerpt": "Healthcare AI case study: Enterprise Mental Health SaaS Pilot. Faster pilot-to-contract conversion discussions.",
+   "image": "/assets/imgs/generated/medical-case-studies/enterprise-mental-health-saas-pilot.svg",
+   "url": "/case-studies/enterprise-mental-health-saas-pilot/",
+   "category": "health"
+  },
+  {
+   "title": "ER De-Escalation Coaching",
+   "excerpt": "Healthcare AI case study: ER De-Escalation Coaching. Better de-escalation communication under pressure.",
+   "image": "/assets/imgs/generated/medical-case-studies/er-de-escalation-coaching.svg",
+   "url": "/case-studies/er-de-escalation-coaching/",
+   "category": "health"
+  },
+  {
+   "title": "Ev Charging Mobile Experience",
+   "excerpt": "Mobile app case study for Ev Charging Mobile Experience with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/ev-charging-mobile-experience.svg",
+   "url": "/case-studies/ev-charging-mobile-experience/",
+   "category": "ai"
+  },
+  {
+   "title": "Family Therapy Session Consistency",
+   "excerpt": "Healthcare AI case study: Family Therapy Session Consistency. Better consistency in care delivery.",
+   "image": "/assets/imgs/generated/medical-case-studies/family-therapy-session-consistency.svg",
+   "url": "/case-studies/family-therapy-session-consistency/",
+   "category": "health"
+  },
+  {
+   "title": "Grocery Delivery Operations App",
+   "excerpt": "Mobile app case study for Grocery Delivery Operations App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/grocery-delivery-operations-app.svg",
+   "url": "/case-studies/grocery-delivery-operations-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Home Healthcare Video Handoffs",
+   "excerpt": "Healthcare AI case study: Home Healthcare Video Handoffs. Better continuity between providers.",
+   "image": "/assets/imgs/generated/medical-case-studies/home-healthcare-video-handoffs.svg",
+   "url": "/case-studies/home-healthcare-video-handoffs/",
+   "category": "health"
+  },
+  {
+   "title": "Hospital Complaint Reduction Program",
+   "excerpt": "Healthcare AI case study: Hospital Complaint Reduction Program. Reduced avoidable complaint incidents.",
+   "image": "/assets/imgs/generated/medical-case-studies/hospital-complaint-reduction-program.svg",
+   "url": "/case-studies/hospital-complaint-reduction-program/",
+   "category": "health"
+  },
+  {
+   "title": "Hospitality Guest Journey App",
+   "excerpt": "Mobile app case study for Hospitality Guest Journey App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/hospitality-guest-journey-app.svg",
+   "url": "/case-studies/hospitality-guest-journey-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Insurance Care Management Audits",
+   "excerpt": "Healthcare AI case study: Insurance Care Management Audits. Better external review readiness.",
+   "image": "/assets/imgs/generated/medical-case-studies/insurance-care-management-audits.svg",
+   "url": "/case-studies/insurance-care-management-audits/",
+   "category": "health"
+  },
+  {
+   "title": "Insurance Claims Field App",
+   "excerpt": "Mobile app case study for Insurance Claims Field App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/insurance-claims-field-app.svg",
+   "url": "/case-studies/insurance-claims-field-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Language Learning Mobile Platform",
+   "excerpt": "Mobile app case study for Language Learning Mobile Platform with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/language-learning-mobile-platform.svg",
+   "url": "/case-studies/language-learning-mobile-platform/",
+   "category": "ai"
+  },
+  {
+   "title": "Last Mile Courier Intelligence App",
+   "excerpt": "Mobile app case study for Last Mile Courier Intelligence App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/last-mile-courier-intelligence-app.svg",
+   "url": "/case-studies/last-mile-courier-intelligence-app/",
+   "category": "ai"
+  },
+  {
+   "title": "MCP-Powered AI Receptionist Tooling for Agent Workflows",
+   "excerpt": "Case study: MCP-Powered AI Receptionist Tooling for Agent Workflows. Cleaner orchestration for AI agents and extensible automation paths.",
+   "image": "/assets/imgs/generated/job-case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows.svg",
+   "url": "/case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows/",
+   "category": "ai"
+  },
+  {
+   "title": "Micro Lending Mobile System",
+   "excerpt": "Mobile app case study for Micro Lending Mobile System with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/micro-lending-mobile-system.svg",
+   "url": "/case-studies/micro-lending-mobile-system/",
+   "category": "ai"
+  },
+  {
+   "title": "Multi-Lingual Intake Workflows",
+   "excerpt": "Healthcare AI case study: Multi-Lingual Intake Workflows. Reliable triage support in multilingual contexts.",
+   "image": "/assets/imgs/generated/medical-case-studies/multi-lingual-intake-workflows.svg",
+   "url": "/case-studies/multi-lingual-intake-workflows/",
+   "category": "health"
+  },
+  {
+   "title": "Multi-Tenant Lead Engine for Agencies",
+   "excerpt": "Case study: Multi-Tenant Lead Engine for Agencies. Secure client separation and scalable outbound operations under one platform.",
+   "image": "/assets/imgs/generated/job-case-studies/multi-tenant-lead-engine-for-agencies.svg",
+   "url": "/case-studies/multi-tenant-lead-engine-for-agencies/",
+   "category": "ai"
+  },
+  {
+   "title": "Neobank Onboarding Rebuild",
+   "excerpt": "Mobile app case study for Neobank Onboarding Rebuild with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/neobank-onboarding-rebuild.svg",
+   "url": "/case-studies/neobank-onboarding-rebuild/",
+   "category": "ai"
+  },
+  {
+   "title": "Next.js App Router Dashboard for Lead Operations",
+   "excerpt": "Case study: Next.js App Router Dashboard for Lead Operations. Centralized workflow management and improved operator visibility.",
+   "image": "/assets/imgs/generated/job-case-studies/nextjs-app-router-dashboard-for-lead-operations.svg",
+   "url": "/case-studies/nextjs-app-router-dashboard-for-lead-operations/",
+   "category": "ai"
+  },
+  {
+   "title": "NGO Crisis Counseling Scale-Up",
+   "excerpt": "Healthcare AI case study: NGO Crisis Counseling Scale-Up. Safer and more consistent response quality.",
+   "image": "/assets/imgs/generated/medical-case-studies/ngo-crisis-counseling-scale-up.svg",
+   "url": "/case-studies/ngo-crisis-counseling-scale-up/",
+   "category": "health"
+  },
+  {
+   "title": "Nurse Call Center QA",
+   "excerpt": "Healthcare AI case study: Nurse Call Center QA. Near-full coverage with targeted human review.",
+   "image": "/assets/imgs/generated/medical-case-studies/nurse-call-center-qa.svg",
+   "url": "/case-studies/nurse-call-center-qa/",
+   "category": "health"
+  },
+  {
+   "title": "Oncology Emotional Distress Flagging",
+   "excerpt": "Healthcare AI case study: Oncology Emotional Distress Flagging. Earlier psychosocial referrals in care plans.",
+   "image": "/assets/imgs/generated/medical-case-studies/oncology-emotional-distress-flagging.svg",
+   "url": "/case-studies/oncology-emotional-distress-flagging/",
+   "category": "health"
+  },
+  {
+   "title": "Outbound Voice Demo System with Retell AI",
+   "excerpt": "Case study: Outbound Voice Demo System with Retell AI. Faster demo activation and stronger sales conversations with real voice proof.",
+   "image": "/assets/imgs/generated/job-case-studies/outbound-voice-demo-system-with-retell-ai.svg",
+   "url": "/case-studies/outbound-voice-demo-system-with-retell-ai/",
+   "category": "ai"
+  },
+  {
+   "title": "Pediatric Counseling Training",
+   "excerpt": "Healthcare AI case study: Pediatric Counseling Training. Faster onboarding to acceptable quality standards.",
+   "image": "/assets/imgs/generated/medical-case-studies/pediatric-counseling-training.svg",
+   "url": "/case-studies/pediatric-counseling-training/",
+   "category": "health"
+  },
+  {
+   "title": "Post-Discharge Wellness Monitoring",
+   "excerpt": "Healthcare AI case study: Post-Discharge Wellness Monitoring. Earlier intervention for vulnerable patients.",
+   "image": "/assets/imgs/generated/medical-case-studies/post-discharge-wellness-monitoring.svg",
+   "url": "/case-studies/post-discharge-wellness-monitoring/",
+   "category": "health"
+  },
+  {
+   "title": "Property Inspection Mobile Toolkit",
+   "excerpt": "Mobile app case study for Property Inspection Mobile Toolkit with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/property-inspection-mobile-toolkit.svg",
+   "url": "/case-studies/property-inspection-mobile-toolkit/",
+   "category": "ai"
+  },
+  {
+   "title": "Psychiatric Intake Standardization",
+   "excerpt": "Healthcare AI case study: Psychiatric Intake Standardization. More consistent first-assessment quality.",
+   "image": "/assets/imgs/generated/medical-case-studies/psychiatric-intake-standardization.svg",
+   "url": "/case-studies/psychiatric-intake-standardization/",
+   "category": "health"
+  },
+  {
+   "title": "Queue-First Outreach Architecture with Failure Recovery",
+   "excerpt": "Case study: Queue-First Outreach Architecture with Failure Recovery. More resilient outbound execution and clearer operational auditability.",
+   "image": "/assets/imgs/generated/job-case-studies/queue-first-outreach-architecture-with-failure-recovery.svg",
+   "url": "/case-studies/queue-first-outreach-architecture-with-failure-recovery/",
+   "category": "ai"
+  },
+  {
+   "title": "Readmission Risk Communication Lens",
+   "excerpt": "Healthcare AI case study: Readmission Risk Communication Lens. Improved callback targeting for at-risk patients.",
+   "image": "/assets/imgs/generated/medical-case-studies/readmission-risk-communication-lens.svg",
+   "url": "/case-studies/readmission-risk-communication-lens/",
+   "category": "health"
+  },
+  {
+   "title": "Rehab Progress Communication Tracking",
+   "excerpt": "Healthcare AI case study: Rehab Progress Communication Tracking. More personalized therapy adjustments.",
+   "image": "/assets/imgs/generated/medical-case-studies/rehab-progress-communication-tracking.svg",
+   "url": "/case-studies/rehab-progress-communication-tracking/",
+   "category": "health"
+  },
+  {
+   "title": "Rural Mental Health Access",
+   "excerpt": "Healthcare AI case study: Rural Mental Health Access. Consistent screening despite unstable internet.",
+   "image": "/assets/imgs/generated/medical-case-studies/rural-mental-health-access.svg",
+   "url": "/case-studies/rural-mental-health-access/",
+   "category": "health"
+  },
+  {
+   "title": "Smart Classroom Parent App",
+   "excerpt": "Mobile app case study for Smart Classroom Parent App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/smart-classroom-parent-app.svg",
+   "url": "/case-studies/smart-classroom-parent-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Substance Recovery Check-In Assist",
+   "excerpt": "Healthcare AI case study: Substance Recovery Check-In Assist. Earlier intervention triggers for counselors.",
+   "image": "/assets/imgs/generated/medical-case-studies/substance-recovery-check-in-assist.svg",
+   "url": "/case-studies/substance-recovery-check-in-assist/",
+   "category": "health"
+  },
+  {
+   "title": "Supabase-Powered SaaS Backend with Tenant Isolation",
+   "excerpt": "Case study: Supabase-Powered SaaS Backend with Tenant Isolation. Production-ready foundation for scaling SaaS workflows safely.",
+   "image": "/assets/imgs/generated/job-case-studies/supabase-powered-saas-backend-with-tenant-isolation.svg",
+   "url": "/case-studies/supabase-powered-saas-backend-with-tenant-isolation/",
+   "category": "ai"
+  },
+  {
+   "title": "Telehealth Supervisor Copilot",
+   "excerpt": "Healthcare AI case study: Telehealth Supervisor Copilot. Review efficiency improved substantially.",
+   "image": "/assets/imgs/generated/medical-case-studies/telehealth-supervisor-copilot.svg",
+   "url": "/case-studies/telehealth-supervisor-copilot/",
+   "category": "health"
+  },
+  {
+   "title": "Telepsychiatry Intake Triage",
+   "excerpt": "Healthcare AI case study: Telepsychiatry Intake Triage. Priority cases surfaced same day for clinical review.",
+   "image": "/assets/imgs/generated/medical-case-studies/telepsychiatry-intake-triage.svg",
+   "url": "/case-studies/telepsychiatry-intake-triage/",
+   "category": "health"
+  },
+  {
+   "title": "Travel Concierge Ar Companion",
+   "excerpt": "Mobile app case study for Travel Concierge Ar Companion with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/travel-concierge-ar-companion.svg",
+   "url": "/case-studies/travel-concierge-ar-companion/",
+   "category": "ai"
+  },
+  {
+   "title": "University Counseling Triage",
+   "excerpt": "Healthcare AI case study: University Counseling Triage. Faster student routing without replacing clinicians.",
+   "image": "/assets/imgs/generated/medical-case-studies/university-counseling-triage.svg",
+   "url": "/case-studies/university-counseling-triage/",
+   "category": "health"
+  },
+  {
+   "title": "Usage-Limit and Plan-Controlled SaaS Monetization",
+   "excerpt": "Case study: Usage-Limit and Plan-Controlled SaaS Monetization. Better cost governance and cleaner pricing-tier enforcement.",
+   "image": "/assets/imgs/generated/job-case-studies/usage-limit-and-plan-controlled-saas-monetization.svg",
+   "url": "/case-studies/usage-limit-and-plan-controlled-saas-monetization/",
+   "category": "ai"
+  },
+  {
+   "title": "Value-Based Care Communication KPI",
+   "excerpt": "Healthcare AI case study: Value-Based Care Communication KPI. Better quality reporting in value-based models.",
+   "image": "/assets/imgs/generated/medical-case-studies/value-based-care-communication-kpi.svg",
+   "url": "/case-studies/value-based-care-communication-kpi/",
+   "category": "health"
+  },
+  {
+   "title": "Virtual Primary Care Quality Layer",
+   "excerpt": "Healthcare AI case study: Virtual Primary Care Quality Layer. Supervisor time focused on highest-impact sessions.",
+   "image": "/assets/imgs/generated/medical-case-studies/virtual-primary-care-quality-layer.svg",
+   "url": "/case-studies/virtual-primary-care-quality-layer/",
+   "category": "health"
+  },
+  {
+   "title": "Warehouse Picking Mobile Workflow",
+   "excerpt": "Mobile app case study for Warehouse Picking Mobile Workflow with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/warehouse-picking-mobile-workflow.svg",
+   "url": "/case-studies/warehouse-picking-mobile-workflow/",
+   "category": "ai"
+  },
+  {
+   "title": "Women Wellness Habit Mobile App",
+   "excerpt": "Mobile app case study for Women Wellness Habit Mobile App with strategy, UX, architecture, and measurable outcomes.",
+   "image": "/assets/imgs/generated/case-studies/women-wellness-habit-mobile-app.svg",
+   "url": "/case-studies/women-wellness-habit-mobile-app/",
+   "category": "ai"
+  },
+  {
+   "title": "Women\u2019s Telehealth Communication Safety",
+   "excerpt": "Healthcare AI case study: Women\u2019s Telehealth Communication Safety. Better supervisor visibility on patient experience quality.",
+   "image": "/assets/imgs/generated/medical-case-studies/womens-telehealth-communication-safety.svg",
+   "url": "/case-studies/womens-telehealth-communication-safety/",
+   "category": "health"
+  }
+ ]
 }

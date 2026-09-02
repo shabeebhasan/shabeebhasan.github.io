@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#312e81"/><stop offset="100%" stop-color="#0e7490"/>
+  </linearGradient></defs>
+  <rect width="1600" height="900" fill="url(#g)"/>
+  <circle cx="1250" cy="180" r="220" fill="rgba(255,255,255,0.16)"/>
+  <circle cx="280" cy="760" r="260" fill="rgba(255,255,255,0.10)"/>
+  <rect x="120" y="130" width="1360" height="640" rx="26" fill="rgba(10,14,28,0.26)"/>
+  <text x="180" y="300" font-family="Merriweather, Georgia, serif" font-size="62" font-weight="700" fill="#ffffff">OCR That Outlived</text>
+  <text x="180" y="376" font-family="Merriweather, Georgia, serif" font-size="62" font-weight="700" fill="#ffffff">Its Rewrite Cycles</text>
+  <text x="180" y="446" font-family="Manrope, Arial, sans-serif" font-size="34" fill="#f1f5f9">Case Study: OCR & Document Intelligence</text>
+  <text x="180" y="710" font-family="Manrope, Arial, sans-serif" font-size="26" fill="#e2e8f0">shabeeb.baydot.net</text>
+</svg>

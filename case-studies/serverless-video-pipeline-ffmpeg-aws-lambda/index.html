@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Video at Serverless Scale: FFmpeg on AWS Lambda | Shabeeb Hasan</title>
+  <meta name="description" content="Five years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/">
+  <meta property="og:title" content="Video at Serverless Scale: FFmpeg on AWS Lambda | Shabeeb Hasan">
+  <meta property="og:description" content="Five years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Video at Serverless Scale: FFmpeg on AWS Lambda",
+      "description": "Five years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Video at Serverless Scale: FFmpeg on AWS Lambda</h1>
+    <p class="content-excerpt">Five years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.</p>
+    <img src="/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg" alt="Video at Serverless Scale: FFmpeg on AWS Lambda" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>aws lambda</span><span>ffmpeg</span><span>ec2 auto-scaling</span><span>s3 / api gateway</span><span>media pipelines</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>In 2016, running FFmpeg inside AWS Lambda was an odd idea — the runtime was constrained, binaries had to be packaged by hand, and most teams defaulted to always-on servers. A client with a media product wanted encoding that cost nothing while idle and scaled instantly under load.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>FFmpeg-on-Lambda encoding</strong>: packaged binaries, tuned memory/duration trade-offs, S3 in, S3 out, API Gateway in front.</li>
+        <li><strong>An EC2 overflow tier</strong> for jobs beyond Lambda's limits, scaled up and torn down automatically.</li>
+        <li><strong>Successive revisions across seven contracts</strong> as formats, volumes and AWS itself changed — the same client returning from 2016 to 2021.</li>
+        <li><strong>Adjacent serverless work</strong> the pattern unlocked: ImageMagick GIF pipelines, Python ETL, DynamoDB backends, Zoho integrations.</li>
+      </ul>
+      <div class="metric-grid">
+        <div class="metric"><strong>7</strong><span>contracts with the same client on this pipeline</span></div>
+        <div class="metric"><strong>5 yrs</strong><span>relationship span, 2016–2021</span></div>
+        <div class="metric"><strong>20+</strong><span>AWS contracts delivered since 2016</span></div>
+        <div class="metric"><strong>$0</strong><span>idle cost — the point of going serverless</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>Media infrastructure earns trust by being boring: predictable costs, observable failures, retries that work. The measure of this system is not a benchmark — it is a client who came back seven times over five years to grow it.</p>
+    </article>
+    <section class="lead-box"><h2>Need Media or Data Pipelines on AWS?</h2><p>Lambda, FFmpeg, queues, auto-scaling workers — I have run this stack in production since 2016. If your processing bill or your reliability worries you, let's talk.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Project%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
+</body>
+</html>
