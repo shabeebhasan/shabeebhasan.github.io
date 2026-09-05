@@ -2,3 +2,6 @@ User-agent: *
 Allow: /
 
 Sitemap: https://shabeeb.baydot.net/sitemap.xml
+
+# Machine-readable summary for AI assistants
+# https://shabeeb.baydot.net/llms.txt

@@ -67,7 +67,7 @@
     },
     {
       id: "about", kw: ["who", "about", "experience", "since", "years", "trust", "reliable", "portfolio", "upwork", "rating", "reviews"],
-      a: "I'm Shabeeb Hasan — Top Rated Plus on Upwork with 100% Job Success, 116 projects, 4,900+ hours and a 5.0 rating over 14+ years, with an MPhil and MS in Computer Science. Scroll up for portfolio and case studies.",
+      a: "I'm Shabeeb Hasan — Top Rated on Upwork with 100% Job Success, 133 completed contracts, 106 five-star reviews and a 5.0 rating over 14+ years, with an MPhil and MS in Computer Science. Scroll up for portfolio and case studies.",
       chips: ["Services", "Book a call"]
     },
     {

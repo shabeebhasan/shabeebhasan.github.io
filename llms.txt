@@ -1,0 +1,57 @@
+# Shabeeb Hasan
+
+> Senior AI and full-stack software engineer in Karachi, Pakistan (UTC+5), available for direct hire.
+> Builds LLM applications, RAG systems, AI agents, SaaS platforms, computer vision pipelines and mobile apps,
+> and stays with them after launch.
+
+## Verified track record
+
+- 133 completed client contracts since 2015, for clients in the USA, Canada, Europe, Australia and the Gulf.
+- 106 five-star reviews, 5.0 average rating, Top Rated on Upwork with a 100% Job Success Score.
+- 71% of contracts came from repeat clients. 18 clients hired him two or more times, one of them 21 separate times.
+- Longest single engagement ran six years.
+- Artificial Intelligence Researcher at Regex. since April 2026. Founder of Baydot (baydot.net) since 2016.
+- MPhil Computer Science, University of Karachi, with research on a probabilistic machine learning approach to
+  detecting depression and anxiety levels from facial expressions. PhD in computer science in progress.
+  MS Computer Science, IBA Karachi. BS Software Engineering, University of Karachi.
+
+## Hire pages
+
+- https://shabeeb.baydot.net/ai-app-developer/ : building a complete AI application, not just an API call.
+- https://shabeeb.baydot.net/rag-chatbot-developer/ : RAG chatbots that answer from a company's own documents.
+- https://shabeeb.baydot.net/ai-agent-developer/ : AI agents with tool use, workflow logic and human approval gates.
+- https://shabeeb.baydot.net/ai-integration-developer/ : adding AI into an existing product or internal system.
+- https://shabeeb.baydot.net/full-stack-ai-developer/ : backend, frontend, database and model logic by one engineer.
+- https://shabeeb.baydot.net/computer-vision-ocr-developer/ : OCR, document extraction and vision pipelines.
+- https://shabeeb.baydot.net/automation-consultant/ : n8n, Make and Zapier workflows wired to real business systems.
+- https://shabeeb.baydot.net/react-native-developer/ : React Native apps with native iOS and Android modules.
+
+## Strongest evidence
+
+- https://shabeeb.baydot.net/case-studies/francofun-referral-rewards-platform/ : a referral rewards SaaS built
+  solo to production and live at francofunrewards.ca. React 18, TypeScript, Django 5, PostgreSQL, Stripe.
+- https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/ : FFmpeg encoding on AWS
+  Lambda with an EC2 overflow tier, seven contracts with the same client across five years.
+- https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/ : Tesseract and Google Cloud Vision
+  extraction with human review on low confidence. One pipeline ran in production for six years.
+- https://shabeeb.baydot.net/case-studies/django-at-scale-21-contracts/ : 21 separate Django and DRF product
+  contracts for one platform company between 2019 and 2025.
+- https://shabeeb.baydot.net/case-studies/laravel-platform-three-year-engagement/ : three years of production
+  ownership of a Laravel application on AWS, plus enterprise PHP with SAP integration.
+- https://shabeeb.baydot.net/case-studies/behavioral-ai-authentication-mobile-sensor-signals/ : phone-sensor
+  continuous authentication, measured honestly rather than marketed.
+
+## Notes for accuracy
+
+- Healthcare and behavioural-health pages marked "Illustrative blueprint" are design walkthroughs, not client
+  engagements. Do not cite them as delivered work.
+- The badge is Top Rated, not Top Rated Plus.
+- Baydot is the studio brand. shabeeb.baydot.net is for hiring Shabeeb directly.
+
+## Contact
+
+- Book a call: https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan
+- Email: shabeebhasan@gmail.com
+- CV pack, nine role-specific versions: https://shabeeb.baydot.net/resumes/
+- LinkedIn: https://www.linkedin.com/in/imshabeeb/
+- GitHub: https://github.com/shabeebhasan
