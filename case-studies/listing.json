@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "Dovia: Healthcare Marketplace Modernization",
+   "excerpt": "One Laravel backend, a React web experience and two React Native clients. Modernizing patient booking, professional workflows and API security, with actual product screenshots and explicit release gates.",
+   "image": "/assets/imgs/case-studies/dovia/00-dovia-cover.png",
+   "url": "/case-studies/dovia-healthcare-marketplace/",
+   "category": "health"
+  },
+  {
    "title": "Medicine Donation Marketplace, Privacy by Design",
    "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals \u2014 with server-enforced prescription and expiry rules and a vision check that fails to human review.",
    "image": "/assets/imgs/case-studies/medishare/medishare-hero.jpg",

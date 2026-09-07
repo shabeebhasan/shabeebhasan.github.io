@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dovia: Healthcare Marketplace Modernization | Shabeeb Hasan</title>
+  <meta name="description" content="Modernizing a healthcare marketplace across Laravel, React and two React Native apps: patient booking, doctor workflows, shared APIs and security regression tests.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/dovia-healthcare-marketplace/">
+  <meta property="og:title" content="Dovia: Healthcare Marketplace Modernization">
+  <meta property="og:description" content="One shared backend, connected patient and doctor experiences, and a complete visual rebrand. Explore the engineering and actual product screenshots.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/dovia-healthcare-marketplace/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/dovia/00-dovia-cover.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/dovia/00-dovia-cover.png">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <style>
+    .dovia-gallery{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin:28px 0}
+    .dovia-gallery figure{margin:0;min-width:0}.dovia-gallery img{width:100%;height:auto;border:1px solid #dae1e7;border-radius:14px;background:#f4f7fa}
+    .dovia-gallery figcaption{font-size:13px;line-height:1.6;margin-top:12px;color:#566575}
+    .dovia-phone{display:flex;gap:32px;align-items:center;background:#f3f6f9;padding:28px;border-radius:18px;margin:30px 0}
+    .dovia-phone img{width:195px;max-width:45%;height:auto;border:5px solid #193750;border-radius:22px}
+    .dovia-phone p{margin-bottom:0}.dovia-label{font-size:12px;letter-spacing:1.6px;text-transform:uppercase;color:#8d621f;font-weight:700}
+    @media(max-width:650px){.dovia-gallery{grid-template-columns:1fr}.dovia-phone{gap:18px;padding:18px}.dovia-phone h3{font-size:19px}}
+  </style>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"Article","headline":"Dovia: Healthcare Marketplace Modernization","author":{"@type":"Person","name":"Shabeeb Hasan","url":"https://shabeeb.baydot.net/"},"datePublished":"2026-09-07","dateModified":"2026-09-07","image":"https://shabeeb.baydot.net/assets/imgs/case-studies/dovia/00-dovia-cover.png","mainEntityOfPage":"https://shabeeb.baydot.net/case-studies/dovia-healthcare-marketplace/"}
+  </script>
+  <link rel="stylesheet" href="/assets/css/assistant.css">
+  <script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a><a href="/case-studies/">Case studies</a></div></nav>
+  <main class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <p class="dovia-label">Full-stack engineering · Product modernization</p>
+    <h1 class="content-title">Dovia: healthcare, closer to people.</h1>
+    <p class="content-excerpt">Modernizing a doctor-on-demand product means more than replacing its screens. The patient, the professional and the backend all need to agree on what happens next.</p>
+    <img src="/assets/imgs/case-studies/dovia/00-dovia-cover.png" alt="Dovia's actual patient dashboard and responsive web consultation view in a portfolio presentation" class="hero-image" fetchpriority="high">
+    <div class="tag-row"><span>Laravel 13</span><span>React 19</span><span>React Native</span><span>Passport authentication</span><span>MySQL</span><span>API security</span></div>
+    <article class="content-article">
+      <h2>The starting point</h2>
+      <p>An existing 2018–2020 healthcare codebase connected two mobile applications to a Laravel API. It needed a modern web experience, an updated mobile foundation and a coherent identity without breaking the contract its clients already depended on.</p>
+      <p>My work focused on that modernization: the Dovia patient and web identity, Dovia Pro for professionals, a React frontend integrated into Laravel, mobile compatibility work, and regression coverage around sensitive flows. This case study builds on an existing product; it is not a claim that the original application was authored from scratch.</p>
+
+      <h2>One backend, three clients</h2>
+      <p>Laravel serves the React web application and the API used by both React Native clients. The web frontend can run on the same origin as the API, while patient and doctor roles get different navigation and workflows. Existing endpoint names and response envelopes are preserved across clients.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>3 clients</strong><span>Web, patient mobile and doctor mobile</span></div>
+        <div class="metric"><strong>96</strong><span>Backend tests passing in the release check</span></div>
+        <div class="metric"><strong>12</strong><span>Web API and location regression tests</span></div>
+        <div class="metric"><strong>11</strong><span>Mobile runtime and brand tests</span></div>
+      </div>
+      <p>These are test-suite counts, not a statement of complete end-to-end or production coverage.</p>
+
+      <h2>A consultation journey people can follow</h2>
+      <p>Patients sign in, confirm their location, search nearby professionals and submit an immediate or scheduled consultation request. Doctors have their own workspace for requests and consultation status. History separates pending, active, completed and cancelled appointments. Profiles, care preferences and medication-request screens share the same identity.</p>
+      <div class="dovia-gallery">
+        <figure><a href="/assets/imgs/case-studies/dovia/01-sign-in.png"><img src="/assets/imgs/case-studies/dovia/01-sign-in.png" alt="Dovia sign-in with patient and doctor role choices" loading="lazy"></a><figcaption>01 / A shared entry point with separate patient and professional roles.</figcaption></figure>
+        <figure><a href="/assets/imgs/case-studies/dovia/03-consultation-history.png"><img src="/assets/imgs/case-studies/dovia/03-consultation-history.png" alt="Completed consultation history using synthetic patient and doctor records" loading="lazy"></a><figcaption>02 / Consultation history with status filters and accessible details.</figcaption></figure>
+        <figure><a href="/assets/imgs/case-studies/dovia/04-booking.png"><img src="/assets/imgs/case-studies/dovia/04-booking.png" alt="Consultation form with explicitly confirmed map coordinates" loading="lazy"></a><figcaption>03 / A real booking form, subsequently submitted successfully in the isolated demo.</figcaption></figure>
+        <figure><a href="/assets/imgs/case-studies/dovia/06-doctor-workspace.png"><img src="/assets/imgs/case-studies/dovia/06-doctor-workspace.png" alt="Doctor dashboard displaying a nearby synthetic consultation request" loading="lazy"></a><figcaption>04 / The professional workspace, showing the other side of the request.</figcaption></figure>
+      </div>
+
+      <h2>The location should be true, not convenient</h2>
+      <p>A default map centre is useful for display. It is not evidence of where a patient is. The web flow now keeps location empty until GPS succeeds or the user explicitly confirms a point. A late GPS error cannot erase a manually confirmed selection. Regression tests cover that race as well as permission denial.</p>
+      <div class="dovia-phone">
+        <img src="/assets/imgs/case-studies/dovia/05-responsive-web.png" alt="390-pixel responsive web consultation view; this is not a native mobile app capture" loading="lazy" width="390" height="844">
+        <div><h3>A usable small-screen flow</h3><p>The responsive web consultation view was checked at 390px without horizontal overflow. This screenshot shows the web app; the separate React Native applications have their own build and device-verification requirements.</p></div>
+      </div>
+
+      <h2>Security work behind the interface</h2>
+      <p>Profile and location updates cannot promote an account into a doctor or change protected identity fields. Generic patient appointment updates cannot rewrite charges or collected money. Payment methods are owner-scoped, and consultation transitions validate the actor and current state.</p>
+      <p>Billing work includes linking Stripe checkout sessions to the correct subscription, mapping PayPal renewal events through their agreement identifier, and reserving a durable card-charge attempt before contacting the provider. If the outcome is uncertain, the application blocks another capture instead of blindly retrying. Provider reconciliation remains a release gate.</p>
+
+      <h2>What is demonstrated, and what remains</h2>
+      <p>The screenshots come from the running Laravel/React application using an isolated database with synthetic accounts. Browser checks exercised patient login, location confirmation, nearby search, consultation creation and history, plus the doctor dashboard. Automated checks also cover real mobile booking and polling methods in isolation; both Android JavaScript bundles build.</p>
+      <div class="cs-note"><p><strong>Development-stage case study.</strong> Live payments, email and professional-verification providers still need environment-specific validation. Native-device lifecycle testing, remaining dependency advisories, push delivery and timezone hardening are tracked separately. Video, chat, pharmacy fulfilment and family accounts are not presented as delivered. No real patient usage or clinical/compliance certification is claimed.</p></div>
+      <h2>What this project shows</h2>
+      <p>The ability to improve an existing multi-client product without hiding its constraints: preserving shared APIs, modernizing the interface, finding authorization bugs and turning those findings into tests another engineer can rerun.</p>
+    </article>
+    <section class="lead-box"><h2>Have an existing app that needs a fresh start?</h2><p>I can help modernize your Laravel, React or React Native product, from the user journey to the backend boundaries.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book a Consultation</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=App%20Modernization">Discuss Your Project</a></div></section>
+  </div></main>
+</body>
+</html>

@@ -28,6 +28,10 @@
 
 ## Strongest evidence
 
+- https://shabeeb.baydot.net/case-studies/dovia-healthcare-marketplace/ : development-stage healthcare
+  marketplace modernization across Laravel, React and two React Native clients; actual demo screenshots
+  and regression tests. Not a claim of live payment readiness or clinical certification.
+
 - https://shabeeb.baydot.net/case-studies/francofun-referral-rewards-platform/ : a referral rewards SaaS built
   solo to production and live at francofunrewards.ca. React 18, TypeScript, Django 5, PostgreSQL, Stripe.
 - https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/ : FFmpeg encoding on AWS
