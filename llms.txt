@@ -9,7 +9,7 @@
 - 133 completed client contracts since 2015, for clients in the USA, Canada, Europe, Australia and the Gulf.
 - 106 five-star reviews, 5.0 average rating, Top Rated on Upwork with a 100% Job Success Score.
 - 71% of contracts came from repeat clients. 18 clients hired him two or more times, one of them 21 separate times.
-- Longest single engagement ran six years.
+- One client hired him 21 times between 2019 and 2025; 18 clients hired him two or more times.
 - Artificial Intelligence Researcher at Regex. since April 2026. Founder of Baydot (baydot.net) since 2016.
 - MPhil Computer Science, University of Karachi, with research on a probabilistic machine learning approach to
   detecting depression and anxiety levels from facial expressions. PhD in computer science in progress.
@@ -35,13 +35,13 @@
 - https://shabeeb.baydot.net/case-studies/francofun-referral-rewards-platform/ : a referral rewards SaaS built
   solo to production and live at francofunrewards.ca. React 18, TypeScript, Django 5, PostgreSQL, Stripe.
 - https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/ : FFmpeg encoding on AWS
-  Lambda with an EC2 overflow tier, seven contracts with the same client across five years.
-- https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/ : Tesseract and Google Cloud Vision
-  extraction with human review on low confidence. One pipeline ran in production for six years.
-- https://shabeeb.baydot.net/case-studies/django-at-scale-21-contracts/ : 21 separate Django and DRF product
-  contracts for one platform company between 2019 and 2025.
-- https://shabeeb.baydot.net/case-studies/laravel-platform-three-year-engagement/ : three years of production
-  ownership of a Laravel application on AWS, plus enterprise PHP with SAP integration.
+  Lambda with an EC2 overflow tier, seven contracts with the same client across four years.
+- https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/ : Google Vision and Google Document AI
+  extraction for a document scanning app, and passport and licence OCR behind a React Native app.
+- https://shabeeb.baydot.net/case-studies/django-at-scale-21-contracts/ : 21 backend and frontend product
+  contracts for one platform company that builds on Django and React, between 2019 and 2025.
+- https://shabeeb.baydot.net/case-studies/laravel-platform-three-year-engagement/ : a Laravel API behind a doctor
+  and patient app pair (three contracts, 2018 to 2020), a Laravel deployment on AWS, and enterprise PHP with SAP.
 - https://shabeeb.baydot.net/case-studies/behavioral-ai-authentication-mobile-sensor-signals/ : phone-sensor
   continuous authentication, measured honestly rather than marketed.
 

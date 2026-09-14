@@ -9,14 +9,14 @@
   },
   {
    "title": "Medicine Donation Marketplace, Privacy by Design",
-   "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals \u2014 with server-enforced prescription and expiry rules and a vision check that fails to human review.",
+   "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals — with server-enforced prescription and expiry rules and a vision check that fails to human review.",
    "image": "/assets/imgs/case-studies/medishare/medishare-hero.jpg",
    "url": "/case-studies/medicine-donation-marketplace-privacy-by-design/",
    "category": "health"
   },
   {
-   "title": "Ethos Guard \u2014 Responsible Speech Analytics",
-   "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech \u2014 negation-aware, identity-safe, advisory by design.",
+   "title": "Ethos Guard — Responsible Speech Analytics",
+   "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, advisory by design.",
    "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",
    "url": "/case-studies/ethos-guard-responsible-speech-analytics/",
    "category": "ai"
@@ -37,42 +37,42 @@
   },
   {
    "title": "On-Device Video Compression Pipeline",
-   "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone \u2014 one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
+   "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone — one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
    "image": "/assets/imgs/case-studies/clip-studio/clip-studio-card.jpg",
    "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
    "category": "ai"
   },
   {
    "title": "A Referral Rewards SaaS, Built Solo to Production",
-   "excerpt": "francofunrewards.ca, live: a bilingual partner-referral platform for a Canadian tutoring company \u2014 React 18 + TypeScript, Django 5/DRF, PostgreSQL and Stripe, architected, built, deployed and maintained by one engineer.",
+   "excerpt": "francofunrewards.ca, live: a bilingual partner-referral platform for a Canadian tutoring company — React 18 + TypeScript, Django 5/DRF, PostgreSQL and Stripe, architected, built, deployed and maintained by one engineer.",
    "image": "/assets/imgs/generated/case-studies/francofun-referral-rewards-platform.svg",
    "url": "/case-studies/francofun-referral-rewards-platform/",
    "category": "ai"
   },
   {
    "title": "Video at Serverless Scale: FFmpeg on AWS Lambda",
-   "excerpt": "Five years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
+   "excerpt": "Four years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
    "image": "/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg",
    "url": "/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/",
    "category": "ai"
   },
   {
-   "title": "OCR That Outlived Its Rewrite Cycles",
-   "excerpt": "A document-scan pipeline maintained for six years for one client, plus a Tesseract / Google Cloud Vision OCR API for business cards \u2014 extraction work measured in years of production, not demos.",
+   "title": "Document Extraction Backends: Google Vision, Document AI and Passport OCR",
+   "excerpt": "Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.",
    "image": "/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg",
    "url": "/case-studies/ocr-document-intelligence-pipeline/",
    "category": "ai"
   },
   {
-   "title": "Three Years Inside One Laravel Codebase",
-   "excerpt": "A production Laravel application on AWS, maintained and extended continuously from 2018 to 2021 for the same client \u2014 plus a Laravel backend for a doctor-patient mobile app and enterprise PHP with SAP integration.",
+   "title": "Laravel and PHP Backends: a Doctor-Patient Platform, AWS and Enterprise SAP",
+   "excerpt": "A Laravel API behind a doctor and patient app pair, built and extended across three contracts from 2018 to 2020, a Laravel deployment on AWS for a long-standing client, and enterprise PHP with SAP integration in Germany.",
    "image": "/assets/imgs/generated/case-studies/laravel-platform-three-year-engagement.svg",
    "url": "/case-studies/laravel-platform-three-year-engagement/",
    "category": "ai"
   },
   {
    "title": "Django at Scale: 21 Contracts for One Platform",
-   "excerpt": "Between 2019 and 2025 one platform company hired me 21 separate times for Django/DRF product work \u2014 parallel client apps, shared standards, and delivery consistent enough to keep earning the next contract.",
+   "excerpt": "Between 2019 and 2025 one platform company hired me 21 separate times for backend and frontend product work on their Django and React platform — parallel client apps, shared standards, and delivery consistent enough to keep earning the next contract.",
    "image": "/assets/imgs/generated/case-studies/django-at-scale-21-contracts.svg",
    "url": "/case-studies/django-at-scale-21-contracts/",
    "category": "ai"
@@ -512,8 +512,8 @@
    "category": "ai"
   },
   {
-   "title": "Women\u2019s Telehealth Communication Safety",
-   "excerpt": "Healthcare AI case study: Women\u2019s Telehealth Communication Safety. Better supervisor visibility on patient experience quality.",
+   "title": "Women’s Telehealth Communication Safety",
+   "excerpt": "Healthcare AI case study: Women’s Telehealth Communication Safety. Better supervisor visibility on patient experience quality.",
    "image": "/assets/imgs/generated/medical-case-studies/womens-telehealth-communication-safety.svg",
    "url": "/case-studies/womens-telehealth-communication-safety/",
    "category": "health"
