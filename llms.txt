@@ -35,7 +35,7 @@
 - https://shabeeb.baydot.net/case-studies/francofun-referral-rewards-platform/ : a referral rewards SaaS built
   solo to production and live at francofunrewards.ca. React 18, TypeScript, Django 5, PostgreSQL, Stripe.
 - https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/ : FFmpeg encoding on AWS
-  Lambda with an EC2 overflow tier, seven contracts with the same client across four years.
+  Lambda with an EC2 overflow tier, six contracts with the same client between 2016 and 2018.
 - https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/ : Google Vision and Google Document AI
   extraction for a document scanning app, and passport and licence OCR behind a React Native app.
 - https://shabeeb.baydot.net/case-studies/django-at-scale-21-contracts/ : 21 backend and frontend product

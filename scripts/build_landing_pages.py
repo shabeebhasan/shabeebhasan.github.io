@@ -138,7 +138,7 @@ PAGES = {
     ("Hand over the controls", "Your team can see runs, rerun a failure and change the parts that change often, without calling me.")],
   stack="n8n, Make, Zapier, Python, FastAPI, Node.js, PostgreSQL, Supabase, Stripe, MailerLite, HubSpot and GoHighLevel APIs, webhooks, Docker",
   proof=[("serverless-video-pipeline-ffmpeg-aws-lambda", "Serverless media pipelines on AWS",
-          "Queues, auto-scaling workers and retry behaviour, refined across four years with the same client."),
+          "Queues, auto-scaling workers and retry behaviour, refined across six contracts with the same client."),
          ("ocr-document-intelligence-pipeline", "OCR and document intelligence",
           "Google Vision and Document AI extraction with field structuring on top, so the output is data rather than text.")],
   faq=[("How do I know an automation is worth building?",

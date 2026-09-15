@@ -51,7 +51,7 @@
   },
   {
    "title": "Video at Serverless Scale: FFmpeg on AWS Lambda",
-   "excerpt": "Four years and seven contracts with one client: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
+   "excerpt": "Six contracts with one client between 2016 and 2018: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
    "image": "/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg",
    "url": "/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/",
    "category": "ai"
