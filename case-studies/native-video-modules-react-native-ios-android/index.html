@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Native iOS and Android Video Modules inside a React Native App | Shabeeb Hasan</title>
+  <meta name="description" content="Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/native-video-modules-react-native-ios-android/">
+  <meta property="og:title" content="Native iOS and Android Video Modules inside a React Native App | Shabeeb Hasan">
+  <meta property="og:description" content="Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/native-video-modules-react-native-ios-android/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/native-video-modules-react-native-ios-android.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Native iOS and Android Video Modules inside a React Native App",
+      "description": "Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/native-video-modules-react-native-ios-android/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/native-video-modules-react-native-ios-android.png"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Native iOS and Android Video Modules inside a React Native App</h1>
+    <p class="content-excerpt">Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.</p>
+    <img src="/assets/imgs/generated/case-studies/native-video-modules-react-native-ios-android.png" alt="Architecture diagram: React Native app, native module bridge, native video code, with the Android MediaCodec contract and the iOS and Android overlay contract underneath" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>react native</span><span>native modules</span><span>android mediacodec</span><span>ios</span><span>video processing</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>The client's React Native app records video. Two problems arrived a year apart. First, recordings were too large to upload comfortably from a phone. Then the product needed layers rendered onto the video itself, and JavaScript could not do that work at frame rate. Both times the answer was the same shape: keep the app in React Native, do the heavy work in native code, and expose it through a small typed API the app team can call like any other component.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>Contract one, 2025: Android transcoding and compression.</strong> A native module built on MediaCodec that shrinks large recordings on the device before upload, wired into the existing app without changing how the JavaScript side records.</li>
+        <li><strong>Contract two, 2026: overlay and baking on both platforms.</strong> Layers rendered onto the video track in native code, AVFoundation on iOS and MediaCodec on Android, so the output is a single burned-in video rather than a preview that only looks right inside the app.</li>
+        <li><strong>One bridge, one API.</strong> Each capability is a React Native module with a small typed surface, so the app team calls it from JavaScript and never touches Swift or Kotlin.</li>
+      </ul>
+      <div class="metric-grid">
+        <div class="metric"><strong>2</strong><span>contracts for the same client, 2025 and 2026</span></div>
+        <div class="metric"><strong>5.0</strong><span>client rating on both</span></div>
+        <div class="metric"><strong>2</strong><span>platforms, iOS and Android, from one JavaScript API</span></div>
+        <div class="metric"><strong>0</strong><span>changes to the app's recording flow; the native work slots in behind it</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>The line between JavaScript and native code is the design decision that matters in a React Native app. Put too little on the native side and the phone stutters; put too much and the app team can no longer maintain it. Keeping the native modules narrow, one job each with a typed interface, is what let the same client come back a year later and ask for the next one.</p>
+      <p class="next-step" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;"><strong>Need this built?</strong> See <a href="/react-native-developer/">React Native work</a>, or browse the <a href="/case-studies/">case studies</a>.</p>
+    </article>
+    <section class="lead-box"><h2>Need Native Performance in a React Native App?</h2><p>Video, audio, camera, sensors or anything else JavaScript cannot do at frame rate. I build the native iOS and Android modules and hand them to your team as ordinary React Native components.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Project%20Consultation">Email for Proposal</a></div></section>
+  </div></section>
+</body>
+</html>

@@ -1,6 +1,27 @@
 {
  "items": [
   {
+   "title": "Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix",
+   "excerpt": "A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action, with written findings. Milestone two: the fix. Two contracts, January 2026.",
+   "image": "/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png",
+   "url": "/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/",
+   "category": "ai"
+  },
+  {
+   "title": "Question Answering over Private Documents with GPT-3 (PoC, 2023)",
+   "excerpt": "A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.",
+   "image": "/assets/imgs/generated/case-studies/gpt3-question-answering-private-documents-poc.png",
+   "url": "/case-studies/gpt3-question-answering-private-documents-poc/",
+   "category": "ai"
+  },
+  {
+   "title": "Native iOS and Android Video Modules inside a React Native App",
+   "excerpt": "Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.",
+   "image": "/assets/imgs/generated/case-studies/native-video-modules-react-native-ios-android.png",
+   "url": "/case-studies/native-video-modules-react-native-ios-android/",
+   "category": "ai"
+  },
+  {
    "title": "Dovia: Healthcare Marketplace Modernization",
    "excerpt": "One Laravel backend, a React web experience and two React Native clients. Modernizing patient booking, professional workflows and API security, with actual product screenshots and explicit release gates.",
    "image": "/assets/imgs/case-studies/dovia/00-dovia-cover-original.png",
