@@ -1,6 +1,20 @@
 {
  "items": [
   {
+   "title": "Facial Emotion Detection App on Expo, with LoRA Training Pipelines",
+   "excerpt": "The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with OpenCV, TensorFlow/Keras and scikit-learn models, and LoRA fine-tuning pipelines on FastAPI, Celery and Docker.",
+   "image": "/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png",
+   "url": "/case-studies/facial-emotion-detection-expo-app-lora-pipelines/",
+   "category": "ai"
+  },
+  {
+   "title": "Python Microservices for LLM Data Import and Inference (2023)",
+   "excerpt": "A three-week senior backend engagement in July 2023: Python microservices for importing and transforming data for large language models, inference functions, test suites, and deployment on GCP managed services with Docker.",
+   "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
+   "url": "/case-studies/llm-data-import-inference-microservices/",
+   "category": "ai"
+  },
+  {
    "title": "Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix",
    "excerpt": "A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action, with written findings. Milestone two: the fix. Two contracts, January 2026.",
    "image": "/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png",

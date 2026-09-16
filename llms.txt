@@ -50,6 +50,11 @@
 - https://shabeeb.baydot.net/case-studies/native-video-modules-react-native-ios-android/ : Android MediaCodec
   transcoding, then native overlay and baking on iOS and Android, as typed React Native modules. Two contracts
   for one client, 2025 and 2026.
+- https://shabeeb.baydot.net/case-studies/llm-data-import-inference-microservices/ : Python microservices for
+  LLM data import, transformation and inference, with tests, on GCP and Docker. Three weeks, July 2023.
+- https://shabeeb.baydot.net/case-studies/facial-emotion-detection-expo-app-lora-pipelines/ : facial emotion
+  detection app on Expo (React Native) with OpenCV, TensorFlow/Keras and scikit-learn models, and LoRA training
+  pipelines on FastAPI, Celery and Docker. Employment at a German firm, 2024 to 2026, not a marketplace contract.
 - https://shabeeb.baydot.net/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/ : FFmpeg encoding on AWS
   Lambda with an EC2 overflow tier, six contracts with the same client between 2016 and 2018.
 - https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/ : Google Vision and Google Document AI
