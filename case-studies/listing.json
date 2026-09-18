@@ -2,7 +2,7 @@
  "items": [
   {
    "title": "Ishara: A Live PSX Portfolio Tracker That Tested Its Own Rule First",
-   "excerpt": "My own product: live Pakistan Stock Exchange portfolio tracking with RSI notices. The rule was tested on five years of data before any alert was built. It did not beat holding the stocks, and the app says so on every page.",
+   "excerpt": "A Baydot product: live Pakistan Stock Exchange portfolio tracking with RSI notices. The rule was tested on five years of data before any alert was built. It did not beat holding the stocks, and the app says so on every page.",
    "image": "/assets/imgs/case-studies/ishara/ishara-card.jpg",
    "url": "/case-studies/ishara-psx-portfolio-rsi-alerts/",
    "category": "ai"
