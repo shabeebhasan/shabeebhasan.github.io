@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "Ishara: A Live PSX Portfolio Tracker That Tested Its Own Rule First",
+   "excerpt": "My own product: live Pakistan Stock Exchange portfolio tracking with RSI notices. The rule was tested on five years of data before any alert was built. It did not beat holding the stocks, and the app says so on every page.",
+   "image": "/assets/imgs/case-studies/ishara/ishara-card.jpg",
+   "url": "/case-studies/ishara-psx-portfolio-rsi-alerts/",
+   "category": "ai"
+  },
+  {
    "title": "Facial Emotion Detection App on Expo, with LoRA Training Pipelines",
    "excerpt": "The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with OpenCV, TensorFlow/Keras and scikit-learn models, and LoRA fine-tuning pipelines on FastAPI, Celery and Docker.",
    "image": "/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png",

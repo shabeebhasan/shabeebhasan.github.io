@@ -26,6 +26,7 @@ LINKS = {
     "doctor-app": ("laravel-platform-three-year-engagement", "Doctor and patient apps on a Laravel API"),
     "referral-saas": ("francofun-referral-rewards-platform", "Franco-fun Rewards, referral SaaS built solo"),
     "speech-ai": ("ethos-guard-responsible-speech-analytics", "Ethos Guard, speech and tone analytics"),
+    "ishara": ("ishara-psx-portfolio-rsi-alerts", "Ishara, PSX portfolio tracker with RSI notices"),
 }
 
 PAGE = """<!DOCTYPE html>

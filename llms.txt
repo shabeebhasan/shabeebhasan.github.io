@@ -50,6 +50,9 @@
 - https://shabeeb.baydot.net/case-studies/native-video-modules-react-native-ios-android/ : Android MediaCodec
   transcoding, then native overlay and baking on iOS and Android, as typed React Native modules. Two contracts
   for one client, 2025 and 2026.
+- https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/ : his own product, a live Pakistan Stock
+  Exchange portfolio tracker with RSI notices; the rule was tested on five years of data first and did not beat
+  holding the stocks, which the app states on every page. FastAPI, SQLite, 345 tests.
 - https://shabeeb.baydot.net/case-studies/llm-data-import-inference-microservices/ : Python microservices for
   LLM data import, transformation and inference, with tests, on GCP and Docker. Three weeks, July 2023.
 - https://shabeeb.baydot.net/case-studies/facial-emotion-detection-expo-app-lora-pipelines/ : facial emotion
