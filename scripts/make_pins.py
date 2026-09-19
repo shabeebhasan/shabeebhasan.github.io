@@ -64,7 +64,7 @@ PINS = [
      "I tested the alert rule first. It lost.", "So the app says so on every page",
      "Built at Baydot", f"{PORT}/13-ishara-own-product/02-portfolio.png",
      f"{BASE}/case-studies/ishara-psx-portfolio-rsi-alerts/{UTM}",
-     "Ishara, a live PSX portfolio tracker with RSI notices, built at Baydot. The RSI rule was tested on five years of data before any alert was built. FastAPI, SQLite, Chart.js and 345 tests.",
+     "Ishara, a PSX portfolio tracker with RSI notices, built at Baydot. The RSI rule was tested on five years of data before any alert was built. FastAPI, SQLite, Chart.js and 345 tests.",
      "Ishara portfolio dashboard"),
     ("native-video-react-native", MOBILE,
      "React Native too slow for video?", "Native iOS and Android modules fix it",

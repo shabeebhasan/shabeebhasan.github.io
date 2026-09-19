@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Ishara: A Live PSX Portfolio Tracker That Tested Its Own Rule First | Shabeeb Hasan</title>
-  <meta name="description" content="Built at Baydot: a live Pakistan Stock Exchange portfolio tracker with RSI notices. Before building any alert, I tested the rule on five years of data. It did not beat simply holding the stocks, and the app says so on every page.">
+  <title>Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First | Shabeeb Hasan</title>
+  <meta name="description" content="Built at Baydot: a Pakistan Stock Exchange portfolio tracker with RSI notices. Before building any alert, I tested the rule on five years of data. It did not beat simply holding the stocks, and the app says so on every page.">
   <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/">
-  <meta property="og:title" content="Ishara: A Live PSX Portfolio Tracker That Tested Its Own Rule First | Shabeeb Hasan">
-  <meta property="og:description" content="A live Pakistan Stock Exchange portfolio tracker with RSI notices. The rule was tested on five years of data before any alert was built, and the app shows the result.">
+  <meta property="og:title" content="Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First | Shabeeb Hasan">
+  <meta property="og:description" content="A Pakistan Stock Exchange portfolio tracker with RSI notices. The rule was tested on five years of data before any alert was built, and the app shows the result.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/">
   <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/ishara/ishara-card.jpg">
@@ -21,6 +21,11 @@
     .shot-grid img,.shot-full img{width:100%;height:auto;border-radius:12px;border:1px solid #e2e8f0}
     .shot-grid figcaption,.shot-full figcaption{font-size:14px;color:#64748b;margin-top:6px}
     .shot-full{margin:18px 0}
+    .result-table{width:100%;border-collapse:collapse;margin:18px 0 6px;font-size:16px}
+    .result-table th,.result-table td{padding:10px 12px;border-bottom:1px solid #e2e8f0;text-align:left}
+    .result-table td:last-child,.result-table th:last-child{text-align:right;white-space:nowrap}
+    .result-table tr.best td{font-weight:700}
+    .role-box{margin:22px 0;padding:16px 18px;border-left:4px solid #0ea5e9;background:#f0f9ff;border-radius:8px}
     .phones{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:520px;margin:18px auto}
     .phones img{width:100%;height:auto;border-radius:18px;border:1px solid #e2e8f0}
     @media (max-width:700px){.shot-grid{grid-template-columns:1fr}}
@@ -29,8 +34,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "Ishara: A Live PSX Portfolio Tracker That Tested Its Own Rule First",
-      "description": "A live Pakistan Stock Exchange portfolio tracker with RSI notices. The rule was tested on five years of data before any alert was built.",
+      "headline": "Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First",
+      "description": "A Pakistan Stock Exchange portfolio tracker with RSI notices. The rule was tested on five years of data before any alert was built.",
       "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
       "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
       "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/",
@@ -55,13 +60,13 @@
   <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
   <section class="section content-page"><div class="container content-wrap">
     <a href="/case-studies/" class="back-link">Back to Case Studies</a>
-    <h1 class="content-title">Ishara: A Live PSX Portfolio Tracker That Tested Its Own Rule First</h1>
+    <h1 class="content-title">Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First</h1>
     <p class="content-excerpt">A Baydot product. It values your Pakistan Stock Exchange holdings through the trading day and sends a short notice when a stock's RSI crosses a level. Before building any alert, I tested the rule on five years of data. It did not beat simply holding the stocks, so the app says that on every page.</p>
     <img src="/assets/imgs/case-studies/ishara/00-landing-dark.webp" alt="Ishara landing page: your PSX portfolio, live, with a nudge when a stock crosses a level" class="hero-image" width="1600" height="1000">
     <div class="tag-row"><span>fastapi</span><span>python</span><span>sqlite</span><span>chart.js</span><span>backtesting</span><span>push alerts</span></div>
     <article class="content-article">
       <h2>What It Does</h2>
-      <p>You paste in your holdings. Ishara prices them every 60 seconds while the market is open, compares each purchase with the KSE-100 from the day you bought it, and keeps five years of history, dividends and company reports in one place. When a stock you follow crosses an RSI level on the daily close, you get a short notice on your dashboard and, if you want, on your phone.</p>
+      <p>You paste in your holdings. Ishara prices them every 60 seconds while the market is open, from the PSX data portal, so prices are as fresh as the portal is. It compares each purchase with the KSE-100 from the day you bought it, and keeps five years of history, dividends and company reports in one place. When a stock you follow crosses an RSI level on the daily close, you get a short notice on your dashboard and, if you want, on your phone.</p>
       <p>It never connects to a broker and it cannot place an order. That is on purpose.</p>
 
       <figure class="shot-full">
@@ -71,7 +76,33 @@
 
       <h2>The Honest Part</h2>
       <p>The first idea was a momentum rule: buy when RSI goes above 70. Before writing a single alert, I tested it on five years of daily prices for 39 liquid PSX stocks. It lost to simply holding the same stocks on 34 of the 39. Tuning did not save it: ninety combinations were tried on one period, and every winner fell apart on a second period it had never seen.</p>
-      <p>The reverse rule, buying when RSI drops through 40, held up much better. It kept a win rate near 68% on the unseen period. But it still did not clearly beat holding the stocks: 25.7% against 27.5%.</p>
+      <p>The reverse rule, buying when RSI drops through 40, held up much better on that unseen period. 68% of its trades made money. But it still did not beat simply holding the stocks.</p>
+      <table class="result-table">
+        <thead><tr><th>Unseen period, 1 Jan 2025 to 3 Sep 2026</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr class="best"><td>Just holding the stocks</td><td>+27.5%</td></tr>
+          <tr><td>Buy when RSI drops through 40, sell when it gets back to 70</td><td>+25.7%</td></tr>
+          <tr><td>Trades from that rule that made money</td><td>68% of 138</td></tr>
+          <tr><td>Best momentum rule from the tuning (buy above RSI 65)</td><td>+6.3%</td></tr>
+        </tbody>
+      </table>
+      <p><strong>A useful notice is not the same as a proven trading edge.</strong></p>
+
+      <h3>How these numbers were measured</h3>
+      <ul>
+        <li>A trade counts as a win if it made money after costs. Costs are 0.15% each way.</li>
+        <li>A signal comes from the day's closing RSI. The trade happens at the next day's close, so the test never uses a price it could not have known.</li>
+        <li>Each percentage is the median stock's total return over the unseen period. Just holding is measured the same way, with the same costs.</li>
+        <li>Prices only. Dividends are left out of both numbers.</li>
+      </ul>
+
+      <h3>What this test cannot tell you</h3>
+      <ul>
+        <li>The stocks came from today's KSE-100 list. Companies that dropped out or closed during those five years are missing, and that usually makes any rule look better than it is.</li>
+        <li>Thin stocks were removed using their trading volume across all five years, which also leans on information from the future.</li>
+        <li>The RSI 40 rule was chosen after looking at the unseen period, so for that rule the period is no longer truly unseen. A third, untouched period would be needed to confirm it.</li>
+        <li>2021 to 2026 was a strong rising market on PSX. Nothing here says how either rule behaves when prices fall.</li>
+      </ul>
       <p>So Ishara calls these <strong>notices</strong>, never signals. The evidence is a page inside the app, and the same warning sits in the footer of every page and at the end of every alert. A product that dressed this up as advice would be claiming something its own test contradicts.</p>
       <div class="metric-grid">
         <div class="metric"><strong>5 years</strong><span>of daily PSX prices tested before any alert existed</span></div>
@@ -79,6 +110,8 @@
         <div class="metric"><strong>345</strong><span>automated tests, including tests on the wording</span></div>
         <div class="metric"><strong>0</strong><span>orders it can place. It cannot trade</span></div>
       </div>
+
+      <div class="role-box"><strong>What I built myself:</strong> the product design, the FastAPI and SQLite backend, the market data pipeline and price cleaning, the RSI engine, the backtest, the portfolio analytics, the phone alerts, the web front end, the tests and the deployment.</div>
 
       <div class="shot-grid">
         <figure>
