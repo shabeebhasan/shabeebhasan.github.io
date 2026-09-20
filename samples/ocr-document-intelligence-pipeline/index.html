@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Document Extraction Backends: Google Vision, Document AI and Passport OCR | Shabeeb Hasan</title>
+  <meta name="description" content="Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/">
+  <meta property="og:title" content="Document Extraction Backends: Google Vision, Document AI and Passport OCR | Shabeeb Hasan">
+  <meta property="og:description" content="Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Document Extraction Backends: Google Vision, Document AI and Passport OCR",
+      "description": "Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/ocr-document-intelligence-pipeline/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/samples/" class="back-link">Back to work samples</a>
+    <h1 class="content-title">Document Extraction Backends: Google Vision, Document AI and Passport OCR</h1>
+    <p class="content-excerpt">Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.</p>
+    <img src="/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg" alt="Document Extraction Backends: Google Vision, Document AI and Passport OCR" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>ocr</span><span>google cloud vision</span><span>google document ai</span><span>document extraction</span><span>python</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Two clients, two years apart, with the same underlying need: take documents people photograph or upload and turn them into data a system can use. One wanted a document scanning web app. The other was building a React Native app that captured identity documents and needed the whole server side behind it.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>A document scanning app (2020, two contracts)</strong>: a Flask web app that takes PDF and image uploads and runs them through Google Vision OCR, then a second phase that accepts multiple files at once, processes them concurrently through Google Document AI form processing, and exports the extracted fields as JSON.</li>
+        <li><strong>The server side of a document-capture mobile app (2018 to 2019)</strong>: cloud web services for a React Native client, a database designed for indexing and normalisation, sign-in through Google, Facebook or a phone one-time password, offline analysis jobs, document storage, and OCR for passports, driving licences, car licences and credit cards.</li>
+        <li><strong>Field structuring on top of the OCR</strong>, because the client needs data, not a block of text. Which engine and which processor to use depends on the document type, and the code decides that per document.</li>
+      </ul>
+      <img src="/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline-architecture.png" alt="Architecture: multi-file upload, concurrent processing, Google Vision OCR in phase one and Document AI form processing in phase two, plus the separate passport and licence OCR backend" class="hero-image" width="1600" height="900" loading="lazy">
+      <div class="metric-grid">
+        <div class="metric"><strong>2</strong><span>clients, both Upwork contracts</span></div>
+        <div class="metric"><strong>2</strong><span>Google APIs in production use: Vision and Document AI</span></div>
+        <div class="metric"><strong>4</strong><span>identity document types captured by OCR</span></div>
+        <div class="metric"><strong>14 mo</strong><span>on the mobile backend, one continuous hourly contract</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>The OCR call is the easy part. The work that decides whether the product is usable is everything around it: choosing the right processor for each document type, handling several uploads at once without one slow file blocking the rest, and shaping the output into fields the next system can read. That is where these two projects spent their time.</p>      
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

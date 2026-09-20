@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Question Answering over Private Documents with GPT-3 (PoC, 2023) | Shabeeb Hasan</title>
+  <meta name="description" content="A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/gpt3-question-answering-private-documents-poc/">
+  <meta property="og:title" content="Question Answering over Private Documents with GPT-3 (PoC, 2023) | Shabeeb Hasan">
+  <meta property="og:description" content="A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/gpt3-question-answering-private-documents-poc/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/gpt3-question-answering-private-documents-poc.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Question Answering over Private Documents with GPT-3 (PoC, 2023)",
+      "description": "A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/gpt3-question-answering-private-documents-poc/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/gpt3-question-answering-private-documents-poc.png"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/samples/" class="back-link">Back to work samples</a>
+    <h1 class="content-title">Question Answering over Private Documents with GPT-3 (PoC, 2023)</h1>
+    <p class="content-excerpt">A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.</p>
+    <img src="/assets/imgs/generated/case-studies/gpt3-question-answering-private-documents-poc.png" alt="Pipeline diagram: client documents are chunked and embedded, a question is embedded and matched by similarity, the top passages go into the GPT-3 prompt" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>openai api</span><span>embeddings</span><span>similarity retrieval</span><span>python</span><span>proof of concept</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>In early 2023 a client wanted to know whether GPT-3 could answer questions about their own documents, text the model had never seen, without inventing an answer around them. The engagement was contracted as a proof of concept in February 2023, and that is what it was: enough of a working pipeline to judge whether the approach deserved a real build.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>Document indexing and chunking</strong>: the client's text split into passages, cleaned and stored with ids so every answer could be traced back to the passage it came from.</li>
+        <li><strong>Embeddings</strong>: one vector per chunk through the OpenAI API, stored alongside the text.</li>
+        <li><strong>Similarity retrieval</strong>: each question embedded the same way, chunks ranked by cosine similarity, the top passages selected.</li>
+        <li><strong>Prompt assembly and answer generation</strong>: the retrieved passages and the question composed into a single prompt so GPT-3 answers from the client's text rather than from memory.</li>
+        <li><strong>Plain Python throughout</strong>, following the OpenAI cookbook embeddings pattern of the time. No framework, because none of the RAG frameworks existed yet in a form worth depending on.</li>
+      </ul>
+      <div class="metric-grid">
+        <div class="metric"><strong>Feb 2023</strong><span>contracted, months before "RAG" became the standard term</span></div>
+        <div class="metric"><strong>PoC</strong><span>the contracted scope, and how the work is described</span></div>
+        <div class="metric"><strong>0</strong><span>frameworks; Python and the OpenAI API only</span></div>
+        <div class="metric"><strong>4</strong><span>stages: chunk, embed, retrieve, answer</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>The retrieval step is what makes the answers checkable. Because every answer is built from named passages, the client could open the source and see whether the model had read it correctly. That traceability is the reason the same pattern went on to become the default way of putting a language model in front of private data.</p>
+      <p>What I would add on a production build today, and did not in a two-week proof of concept: chunking by document structure instead of fixed length, hybrid keyword-plus-vector search, and a small evaluation set of real questions with known answers so retrieval quality is measured rather than eyeballed.</p>
+      
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix | Shabeeb Hasan</title>
+  <meta name="description" content="A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action. Milestone two: the fix. Two contracts, January 2026.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/">
+  <meta property="og:title" content="Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix | Shabeeb Hasan">
+  <meta property="og:description" content="A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action. Milestone two: the fix. Two contracts, January 2026.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix",
+      "description": "A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action. Milestone two: the fix. Two contracts, January 2026.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/samples/" class="back-link">Back to work samples</a>
+    <h1 class="content-title">Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix</h1>
+    <p class="content-excerpt">A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action. Milestone two: the fix. Two contracts, January 2026.</p>
+    <img src="/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png" alt="Flow diagram: Stripe payment event, webhook handler, MailerLite group and tag, onboarding automation, with the audit milestone and the fix milestone underneath" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>stripe webhooks</span><span>mailerlite</span><span>integration audit</span><span>email automation</span><span>subscription billing</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Customers were paying. Some of them then received the onboarding email sequence twice; others never received it at all. The business could see the symptom in support tickets but nobody could say which part of the Stripe to MailerLite chain was producing it. They did not want a rebuild. They wanted to know what was wrong, in writing, before anyone changed anything.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>Milestone one, a two-day audit as its own deliverable.</strong> I traced every path from a Stripe payment event, first payment and renewal alike, through the webhook handling into MailerLite: which group a subscriber lands in, which tag is applied, which automation that tag triggers. The output was a written findings document: which paths fire twice, which never fire, and why.</li>
+        <li><strong>Milestone two, the fix.</strong> With the causes named, a second contract corrected the event handling so the onboarding sequence is triggered on first payment only and renewals do not re-enter it.</li>
+        <li><strong>A record the client keeps.</strong> The audit document doubles as the map of the integration, so the next person who touches it starts from facts rather than from support tickets.</li>
+      </ul>
+      <div class="metric-grid">
+        <div class="metric"><strong>2</strong><span>contracts, January 2026, both closed and reviewed</span></div>
+        <div class="metric"><strong>2 days</strong><span>the audit, scoped and paid as its own milestone</span></div>
+        <div class="metric"><strong>1</strong><span>written findings document before any code changed</span></div>
+        <div class="metric"><strong>0</strong><span>rebuild. The existing integration was corrected, not replaced</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>Audit first is how I take on any failing integration. The client pays for a diagnosis, reads it, and only then decides whether the fix is worth funding. It keeps the second milestone small, because the fix targets the cause the audit named instead of the symptom that raised the ticket, and it means the client is never paying for an engineer to discover the system on their time.</p>
+      
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

@@ -1,10 +1,14 @@
 #!/usr/bin/env python3
-"""Short /work/<name>/ links that point at the real case-study pages.
+"""Short /work/<name>/ links that point at the marketplace-safe /samples/ pages.
 
 Why: a proposal reads better with shabeeb.baydot.net/work/stripe-fix than with a
 long /case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/ URL. The real
 pages keep their addresses and their search ranking; these are only doorways, so they
 carry noindex plus a canonical back to the real page.
+
+They point at /samples/ (see build_samples.py), not /case-studies/, because these links
+are pasted into Upwork and Fiverr, where sending a client to contact details is a
+violation. Run build_samples.py first.
 
 Run from the repo root:  python3 scripts/build_work_links.py
 """
@@ -56,16 +60,16 @@ PAGE = """<!DOCTYPE html>
 def main():
     made = 0
     for name, (slug, title) in LINKS.items():
-        real = os.path.join(ROOT, "case-studies", slug, "index.html")
+        real = os.path.join(ROOT, "samples", slug, "index.html")
         if not os.path.exists(real):
             print("MISSING case study for", name, "->", slug); continue
         folder = os.path.join(ROOT, "work", name)
         os.makedirs(folder, exist_ok=True)
-        target = f"{BASE}/case-studies/{slug}/"
+        target = f"{BASE}/samples/{slug}/"
         open(os.path.join(folder, "index.html"), "w", encoding="utf-8").write(
             PAGE.format(title=title, target=target))
         made += 1
-        print(f"{BASE}/work/{name}/  ->  /case-studies/{slug}/")
+        print(f"{BASE}/work/{name}/  ->  /samples/{slug}/")
     print(made, "short links written")
 
 

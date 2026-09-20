@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Facial Emotion Detection App on Expo, with LoRA Training Pipelines | Shabeeb Hasan</title>
+  <meta name="description" content="The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with models trained in OpenCV, TensorFlow/Keras and scikit-learn, and LoRA fine-tuning pipelines served through FastAPI, Celery and Docker.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/facial-emotion-detection-expo-app-lora-pipelines/">
+  <meta property="og:title" content="Facial Emotion Detection App on Expo, with LoRA Training Pipelines | Shabeeb Hasan">
+  <meta property="og:description" content="The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with models trained in OpenCV, TensorFlow/Keras and scikit-learn, and LoRA fine-tuning pipelines served through FastAPI, Celery and Docker.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/facial-emotion-detection-expo-app-lora-pipelines/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Facial Emotion Detection App on Expo, with LoRA Training Pipelines",
+      "description": "The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with models trained in OpenCV, TensorFlow/Keras and scikit-learn, and LoRA fine-tuning pipelines served through FastAPI, Celery and Docker.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/facial-emotion-detection-expo-app-lora-pipelines/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/samples/" class="back-link">Back to work samples</a>
+    <h1 class="content-title">Facial Emotion Detection App on Expo, with LoRA Training Pipelines</h1>
+    <p class="content-excerpt">The AI track of a software developer role at a German firm, November 2024 to July 2026: a facial emotion detection app on Expo (React Native) with models trained in OpenCV, TensorFlow/Keras and scikit-learn, and LoRA fine-tuning pipelines served through FastAPI, Celery and Docker. Employment, not a marketplace contract.</p>
+    <img src="/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png" alt="Architecture: Expo app, emotion model, FastAPI serving, then LoRA training jobs on Celery, a FastAPI control plane and Docker" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>expo / react native</span><span>tensorflow / keras</span><span>opencv</span><span>lora fine-tuning</span><span>fastapi + celery</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>Two tracks at a German software firm. The first was PHP (Yii2) development with SAP integration for the firm's enterprise clients. The second, described here, was AI: a mobile app that reads a person's facial expression and reports an emotion, and a training pipeline for LoRA adapters that the firm's other AI work depended on.</p>
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>The app, on Expo (React Native)</strong>: camera capture, the request to the model, and the result rendered in the app on both iOS and Android from one codebase.</li>
+        <li><strong>The emotion model</strong>: trained with OpenCV for face handling and TensorFlow/Keras and scikit-learn for the classifier, on the same line of work as my MPhil research into detecting depression and anxiety levels from facial expressions.</li>
+        <li><strong>Serving</strong>: FastAPI endpoints the app calls, packaged in Docker.</li>
+        <li><strong>LoRA training pipelines</strong>: fine-tuning runs queued as Celery tasks so an API request never waits on a GPU, a FastAPI control plane to start a run, check progress and fetch the finished adapter, and one set of Docker images for workers and API on the firm's own machines.</li>
+      </ul>
+      <div class="metric-grid">
+        <div class="metric"><strong>Nov 2024</strong><span>to July 2026, alongside the PHP and SAP track</span></div>
+        <div class="metric"><strong>2</strong><span>platforms from one Expo codebase, iOS and Android</span></div>
+        <div class="metric"><strong>3</strong><span>ML libraries in the model: OpenCV, TensorFlow/Keras, scikit-learn</span></div>
+        <div class="metric"><strong>Async</strong><span>training as Celery jobs, never blocking a request</span></div>
+      </div>
+      <h2>Why It Holds Up</h2>
+      <p>The interesting engineering is not the classifier, it is the seam between a phone app and a model: keeping inference fast enough to feel live, keeping training off the request path, and giving the rest of the team a plain API for both. That is the same shape as most AI features clients ask for, which is why this role is the closest match when someone wants an LLM or vision feature inside an existing React Native app.</p>
+      <div class="cs-note"><p>This was employment, not an Upwork contract, so there is no marketplace review to point to. The employer is named on my CV; the enterprise clients behind the PHP and SAP work are not.</p></div>
+      
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>
