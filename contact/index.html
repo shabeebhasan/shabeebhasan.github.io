@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Contact Shabeeb Hasan | AI and Full-Stack Developer</title>
+  <meta name="description" content="Book a free call or send a message. Tell me what is broken or what you want built, and I will tell you what I would do first and how long it takes.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/contact/">
+  <meta property="og:title" content="Contact Shabeeb Hasan">
+  <meta property="og:description" content="Book a free call or send a message about your project.">
+  <meta property="og:url" content="https://shabeeb.baydot.net/contact/">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <style>
+    .contact-wrap{max-width:900px;margin:0 auto;padding:44px 20px 70px}
+    .contact-wrap h1{font-size:34px;margin:0 0 10px}
+    .contact-wrap .lede{color:#475569;font-size:17px;line-height:1.6;margin:0 0 26px}
+    .ways{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:30px}
+    .way{padding:18px 20px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px}
+    .way h2{font-size:17px;margin:0 0 6px}
+    .way p{margin:0 0 10px;color:#475569;font-size:15px}
+    .way a.action{font-weight:700;color:#0369a1}
+    .form-card{padding:22px;border:1px solid #e2e8f0;border-radius:12px}
+    @media (max-width:700px){.ways{grid-template-columns:1fr}}
+  </style>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <div class="contact-wrap">
+    <h1>Contact</h1>
+    <p class="lede">Tell me what is broken, or what you want built. I will tell you what I would do
+      first, how long it takes, and what it costs. I work with clients in the USA, Canada, Europe,
+      Australia and the Gulf, and my mornings overlap with US working hours.</p>
+
+    <div class="ways">
+      <div class="way">
+        <h2>Book a call</h2>
+        <p>30 minutes, free. Pick a time that suits you.</p>
+        <a class="action" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Open my calendar</a>
+      </div>
+      <div class="way">
+        <h2>Email</h2>
+        <p>Send the details and I will reply the same day.</p>
+        <a class="action" href="mailto:shabeebhasan@gmail.com?subject=Project%20enquiry">shabeebhasan@gmail.com</a>
+      </div>
+    </div>
+
+    <div class="form-card">
+      <h2 style="font-size:20px;margin:0 0 14px">Or write here</h2>
+      <div id="sendmessage">Your message has been sent. Thank you!</div>
+      <div id="errormessage"></div>
+
+            <form id="contact-form" action="https://api.web3forms.com/submit" method="POST" role="form"
+              class="contactForm">
+              <input type="hidden" name="access_key" value="cf4646fa-fc06-4413-a8fe-13be2251e865">
+              <input type="checkbox" name="botcheck" class="hidden" style="display:none">
+              <input type="hidden" name="redirect" value="https://shabeeb.baydot.net/thank-you/">
+              <input type="hidden" name="from_name" value="shabeeb.baydot.net">
+              <input type="hidden" name="subject" value="New enquiry from shabeeb.baydot.net">
+              <div class="form-row">
+                <div class="form-group col-lg-6">
+                  <input class="form-control" id="name" name="name" type="text" placeholder="First Name" required>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input class="form-control" id="last" name="last_name" type="text" placeholder="Last Name" required>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input id="email-field" class="form-control" name="email" type="email" placeholder="Work Email"
+                    required>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-lg-6">
+                  <input class="form-control" id="subject" name="company" type="text" placeholder="Company or website" required>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-lg-12">
+                  <textarea class="form-control" name="message" id="message-field" placeholder="Tell me about the problem you are solving."
+                    rows="5" required></textarea>
+                  <div class="validation"></div>
+                </div>
+                <div class="form-group col-12 d-flex justify-content-center mb-3">
+                  <div class="h-captcha" data-captcha="true"></div>
+                </div>
+                <div class="form-group col-12 text-center">
+                  <button type="submit" class="btn btn-primary btn-rounded w-lg">Request a Consultation</button>
+                </div>
+              </div>
+            </form>
+    </div>
+  </div>
+  <script src="/assets/vendors/jquery/jquery-3.4.1.js"></script>
+</body>
+</html>

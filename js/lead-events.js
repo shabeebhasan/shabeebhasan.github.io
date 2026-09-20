@@ -106,7 +106,7 @@
     var label = (a.textContent || "").trim().slice(0, 60);
     var base = { source_page: source.page, link_text: label, site: SITE };
 
-    if (href.indexOf("calendly.com") !== -1) {
+    if (href.indexOf("/contact/") !== -1 || href.indexOf("calendly.com") !== -1) {
       track("book_call_click", base);
     } else if (href.indexOf("wa.me") !== -1 || href.indexOf("whatsapp") !== -1) {
       track("whatsapp_click", base);

@@ -169,7 +169,7 @@ $("#contact-form").submit(function (e) {
       }
     },
     error: function () {
-      $("#errormessage").text("Something went wrong. Please email me directly at shabeebhasan@gmail.com.").fadeIn();
+      $("#errormessage").text("Something went wrong. Please try again, or use the contact page.").fadeIn();
     },
     complete: function () {
       button.prop("disabled", false).text("Request a Consultation");

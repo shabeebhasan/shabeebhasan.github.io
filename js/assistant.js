@@ -5,7 +5,7 @@
 (function () {
   "use strict";
 
-  var CALENDLY = "https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan";
+  var CALENDLY = "/contact/";   // the one page that holds the booking link and the address
   var WHATSAPP = "https://wa.me/923222254819";
   var W3F_KEY = "cf4646fa-fc06-4413-a8fe-13be2251e865";
 
@@ -194,12 +194,12 @@
         setChips(["Book a free call", "Message on WhatsApp"]);
         track("lead_submitted");
       } else {
-        addMsg("Hmm, that didn't send. You can email <a href='mailto:shabeebhasan@gmail.com'>shabeebhasan@gmail.com</a> or book a call instead.", "bot");
+        addMsg("Hmm, that didn't send. You can reach me from the <a href='/contact/'>contact page</a> instead.", "bot");
         setChips(["Book a free call"]);
       }
     }).catch(function () {
       form.parentNode.removeChild(form);
-      addMsg("Connection issue on my end. Please email <a href='mailto:shabeebhasan@gmail.com'>shabeebhasan@gmail.com</a> or book a call.", "bot");
+      addMsg("Connection issue on my end. Please use the <a href='/contact/'>contact page</a>.", "bot");
       setChips(["Book a free call"]);
     });
   }

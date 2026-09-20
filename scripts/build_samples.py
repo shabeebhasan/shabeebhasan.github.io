@@ -69,6 +69,8 @@ def clean(html, slug):
     html = html.replace("Back to Case Studies", "Back to work samples")
     html = re.sub(r'href="/case-studies/([a-z0-9-]+)/"', r'href="/samples/\1/"', html)
     html = re.sub(r'<a href="/[a-z0-9-]*(developer|consultant)/"[^>]*>(.*?)</a>', r"\2", html, flags=re.S)
+    # /contact/ is where the address, the number and the calendar live: never link it here
+    html = re.sub(r'<a [^>]*href="/contact/"[^>]*>(.*?)</a>', r"\1", html, flags=re.S)
     html = html.replace('<a class="navbar-brand" href="/">', '<a class="navbar-brand" href="/samples/">')
     # copies must never be indexed; canonical already points at the real page
     if 'name="robots"' not in html:
