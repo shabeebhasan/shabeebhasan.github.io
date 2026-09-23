@@ -53,9 +53,9 @@
 - https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/ : a Baydot product, a Pakistan Stock
   Exchange portfolio tracker with RSI notices; the rule was tested on five years of data first and did not beat
   holding the stocks, which the app states on every page. FastAPI, SQLite, 345 tests.
-- https://shabeeb.baydot.net/case-studies/zoho-crm-subscription-and-data-integrations/ : Zoho Subscriptions events updating
-  Zoho CRM through AWS Lambda, plus a repeatable merge of three provider files into one website
-  directory. Three contracts for one client, 2018 to 2020.
+- https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/ : seven AWS Lambdas, two Deluge scripts and a
+  2.9 GB CSV pipeline rebuilt as one Odoo 17 module, with nine defects found in the original. Module
+  written and unit tested; not yet validated against a live Odoo instance, which the page says.
 - https://shabeeb.baydot.net/case-studies/llm-data-import-inference-microservices/ : Python microservices for
   LLM data import, transformation and inference, with tests, on GCP and Docker. Three weeks, July 2023.
 - https://shabeeb.baydot.net/case-studies/facial-emotion-detection-expo-app-lora-pipelines/ : facial emotion

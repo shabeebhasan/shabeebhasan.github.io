@@ -22,10 +22,10 @@
    "category": "ai"
   },
   {
-   "title": "Zoho Subscriptions to Zoho CRM, and a Directory Merged From Three Sources",
-   "excerpt": "Three contracts for one client between 2018 and 2020: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a nightly merge that turned three separate provider files into one clean directory listing on their website.",
+   "title": "From Zoho and AWS Lambda to One Odoo Module",
+   "excerpt": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
    "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
-   "url": "/case-studies/zoho-crm-subscription-and-data-integrations/",
+   "url": "/case-studies/zoho-aws-lambda-to-odoo-migration/",
    "category": "automation"
   },
   {

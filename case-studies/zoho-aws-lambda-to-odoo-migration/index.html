@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>From Zoho and AWS Lambda to One Odoo Module | Shabeeb Hasan</title>
+  <meta name="description" content="A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/">
+  <meta property="og:title" content="From Zoho and AWS Lambda to One Odoo Module | Shabeeb Hasan">
+  <meta property="og:description" content="A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "From Zoho and AWS Lambda to One Odoo Module",
+      "description": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">From Zoho and AWS Lambda to One Odoo Module</h1>
+    <p class="content-excerpt">A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.</p>
+    <div class="tag-row"><span>odoo 17</span><span>zoho crm</span><span>zoho subscriptions</span><span>aws lambda</span><span>migration</span><span>python</span></div>
+    <article class="content-article">
+      <h2>What was running</h2>
+      <p>The business sold dental membership plans. Payments and renewals lived in Zoho Subscriptions,
+      customers in Zoho CRM, leads went to Mailchimp, a monthly eligibility file went to a network
+      partner, and a public provider directory was rebuilt from three source files every month.</p>
+      <p>Holding it together: seven AWS Lambda functions, two Deluge scripts inside Zoho, and a set of
+      Python scripts that produced roughly 2.9 GB of CSV across 328 files. Each piece was deployed on
+      its own, logged to CloudWatch, and understood by whoever wrote it.</p>
+
+      <h2>What I built</h2>
+      <p>One Odoo 17 module, Community compatible, that carries all four jobs:</p>
+      <ul>
+        <li><strong>Subscription lifecycle.</strong> The five rules that used to live in Lambda are now
+        methods on real records, with chatter on every state change. One controller replaces four
+        separately deployed functions and keeps the same payload shapes, so Zoho's existing webhooks
+        only needed a new URL. Two nightly crons catch anything a missed webhook would have dropped,
+        which nothing did before.</li>
+        <li><strong>Lead sync to Mailchimp.</strong> Odoo hashes the email itself, so the Lambda and API
+        Gateway that existed only to compute an MD5 are gone. The sync is queued and retried by a cron
+        instead of running inside the save, so a Mailchimp outage no longer blocks a salesperson, and
+        the sync state and error text sit on the lead form.</li>
+        <li><strong>The monthly eligibility file.</strong> The same 229-character fixed-width layout,
+        generated straight from Odoo data, with no report export step and no auth token in code. The
+        six hard-coded dependant columns became the member's actual contact children.</li>
+        <li><strong>The provider directory.</strong> Providers became records instead of rows in a 400 MB
+        CSV: searchable, groupable by state, network and fee schedule, editable by staff. The import
+        wizard reads all four source formats, the export wizard reproduces the exact split rules, and
+        the geocode cache moved from DynamoDB into the database that already gets backed up.</li>
+      </ul>
+
+      <h2>Nine defects the rewrite found</h2>
+      <p>Porting code line by line is the most thorough code review there is. The ones that mattered:</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>Renewals</strong><span>a typo in one key meant renewals silently stayed on manual collection, so that path never worked</span></div>
+        <div class="metric"><strong>Map pins</strong><span>latitude was read into longitude, so every provider geocoded by that script landed in the wrong place</span></div>
+        <div class="metric"><strong>Open webhooks</strong><span>anyone who knew a URL could cancel a subscription; the Odoo endpoints require a shared secret</span></div>
+        <div class="metric"><strong>Silent failures</strong><span>bare except and print meant a failed card deletion vanished; every call is now logged with its payload and outcome</span></div>
+      </div>
+      <p>Also: the Mailchimp create call used POST, which fails for anyone already on the list; the
+      monthly dedup compared against one in-memory file, so last month's provider came back this month;
+      and the bio templates passed more arguments than placeholders, so the network name never printed.</p>
+      <p>One more, which is not a code defect but the most urgent finding: live Zoho, AWS, Geocodio and
+      Mailchimp keys were hard-coded in committed source. In the module they are Odoo system parameters.
+      The keys themselves still need rotating, and I said so in writing.</p>
+
+      <h2>Where it stands</h2>
+      <p>The module is written, validated and ships unit tests that pin the formatting rules, the
+      subscription and card state changes and the Mailchimp hash. It has not yet been run against a live
+      Odoo instance with real files. The next step is a staging database, one month of real input, and an
+      export compared row for row against the existing output.</p>
+      <p>I am saying that plainly rather than calling it delivered, because a migration is finished when
+      the old and new outputs match on real data, not when the code compiles.</p>
+
+      <h2>The earlier work on the same system</h2>
+      <p>Three contracts with the same client between 2018 and 2020 built parts of what this module now
+      replaces: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a repeatable merge
+      that turned three separate provider files into one clean directory listing.</p>
+    </article>
+    <section class="lead-box"><h2>Moving off a Pile of Scripts?</h2><p>Zoho, Lambda, cron jobs and CSVs that only one person understands. I port them into one system, and tell you what was broken on the way.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+</body>
+</html>
