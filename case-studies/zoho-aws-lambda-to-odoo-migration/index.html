@@ -4,10 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>From Zoho and AWS Lambda to One Odoo Module | Shabeeb Hasan</title>
-  <meta name="description" content="A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.">
+  <meta name="description" content="A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt it as one Odoo 17 module, ran it on a real Odoo instance against the client's own files, and found nine defects in the original on the way.">
   <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/">
   <meta property="og:title" content="From Zoho and AWS Lambda to One Odoo Module | Shabeeb Hasan">
-  <meta property="og:description" content="A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.">
+  <meta property="og:description" content="A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt it as one Odoo 17 module, ran it on a real Odoo instance against the client's own files, and found nine defects in the original on the way.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/">
   <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png">
@@ -20,7 +20,7 @@
       "@context": "https://schema.org",
       "@type": "Article",
       "headline": "From Zoho and AWS Lambda to One Odoo Module",
-      "description": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
+      "description": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt it as one Odoo 17 module, ran it on a real Odoo instance against the client's own files, and found nine defects in the original on the way.",
       "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
       "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/"
     }
@@ -44,7 +44,7 @@
   <section class="section content-page"><div class="container content-wrap">
     <a href="/case-studies/" class="back-link">Back to Case Studies</a>
     <h1 class="content-title">From Zoho and AWS Lambda to One Odoo Module</h1>
-    <p class="content-excerpt">A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.</p>
+    <p class="content-excerpt">A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt it as one Odoo 17 module, ran it on a real Odoo instance against the client's own files, and found nine defects in the original on the way.</p>
     <div class="tag-row"><span>odoo 17</span><span>zoho crm</span><span>zoho subscriptions</span><span>aws lambda</span><span>migration</span><span>python</span></div>
     <article class="content-article">
       <h2>What was running</h2>
@@ -91,13 +91,35 @@
       Mailchimp keys were hard-coded in committed source. In the module they are Odoo system parameters.
       The keys themselves still need rotating, and I said so in writing.</p>
 
-      <h2>Where it stands</h2>
-      <p>The module is written, validated and ships unit tests that pin the formatting rules, the
-      subscription and card state changes and the Mailchimp hash. It has not yet been run against a live
-      Odoo instance with real files. The next step is a staging database, one month of real input, and an
-      export compared row for row against the existing output.</p>
-      <p>I am saying that plainly rather than calling it delivered, because a migration is finished when
-      the old and new outputs match on real data, not when the code compiles.</p>
+      <h2>What the tests actually showed</h2>
+      <p>The module was installed on a real Odoo 17 instance with PostgreSQL 14 and run against the
+      client's own files, not sample data. It installs clean on an empty database: ten models, the
+      views, menus, security groups, access rules, five scheduled jobs and the system parameters all
+      load without an error or a warning. Nine unit tests pass.</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>1,681</strong><span>providers imported from 2,000 real lines; 319 skipped as duplicate phone numbers</span></div>
+        <div class="metric"><strong>0</strong><span>created on a second import of the same file, so a repeated run cannot double count</span></div>
+        <div class="metric"><strong>38</strong><span>state CSV files exported, including the California split by fee schedule, header identical to the original</span></div>
+        <div class="metric"><strong>7 of 7</strong><span>webhook cases behaved: no secret and wrong secret rejected, a malformed payload answered 400 instead of being swallowed</span></div>
+      </div>
+      <p>Fixed-width parsing landed exactly, with no leftover characters on any line. Phone, zip, state,
+      specialty and language expansion all came out right, fee schedules matched by zip prefix, and the
+      229-character eligibility file put every field in its correct column.</p>
+      <p>The run also surfaced a typo in the original export header: the third column is spelled
+      <code>excert</code>, not <code>excerpt</code>. The Odoo export keeps that exact spelling, because
+      the downstream WordPress import depends on it, and a test now pins the full 38-column header so it
+      cannot drift.</p>
+
+      <h2>What is left before go-live</h2>
+      <ul>
+        <li>Run the full 117 MB provider file, not the 2,000-line slice, and diff the exported state
+        files against the current production output row by row.</li>
+        <li>Fill in the Mailchimp key, the Geocodio key and the webhook secret in system parameters.</li>
+        <li>Rotate the credentials that were exposed in the old source.</li>
+        <li>Point the Zoho webhooks at the new Odoo URLs.</li>
+      </ul>
+      <p>I list those plainly rather than calling the job finished. A migration is done when the old and
+      new outputs match on the full data set, not when the tests pass on a slice.</p>
 
       <h2>The earlier work on the same system</h2>
       <p>Three contracts with the same client between 2018 and 2020 built parts of what this module now
