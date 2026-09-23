@@ -22,6 +22,13 @@
    "category": "ai"
   },
   {
+   "title": "Zoho Subscriptions to Zoho CRM, and a Directory Merged From Three Sources",
+   "excerpt": "Three contracts for one client between 2018 and 2020: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a nightly merge that turned three separate provider files into one clean directory listing on their website.",
+   "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
+   "url": "/case-studies/zoho-crm-subscription-and-data-integrations/",
+   "category": "automation"
+  },
+  {
    "title": "Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix",
    "excerpt": "A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action, with written findings. Milestone two: the fix. Two contracts, January 2026.",
    "image": "/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png",

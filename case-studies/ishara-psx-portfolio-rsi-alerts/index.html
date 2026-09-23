@@ -66,7 +66,7 @@
     <div class="tag-row"><span>fastapi</span><span>python</span><span>sqlite</span><span>chart.js</span><span>backtesting</span><span>push alerts</span></div>
     <article class="content-article">
       <h2>What It Does</h2>
-      <p>You paste in your holdings. Ishara prices them every 60 seconds while the market is open, from the PSX data portal, so prices are as fresh as the portal is. It compares each purchase with the KSE-100 from the day you bought it, and keeps five years of history, dividends and company reports in one place. When a stock you follow crosses an RSI level on the daily close, you get a short notice on your dashboard and, if you want, on your phone.</p>
+      <p>You paste in your holdings. Ishara prices them every 60 seconds while the market is open, from the exchange's own public data portal, so prices are as fresh as that portal is. It compares each purchase with the KSE-100 from the day you bought it, and keeps five years of history, dividends and company reports in one place. When a stock you follow crosses an RSI level on the daily close, you get a short notice on your dashboard and, if you want, on your phone.</p>
       <p>It never connects to a broker and it cannot place an order. That is on purpose.</p>
 
       <figure class="shot-full">
@@ -137,6 +137,7 @@
         <li><strong>FastAPI and one SQLite file.</strong> No queue, no cache, no build step. Two processes share the database: the web app and a scheduler.</li>
         <li><strong>One module talks to the market data source.</strong> If the source changes, one file changes, not the whole app.</li>
         <li><strong>Price history is cleaned before RSI is worked out.</strong> Splits and bonus shares are adjusted, and where a jump cannot be explained, RSI restarts instead of carrying a false spike.</li>
+        <li><strong>Market data comes from the exchange's public portal.</strong> No login and no paywall: the app reads the same pages a visitor reads, at a visitor's pace, and stores prices only for the people who asked for them.</li>
         <li><strong>Alerts go to the phone through ntfy.</strong> Each account picks its own topic. Nothing needs to be installed on the server for it.</li>
         <li><strong>Light and dark themes, and it works on a phone.</strong></li>
       </ul>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Zoho Subscriptions to Zoho CRM, and a Directory Merged From Three Sources | Shabeeb Hasan</title>
+  <meta name="description" content="Three contracts for one client between 2018 and 2020: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a nightly merge that turned three separate provider files into one clean directory listing on their website.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/zoho-crm-subscription-and-data-integrations/">
+  <meta property="og:title" content="Zoho Subscriptions to Zoho CRM, and a Directory Merged From Three Sources | Shabeeb Hasan">
+  <meta property="og:description" content="Three contracts for one client between 2018 and 2020: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a nightly merge that turned three separate provider files into one clean directory listing on their website.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/zoho-crm-subscription-and-data-integrations/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Zoho Subscriptions to Zoho CRM, and a Directory Merged From Three Sources",
+      "description": "Three contracts for one client between 2018 and 2020: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a nightly merge that turned three separate provider files into one clean directory listing on their website.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/zoho-crm-subscription-and-data-integrations/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Zoho Subscriptions to Zoho CRM, and a Directory Merged From Three Sources</h1>
+    <p class="content-excerpt">Three contracts for one client between 2018 and 2020: a Zoho Subscriptions webhook updating Zoho CRM through AWS Lambda, and a nightly merge that turned three separate provider files into one clean directory listing on their website.</p>
+    <div class="tag-row"><span>zoho crm</span><span>zoho subscriptions</span><span>aws lambda</span><span>webhooks</span><span>python</span><span>data merge</span></div>
+    <article class="content-article">
+      <h2>What the client had</h2>
+      <p>A membership business running on Zoho. Payments and renewals lived in Zoho Subscriptions.
+      Customers, notes and sales activity lived in Zoho CRM. The two did not talk to each other, so
+      when somebody paid, renewed or cancelled, a person had to open CRM and change the record by
+      hand. That person was not always fast, and sometimes not there at all.</p>
+
+      <p>Separately, the directory on their website was assembled by hand every time it changed.
+      One file came from a partner over SFTP, one came out of Zoho Reports, and the current list came
+      out of the website's own database. Someone compared them in Excel and uploaded the result.</p>
+
+      <h2>What I built</h2>
+      <ul>
+        <li><strong>A webhook on AWS Lambda between Zoho Subscriptions and Zoho CRM.</strong>
+        A subscription event fires, Lambda receives it, and the matching CRM record is updated the
+        same minute. No server to keep running, and no queue to babysit.</li>
+        <li><strong>A repeatable merge for the three source files.</strong> Download, normalise the
+        columns, compare against what the website already has, and produce one clean file: new rows,
+        changed rows and rows that disappeared, each marked. The Excel afternoon became a script.</li>
+        <li><strong>Checks before anything is written.</strong> A record that looks wrong, a total
+        that does not match, or a file that arrived half-written stops the run and says why, instead
+        of quietly overwriting good data with bad.</li>
+      </ul>
+
+      <h2>Why it lasted</h2>
+      <p>Three contracts with the same client between 2018 and 2020, because each piece was small
+      and testable on its own. The integration is still the pattern I use for CRM work today: one
+      event, one handler, one record updated, with the event's own id stored so that the same event
+      arriving twice changes nothing.</p>
+
+      <h2>Where this fits</h2>
+      <p>If your CRM, your billing and your website each hold a different version of the truth, the
+      fix is rarely a new platform. It is a small, boring piece of code between them that runs every
+      time and tells you when it cannot.</p>
+    </article>
+    <section class="lead-box"><h2>CRM and Billing Out of Sync?</h2><p>Zoho, Stripe, HubSpot or a database that three systems each believe they own. I trace where the data diverges, then fix the handoff.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+</body>
+</html>
