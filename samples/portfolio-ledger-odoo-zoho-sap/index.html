@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP | Shabeeb Hasan</title>
+  <meta name="description" content="An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/portfolio-ledger-odoo-zoho-sap/">
+  <meta property="og:title" content="One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP | Shabeeb Hasan">
+  <meta property="og:description" content="An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/portfolio-ledger-odoo-zoho-sap/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP",
+      "description": "An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/portfolio-ledger-odoo-zoho-sap/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/samples/" class="back-link">Back to work samples</a>
+    <h1 class="content-title">One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP</h1>
+    <p class="content-excerpt">An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.</p>
+    <div class="tag-row"><span>odoo 18</span><span>zoho books</span><span>sap business one</span><span>double-entry</span><span>python</span><span>decimal</span></div>
+    <article class="content-article">
+      <h2>The idea</h2>
+      <p>Most ERP integrations put the accounting inside the ERP. Then the same rules get written again
+      for the next system, slightly differently, and nobody can say which one is right.</p>
+      <p>This one is built the other way round. All of the accounting lives in <code>ledger_core</code>,
+      a Python package with no web framework and no ERP in it: events go in, positions and balanced
+      journal entries come out. Each ERP gets a thin translator that writes those entries down its own
+      way. The arithmetic is tested once, in one place.</p>
+
+      <h2>What the core does</h2>
+      <ul>
+        <li><strong>Exact amounts.</strong> Quantities and prices are decimals parsed from text, with a
+        precision declared per instrument: two places for a share, eight for bitcoin. A value with more
+        places is refused rather than rounded. No floating point ever touches a balance.</li>
+        <li><strong>Positions are replayed, never stored.</strong> Every figure is rebuilt from the events
+        in order, so correcting an import corrects the history. Two cost methods: moving average and FIFO.</li>
+        <li><strong>Cost that is honest about itself.</strong> Units that arrived from elsewhere with no
+        price carry no cost on record. They count in the quantity, stay out of every cost figure, and each
+        position reports how much of it the cost actually speaks for. Nothing is quietly valued at zero.</li>
+        <li><strong>Double entry that balances before it is sent.</strong> A purchase capitalises its fee.
+        A sale splits into cash received, the fee as an expense, the book cost of the units sold, and the
+        gain or loss. An unbalanced entry is never posted.</li>
+        <li><strong>Reconciliation, not adjustment.</strong> The custodian's balances are compared with the
+        ledger's and the differences are reported. Draft corrections wait for a person to accept them.</li>
+        <li><strong>Imports that cannot double count.</strong> Each row gets a stable id from its own
+        content, so the same statement imported twice adds nothing the second time.</li>
+      </ul>
+
+      <h2>The Odoo addon</h2>
+      <p>Written for Odoo 18: a portfolio book with its cost method, currency, journal and account per
+      role; instruments with their own precision; transactions validated through the core as they are
+      written; and positions rebuilt by a daily cron rather than edited by hand. There is an import
+      wizard that previews what it found and what it skipped before anything is written, reader and
+      manager groups with company record rules, and three buttons on the book: rebuild positions, post
+      journal entries, import statement.</p>
+      <p>A seed script drives it through Odoo's external API, posts the entries, reads the positions back
+      and compares them with the core's own figures:</p>
+      <div class="metric-grid">
+        <div class="metric"><strong>69</strong><span>tests on the accounting core, importers and all three adapters</span></div>
+        <div class="metric"><strong>12</strong><span>more tests inside a real Odoo 18 database</span></div>
+        <div class="metric"><strong>3</strong><span>ERPs fed by one set of entries: Odoo, Zoho Books, SAP Business One</span></div>
+        <div class="metric"><strong>0</strong><span>floats anywhere in a balance</span></div>
+      </div>
+
+      <h2>Zoho Books and SAP Business One</h2>
+      <p>The same entries go to the Zoho Books REST API and to the SAP Business One Service Layer through
+      two small adapters. Every adapter looks for the entry's reference before creating anything, so a
+      repeated run does not duplicate a journal entry. The adapter tests give each one a transport that
+      answers the way the vendor documents it, then read back what the adapter tried to send, including a
+      check that all three systems receive identical totals.</p>
+
+      <h2>What this is not</h2>
+      <p>Not a tax computation: the reports give realised amounts by period and holding period, and what
+      is owed depends on the jurisdiction. Not a price feed: valuation uses the prices it is given. Not a
+      trading system: it records what happened and places nothing.</p>
+      <p>The Zoho and SAP adapters are written against the published API shapes and tested against fakes.
+      Running them against a live tenant needs that tenant's credentials and one pass of verification.
+      That is stated here for the same reason it is stated in the repository: a claim that has not been
+      run against the real thing should say so.</p>
+
+      <h2>Why it is built this way</h2>
+      <p>If you are choosing an ERP, or moving between two, the expensive part is never the buttons. It is
+      whether the numbers mean the same thing on both sides. Keeping the rules in one tested package, and
+      letting each ERP be a translator, is what makes that answerable.</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

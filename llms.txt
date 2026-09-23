@@ -53,6 +53,10 @@
 - https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/ : a Baydot product, a Pakistan Stock
   Exchange portfolio tracker with RSI notices; the rule was tested on five years of data first and did not beat
   holding the stocks, which the app states on every page. FastAPI, SQLite, 345 tests.
+- https://shabeeb.baydot.net/case-studies/portfolio-ledger-odoo-zoho-sap/ : an investment ledger whose accounting lives in
+  one framework-free package, with adapters that post the same journal entries into Odoo 18, Zoho Books
+  and SAP Business One. 69 core tests plus 12 inside a real Odoo database. The Zoho and SAP adapters are
+  tested against fakes, not a live tenant, and the page says so.
 - https://shabeeb.baydot.net/case-studies/zoho-aws-lambda-to-odoo-migration/ : seven AWS Lambdas, two Deluge scripts and a
   2.9 GB CSV pipeline rebuilt as one Odoo 17 module, with nine defects found in the original. Module
   written and unit tested; not yet validated against a live Odoo instance, which the page says.

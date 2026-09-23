@@ -22,6 +22,13 @@
    "category": "ai"
   },
   {
+   "title": "One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP",
+   "excerpt": "An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.",
+   "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
+   "url": "/case-studies/portfolio-ledger-odoo-zoho-sap/",
+   "category": "automation"
+  },
+  {
    "title": "From Zoho and AWS Lambda to One Odoo Module",
    "excerpt": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
    "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",

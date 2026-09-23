@@ -34,6 +34,7 @@ SLUGS = [
     "behavioral-ai-authentication-mobile-sensor-signals",
     "ethos-guard-responsible-speech-analytics",
     "zoho-aws-lambda-to-odoo-migration",
+    "portfolio-ledger-odoo-zoho-sap",
 ]
 
 NOTE = ('<p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;'
