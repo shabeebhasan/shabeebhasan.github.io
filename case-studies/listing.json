@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "Food Delivery Platform: Customer App, Driver App, Admin and Django API",
+   "excerpt": "Three sides of a food delivery product: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST API with Stripe Connect payouts. Six milestones, 2020 to 2021.",
+   "image": "/assets/imgs/case-studies/delivery/delivery-card.jpg",
+   "url": "/case-studies/food-delivery-rider-driver-apps-django/",
+   "category": "mobile"
+  },
+  {
    "title": "Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First",
    "excerpt": "A Baydot product: Pakistan Stock Exchange portfolio tracking with RSI notices. The rule was tested on five years of data before any alert was built. It did not beat holding the stocks, and the app says so on every page.",
    "image": "/assets/imgs/case-studies/ishara/ishara-card.jpg",

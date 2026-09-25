@@ -35,6 +35,7 @@ SLUGS = [
     "ethos-guard-responsible-speech-analytics",
     "zoho-aws-lambda-to-odoo-migration",
     "portfolio-ledger-odoo-zoho-sap",
+    "food-delivery-rider-driver-apps-django",
 ]
 
 NOTE = ('<p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;'

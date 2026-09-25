@@ -32,6 +32,7 @@ LINKS = {
     "speech-ai": ("ethos-guard-responsible-speech-analytics", "Ethos Guard, speech and tone analytics"),
     "erp-ledger": ("portfolio-ledger-odoo-zoho-sap", "One accounting core posting into Odoo, Zoho Books and SAP"),
     "odoo": ("zoho-aws-lambda-to-odoo-migration", "Zoho and AWS Lambda ported into one Odoo module"),
+    "delivery": ("food-delivery-rider-driver-apps-django", "Food delivery: customer app, driver app, admin, Django API"),
     "ishara": ("ishara-psx-portfolio-rsi-alerts", "Ishara, PSX portfolio tracker with RSI notices"),
 }
 

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Food Delivery Platform: Customer App, Driver App, Admin and Django API | Shabeeb Hasan</title>
+  <meta name="description" content="A three-sided food delivery product built on contract from June 2020 to May 2021: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST backend with Stripe Connect payouts and PostGIS locations. Six milestones.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/food-delivery-rider-driver-apps-django/">
+  <meta property="og:title" content="Food Delivery Platform: Customer App, Driver App, Admin and Django API | Shabeeb Hasan">
+  <meta property="og:description" content="A three-sided food delivery product built on contract from June 2020 to May 2021: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST backend with Stripe Connect payouts and PostGIS locations. Six milestones.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/food-delivery-rider-driver-apps-django/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/delivery/delivery-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Food Delivery Platform: Customer App, Driver App, Admin and Django API",
+      "description": "A three-sided food delivery product built on contract from June 2020 to May 2021: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST backend with Stripe Connect payouts and PostGIS locations. Six milestones.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/food-delivery-rider-driver-apps-django/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Food Delivery Platform: Customer App, Driver App, Admin and Django API</h1>
+    <p class="content-excerpt">A three-sided food delivery product built on contract from June 2020 to May 2021: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST backend with Stripe Connect payouts and PostGIS locations. Six milestones.</p>
+    <div class="tag-row"><span>react native</span><span>django rest framework</span><span>react</span><span>stripe connect</span><span>postgis</span><span>food delivery</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/delivery/delivery.jpg" alt="Customer app, driver app and Django backend of the food delivery platform" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">The whole platform: three customer screens, two driver screens, and the backend.</figcaption></figure>
+      <h2>What it is</h2>
+      <p>A delivery product with three sides. Customers order food from nearby restaurants. Drivers accept
+      and deliver the orders. Restaurants manage their menu, orders and drivers from a web admin. All three
+      run on one Django REST API.</p>
+      <p>The work was a contract with six milestones between June 2020 and May 2021.</p>
+
+      <h2>Customer app</h2>
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/delivery/rider.jpg" alt="Customer app screens: onboarding, restaurants, cart, card payment, review" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Onboarding, nearby restaurants, cart, card payment, and the review after delivery.</figcaption></figure>
+      <ul>
+        <li>Restaurant search, menu categories, and items with sizes, add-ons and reviews.</li>
+        <li>A cart, then a three-step checkout: contact details, card, and place order.</li>
+        <li>Card payments through Stripe. The app checks the card number, expiry and CVV before sending anything.</li>
+        <li>Order history, a star rating and review after each order, chat, and push notifications.</li>
+      </ul>
+
+      <h2>Driver app</h2>
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/delivery/driver.jpg" alt="Driver app screens: order queue, route, history, chat, profile" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Order queue, route with the order details, delivery history, chat, and profile.</figcaption></figure>
+      <ul>
+        <li>New orders arrive by push. The driver accepts or rejects them, then marks them delivered.</li>
+        <li>A map with the delivery location and the full order.</li>
+        <li>Delivery history, chat with the customer, and a profile with vehicle, licence and bank details.</li>
+      </ul>
+
+      <h2>Restaurant admin</h2>
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/delivery/admin.jpg" alt="Restaurant admin web dashboard with sales chart, order status and menu" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Dashboard and menu editor in the React admin.</figcaption></figure>
+      <ul>
+        <li>React with CoreUI, Redux and redux-saga.</li>
+        <li>Orders grouped as Pending, Chef Assigned, Ongoing and Delivered, with search. Drivers are assigned from here.</li>
+        <li>Menu items with sizes and add-ons, with drag-and-drop images. Also driver accounts and monthly sales charts.</li>
+      </ul>
+
+      <h2>Backend</h2>
+      <ul>
+        <li>Django and Django REST Framework, with separate apps for restaurants, orders, drivers and users.</li>
+        <li>Stripe Connect: each restaurant has its own connected account and is paid out directly. Webhooks handle the payment events.</li>
+        <li>PostGIS for restaurant and delivery locations.</li>
+        <li>Order endpoints to add, accept, decline and mark orders delivered. FCM push to both apps.</li>
+        <li>Google and Apple sign-in. Deployed with Docker on Heroku.</li>
+      </ul>
+
+      <h2>About the images</h2>
+      <p>These screens were redrawn from the source code for this page. The layouts, colours, icons and photos
+      come from the apps. The names, addresses and prices are sample data.</p>
+    </article>
+    <section class="lead-box"><h2>Building a Delivery or Marketplace App?</h2><p>Customer app, driver app, admin and payments, all on one backend. I have built all four parts.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+</body>
+</html>

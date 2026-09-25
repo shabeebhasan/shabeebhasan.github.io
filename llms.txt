@@ -53,6 +53,9 @@
 - https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/ : a Baydot product, a Pakistan Stock
   Exchange portfolio tracker with RSI notices; the rule was tested on five years of data first and did not beat
   holding the stocks, which the app states on every page. FastAPI, SQLite, 345 tests.
+- https://shabeeb.baydot.net/case-studies/food-delivery-rider-driver-apps-django/ : a food delivery product with three sides: React Native
+  customer and driver apps, a React admin for restaurants, and a Django REST API with Stripe Connect payouts
+  and PostGIS locations. Contract work, 2020 to 2021.
 - https://shabeeb.baydot.net/case-studies/portfolio-ledger-odoo-zoho-sap/ : an investment ledger whose accounting lives in
   one framework-free package, with adapters that post the same journal entries into Odoo 18, Zoho Books
   and SAP Business One. 69 core tests plus 12 inside a real Odoo database. The Zoho and SAP adapters are
