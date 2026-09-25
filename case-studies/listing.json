@@ -31,14 +31,14 @@
   {
    "title": "One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP",
    "excerpt": "An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.",
-   "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
+   "image": "/assets/imgs/case-studies/ledger/ledger-card.jpg",
    "url": "/case-studies/portfolio-ledger-odoo-zoho-sap/",
    "category": "automation"
   },
   {
    "title": "From Zoho and AWS Lambda to One Odoo Module",
    "excerpt": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
-   "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
+   "image": "/assets/imgs/case-studies/odoo/odoo-card.jpg",
    "url": "/case-studies/zoho-aws-lambda-to-odoo-migration/",
    "category": "automation"
   },
@@ -108,7 +108,7 @@
   {
    "title": "A Referral Rewards SaaS, Built Solo to Production",
    "excerpt": "francofunrewards.ca, live: a bilingual partner-referral platform for a Canadian tutoring company — React 18 + TypeScript, Django 5/DRF, PostgreSQL and Stripe, architected, built, deployed and maintained by one engineer.",
-   "image": "/assets/imgs/generated/case-studies/francofun-referral-rewards-platform.svg",
+   "image": "/assets/imgs/case-studies/franco/franco-card.jpg",
    "url": "/case-studies/francofun-referral-rewards-platform/",
    "category": "ai"
   },
@@ -129,7 +129,7 @@
   {
    "title": "Laravel and PHP Backends: a Doctor-Patient Platform, AWS and Enterprise SAP",
    "excerpt": "A Laravel API behind a doctor and patient app pair, built and extended across three contracts from 2018 to 2020, a Laravel deployment on AWS for a long-standing client, and enterprise PHP with SAP integration in Germany.",
-   "image": "/assets/imgs/generated/case-studies/laravel-platform-three-year-engagement.svg",
+   "image": "/assets/imgs/case-studies/doctor/doctor-card.jpg",
    "url": "/case-studies/laravel-platform-three-year-engagement/",
    "category": "ai"
   },
