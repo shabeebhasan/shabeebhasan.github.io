@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS | Shabeeb Hasan</title>
+  <meta name="description" content="A Django, Celery and React SaaS with FastAPI engines for face search, AI image generation, LoRA training and virtual try-on. GPU jobs are queued, and every try-on model was checked for commercial use.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/">
+  <meta property="og:title" content="FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS | Shabeeb Hasan">
+  <meta property="og:description" content="A Django, Celery and React SaaS with FastAPI engines for face search, AI image generation, LoRA training and virtual try-on. GPU jobs are queued, and every try-on model was checked for commercial use.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/facesearch/facesearch-poster-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS",
+      "description": "A Django, Celery and React SaaS with FastAPI engines for face search, AI image generation, LoRA training and virtual try-on. GPU jobs are queued, and every try-on model was checked for commercial use.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS</h1>
+    <p class="content-excerpt">A Django, Celery and React SaaS with FastAPI engines for face search, AI image generation, LoRA training and virtual try-on. GPU jobs are queued, and every try-on model was checked for commercial use.</p>
+    <div class="tag-row"><span>django</span><span>celery</span><span>react</span><span>fastapi</span><span>stable diffusion</span><span>lora</span><span>virtual try-on</span></div>
+    <article class="content-article">
+<figure style="margin:22px 0"><img src="/assets/imgs/case-studies/facesearch/facesearch-poster.jpg" alt="FaceSearch LoRA training page and Outfit Studio" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">The LoRA training page and Outfit Studio. The four samples are real outputs of a LoRA trained through the pipeline.</figcaption></figure>
+      <h2>What it does</h2>
+      <p>Users upload photo collections and search them by face, generate images, train their own LoRA from a few photos, and try garments on people. Each of those is heavy GPU work, so the app never runs it inside a web request.</p>
+      <h2>How it is built</h2>
+      <ul>
+        <li>A React front end and a Django API and admin.</li>
+        <li>Celery workers queue and track the GPU jobs.</li>
+        <li>FastAPI engines for image generation, LoRA training (a wrapper around kohya_ss) and virtual try-on.</li>
+        <li>Postgres, Redis and Nginx, all in Docker, with a GPU profile for real workloads.</li>
+      </ul>
+      <h2>The LoRA pipeline</h2>
+      <p>Upload a dataset, queue the job, train, and the model is stored as a <code>.safetensors</code> file and marked ready. The run in the poster trained on Realistic Vision 5.1 for 150 steps at 512 pixels, network dim 16, in 126 seconds, and produced the four samples shown. Training ran end to end on Kaggle GPUs.</p>
+      <h2>Virtual try-on and licences</h2>
+      <p>Try-on goes through a provider router: two hosted APIs, a synthetic FLUX.2 klein 4B path (Apache-2.0), and a self-hosted model. The self-hosted one depends on a human parser under a non-commercial licence, so it is used for testing only and paying traffic is routed to a hosted provider. If a provider fails, the router falls back and marks the job.</p>
+    </article>
+    <section class="lead-box"><h2>Building an AI image product?</h2><p>Generation, fine-tuning and try-on behind a queue, with the licences checked before anything goes to paying users.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+</body>
+</html>

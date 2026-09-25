@@ -53,6 +53,12 @@
 - https://shabeeb.baydot.net/case-studies/ishara-psx-portfolio-rsi-alerts/ : a Baydot product, a Pakistan Stock
   Exchange portfolio tracker with RSI notices; the rule was tested on five years of data first and did not beat
   holding the stocks, which the app states on every page. FastAPI, SQLite, 345 tests.
+- https://shabeeb.baydot.net/case-studies/voicerelay-bluetooth-mic-speaker-relay/ : a native Android app relaying a voice
+  from any microphone to any speaker, with a C++ Oboe audio engine and an echo canceller built from scratch.
+  The Bluetooth path is not yet validated on physical hardware, and the page says so.
+- https://shabeeb.baydot.net/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/ : face search, AI image
+  generation, LoRA training and virtual try-on in one Django, Celery and React SaaS, with model licences checked
+  for commercial use.
 - https://shabeeb.baydot.net/case-studies/food-delivery-rider-driver-apps-django/ : a food delivery product with three sides: React Native
   customer and driver apps, a React admin for restaurants, and a Django REST API with Stripe Connect payouts
   and PostGIS locations. Contract work, 2020 to 2021.
