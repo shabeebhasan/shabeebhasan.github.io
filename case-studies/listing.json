@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA",
+   "excerpt": "ComfyUI graphs that keep a face consistent with a LoRA, IP-Adapter FaceID and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA.",
+   "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
+   "url": "/case-studies/comfyui-faceid-controlnet-lora-workflows/",
+   "category": "ai"
+  },
+  {
    "title": "FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS",
    "excerpt": "Face search, AI image generation, LoRA training and virtual try-on in one Django and React SaaS, with GPU jobs on Celery and model licences checked for commercial use.",
    "image": "/assets/imgs/case-studies/facesearch/facesearch-poster-card.jpg",

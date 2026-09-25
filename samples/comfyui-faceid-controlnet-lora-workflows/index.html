@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA | Shabeeb Hasan</title>
+  <meta name="description" content="ComfyUI graphs that keep one face consistent across images using a LoRA, IP-Adapter FaceID Plus V2 and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA with kohya_ss.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/comfyui-faceid-controlnet-lora-workflows/">
+  <meta property="og:title" content="ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA | Shabeeb Hasan">
+  <meta property="og:description" content="ComfyUI graphs that keep one face consistent across images using a LoRA, IP-Adapter FaceID Plus V2 and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA with kohya_ss.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/comfyui-faceid-controlnet-lora-workflows/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/comfy/comfy-poster-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA",
+      "description": "ComfyUI graphs that keep one face consistent across images using a LoRA, IP-Adapter FaceID Plus V2 and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA with kohya_ss.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/comfyui-faceid-controlnet-lora-workflows/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/samples/" class="back-link">Back to work samples</a>
+    <h1 class="content-title">ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA</h1>
+    <p class="content-excerpt">ComfyUI graphs that keep one face consistent across images using a LoRA, IP-Adapter FaceID Plus V2 and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA with kohya_ss.</p>
+    <div class="tag-row"><span>comfyui</span><span>stable diffusion</span><span>ip-adapter faceid</span><span>controlnet</span><span>kohya_ss</span><span>lora</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/comfy/comfy-poster.jpg" alt="ComfyUI graph with LoRA, FaceID and ControlNet, and the LoRA training notebook" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">The real workflow graph, drawn from its JSON: every node, setting and link. LoRA names, photo file names and the prompt were replaced.</figcaption></figure>
+      <h2>The problem</h2>
+      <p>Stable Diffusion changes a face a little on every image. For a character, a model or a brand face that has to look the same across a set, that drift is the whole problem.</p>
+      <h2>The graph</h2>
+      <ul>
+        <li><strong>A trained LoRA</strong> carries the identity into the model and the text encoder.</li>
+        <li><strong>IP-Adapter FaceID Plus V2</strong> takes a single reference photo and holds the face on top of the LoRA.</li>
+        <li><strong>An OpenPose ControlNet</strong> takes the pose from a second photo. Its strength is its own setting, so a weak pose hint can be turned down without touching the face.</li>
+        <li>A KSampler with fixed settings, then VAE decode and save. Variants of the graph cover SD 1.5 and SDXL, with and without the pose hint.</li>
+      </ul>
+      <h2>Training the LoRA</h2>
+      <p>A Colab notebook runs kohya_ss sd-scripts with Accelerate in fp16. Captioned images come from Google Drive, and each epoch's LoRA is saved back to it. It starts at 512 pixels with network dim 16 and a cosine schedule, and the notes cover what to change when free Colab runs out of memory.</p>
+      <p>The same LoRA pipeline was later built into a full product: see <a href="/samples/facesearch-ai-image-saas-lora-virtual-try-on/">FaceSearch</a>.</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>
