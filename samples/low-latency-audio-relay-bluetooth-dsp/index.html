@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>Low-Latency Bluetooth Audio Relay | Shabeeb Hasan</title>
   <meta name="description" content="A real-time mic-to-speaker relay app with a portable C++ DSP core, custom GCC-PHAT alignment and NLMS echo cancellation, covered by 25 tests.">
+  <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/low-latency-audio-relay-bluetooth-dsp/">
   <meta property="og:title" content="Low-Latency Bluetooth Audio Relay | Shabeeb Hasan">
   <meta property="og:description" content="A real-time mic-to-speaker relay app with a portable C++ DSP core, custom GCC-PHAT alignment and NLMS echo cancellation, covered by 25 tests.">
@@ -35,16 +36,14 @@
         y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
     })(window, document, "clarity", "script", "xr2jrpr9sq");
   </script>
-  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
-  <script src="/js/assistant.js" defer></script>
   <!-- Google Analytics 4 -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
 </head>
 <body>
-  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/samples/">Shabeeb Hasan</a></div></nav>
   <section class="section content-page"><div class="container content-wrap">
-    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <a href="/samples/" class="back-link">Back to work samples</a>
     <h1 class="content-title">Low-Latency Bluetooth Audio Relay</h1>
     <p class="content-excerpt">Turning a phone into a live PA system means beating three things the mobile audio stack is not built for: latency, routing, and howling feedback. This one needed its own echo canceller, because the platform's could not reach across a room.</p>
     <img src="/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg" alt="Low-Latency Bluetooth Audio Relay" class="hero-image" width="1600" height="900">
@@ -90,9 +89,10 @@
       <div class="cs-note"><p>Honest status: the DSP and engine are verified in automated tests and on emulator, with an in-app latency estimator in the field. The definitive hardware round-trip benchmark across real Bluetooth devices is in progress. That number will be published when it is measured, not before.</p></div>
 
       <h2>Why It Matters Commercially</h2>
-      <p>The same portable core is the asset. The signal processing is not tied to Android, so an iOS build reuses the tested DSP and adds only its own audio I/O layer, and the identical architecture applies to hearing assistance, tour-guide systems, live translation relays, and any product where audio has to move between devices in real time.</p>      <p class="next-step" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;"><strong>Need this built?</strong> See <a href="/full-stack-ai-developer/">full-stack AI development</a>, or browse the <a href="/case-studies/">case studies</a>.</p>
+      <p>The same portable core is the asset. The signal processing is not tied to Android, so an iOS build reuses the tested DSP and adds only its own audio I/O layer, and the identical architecture applies to hearing assistance, tour-guide systems, live translation relays, and any product where audio has to move between devices in real time.</p>      
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
     </article>
-    <section class="lead-box"><h2>Building Something Real-Time?</h2><p>Audio, sensors, streaming, or any system where milliseconds and failure modes both matter. I write the portable core, test it properly, and make the platform behave. Let's talk about your build.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="/contact/">Send a Message</a></div></section>
+    
   </div></section>
 </body>
 </html>

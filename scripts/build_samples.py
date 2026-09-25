@@ -36,7 +36,7 @@ SLUGS = [
     "zoho-aws-lambda-to-odoo-migration",
     "portfolio-ledger-odoo-zoho-sap",
     "food-delivery-rider-driver-apps-django",
-    "voicerelay-bluetooth-mic-speaker-relay",
+    "low-latency-audio-relay-bluetooth-dsp",
     "facesearch-ai-image-saas-lora-virtual-try-on",
     "comfyui-faceid-controlnet-lora-workflows",
 ]

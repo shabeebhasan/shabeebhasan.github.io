@@ -33,7 +33,7 @@ LINKS = {
     "erp-ledger": ("portfolio-ledger-odoo-zoho-sap", "One accounting core posting into Odoo, Zoho Books and SAP"),
     "odoo": ("zoho-aws-lambda-to-odoo-migration", "Zoho and AWS Lambda ported into one Odoo module"),
     "comfyui": ("comfyui-faceid-controlnet-lora-workflows", "ComfyUI FaceID, ControlNet and LoRA workflows"),
-    "voicerelay": ("voicerelay-bluetooth-mic-speaker-relay", "VoiceRelay, live Bluetooth mic to speaker relay"),
+    "voicerelay": ("low-latency-audio-relay-bluetooth-dsp", "VoiceRelay, live Bluetooth mic to speaker relay"),
     "facesearch": ("facesearch-ai-image-saas-lora-virtual-try-on", "FaceSearch, LoRA training and virtual try-on SaaS"),
     "delivery": ("food-delivery-rider-driver-apps-django", "Food delivery: customer app, driver app, admin, Django API"),
     "ishara": ("ishara-psx-portfolio-rsi-alerts", "Ishara, PSX portfolio tracker with RSI notices"),

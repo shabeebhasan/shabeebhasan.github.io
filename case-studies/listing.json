@@ -15,13 +15,6 @@
    "category": "ai"
   },
   {
-   "title": "VoiceRelay: A Live Bluetooth Mic to Speaker Relay with Its Own Echo Canceller",
-   "excerpt": "A native Android app that relays a voice from any microphone to any speaker in real time, with a C++ audio engine and an echo canceller built from scratch.",
-   "image": "/assets/imgs/case-studies/voicerelay/voicerelay-poster-card.jpg",
-   "url": "/case-studies/voicerelay-bluetooth-mic-speaker-relay/",
-   "category": "ai"
-  },
-  {
    "title": "Food Delivery Platform: Customer App, Driver App, Admin and Django API",
    "excerpt": "Three sides of a food delivery product: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST API with Stripe Connect payouts. Six milestones, 2020 to 2021.",
    "image": "/assets/imgs/case-studies/delivery/delivery-card.jpg",
@@ -115,7 +108,7 @@
   {
    "title": "Low-Latency Bluetooth Audio Relay",
    "excerpt": "A real-time mic-to-speaker relay with a portable C++ DSP core and a custom GCC-PHAT + NLMS echo canceller for room-length Bluetooth echo paths the platform AEC cannot reach.",
-   "image": "/assets/imgs/generated/case-studies/low-latency-audio-relay-bluetooth-dsp.svg",
+   "image": "/assets/imgs/case-studies/voicerelay/voicerelay-poster-card.jpg",
    "url": "/case-studies/low-latency-audio-relay-bluetooth-dsp/",
    "category": "ai"
   },
