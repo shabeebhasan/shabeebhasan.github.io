@@ -1506,3 +1506,7 @@ i.text-danger,
     min-height: 0;
   }
 }
+
+/* one card shape so the grid lines up */
+.portfolio .portfolio-container .portfolio-item img { aspect-ratio: 4 / 3; min-height: 0; height: auto; }
+.price-card-cost .num-word { font-size: 44px; white-space: nowrap; }
