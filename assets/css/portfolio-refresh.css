@@ -1516,3 +1516,7 @@ i.text-danger,
 .portfolio .filters a { flex-basis: auto; white-space: nowrap; opacity: 1; font-size: 14px; }
 .cv-pack-section .cv-pack-word { color: #ffffff; }
 .outcome-card img { aspect-ratio: 16 / 10; height: auto; object-fit: cover; object-position: top; background: #f3f0e8; }
+
+/* whole card opens its case study */
+.portfolio .portfolio-container .portfolio-item { position: relative; cursor: pointer; }
+.portfolio .portfolio-container .portfolio-item .pf-live { display: inline-block; margin-top: 8px; }
