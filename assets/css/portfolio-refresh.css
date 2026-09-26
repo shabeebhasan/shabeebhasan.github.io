@@ -1510,3 +1510,9 @@ i.text-danger,
 /* one card shape so the grid lines up */
 .portfolio .portfolio-container .portfolio-item img { aspect-ratio: 4 / 3; min-height: 0; height: auto; }
 .price-card-cost .num-word { font-size: 44px; white-space: nowrap; }
+
+/* design review fixes */
+.portfolio .filters { max-width: none; border-bottom: 1px solid var(--portfolio-line); justify-content: flex-start; }
+.portfolio .filters a { flex-basis: auto; white-space: nowrap; opacity: 1; font-size: 14px; }
+.cv-pack-section .cv-pack-word { color: #ffffff; }
+.outcome-card img { aspect-ratio: 16 / 10; height: auto; object-fit: cover; object-position: top; background: #f3f0e8; }
