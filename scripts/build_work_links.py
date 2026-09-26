@@ -32,6 +32,7 @@ LINKS = {
     "speech-ai": ("ethos-guard-responsible-speech-analytics", "Ethos Guard, speech and tone analytics"),
     "erp-ledger": ("portfolio-ledger-odoo-zoho-sap", "One accounting core posting into Odoo, Zoho Books and SAP"),
     "odoo": ("zoho-aws-lambda-to-odoo-migration", "Zoho and AWS Lambda ported into one Odoo module"),
+    "jobhunt": ("job-hunting-ai-lead-engine-proposal-saas", "Job-Hunting AI lead and proposal SaaS"),
     "comfyui": ("comfyui-faceid-controlnet-lora-workflows", "ComfyUI FaceID, ControlNet and LoRA workflows"),
     "voicerelay": ("low-latency-audio-relay-bluetooth-dsp", "VoiceRelay, live Bluetooth mic to speaker relay"),
     "facesearch": ("facesearch-ai-image-saas-lora-virtual-try-on", "FaceSearch, LoRA training and virtual try-on SaaS"),

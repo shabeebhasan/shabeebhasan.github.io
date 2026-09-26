@@ -35,6 +35,8 @@
 
 ## Strongest evidence
 
+- https://shabeeb.baydot.net/case-studies/job-hunting-ai-lead-engine-proposal-saas/ : my own SaaS that finds and
+  qualifies businesses, drafts outreach a person approves, and learns which proposals win (Next.js, Supabase, BullMQ).
 - https://shabeeb.baydot.net/case-studies/dovia-healthcare-marketplace/ : development-stage healthcare
   marketplace modernization across Laravel, React and two React Native clients; actual demo screenshots
   and regression tests. Not a claim of live payment readiness or clinical certification.

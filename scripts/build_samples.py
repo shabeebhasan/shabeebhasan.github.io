@@ -39,6 +39,7 @@ SLUGS = [
     "low-latency-audio-relay-bluetooth-dsp",
     "facesearch-ai-image-saas-lora-virtual-try-on",
     "comfyui-faceid-controlnet-lora-workflows",
+    "job-hunting-ai-lead-engine-proposal-saas",
 ]
 
 NOTE = ('<p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;'

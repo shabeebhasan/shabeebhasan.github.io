@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS",
+   "excerpt": "Finds and qualifies businesses, drafts outreach a person approves, runs an AI receptionist, and learns which proposals win. Next.js, Supabase, BullMQ.",
+   "image": "/assets/imgs/case-studies/jobhunt/jobhunt-poster-card.jpg",
+   "url": "/case-studies/job-hunting-ai-lead-engine-proposal-saas/",
+   "category": "ai"
+  },
+  {
    "title": "ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA",
    "excerpt": "ComfyUI graphs that keep a face consistent with a LoRA, IP-Adapter FaceID and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA.",
    "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",

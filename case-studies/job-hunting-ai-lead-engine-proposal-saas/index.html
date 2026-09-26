@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS | Shabeeb Hasan</title>
+  <meta name="description" content="A Next.js and Supabase SaaS that finds local businesses, qualifies them with a capped confidence score, drafts outreach for a person to approve, runs an AI receptionist, and learns from recorded proposal outcomes which proposals win.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/job-hunting-ai-lead-engine-proposal-saas/">
+  <meta property="og:title" content="Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS | Shabeeb Hasan">
+  <meta property="og:description" content="A Next.js and Supabase SaaS that finds local businesses, qualifies them with a capped confidence score, drafts outreach for a person to approve, runs an AI receptionist, and learns from recorded proposal outcomes which proposals win.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/job-hunting-ai-lead-engine-proposal-saas/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/jobhunt/jobhunt-poster-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS",
+      "description": "A Next.js and Supabase SaaS that finds local businesses, qualifies them with a capped confidence score, drafts outreach for a person to approve, runs an AI receptionist, and learns from recorded proposal outcomes which proposals win.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/job-hunting-ai-lead-engine-proposal-saas/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS</h1>
+    <p class="content-excerpt">A Next.js and Supabase SaaS that finds local businesses, qualifies them with a capped confidence score, drafts outreach for a person to approve, runs an AI receptionist, and learns from recorded proposal outcomes which proposals win.</p>
+    <div class="tag-row"><span>next.js</span><span>supabase</span><span>bullmq</span><span>claude</span><span>mcp</span><span>saas</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/jobhunt/jobhunt-poster.jpg" alt="Job-Hunting AI lead pipeline, Win Engine, outreach draft and AI receptionist" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Screens redrawn from the code, with sample businesses in place of real ones.</figcaption></figure>
+      <h2>What it is</h2>
+      <p>My own product, built to find freelance and agency work. It covers the whole path: find a business, decide if it is worth the time, reach it, and learn from what happened.</p>
+      <h2>What it does</h2>
+      <ul>
+        <li><strong>Lead engine.</strong> Searches OpenStreetMap against a saved ideal-customer profile, imports CSV with a preview that says why a bad row was refused, and reads each business's own website for a published email.</li>
+        <li><strong>Qualification.</strong> An LLM scores fit, gives reasons, a pain guess and an opening line. Confidence is capped by how much is actually known, and the missing fields are listed.</li>
+        <li><strong>Outreach and autopilot.</strong> A daily run finds and enriches new leads, drafts emails and pushes a summary to the phone. Nothing is sent until a person approves it, and approval is refused until a postal address is set. Every email has an unsubscribe link.</li>
+        <li><strong>AI receptionist.</strong> Sales, booking and support agents, each with its own short prompt and tools, handing a caller across without asking their name twice. It is also exposed as an MCP server and an embeddable widget.</li>
+        <li><strong>Win Engine.</strong> Records proposal outcomes and shows what the winners had in common, for example reply-getting proposals were far shorter. It shows nothing until there are enough decided proposals to mean something.</li>
+        <li><strong>Plans and usage.</strong> Quota is reserved before AI work runs and refunded if the work fails, so two requests cannot both spend the last unit.</li>
+      </ul>
+      <h2>Stack</h2>
+      <p>Next.js 14 and TypeScript, Supabase (Postgres, Auth, row-level security), BullMQ workers on Redis, Stripe billing, a Chrome extension for collecting job posts, and a provider-agnostic LLM layer (Claude, OpenAI, Gemini and others). 177 automated tests.</p>
+      <h2>What it does not claim</h2>
+      <p>Contact lookup only finds published addresses, roughly one site in four. Scores are a model's opinion against the profile. The receptionist books into the app's own calendar; phone lines and Google Calendar are integrations, not part of the demo.</p>
+    </article>
+    <section class="lead-box"><h2>Need a lead or proposal pipeline?</h2><p>Lead search, qualification, outreach drafts and usage-metered SaaS plans, built so a person stays in control of what gets sent.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+</body>
+</html>
