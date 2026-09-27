@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend | Shabeeb Hasan</title>
+  <meta name="description" content="A React Native insurance app where one account replaces many policies: open it by photographing an ID, choose covers, and claim with photos, on a Cognito, Lambda and DynamoDB backend. Client contract, 2018 to 2019.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/insurance-wallet-app-react-native-aws-ocr/">
+  <meta property="og:title" content="Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend | Shabeeb Hasan">
+  <meta property="og:description" content="A React Native insurance app where one account replaces many policies: open it by photographing an ID, choose covers, and claim with photos, on a Cognito, Lambda and DynamoDB backend. Client contract, 2018 to 2019.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/insurance-wallet-app-react-native-aws-ocr/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/old/yous-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend",
+      "description": "A React Native insurance app where one account replaces many policies: open it by photographing an ID, choose covers, and claim with photos, on a Cognito, Lambda and DynamoDB backend. Client contract, 2018 to 2019.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/insurance-wallet-app-react-native-aws-ocr/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/portfolio/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/portfolio/" class="back-link">Back to portfolio</a>
+    <h1 class="content-title">Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend</h1>
+    <p class="content-excerpt">A React Native insurance app where one account replaces many policies: open it by photographing an ID, choose covers, and claim with photos, on a Cognito, Lambda and DynamoDB backend. Client contract, 2018 to 2019.</p>
+    <div class="tag-row"><span>react native</span><span>aws lambda</span><span>cognito</span><span>dynamodb</span><span>google vision</span><span>ocr</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/old/yous.jpg" alt="Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Screens are redrawn from the app code and use its own illustrations. Names and ID numbers are sample data. The server side is also covered in the <a href="/portfolio/ocr-document-intelligence-pipeline/">OCR case study</a>.</figcaption></figure>
+      <h2>The problem</h2>
+      <p>People held separate policies for family, car, travel and home, each with its own sign-up and its own claim form. The client wanted one app where an account opens in a minute and a claim starts from a photo.</p>
+      <h2>What I built</h2>
+      <ul><li><strong>Open an account from an ID photo.</strong> The app sends the licence photo to a Lambda, Google Vision reads it, and the name, ID number and dates are parsed out of the text and shown back for the user to approve.</li><li><strong>Phone login with no password.</strong> Cognito with custom auth challenge Lambdas sends and checks a one-time code.</li><li><strong>Covers and preferences.</strong> Family, mobility and property cover, with travel preferences such as winter sport or flight cancellation feeding a cover calculation.</li><li><strong>Claims with photos.</strong> The user says whose property was damaged and who was responsible, uploads photos to S3, and gets recommended repair places on a map.</li><li><strong>Mobility data.</strong> A native module streams location history and driving state from a mobility SDK to the API; a scheduled Lambda writes daily summaries to DynamoDB.</li></ul>
+      <h2>Stack</h2>
+      <p>React Native 0.55, Redux, React Navigation, AWS Amplify, Cognito, API Gateway, Lambda (Python and Node), DynamoDB, S3, Google Vision</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

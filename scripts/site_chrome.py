@@ -4,7 +4,7 @@
 Inner pages were written with a navbar that held only the name, and no footer, so a
 reader who finished a case study had nowhere to go. This adds a menu and a footer
 between marker comments, so running it again replaces them instead of stacking copies.
-build_samples.py strips both blocks: the /samples/ copies must not link to /contact/.
+build_samples.py strips both blocks: the /portfolio/ copies must not link to /contact/.
 
 The CV hub at /resumes/ has no navbar, so it gets a top bar with the same menu instead.
 
@@ -14,7 +14,7 @@ import os
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SKIP_TOP = {"samples", "work", "resumes", "pins", "scripts", "assets", "js", ".git"}
+SKIP_TOP = {"samples", "portfolio", "work", "resumes", "pins", "scripts", "assets", "js", ".git"}
 
 NAV = """<!--site-nav--><style>
 .site-nav-links{display:flex;gap:22px;align-items:center;margin-left:auto;flex-wrap:wrap}

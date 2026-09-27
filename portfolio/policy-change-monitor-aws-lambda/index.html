@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Policy Change Monitor: a Serverless Diff of Public Terms Pages | Shabeeb Hasan</title>
+  <meta name="description" content="A Python job on AWS Lambda that watches about 28 public terms, privacy and cookie pages, finds exactly what changed, keeps every version in DynamoDB and emails the diff for review.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/policy-change-monitor-aws-lambda/">
+  <meta property="og:title" content="Policy Change Monitor: a Serverless Diff of Public Terms Pages | Shabeeb Hasan">
+  <meta property="og:description" content="A Python job on AWS Lambda that watches about 28 public terms, privacy and cookie pages, finds exactly what changed, keeps every version in DynamoDB and emails the diff for review.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/policy-change-monitor-aws-lambda/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/old/policymon-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Policy Change Monitor: a Serverless Diff of Public Terms Pages",
+      "description": "A Python job on AWS Lambda that watches about 28 public terms, privacy and cookie pages, finds exactly what changed, keeps every version in DynamoDB and emails the diff for review.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/policy-change-monitor-aws-lambda/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/portfolio/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/portfolio/" class="back-link">Back to portfolio</a>
+    <h1 class="content-title">Policy Change Monitor: a Serverless Diff of Public Terms Pages</h1>
+    <p class="content-excerpt">A Python job on AWS Lambda that watches about 28 public terms, privacy and cookie pages, finds exactly what changed, keeps every version in DynamoDB and emails the diff for review.</p>
+    <div class="tag-row"><span>python</span><span>aws lambda</span><span>dynamodb</span><span>ses</span><span>beautifulsoup</span><span>web scraping</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/old/policymon.jpg" alt="Policy Change Monitor: a Serverless Diff of Public Terms Pages" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">The diff in the image is sample text. The page names in the watch list were public pages; the client is not named.</figcaption></figure>
+      <h2>The problem</h2>
+      <p>The client had to know when any of dozens of public policy pages changed. Checking them by hand meant changes were found late or not at all.</p>
+      <h2>What I built</h2>
+      <ul><li><strong>Watch list</strong> of pages, each with the CSS selector for its main text, so menus and footers never show up as changes.</li><li><strong>Fetch and extract</strong> with requests and BeautifulSoup inside Lambda.</li><li><strong>Compare</strong> against the last stored version with a unified diff, and skip pages that did not change.</li><li><strong>Report</strong>: each change is stored as a new version and an SES email with the diff goes to every subscriber.</li><li><strong>Review API</strong>: API Gateway endpoints mark a change as reviewed, lock it while someone is on it, and log who reviewed it and when.</li></ul>
+      <h2>Stack</h2>
+      <p>Python, AWS Lambda, API Gateway, DynamoDB, SES, BeautifulSoup, difflib</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

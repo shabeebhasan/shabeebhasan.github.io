@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Marketplace-safe copies of the case studies, under /samples/.
+"""Marketplace-safe copies of the case studies, under /portfolio/ (old /samples/ links redirect here).
 
 Upwork and Fiverr forbid pointing a client at contact details. The real case-study
 pages carry an email button, a Calendly link, the AI assistant widget and links to
@@ -12,10 +12,12 @@ never compete with the originals in search.
 Run from the repo root:  python3 scripts/build_samples.py
 """
 import os
+import shutil
 import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-OUT = os.path.join(ROOT, "samples")
+OUT = os.path.join(ROOT, "portfolio")
+OLD = os.path.join(ROOT, "samples")  # every old /samples/ URL redirects to /portfolio/
 BASE = "https://shabeeb.baydot.net"
 
 SLUGS = [
@@ -82,14 +84,14 @@ def clean(html, slug):
     # any contact link left anywhere: keep the words, drop the link
     html = re.sub(r'<a [^>]*href="(mailto:|tel:|https://calendly\.com|https://wa\.me)[^"]*"[^>]*>(.*?)</a>',
                   r"\2", html, flags=re.S)
-    # stay inside /samples/, and never send a reader to a hire page
-    html = html.replace('href="/case-studies/"', 'href="/samples/"')
-    html = html.replace("Back to Case Studies", "Back to work samples")
-    html = re.sub(r'href="/case-studies/([a-z0-9-]+)/"', r'href="/samples/\1/"', html)
+    # stay inside /portfolio/, and never send a reader to a hire page
+    html = html.replace('href="/case-studies/"', 'href="/portfolio/"')
+    html = html.replace("Back to Case Studies", "Back to portfolio")
+    html = re.sub(r'href="/case-studies/([a-z0-9-]+)/"', r'href="/portfolio/\1/"', html)
     html = re.sub(r'<a href="/[a-z0-9-]*(developer|consultant)/"[^>]*>(.*?)</a>', r"\2", html, flags=re.S)
     # /contact/ is where the address, the number and the calendar live: never link it here
     html = re.sub(r'<a [^>]*href="/contact/"[^>]*>(.*?)</a>', r"\1", html, flags=re.S)
-    html = html.replace('<a class="navbar-brand" href="/">', '<a class="navbar-brand" href="/samples/">')
+    html = html.replace('<a class="navbar-brand" href="/">', '<a class="navbar-brand" href="/portfolio/">')
     # copies must never be indexed; canonical already points at the real page
     if 'name="robots"' not in html:
         html = html.replace('<link rel="canonical"',
@@ -120,10 +122,10 @@ def main():
         open(os.path.join(folder, "index.html"), "w", encoding="utf-8").write(clean(html, slug))
         image = field(html, r'<meta property="og:image" content="https://shabeeb\.baydot\.net([^"]+)"')
         items.append((slug, title, excerpt, image))
-        print(f"{BASE}/samples/{slug}/")
+        print(f"{BASE}/portfolio/{slug}/")
 
     cards = "\n".join(
-        f'    <a class="item" href="/samples/{s}/">'
+        f'    <a class="item" href="/portfolio/{s}/">'
         + (f'<img src="{img}" alt="" loading="lazy">' if img else "")
         + f'<div><h2>{t}</h2><p>{e[:170]}{"…" if len(e) > 170 else ""}</p></div></a>'
         for s, t, e, img in items)
@@ -132,15 +134,15 @@ def main():
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Work samples | Shabeeb Hasan</title>
+  <title>Portfolio | Shabeeb Hasan</title>
   <meta name="robots" content="noindex, follow">
   <link rel="canonical" href="{BASE}/case-studies/">
-  <meta name="description" content="Work samples: AI applications, SaaS platforms, mobile apps and data pipelines.">
+  <meta name="description" content="Portfolio: AI applications, SaaS platforms, mobile apps and data pipelines.">
   {INDEX_CSS}
 </head>
 <body>
   <div class="wrap">
-    <h1>Work samples</h1>
+    <h1>Portfolio</h1>
     <p class="lede">A short write-up of each project: what the problem was, what I built, and what it does today.
     {len(items)} of them, from AI and document work to SaaS platforms, mobile apps and video pipelines.</p>
     <div class="grid">
@@ -152,7 +154,33 @@ def main():
 </html>
 """
     open(os.path.join(OUT, "index.html"), "w", encoding="utf-8").write(index)
-    print(len(items), "clean pages written to /samples/")
+    print(len(items), "clean pages written to /portfolio/")
+    write_redirects([s for s, *_ in items])
+
+
+def redirect_page(target):
+    return (f'<!DOCTYPE html><html lang="en"><head><meta charset="utf-8">'
+            f'<meta http-equiv="refresh" content="0; url={target}"><link rel="canonical" href="{BASE}{target}">'
+            f'<meta name="robots" content="noindex, follow"><title>Portfolio | Shabeeb Hasan</title>'
+            f'<script>location.replace("{target}"+location.hash)</script></head>'
+            f'<body><p>Moved to <a href="{target}">{target}</a>.</p></body></html>\n')
+
+
+def write_redirects(slugs):
+    """Links already sent in proposals point at /samples/...; keep every one of them working."""
+    retired = []
+    if os.path.isdir(OLD):
+        # pages that once lived under /samples/ but are no longer built still get a redirect
+        retired = [d for d in os.listdir(OLD) if os.path.isdir(os.path.join(OLD, d)) and d not in slugs]
+        shutil.rmtree(OLD)
+    os.makedirs(OLD)
+    for s in retired:
+        os.makedirs(os.path.join(OLD, s))
+        open(os.path.join(OLD, s, "index.html"), "w", encoding="utf-8").write(redirect_page("/portfolio/"))
+    open(os.path.join(OLD, "index.html"), "w", encoding="utf-8").write(redirect_page("/portfolio/"))
+    for s in slugs:
+        os.makedirs(os.path.join(OLD, s))
+        open(os.path.join(OLD, s, "index.html"), "w", encoding="utf-8").write(redirect_page(f"/portfolio/{s}/"))
 
 
 if __name__ == "__main__":
