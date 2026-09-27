@@ -19,27 +19,27 @@ OUT = os.path.join(ROOT, "samples")
 BASE = "https://shabeeb.baydot.net"
 
 SLUGS = [
+    "food-delivery-rider-driver-apps-django",
+    "dovia-healthcare-marketplace",
+    "facesearch-ai-image-saas-lora-virtual-try-on",
     "francofun-referral-rewards-platform",
+    "job-hunting-ai-lead-engine-proposal-saas",
+    "zoho-aws-lambda-to-odoo-migration",
+    "behavioral-ai-authentication-mobile-sensor-signals",
+    "ishara-psx-portfolio-rsi-alerts",
+    "laravel-platform-three-year-engagement",
+    "low-latency-audio-relay-bluetooth-dsp",
+    "portfolio-ledger-odoo-zoho-sap",
+    "comfyui-faceid-controlnet-lora-workflows",
+    "native-video-modules-react-native-ios-android",
     "stripe-mailerlite-subscription-flow-audit-and-fix",
+    "facial-emotion-detection-expo-app-lora-pipelines",
+    "ethos-guard-responsible-speech-analytics",
     "gpt3-question-answering-private-documents-poc",
     "llm-data-import-inference-microservices",
-    "native-video-modules-react-native-ios-android",
-    "facial-emotion-detection-expo-app-lora-pipelines",
-    "ishara-psx-portfolio-rsi-alerts",
     "serverless-video-pipeline-ffmpeg-aws-lambda",
     "ocr-document-intelligence-pipeline",
     "django-at-scale-21-contracts",
-    "laravel-platform-three-year-engagement",
-    "dovia-healthcare-marketplace",
-    "behavioral-ai-authentication-mobile-sensor-signals",
-    "ethos-guard-responsible-speech-analytics",
-    "zoho-aws-lambda-to-odoo-migration",
-    "portfolio-ledger-odoo-zoho-sap",
-    "food-delivery-rider-driver-apps-django",
-    "low-latency-audio-relay-bluetooth-dsp",
-    "facesearch-ai-image-saas-lora-virtual-try-on",
-    "comfyui-faceid-controlnet-lora-workflows",
-    "job-hunting-ai-lead-engine-proposal-saas",
 ]
 
 NOTE = ('<p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;'
@@ -48,7 +48,7 @@ NOTE = ('<p class="samples-note" style="margin:26px 0 0;padding:14px 16px;backgr
 
 INDEX_CSS = """<style>
     body{font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;margin:0;background:#f8fafc;color:#0f172a}
-    .wrap{max-width:860px;margin:0 auto;padding:40px 20px 70px}
+    .wrap{max-width:1100px;margin:0 auto;padding:40px 20px 70px}
     h1{font-size:34px;margin:0 0 10px}
     .lede{color:#475569;font-size:17px;line-height:1.6;margin:0 0 30px}
     .item{display:block;padding:18px 20px;margin-bottom:14px;background:#fff;border:1px solid #e2e8f0;
@@ -57,10 +57,18 @@ INDEX_CSS = """<style>
     .item h2{font-size:19px;margin:0 0 6px;color:#0369a1}
     .item p{margin:0;color:#475569;font-size:15px;line-height:1.55}
     .note{margin-top:30px;padding:14px 16px;background:#e0f2fe;border-radius:10px;color:#075985;font-size:15px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:16px}
+    .grid .item{display:flex;flex-direction:column;padding:0;overflow:hidden;margin:0}
+    .grid .item img{width:100%;aspect-ratio:16/10;object-fit:cover;object-position:top;background:#f3f0e8;border-bottom:1px solid #e2e8f0}
+    .grid .item div{padding:14px 16px 16px}
+    .grid .item h2{font-size:17px}
   </style>"""
 
 
 def clean(html, slug):
+    # the site menu and footer link to /contact/ and the hire pages: copies get neither
+    html = re.sub(r"<!--site-nav-->.*?<!--/site-nav-->", "", html, flags=re.S)
+    html = re.sub(r"<!--site-foot-->.*?<!--/site-foot-->\s*", "", html, flags=re.S)
     # scripts and styles that render the assistant widget and lead tracking
     html = re.sub(r'<link href="/assets/css/assistant\.css"[^>]*>', "", html)
     html = re.sub(r'<script src="/js/(assistant|lead-events)\.js"[^>]*></script>\s*', "", html)
@@ -107,12 +115,15 @@ def main():
         folder = os.path.join(OUT, slug)
         os.makedirs(folder, exist_ok=True)
         open(os.path.join(folder, "index.html"), "w", encoding="utf-8").write(clean(html, slug))
-        items.append((slug, title, excerpt))
+        image = field(html, r'<meta property="og:image" content="https://shabeeb\.baydot\.net([^"]+)"')
+        items.append((slug, title, excerpt, image))
         print(f"{BASE}/samples/{slug}/")
 
     cards = "\n".join(
-        f'    <a class="item" href="/samples/{s}/"><h2>{t}</h2><p>{e[:190]}{"…" if len(e) > 190 else ""}</p></a>'
-        for s, t, e in items)
+        f'    <a class="item" href="/samples/{s}/">'
+        + (f'<img src="{img}" alt="" loading="lazy">' if img else "")
+        + f'<div><h2>{t}</h2><p>{e[:170]}{"…" if len(e) > 170 else ""}</p></div></a>'
+        for s, t, e, img in items)
     index = f"""<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -129,7 +140,9 @@ def main():
     <h1>Work samples</h1>
     <p class="lede">A short write-up of each project: what the problem was, what I built, and what it does today.
     {len(items)} of them, from AI and document work to SaaS platforms, mobile apps and video pipelines.</p>
+    <div class="grid">
 {cards}
+    </div>
     <p class="note">Message me on the platform where you found this and I will answer there.</p>
   </div>
 </body>
