@@ -17,7 +17,9 @@ import re
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OUT = os.path.join(ROOT, "portfolio")
-OLD = os.path.join(ROOT, "samples")  # every old /samples/ URL redirects to /portfolio/
+OLD = os.path.join(ROOT, "samples")
+# old sample pages that were merged into another page: send them to the page that replaced them
+RENAMED = {"voicerelay-bluetooth-mic-speaker-relay": "low-latency-audio-relay-bluetooth-dsp"}  # every old /samples/ URL redirects to /portfolio/
 BASE = "https://shabeeb.baydot.net"
 
 SLUGS = [
@@ -174,10 +176,15 @@ def write_redirects(slugs):
         retired = [d for d in os.listdir(OLD) if os.path.isdir(os.path.join(OLD, d)) and d not in slugs]
         shutil.rmtree(OLD)
     os.makedirs(OLD)
+    open(os.path.join(OLD, "index.html"), "w", encoding="utf-8").write(redirect_page("/portfolio/"))
+    for old_slug, new_slug in RENAMED.items():
+        if old_slug in retired:
+            retired.remove(old_slug)
+        os.makedirs(os.path.join(OLD, old_slug))
+        open(os.path.join(OLD, old_slug, "index.html"), "w", encoding="utf-8").write(redirect_page(f"/portfolio/{new_slug}/"))
     for s in retired:
         os.makedirs(os.path.join(OLD, s))
         open(os.path.join(OLD, s, "index.html"), "w", encoding="utf-8").write(redirect_page("/portfolio/"))
-    open(os.path.join(OLD, "index.html"), "w", encoding="utf-8").write(redirect_page("/portfolio/"))
     for s in slugs:
         os.makedirs(os.path.join(OLD, s))
         open(os.path.join(OLD, s, "index.html"), "w", encoding="utf-8").write(redirect_page(f"/portfolio/{s}/"))
