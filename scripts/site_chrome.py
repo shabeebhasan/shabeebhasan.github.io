@@ -6,6 +6,8 @@ reader who finished a case study had nowhere to go. This adds a menu and a foote
 between marker comments, so running it again replaces them instead of stacking copies.
 build_samples.py strips both blocks: the /samples/ copies must not link to /contact/.
 
+The CV hub at /resumes/ has no navbar, so it gets a top bar with the same menu instead.
+
 Usage: python3 scripts/site_chrome.py
 """
 import os
@@ -47,8 +49,26 @@ def apply(html, top):
     return new.replace("</body>", FOOT + "\n</body>", 1)
 
 
+TOP_BAR = ('<!--site-top--><div style="background:#fff;border-bottom:1px solid #e2e8f0"><div style="max-width:1140px;'
+           'margin:0 auto;padding:14px 20px;display:flex;align-items:center;flex-wrap:wrap;gap:10px"><a href="/" '
+           'style="font-size:20px;color:#0f172a;text-decoration:none">Shabeeb Hasan</a>{nav}</div></div><!--/site-top-->')
+
+
+def apply_top_bar(html):
+    """Pages with no navbar of their own (the CV hub) get a plain bar with the same menu."""
+    html = re.sub(r"<!--site-top-->.*?<!--/site-top-->\s*", "", html, flags=re.S)
+    bar = TOP_BAR.replace("{nav}", NAV.replace("{cs}", "").replace("{bl}", ""))
+    return re.sub(r"(<body[^>]*>)", lambda m: m.group(1) + "\n" + bar, html, count=1)
+
+
 def main():
     changed = 0
+    hub = os.path.join(ROOT, "resumes", "index.html")
+    html = open(hub, encoding="utf-8").read()
+    out = apply_top_bar(html)
+    if out != html:
+        open(hub, "w", encoding="utf-8").write(out)
+        changed += 1
     for dp, dn, fn in os.walk(ROOT):
         rel = os.path.relpath(dp, ROOT)
         top = rel.split(os.sep)[0]
