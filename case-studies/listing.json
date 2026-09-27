@@ -8,6 +8,41 @@
    "category": "ai"
   },
   {
+   "title": "Policy Change Monitor: a Serverless Diff of Public Terms Pages",
+   "excerpt": "Lambda job that watches ~28 policy pages, diffs each change, keeps every version and emails the report.",
+   "image": "/assets/imgs/case-studies/old/policymon-card.jpg",
+   "url": "/case-studies/policy-change-monitor-aws-lambda/",
+   "category": "ai"
+  },
+  {
+   "title": "Voice Explorer: a Talent Showcase App on Android (University Project)",
+   "excerpt": "Record, trim with FFmpeg and upload to YouTube, with an admin app and an AngularJS web app.",
+   "image": "/assets/imgs/case-studies/old/voiceexplorer-card.jpg",
+   "url": "/case-studies/voice-explorer-talent-showcase-android-ffmpeg/",
+   "category": "ai"
+  },
+  {
+   "title": "ColorBook: an iOS Colouring App with a Hand-Written Flood Fill",
+   "excerpt": "Tap-to-fill colouring on detailed line art, with a scanline flood fill in Objective-C.",
+   "image": "/assets/imgs/case-studies/old/colorbook-card.jpg",
+   "url": "/case-studies/colorbook-ios-colouring-app-flood-fill/",
+   "category": "ai"
+  },
+  {
+   "title": "Chat and Voice Calling Android App with Sinch and Parse",
+   "excerpt": "Android messenger with phone login, chat, Sinch voice calls, push and an admin app. Client contract, 2016.",
+   "image": "/assets/imgs/case-studies/old/chat360-card.jpg",
+   "url": "/case-studies/chat-voice-calling-android-app-sinch/",
+   "category": "ai"
+  },
+  {
+   "title": "Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend",
+   "excerpt": "React Native insurance app: open an account from an ID photo, pick covers, claim with photos. Cognito, Lambda, DynamoDB. 2018 to 2019.",
+   "image": "/assets/imgs/case-studies/old/yous-card.jpg",
+   "url": "/case-studies/insurance-wallet-app-react-native-aws-ocr/",
+   "category": "ai"
+  },
+  {
    "title": "ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA",
    "excerpt": "ComfyUI graphs that keep a face consistent with a LoRA, IP-Adapter FaceID and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA.",
    "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
