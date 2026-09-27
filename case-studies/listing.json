@@ -22,8 +22,8 @@
    "category": "ai"
   },
   {
-   "title": "ColorBook: an iOS Colouring App with a Hand-Written Flood Fill",
-   "excerpt": "Tap-to-fill colouring on detailed line art, with a scanline flood fill in Objective-C.",
+   "title": "ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom",
+   "excerpt": "Zoom into detailed line art and colour it with a tap. Swift app around an open-source scanline flood fill.",
    "image": "/assets/imgs/case-studies/old/colorbook-card.jpg",
    "url": "/case-studies/colorbook-ios-colouring-app-flood-fill/",
    "category": "ai"

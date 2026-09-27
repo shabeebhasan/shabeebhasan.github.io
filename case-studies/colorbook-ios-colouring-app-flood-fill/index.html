@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>ColorBook: an iOS Colouring App with a Hand-Written Flood Fill | Shabeeb Hasan</title>
-  <meta name="description" content="An iOS colouring app for detailed line art. A tap fills an area with colour using a scanline flood fill written in Objective-C and called from Swift.">
+  <title>ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom | Shabeeb Hasan</title>
+  <meta name="description" content="An iOS colouring app for detailed line art: zoom in, tap, and the area fills with colour. Built in Swift around the open-source UIImageScanlineFloodfill library.">
   <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/colorbook-ios-colouring-app-flood-fill/">
-  <meta property="og:title" content="ColorBook: an iOS Colouring App with a Hand-Written Flood Fill | Shabeeb Hasan">
-  <meta property="og:description" content="An iOS colouring app for detailed line art. A tap fills an area with colour using a scanline flood fill written in Objective-C and called from Swift.">
+  <meta property="og:title" content="ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom | Shabeeb Hasan">
+  <meta property="og:description" content="An iOS colouring app for detailed line art: zoom in, tap, and the area fills with colour. Built in Swift around the open-source UIImageScanlineFloodfill library.">
   <meta property="og:type" content="article">
   <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/colorbook-ios-colouring-app-flood-fill/">
   <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/old/colorbook-card.jpg">
@@ -19,8 +19,8 @@
     {
       "@context": "https://schema.org",
       "@type": "Article",
-      "headline": "ColorBook: an iOS Colouring App with a Hand-Written Flood Fill",
-      "description": "An iOS colouring app for detailed line art. A tap fills an area with colour using a scanline flood fill written in Objective-C and called from Swift.",
+      "headline": "ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom",
+      "description": "An iOS colouring app for detailed line art: zoom in, tap, and the area fills with colour. Built in Swift around the open-source UIImageScanlineFloodfill library.",
       "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
       "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/colorbook-ios-colouring-app-flood-fill/"
     }
@@ -53,17 +53,20 @@
 </style><div class="site-nav-links"><a href="/" class="hide-sm">Home</a><a href="/case-studies/" class="on">Case Studies</a><a href="/blog/">Blog</a><a href="/resumes/" class="hide-sm">CVs</a><a href="/contact/" class="cta">Contact</a></div><!--/site-nav--></div></nav>
   <section class="section content-page"><div class="container content-wrap">
     <a href="/case-studies/" class="back-link">Back to Case Studies</a>
-    <h1 class="content-title">ColorBook: an iOS Colouring App with a Hand-Written Flood Fill</h1>
-    <p class="content-excerpt">An iOS colouring app for detailed line art. A tap fills an area with colour using a scanline flood fill written in Objective-C and called from Swift.</p>
-    <div class="tag-row"><span>ios</span><span>swift</span><span>objective-c</span><span>image processing</span></div>
+    <h1 class="content-title">ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom</h1>
+    <p class="content-excerpt">An iOS colouring app for detailed line art: zoom in, tap, and the area fills with colour. Built in Swift around the open-source UIImageScanlineFloodfill library.</p>
+    <div class="tag-row"><span>ios</span><span>swift</span><span>objective-c bridge</span><span>uikit</span></div>
     <article class="content-article">
-      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/old/colorbook.jpg" alt="ColorBook: an iOS Colouring App with a Hand-Written Flood Fill" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Screens use the app's own line-art pictures and palette. The fill in the second screen is illustrative.</figcaption></figure>
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/old/colorbook.jpg" alt="ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">The three phone screens are frames from a real screen recording of the app.</figcaption></figure>
       <h2>The problem</h2>
-      <p>Detailed mandala and animal line art has thousands of small regions. A simple recursive fill is slow on full-screen images and can crash on large areas.</p>
+      <p>Mandala and animal line art has thousands of tiny regions. On a phone screen they are too small to hit with a finger, and the colour has to land exactly inside the lines.</p>
       <h2>What I built</h2>
-      <ul><li><strong>Scanline flood fill</strong> in Objective-C: each row is filled left and right in one pass, and the rows above and below go onto a linked-list stack instead of the call stack, so big areas never overflow.</li><li><strong>Tolerance</strong>, so anti-aliased line edges fill cleanly.</li><li><strong>Tap mapping</strong> from the zoomable view to the bitmap pixel, so the fill lands where the finger is.</li><li><strong>Palette</strong> of colours plus a picker for custom colours.</li></ul>
+      <ul><li><strong>Zoomable canvas.</strong> The picture sits in a scroll view, so the finest parts can be pinched into.</li>
+      <li><strong>Tap mapping.</strong> The tap point is converted from the zoomed view to the bitmap pixel, so the fill lands where the finger is.</li>
+      <li><strong>Flood fill.</strong> The fill is the open-source UIImageScanlineFloodfill library (Objective-C, iterative scanline with a linked-list stack), bridged into the Swift app with a tolerance for anti-aliased edges.</li>
+      <li><strong>Palette.</strong> Preset colours plus a picker for custom colours, and a set of line-art pictures.</li></ul>
       <h2>Stack</h2>
-      <p>Swift, Objective-C, UIKit, Core Graphics</p>
+      <p>Swift, UIKit, an Objective-C bridging header, UIImageScanlineFloodfill</p>
     </article>
     <section class="lead-box"><h2>Need something like this?</h2><p>Tell me what is broken or what you want built, and I will tell you what I would do first.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
   </div></section>
