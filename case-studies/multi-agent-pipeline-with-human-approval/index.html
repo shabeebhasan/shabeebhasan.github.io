@@ -57,7 +57,7 @@
     <p class="content-excerpt">Five agents with one narrow job each. One finds requests that fit, one drafts replies from a catalog of real work, one checks the drafts, plain code asks the owner to approve on a phone, and one edits on request. Nothing goes out without a tap.</p>
     <div class="tag-row"><span>multi-agent</span><span>claude</span><span>codex</span><span>mcp</span><span>python</span><span>human-in-the-loop</span></div>
     <article class="content-article">
-      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/multiagent/multiagent-poster.jpg" alt="Five agents: scout, writer, reviewer, approver and editor, shown on a real chat thread with the Send buttons" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">A real thread from the pipeline, copied from the bot's own posts. The client is not named.</figcaption></figure>
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/multiagent/multiagent-poster.jpg" alt="Five agents: scout, writer, reviewer, approver and editor, shown on an example chat thread with the Send buttons" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Example use case: quote requests for a home-services company. Names and figures are sample data.</figcaption></figure>
       <h2>What it is</h2>
       <p>My own working pipeline for handling inbound work requests. One big prompt kept doing everything badly, so I split it into five agents that each do one job and hand over a checked result. A person stays in charge of the only step that matters: sending.</p>
       <h2>The five agents</h2>
@@ -68,6 +68,8 @@
         <li><strong>Approver.</strong> Ordinary code, not a model. It builds a preview with the bid, the cost and the attachments, posts it to the owner's phone, and waits. It sends only after a tap on Confirm. Cancel does nothing.</li>
         <li><strong>Editor.</strong> Changes a draft or the price when the owner asks in the chat thread, for example "shorter" or "add the map project". Changes to something already sent also show a preview first.</li>
       </ul>
+      <h2>Example use case: quote requests</h2>
+      <p>The poster shows the same pipeline on a home-services company. A homeowner asks about a second floor that will not cool. The scout keeps it because it is inside the service area. The writer drafts two replies from the price book and past jobs. The reviewer catches a quote below the price book, a promise of same-day service the calendar cannot keep and a dead financing link, and fixes them. The owner sees a preview on the phone and taps Confirm before anything reaches the customer.</p>
       <h2>Why five and not one</h2>
       <p>A writer that also checks its own work approves its own mistakes. Keeping the reviewer separate means it looks at the draft cold. Keeping the approver as code means the step that spends money and speaks for me cannot be talked into anything by the text of a request. Each agent gets only the tools it needs, and the ones that prepare work cannot confirm anything.</p>
       <h2>A real catch</h2>
