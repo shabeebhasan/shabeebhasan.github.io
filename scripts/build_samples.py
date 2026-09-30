@@ -28,6 +28,7 @@ SLUGS = [
     "facesearch-ai-image-saas-lora-virtual-try-on",
     "francofun-referral-rewards-platform",
     "job-hunting-ai-lead-engine-proposal-saas",
+    "multi-agent-pipeline-with-human-approval",
     "zoho-aws-lambda-to-odoo-migration",
     "behavioral-ai-authentication-mobile-sensor-signals",
     "ishara-psx-portfolio-rsi-alerts",

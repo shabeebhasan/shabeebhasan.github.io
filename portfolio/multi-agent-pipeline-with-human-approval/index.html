@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Multi-Agent Pipeline with Human Approval: Scout, Writer, Reviewer, Approver, Editor | Shabeeb Hasan</title>
+  <meta name="description" content="Five agents with one narrow job each. One finds requests that fit, one drafts replies from a catalog of real work, one checks the drafts, plain code asks the owner to approve on a phone, and one edits on request. Nothing goes out without a tap.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/multi-agent-pipeline-with-human-approval/">
+  <meta property="og:title" content="Multi-Agent Pipeline with Human Approval: Scout, Writer, Reviewer, Approver, Editor | Shabeeb Hasan">
+  <meta property="og:description" content="Five agents with one narrow job each. One finds requests that fit, one drafts replies from a catalog of real work, one checks the drafts, plain code asks the owner to approve on a phone, and one edits on request. Nothing goes out without a tap.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/multi-agent-pipeline-with-human-approval/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/multiagent/multiagent-poster-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Multi-Agent Pipeline with Human Approval: Scout, Writer, Reviewer, Approver, Editor",
+      "description": "Five agents with one narrow job each. One finds requests that fit, one drafts replies from a catalog of real work, one checks the drafts, plain code asks the owner to approve on a phone, and one edits on request. Nothing goes out without a tap.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/multi-agent-pipeline-with-human-approval/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/portfolio/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/portfolio/" class="back-link">Back to portfolio</a>
+    <h1 class="content-title">Multi-Agent Pipeline with Human Approval: Scout, Writer, Reviewer, Approver, Editor</h1>
+    <p class="content-excerpt">Five agents with one narrow job each. One finds requests that fit, one drafts replies from a catalog of real work, one checks the drafts, plain code asks the owner to approve on a phone, and one edits on request. Nothing goes out without a tap.</p>
+    <div class="tag-row"><span>multi-agent</span><span>claude</span><span>codex</span><span>mcp</span><span>python</span><span>human-in-the-loop</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/multiagent/multiagent-poster.jpg" alt="Five agents: scout, writer, reviewer, approver and editor, with a chat thread and a phone showing the approval step" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">Names and figures shown are sample data.</figcaption></figure>
+      <h2>What it is</h2>
+      <p>My own working pipeline for handling inbound work requests. One big prompt kept doing everything badly, so I split it into five agents that each do one job and hand over a checked result. A person stays in charge of the only step that matters: sending.</p>
+      <h2>The five agents</h2>
+      <ul>
+        <li><strong>Scout.</strong> Looks at new requests every few minutes and keeps only the ones that fit: the right region, a client with a track record, and little competition so far. It reads and never writes.</li>
+        <li><strong>Writer.</strong> Drafts two different replies for each request, using a catalog of real past work as its only source, so nothing is invented. Both drafts open with the client's own problem, not with a greeting.</li>
+        <li><strong>Reviewer.</strong> A separate agent that checks each draft before a person sees it. Plain code catches contact details and dead or unknown links; a model checks the opening, the claims against the catalog, and whether the draft answers what the client asked. If something fails it fixes the draft and says what it changed.</li>
+        <li><strong>Approver.</strong> Ordinary code, not a model. It builds a preview with the bid, the cost and the attachments, posts it to the owner's phone, and waits. It sends only after a tap on Confirm. Cancel does nothing.</li>
+        <li><strong>Editor.</strong> Changes a draft or the price when the owner asks in the chat thread, for example "shorter" or "add the map project". Changes to something already sent also show a preview first.</li>
+      </ul>
+      <h2>Why five and not one</h2>
+      <p>A writer that also checks its own work approves its own mistakes. Keeping the reviewer separate means it looks at the draft cold. Keeping the approver as code means the step that spends money and speaks for me cannot be talked into anything by the text of a request. Each agent gets only the tools it needs, and the ones that prepare work cannot confirm anything.</p>
+      <h2>A real catch</h2>
+      <p>In a test on a live draft, the writer had linked to a page that returned 404. The reviewer's link check found it, picked the closest live case study from the list of real pages, and swapped it in, along with two smaller fixes to the closing line. That is the kind of slip that is easy to miss when you paste drafts by hand.</p>
+      <h2>Stack</h2>
+      <p>Python, a scheduler on the host machine, Claude and OpenAI Codex driven from the command line with MCP connectors, a chat bot on Discord for the phone side, and a link checker built on HTTP requests. The writer runs on one model and the scout and reviewer on another, so the work is spread across two subscriptions.</p>
+      <h2>What it does not claim</h2>
+      <p>It is new, so there are no win rates to quote yet. The reviewer reduces bad drafts; it does not guarantee good ones. It runs on a machine that has to be on, and every send still depends on a person's tap by design.</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>
