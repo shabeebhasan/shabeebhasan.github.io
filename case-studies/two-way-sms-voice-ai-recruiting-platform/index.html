@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA) | Shabeeb Hasan</title>
+  <meta name="description" content="Contract work for a US voice AI startup whose agents call and text truck-driver applicants. I added texting to the conversation view: queued sends, delivery status and history, no duplicate texts, clear carrier errors, and fixes for voice session race conditions. Next.js, TypeScript, Supabase, BullMQ.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/two-way-sms-voice-ai-recruiting-platform/">
+  <meta property="og:title" content="Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA) | Shabeeb Hasan">
+  <meta property="og:description" content="Contract work for a US voice AI startup whose agents call and text truck-driver applicants. I added texting to the conversation view: queued sends, delivery status and history, no duplicate texts, clear carrier errors, and fixes for voice session race conditions. Next.js, TypeScript, Supabase, BullMQ.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/two-way-sms-voice-ai-recruiting-platform/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/voice-sms/voice-sms-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA)",
+      "description": "Contract work for a US voice AI startup whose agents call and text truck-driver applicants. I added texting to the conversation view: queued sends, delivery status and history, no duplicate texts, clear carrier errors, and fixes for voice session race conditions. Next.js, TypeScript, Supabase, BullMQ.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/two-way-sms-voice-ai-recruiting-platform/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a><!--site-nav--><style>
+.site-nav-links{display:flex;gap:22px;align-items:center;margin-left:auto;flex-wrap:wrap}
+.site-nav-links a{color:#334155;font-weight:600;font-size:15px;text-decoration:none}
+.site-nav-links a:hover,.site-nav-links a.on{color:#4338ca}
+.site-nav-links a.cta{background:linear-gradient(90deg,#4f46e5,#0ea5e9);color:#fff;padding:7px 16px;border-radius:999px}
+@media(max-width:640px){.site-nav-links{gap:14px;width:100%;margin:6px 0 2px}.site-nav-links a{font-size:14px}.site-nav-links a.hide-sm{display:none}}
+.site-foot{border-top:1px solid #e2e8f0;background:#f8fafc;padding:34px 0 26px;margin-top:40px;font-size:14px;color:#64748b}
+.site-foot .row-f{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+.site-foot a{color:#334155;text-decoration:none;margin-right:16px;line-height:2}
+.site-foot a:hover{color:#4338ca}
+</style><div class="site-nav-links"><a href="/" class="hide-sm">Home</a><a href="/case-studies/" class="on">Case Studies</a><a href="/blog/">Blog</a><a href="/resumes/" class="hide-sm">CVs</a><a href="/contact/" class="cta">Contact</a></div><!--/site-nav--></div></nav>
+        <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA)</h1>
+    <p class="content-excerpt">Contract work for a US voice AI startup whose agents call and text truck-driver applicants. I added texting to the conversation view: queued sends, delivery status and history, no duplicate texts, clear carrier errors, and fixes for voice session race conditions. Next.js, TypeScript, Supabase, BullMQ.</p>
+    <div class="tag-row"><span>next.js</span><span>typescript</span><span>supabase</span><span>bullmq</span><span>sms</span><span>voice ai</span><span>nda</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/voice-sms/voice-sms-poster.jpg" alt="Diagram of the SMS flow I built: conversation view, job queue, SMS provider, status and history" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">A diagram of my part of the work. The client's name, screens and code are under NDA.</figcaption></figure>
+      <h2>The client</h2>
+      <p>A US startup runs AI voice agents that call and text truck-driver applicants for recruiting teams. I joined their engineering team on contract in February 2026, after a paid test exercise, to add texting to the platform's conversation view. Their name, code and screens are covered by an NDA, so this page describes the work only.</p>
+      <h2>What I built</h2>
+      <ul>
+        <li><strong>Send SMS from a conversation.</strong> Recruiters text an applicant from the conversation they already have open. The phone number is checked first, and there is a field to add one by hand when none is on file.</li>
+        <li><strong>A queue for outbound texts.</strong> Messages go through a background job queue instead of the web request, so a slow provider or a retry never blocks the screen.</li>
+        <li><strong>Delivery status and history.</strong> Each text shows queued, sent or failed, and the side panel shows the applicant's full SMS history, kept in sync with the provider.</li>
+        <li><strong>No duplicates.</strong> Fixed the paths that could send the same text twice.</li>
+        <li><strong>Clear carrier errors.</strong> A text from an unregistered US sender number (A2P 10DLC) now returns a message that says what to fix, not a generic failure.</li>
+        <li><strong>Voice session fixes.</strong> Fixed race conditions where the AI voice session was cleaned up or recreated while a text was in flight.</li>
+        <li><strong>An applicant sync worker.</strong> A scheduled worker that pulls applicant data from the client's applicant-tracking system.</li>
+      </ul>
+      <h2>Code quality along the way</h2>
+      <p>Moved data loading from effects to React Query, removed a duplicated database client, fixed a webhook handler that saved contacts under the wrong ID, and cleaned up error logging. Everything went through pull requests into the team's development branch.</p>
+      <h2>Stack</h2>
+      <p>Next.js and TypeScript, Supabase (Postgres), a Redis job queue (BullMQ), a voice AI provider and an SMS provider behind the platform's provider-agnostic layer, Sentry.</p>
+      <h2>What it does not claim</h2>
+      <p>I was one engineer on a larger team, on a short contract. The platform, its voice agents and its other integrations were built by the client's team.</p>
+    </article>
+    <section class="lead-box"><h2>Adding messaging to a product that already works?</h2><p>Queued sends, delivery status, clear errors and no duplicates, built into the code you already have.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+<!--site-foot--><footer class="site-foot"><div class="container"><div class="row-f">
+<div><strong style="color:#0f172a">Shabeeb Hasan</strong><br>Senior AI and full-stack engineer. 133 Upwork projects, 100% Job Success.</div>
+<div><a href="/case-studies/">Case studies</a><a href="/blog/">Blog</a><a href="/ai-agent-developer/">AI agents</a><a href="/react-native-developer/">React Native</a><a href="/full-stack-ai-developer/">Full-stack AI</a><a href="/contact/">Contact</a></div>
+</div><div style="margin-top:14px">&copy; 2026 Shabeeb Hasan</div></div></footer><!--/site-foot-->
+</body>
+</html>

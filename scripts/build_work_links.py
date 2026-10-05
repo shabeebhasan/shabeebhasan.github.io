@@ -18,6 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://shabeeb.baydot.net"
 
 LINKS = {
+    "voice-sms": ("two-way-sms-voice-ai-recruiting-platform", "Two-way SMS in a voice AI recruiting platform (NDA)"),
     "applymail": ("applymail-go-job-post-to-tailored-application", "applymail: job post to tailored application, sent on approval"),
     "genflow": ("genflow-go-durable-comfyui-generation-jobs", "genflow: durable ComfyUI generation jobs in Go"),
     "supaquery": ("supaquery-go-natural-language-claims-queries", "SupaQuery in Go: plain-English questions over claims data"),
