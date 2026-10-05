@@ -23,6 +23,7 @@ RENAMED = {"voicerelay-bluetooth-mic-speaker-relay": "low-latency-audio-relay-bl
 BASE = "https://shabeeb.baydot.net"
 
 SLUGS = [
+    "genflow-go-durable-comfyui-generation-jobs",
     "supaquery-go-natural-language-claims-queries",
     "food-delivery-rider-driver-apps-django",
     "dovia-healthcare-marketplace",

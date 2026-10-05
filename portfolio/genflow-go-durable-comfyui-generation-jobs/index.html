@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs | Shabeeb Hasan</title>
+  <meta name="description" content="A Go job runner for long ComfyUI image generations. Steps are checkpointed in Postgres, workers hold leases, and the ComfyUI prompt id is the job id, so a crashed worker's job resumes on the run already on the GPU instead of starting a second one.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/genflow-go-durable-comfyui-generation-jobs/">
+  <meta property="og:title" content="genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs | Shabeeb Hasan">
+  <meta property="og:description" content="A Go job runner for long ComfyUI image generations. Steps are checkpointed in Postgres, workers hold leases, and the ComfyUI prompt id is the job id, so a crashed worker's job resumes on the run already on the GPU instead of starting a second one.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/genflow-go-durable-comfyui-generation-jobs/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/comfy/comfy-poster-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs",
+      "description": "A Go job runner for long ComfyUI image generations. Steps are checkpointed in Postgres, workers hold leases, and the ComfyUI prompt id is the job id, so a crashed worker's job resumes on the run already on the GPU instead of starting a second one.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/genflow-go-durable-comfyui-generation-jobs/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/portfolio/">Shabeeb Hasan</a></div></nav>
+      <section class="section content-page"><div class="container content-wrap">
+    <a href="/portfolio/" class="back-link">Back to portfolio</a>
+    <h1 class="content-title">genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs</h1>
+    <p class="content-excerpt">A Go job runner for long ComfyUI image generations. Steps are checkpointed in Postgres, workers hold leases, and the ComfyUI prompt id is the job id, so a crashed worker's job resumes on the run already on the GPU instead of starting a second one.</p>
+    <div class="tag-row"><span>go</span><span>comfyui</span><span>stable-diffusion</span><span>postgres</span><span>durable-workflows</span><span>retries</span><span>backpressure</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/case-studies/comfy/comfy-poster.jpg" alt="ComfyUI FaceID workflow that genflow drives" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="color:#64748b;font-size:14px;margin-top:6px">The FaceID workflow from my ComfyUI work; genflow runs the same graph as a durable job.</figcaption></figure>
+      <h2>What it does</h2>
+      <p>Send a face photo and a prompt. A worker uploads the photo to ComfyUI, queues a FaceID graph (IPAdapter FaceID, optional LoRA, KSampler), waits while the GPU works, downloads the portrait and stores it. The client polls the job and fetches the image.</p>
+      <h2>Where it came from</h2>
+      <p>In my FaceSearch SaaS (face search, LoRA training, virtual try-on), image generation ran as a Celery task: submit to the AI engine, then poll until done, all inside one function. A separate Python script built the ComfyUI FaceID graph and waited on its history. If the worker died while waiting, the progress and the link to the running generation were lost, and the next attempt started over with a fresh submit: the same image on the GPU twice.</p>
+      <h2>How genflow keeps a job alive</h2>
+      <ul>
+        <li><strong>Steps with checkpoints.</strong> Upload, submit, wait, download. Progress is saved in Postgres after each step, and a new attempt starts after the last saved one.</li>
+        <li><strong>Leases.</strong> Workers claim jobs with FOR UPDATE SKIP LOCKED and renew a lease while ComfyUI works. If a worker dies, the lease runs out and another worker takes over. Every write checks the lease owner, so a frozen worker that wakes up cannot overwrite the new owner's progress.</li>
+        <li><strong>A submit that is safe to repeat.</strong> The ComfyUI prompt id is the job id. Before queueing, the worker asks ComfyUI whether that id is already queued, running or finished, and only queues it if ComfyUI has never seen it. A resumed job re-attaches to the run already on the GPU. If ComfyUI itself restarted and lost the prompt, the same id is queued again, a limited number of times.</li>
+      </ul>
+      <h2>Also built in</h2>
+      <ul>
+        <li>Retries with exponential backoff and jitter, with a cap on attempts.</li>
+        <li>Errors sorted into temporary (ComfyUI busy or unreachable: retry) and permanent (bad graph, missing model, CUDA out of memory: fail at once).</li>
+        <li>Backpressure: past a set queue depth the API answers 429 with Retry-After, and each worker process limits how many prompts it has on the GPU.</li>
+        <li>Cancel, graceful shutdown, and API and workers that can run on separate machines.</li>
+      </ul>
+      <h2>Tested</h2>
+      <p>Integration tests run against a real Postgres and a fake ComfyUI that speaks the same API and can fail on purpose. A worker crashes right after queueing; a second worker cannot touch the job while the first lease is valid, then resumes it, and the prompt reaches ComfyUI exactly once. ComfyUI drops its queue mid-run and the job still finishes. Two server errors are retried; an out-of-memory error fails on the first attempt; cancel stops a running job; the queue refuses work past its limit. Sixty jobs on eight workers each ran exactly once. Everything passes under the Go race detector, three runs in a row.</p>
+      <h2>Stack</h2>
+      <p>Go 1.27, Postgres with pgx, the ComfyUI HTTP API, Docker Compose for a GPU-free demo. Code: <a href="https://github.com/shabeebhasan/genflow-go">github.com/shabeebhasan/genflow-go</a>.</p>
+      <h2>What it does not claim</h2>
+      <p>The tests use a fake ComfyUI, not a GPU. The graph mirrors the FaceID graph my Python script builds for ComfyUI, but this project has not been run on a GPU yet. It is my own build, not a client system in production.</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

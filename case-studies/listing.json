@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs",
+   "excerpt": "Go job runner for ComfyUI generations: Postgres leases, step checkpoints and an idempotent submit, so a crashed worker's job resumes without a second GPU run. Tested with crashes, restarts and 60 jobs on 8 workers.",
+   "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
+   "url": "/case-studies/genflow-go-durable-comfyui-generation-jobs/",
+   "category": "ai"
+  },
+  {
    "title": "SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely",
    "excerpt": "Upload a claims spreadsheet and ask in plain English. Go rewrite of a Next.js + Supabase prototype: read-only SQL guard, READ ONLY transaction, 400,000 rows loaded in 18 s with Postgres COPY.",
    "image": "/assets/imgs/generated/portfolio/supaquery.svg",
