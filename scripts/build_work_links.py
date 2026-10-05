@@ -18,6 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://shabeeb.baydot.net"
 
 LINKS = {
+    "supaquery": ("supaquery-go-natural-language-claims-queries", "SupaQuery in Go: plain-English questions over claims data"),
     "stripe-fix": ("stripe-mailerlite-subscription-flow-audit-and-fix", "Stripe to MailerLite: audit first, then the fix"),
     "doc-chatbot": ("gpt3-question-answering-private-documents-poc", "Question answering over private documents"),
     "llm-pipeline": ("llm-data-import-inference-microservices", "Python microservices for LLM data and inference"),

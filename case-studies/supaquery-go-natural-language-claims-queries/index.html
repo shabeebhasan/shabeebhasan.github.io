@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely | Shabeeb Hasan</title>
+  <meta name="description" content="A Go rewrite of a Next.js + Supabase prototype. Upload a claims spreadsheet, ask a question in plain English, and an LLM writes the SQL. The Go server lets only one read-only query through, runs it in a read-only transaction, and loads 400,000 rows in 18 seconds with Postgres COPY.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/supaquery-go-natural-language-claims-queries/">
+  <meta property="og:title" content="SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely | Shabeeb Hasan">
+  <meta property="og:description" content="A Go rewrite of a Next.js + Supabase prototype. Upload a claims spreadsheet, ask a question in plain English, and an LLM writes the SQL. The Go server lets only one read-only query through, runs it in a read-only transaction, and loads 400,000 rows in 18 seconds with Postgres COPY.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/supaquery-go-natural-language-claims-queries/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/portfolio/supaquery.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely",
+      "description": "A Go rewrite of a Next.js + Supabase prototype. Upload a claims spreadsheet, ask a question in plain English, and an LLM writes the SQL. The Go server lets only one read-only query through, runs it in a read-only transaction, and loads 400,000 rows in 18 seconds with Postgres COPY.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/supaquery-go-natural-language-claims-queries/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a><!--site-nav--><style>
+.site-nav-links{display:flex;gap:22px;align-items:center;margin-left:auto;flex-wrap:wrap}
+.site-nav-links a{color:#334155;font-weight:600;font-size:15px;text-decoration:none}
+.site-nav-links a:hover,.site-nav-links a.on{color:#4338ca}
+.site-nav-links a.cta{background:linear-gradient(90deg,#4f46e5,#0ea5e9);color:#fff;padding:7px 16px;border-radius:999px}
+@media(max-width:640px){.site-nav-links{gap:14px;width:100%;margin:6px 0 2px}.site-nav-links a{font-size:14px}.site-nav-links a.hide-sm{display:none}}
+.site-foot{border-top:1px solid #e2e8f0;background:#f8fafc;padding:34px 0 26px;margin-top:40px;font-size:14px;color:#64748b}
+.site-foot .row-f{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+.site-foot a{color:#334155;text-decoration:none;margin-right:16px;line-height:2}
+.site-foot a:hover{color:#4338ca}
+</style><div class="site-nav-links"><a href="/" class="hide-sm">Home</a><a href="/case-studies/" class="on">Case Studies</a><a href="/blog/">Blog</a><a href="/resumes/" class="hide-sm">CVs</a><a href="/contact/" class="cta">Contact</a></div><!--/site-nav--></div></nav>
+    <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely</h1>
+    <p class="content-excerpt">A Go rewrite of a Next.js + Supabase prototype. Upload a claims spreadsheet, ask a question in plain English, and an LLM writes the SQL. The Go server lets only one read-only query through, runs it in a read-only transaction, and loads 400,000 rows in 18 seconds with Postgres COPY.</p>
+    <div class="tag-row"><span>go</span><span>postgres</span><span>supabase</span><span>llm</span><span>text-to-sql</span><span>groq</span><span>openai</span><span>gemini</span></div>
+    <article class="content-article">
+      <figure style="margin:22px 0"><img src="/assets/imgs/generated/portfolio/supaquery.svg" alt="SupaQuery: ask questions about a claims spreadsheet in plain English" loading="lazy" style="width:100%;border-radius:12px"></figure>
+      <h2>What it does</h2>
+      <p>A person uploads a medical-claims spreadsheet with about 40 columns: members, dates, diagnosis and procedure codes, and billed, allowed and paid amounts. Then they ask things like "total paid by facility since June" in plain English. A model (Llama 3.3 on Groq by default, or GPT-4o or Gemini) writes the SQL, the server runs it on Postgres and returns the rows together with the SQL, so the answer can be checked.</p>
+      <h2>Where it came from</h2>
+      <p>I first built it as a paid prototype task for a health-data startup, in Next.js with Supabase. The CTO ran it locally and called it the best test of the candidates they tried. I then rewrote the backend in Go, keeping the same five endpoints and the same JSON, so the existing dashboard works against either one.</p>
+      <h2>The problem with the first version</h2>
+      <p>The prototype ran every generated query through a database function that would also run INSERT, UPDATE and DELETE. For a demo that was fine. For real claims data it means one bad model answer could change or wipe the table.</p>
+      <h2>Two locks in the Go version</h2>
+      <ul>
+        <li><strong>A guard in code.</strong> The model's reply is parsed, and only a single SELECT or WITH query gets through. A second statement after a semicolon, a write hidden inside a WITH, or calls like pg_sleep are refused, and the person sees the refused SQL. Text inside quotes cannot trick it.</li>
+        <li><strong>A read-only transaction.</strong> Whatever passes the guard runs inside a READ ONLY transaction with a statement timeout and a row cap. A test pushes a DELETE straight past the guard to prove the database itself refuses it and the row count does not change.</li>
+      </ul>
+      <h2>Faster uploads</h2>
+      <p>The prototype inserted rows 500 at a time through the Supabase client. The Go version streams rows out of the sheet and loads them with Postgres COPY in batches of 5,000. Measured on a MacBook with Postgres 18: <strong>400,000 rows from a 21.7 MB sheet in 18.4 seconds</strong>, and an aggregate by facility over all of them in <strong>262 ms</strong>.</p>
+      <h2>Other changes</h2>
+      <ul>
+        <li>Resetting the schema is off unless it is switched on, instead of open to anyone who can reach the endpoint.</li>
+        <li>No anonymous insert, select or delete policies; the server uses its own database role.</li>
+        <li>One 18 MB static binary and a small Docker image instead of a Node server.</li>
+      </ul>
+      <h2>Tests</h2>
+      <p>Unit tests cover the SQL guard, the three model clients against a fake HTTP server, the spreadsheet column mapping and dates, and every HTTP endpoint. Integration tests start a real Postgres and run the upload, the queries, the read-only lock, the timeout and the 400,000-row speed run.</p>
+      <h2>Stack</h2>
+      <p>Go 1.27, pgx, excelize, Postgres or Supabase, Groq, OpenAI and Gemini APIs, Docker. Code: <a href="https://github.com/shabeebhasan/supaquery-go">github.com/shabeebhasan/supaquery-go</a>.</p>
+      <h2>What it does not claim</h2>
+      <p>It is a rewrite of a prototype, not a system in production. The model can still write a wrong query; that is why the SQL is always shown with the answer. The guard is a keyword check, and the read-only transaction is the real lock behind it.</p>
+    </article>
+    <section class="lead-box"><h2>Need questions answered from your own data?</h2><p>Text-to-SQL and data tools where the model helps but cannot change your data, with the query shown next to every answer.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+<!--site-foot--><footer class="site-foot"><div class="container"><div class="row-f">
+<div><strong style="color:#0f172a">Shabeeb Hasan</strong><br>Senior AI and full-stack engineer. 133 Upwork projects, 100% Job Success.</div>
+<div><a href="/case-studies/">Case studies</a><a href="/blog/">Blog</a><a href="/ai-agent-developer/">AI agents</a><a href="/react-native-developer/">React Native</a><a href="/full-stack-ai-developer/">Full-stack AI</a><a href="/contact/">Contact</a></div>
+</div><div style="margin-top:14px">&copy; 2026 Shabeeb Hasan</div></div></footer><!--/site-foot-->
+</body>
+</html>

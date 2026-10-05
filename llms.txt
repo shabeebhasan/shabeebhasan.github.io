@@ -36,6 +36,7 @@
 ## Strongest evidence
 
 - https://shabeeb.baydot.net/case-studies/multi-agent-pipeline-with-human-approval/ : my multi-agent pipeline (scout, writer, reviewer, approver, editor) where a person
+- https://shabeeb.baydot.net/case-studies/supaquery-go-natural-language-claims-queries/ : SupaQuery in Go, plain-English questions over a claims spreadsheet; read-only SQL guard and READ ONLY transaction, Postgres COPY loads 400,000 rows in 18 s
   approves every send; the approval step is plain code, not a model.
 - https://shabeeb.baydot.net/case-studies/job-hunting-ai-lead-engine-proposal-saas/ : my own SaaS that finds and
   qualifies businesses, drafts outreach a person approves, and learns which proposals win (Next.js, Supabase, BullMQ).

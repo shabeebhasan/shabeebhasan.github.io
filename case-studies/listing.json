@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely",
+   "excerpt": "Upload a claims spreadsheet and ask in plain English. Go rewrite of a Next.js + Supabase prototype: read-only SQL guard, READ ONLY transaction, 400,000 rows loaded in 18 s with Postgres COPY.",
+   "image": "/assets/imgs/generated/portfolio/supaquery.svg",
+   "url": "/case-studies/supaquery-go-natural-language-claims-queries/",
+   "category": "ai"
+  },
+  {
    "title": "Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS",
    "excerpt": "Finds and qualifies businesses, drafts outreach a person approves, runs an AI receptionist, and learns which proposals win. Next.js, Supabase, BullMQ.",
    "image": "/assets/imgs/case-studies/jobhunt/jobhunt-poster-card.jpg",
