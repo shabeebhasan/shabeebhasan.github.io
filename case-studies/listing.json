@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "applymail: Job Post In, Tailored CV and Cover Letter Out, Sent Only on Approval",
+   "excerpt": "Paste a job post or screenshot; a Go service checks the email, picks the best of 24 CVs, writes an honest cover letter and sends from Gmail only after you tap Send. Discord and n8n.",
+   "image": "/assets/imgs/case-studies/applymail/applymail-card.jpg",
+   "url": "/case-studies/applymail-go-job-post-to-tailored-application/",
+   "category": "ai"
+  },
+  {
    "title": "genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs",
    "excerpt": "Go job runner for ComfyUI generations: Postgres leases, step checkpoints and an idempotent submit, so a crashed worker's job resumes without a second GPU run. Tested with crashes, restarts and 60 jobs on 8 workers.",
    "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
