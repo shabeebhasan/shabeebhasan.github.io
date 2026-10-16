@@ -1,0 +1,559 @@
+[
+  {
+    "id": "forward-deployed-ai",
+    "title": "Forward Deployed AI Engineer",
+    "band": "Primary focus",
+    "subtitle": "Customer discovery, AI integration and delivery",
+    "summary": "Customer-facing AI delivery with Python, LLMs, RAG and existing-system integrations. Twelve-plus years in software engineering, working directly with clients from requirements through implementation, testing and handover.",
+    "use_when": "Use for Forward Deployed Engineer, customer-facing AI engineer and AI implementation roles.",
+    "check_before_applying": "Customer-facing implementation and system integration, rather than field-sales or on-site-only roles.",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "Django/DRF",
+      "React",
+      "TypeScript",
+      "PostgreSQL",
+      "API integration",
+      "LLM applications",
+      "RAG",
+      "Testing and handover"
+    ],
+    "projects": [
+      {
+        "title": "Claims data upload and AI query prototype",
+        "kind": "Paid client evaluation",
+        "text": "Delivered a Next.js/TypeScript and Supabase prototype with data upload, natural-language analysis, local setup instructions and query examples. Client under NDA.",
+        "url": "/work/supaquery/",
+        "source": "W3"
+      },
+      {
+        "title": "LLM import and inference services",
+        "kind": "Client work",
+        "text": "Built Python data import, transformation and inference microservices with unit, integration and component testing, Docker and GCP managed services.",
+        "url": "/work/llm-pipeline/",
+        "source": "A4"
+      },
+      {
+        "title": "Django and React platform delivery",
+        "kind": "Client work",
+        "text": "Backend and frontend product work across 21 contracts for one platform company, 2019–2025, including delivery, rebates and health applications.",
+        "url": "/work/django-platform/",
+        "source": "W2"
+      },
+      {
+        "title": "Franco-fun Rewards",
+        "kind": "Client product",
+        "text": "Built a live referral SaaS end to end using React, TypeScript, Django/DRF and PostgreSQL, with bilingual dashboards, email and deployment.",
+        "url": "/work/referral-saas/",
+        "source": "W1"
+      }
+    ],
+    "keywords": [
+      "forward deployed",
+      "forward-deployed",
+      "customer facing",
+      "customer-facing",
+      "solutions engineer",
+      "implementation engineer",
+      "customer engineer",
+      "discovery",
+      "deployment"
+    ],
+    "proof": [
+      "12+ years in software delivery",
+      "21 contracts with one platform company",
+      "Prototype and production work clearly labelled"
+    ],
+    "public_pdf": "/resumes/files/forward-deployed-ai-resume.pdf",
+    "marketplace_pdf": "/resumes/files/forward-deployed-ai-marketplace-resume.pdf",
+    "text_file": "/resumes/files/forward-deployed-ai-resume.md"
+  },
+  {
+    "id": "applied-ai-rag",
+    "title": "Applied AI and RAG Engineer",
+    "band": "Core AI",
+    "subtitle": "Document AI, retrieval and practical LLM applications",
+    "summary": "Applied AI engineer building document question answering, data-ingestion services and LLM features in existing applications. Combines Python backend delivery with an MPhil in probabilistic machine learning and a focus on testable, evidence-grounded output.",
+    "use_when": "Use for AI engineer, LLM application engineer, RAG developer and document AI roles.",
+    "check_before_applying": "Check for requirements involving large-model pretraining or published NLP research before applying.",
+    "skills": [
+      "Python",
+      "FastAPI",
+      "OpenAI embeddings",
+      "RAG",
+      "Document processing",
+      "PostgreSQL",
+      "Supabase",
+      "Docker",
+      "GCP",
+      "API testing"
+    ],
+    "projects": [
+      {
+        "title": "Question answering over private documents",
+        "kind": "Client proof of concept",
+        "text": "Built chunking, OpenAI embeddings, similarity retrieval and answers grounded in retrieved passages for a client document corpus in 2023.",
+        "url": "/work/doc-chatbot/",
+        "source": "A3"
+      },
+      {
+        "title": "LLM import and inference services",
+        "kind": "Client work",
+        "text": "Built Python data import, transformation and inference microservices with unit, integration and component testing, Docker and GCP managed services.",
+        "url": "/work/llm-pipeline/",
+        "source": "A4"
+      },
+      {
+        "title": "Claims data upload and AI query prototype",
+        "kind": "Paid client evaluation",
+        "text": "Delivered a Next.js/TypeScript and Supabase prototype with data upload, natural-language analysis, local setup instructions and query examples. Client under NDA.",
+        "url": "/work/supaquery/",
+        "source": "W3"
+      },
+      {
+        "title": "Document extraction backends",
+        "kind": "Client work",
+        "text": "Built Google Vision and Document AI form-processing backends for a scanning app, plus passport, licence and card OCR for mobile workflows.",
+        "url": "/work/ocr/",
+        "source": "OCR catalog entries"
+      }
+    ],
+    "keywords": [
+      "rag",
+      "retrieval",
+      "embeddings",
+      "vector",
+      "document ai",
+      "llm",
+      "knowledge base",
+      "semantic search",
+      "AI engineer",
+      "AI agent",
+      "AI agents",
+      "LLM engineer",
+      "NLP"
+    ],
+    "proof": [
+      "Private-document question answering PoC",
+      "Client LLM ingestion and inference services"
+    ],
+    "public_pdf": "/resumes/files/applied-ai-rag-resume.pdf",
+    "marketplace_pdf": "/resumes/files/applied-ai-rag-marketplace-resume.pdf",
+    "text_file": "/resumes/files/applied-ai-rag-resume.md"
+  },
+  {
+    "id": "voice-ai",
+    "title": "Voice AI and Messaging Integration Engineer",
+    "band": "Specialist AI",
+    "subtitle": "Voice workflows, SMS and appointment integrations",
+    "summary": "Engineer delivering voice-agent booking flows and messaging integrations around existing products. Experience includes a team contract on a voice AI recruiting platform, queued SMS delivery, synchronization and race-condition fixes, plus Android voice calling.",
+    "use_when": "Use for voice AI integration, AI receptionist, SMS workflow and appointment-agent roles.",
+    "check_before_applying": "Direct vendor experience: Vapi, ElevenLabs and Twilio. Browser WebRTC transport and packet-capture expertise are not implied.",
+    "skills": [
+      "Vapi",
+      "ElevenLabs",
+      "Twilio",
+      "Next.js",
+      "TypeScript",
+      "Supabase",
+      "BullMQ",
+      "Webhooks",
+      "SMS status handling",
+      "API integration"
+    ],
+    "projects": [
+      {
+        "title": "Messaging in a voice AI recruiting platform",
+        "kind": "Client team contribution",
+        "text": "Built two-way SMS features, BullMQ queued delivery and status history; fixed duplicate sends and voice-session race conditions, and added applicant synchronization. Next.js and Supabase; client under NDA.",
+        "url": "/work/voice-sms/",
+        "source": "W3e"
+      },
+      {
+        "title": "AI receptionist and appointment booking",
+        "kind": "Portfolio implementation",
+        "text": "Built inbound voice-agent booking and receptionist flows using Vapi, ElevenLabs and Twilio telephony.",
+        "url": "/portfolio/ai-receptionist-for-appointment-booking/",
+        "source": "V1"
+      },
+      {
+        "title": "Android chat and voice calling",
+        "kind": "Client work",
+        "text": "Built an Android/Java application with Sinch voice calls, Parse messaging, incoming-call controls and push notifications.",
+        "url": "/portfolio/chat-voice-calling-android-app-sinch/",
+        "source": "M5"
+      },
+      {
+        "title": "LLM import and inference services",
+        "kind": "Client work",
+        "text": "Built Python data import, transformation and inference microservices with unit, integration and component testing, Docker and GCP managed services.",
+        "url": "/work/llm-pipeline/",
+        "source": "A4"
+      }
+    ],
+    "keywords": [
+      "voice ai",
+      "voice agent",
+      "receptionist",
+      "vapi",
+      "elevenlabs",
+      "twilio",
+      "sms",
+      "telephony",
+      "call routing"
+    ],
+    "proof": [
+      "Voice recruiting platform contribution under NDA",
+      "Inbound receptionist and booking flows"
+    ],
+    "public_pdf": "/resumes/files/voice-ai-resume.pdf",
+    "marketplace_pdf": "/resumes/files/voice-ai-marketplace-resume.pdf",
+    "text_file": "/resumes/files/voice-ai-resume.md"
+  },
+  {
+    "id": "backend-integrations",
+    "title": "Python Backend and Integration Engineer",
+    "band": "Core delivery",
+    "subtitle": "APIs, workflow reliability and cloud services",
+    "summary": "Backend engineer with long-term Django/DRF delivery and practical experience repairing payment automations, connecting business systems and building data-processing APIs. Owns implementation, debugging, deployment and documented handover.",
+    "use_when": "Use for Python backend, API integration, automation reliability and cloud backend roles.",
+    "check_before_applying": "Use the legacy PHP/Laravel CV below when a role is predominantly PHP.",
+    "skills": [
+      "Python",
+      "Django/DRF",
+      "FastAPI",
+      "PostgreSQL",
+      "Node.js",
+      "REST APIs",
+      "Stripe",
+      "Webhooks",
+      "AWS Lambda",
+      "Docker"
+    ],
+    "projects": [
+      {
+        "title": "Django and React platform delivery",
+        "kind": "Client work",
+        "text": "Backend and frontend product work across 21 contracts for one platform company, 2019–2025, including delivery, rebates and health applications.",
+        "url": "/work/django-platform/",
+        "source": "W2"
+      },
+      {
+        "title": "Stripe and MailerLite automation repair",
+        "kind": "Client work",
+        "text": "Audited a subscription workflow and repaired its Stripe/MailerLite automation in two milestones, documenting the failures and fixes.",
+        "url": "/work/stripe-fix/",
+        "source": "C1"
+      },
+      {
+        "title": "LLM import and inference services",
+        "kind": "Client work",
+        "text": "Built Python data import, transformation and inference microservices with unit, integration and component testing, Docker and GCP managed services.",
+        "url": "/work/llm-pipeline/",
+        "source": "A4"
+      },
+      {
+        "title": "Serverless media processing on AWS",
+        "kind": "Client work",
+        "text": "Built FFmpeg processing on AWS Lambda with an EC2 tier for larger workloads, across repeated client engagements.",
+        "url": "/work/video-aws/",
+        "source": "Cloud catalog"
+      }
+    ],
+    "keywords": [
+      "backend",
+      "back-end",
+      "api integration",
+      "webhook",
+      "stripe",
+      "django",
+      "fastapi",
+      "aws lambda",
+      "crm integration",
+      "automation"
+    ],
+    "proof": [
+      "Repeated platform delivery",
+      "Subscription workflow audit and repair"
+    ],
+    "public_pdf": "/resumes/files/backend-integrations-resume.pdf",
+    "marketplace_pdf": "/resumes/files/backend-integrations-marketplace-resume.pdf",
+    "text_file": "/resumes/files/backend-integrations-resume.md"
+  },
+  {
+    "id": "full-stack-ai",
+    "title": "Full Stack AI Product Engineer",
+    "band": "Core product",
+    "subtitle": "Customer-facing software from schema to launch",
+    "summary": "Full-stack engineer building AI features and the web applications around them. Works across React/TypeScript, Django/FastAPI, data models, integrations and deployment, with production client delivery and separately labelled AI prototypes.",
+    "use_when": "Use for full-stack AI engineer, AI SaaS developer and product engineer roles.",
+    "check_before_applying": "Confirm location and work-authorisation requirements before applying to US-only roles.",
+    "skills": [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Django/DRF",
+      "FastAPI",
+      "PostgreSQL",
+      "Supabase",
+      "REST APIs",
+      "LLM integration",
+      "Docker"
+    ],
+    "projects": [
+      {
+        "title": "Franco-fun Rewards",
+        "kind": "Client product",
+        "text": "Built a live referral SaaS end to end using React, TypeScript, Django/DRF and PostgreSQL, with bilingual dashboards, email and deployment.",
+        "url": "/work/referral-saas/",
+        "source": "W1"
+      },
+      {
+        "title": "Claims data upload and AI query prototype",
+        "kind": "Paid client evaluation",
+        "text": "Delivered a Next.js/TypeScript and Supabase prototype with data upload, natural-language analysis, local setup instructions and query examples. Client under NDA.",
+        "url": "/work/supaquery/",
+        "source": "W3"
+      },
+      {
+        "title": "Django and React platform delivery",
+        "kind": "Client work",
+        "text": "Backend and frontend product work across 21 contracts for one platform company, 2019–2025, including delivery, rebates and health applications.",
+        "url": "/work/django-platform/",
+        "source": "W2"
+      },
+      {
+        "title": "Messaging in a voice AI recruiting platform",
+        "kind": "Client team contribution",
+        "text": "Built two-way SMS features, BullMQ queued delivery and status history; fixed duplicate sends and voice-session race conditions, and added applicant synchronization. Next.js and Supabase; client under NDA.",
+        "url": "/work/voice-sms/",
+        "source": "W3e"
+      }
+    ],
+    "keywords": [
+      "full stack",
+      "full-stack",
+      "saas",
+      "product engineer",
+      "react",
+      "next.js",
+      "nextjs",
+      "typescript",
+      "supabase"
+    ],
+    "proof": [
+      "Live referral SaaS built end to end",
+      "Next.js/Supabase claims prototype"
+    ],
+    "public_pdf": "/resumes/files/full-stack-ai-resume.pdf",
+    "marketplace_pdf": "/resumes/files/full-stack-ai-marketplace-resume.pdf",
+    "text_file": "/resumes/files/full-stack-ai-resume.md"
+  },
+  {
+    "id": "computer-vision-ocr",
+    "title": "Computer Vision and OCR Engineer",
+    "band": "Specialist AI",
+    "subtitle": "Document extraction and applied vision",
+    "summary": "Applied computer vision engineer with client document-extraction backends, an emotion-analysis application and probabilistic ML research. Builds Python services around models and evaluates limitations explicitly, including in sensor-based proof-of-concept work.",
+    "use_when": "Use for OCR, document extraction and applied computer vision backend roles.",
+    "check_before_applying": "Livestock tracking, LiDAR and medical diagnostic performance need separate evidence and data validation.",
+    "skills": [
+      "Python",
+      "OpenCV",
+      "TensorFlow",
+      "scikit-learn",
+      "FastAPI",
+      "Google Vision",
+      "Document AI",
+      "Celery",
+      "Docker",
+      "Model evaluation"
+    ],
+    "projects": [
+      {
+        "title": "Document extraction backends",
+        "kind": "Client work",
+        "text": "Built Google Vision and Document AI form-processing backends for a scanning app, plus passport, licence and card OCR for mobile workflows.",
+        "url": "/work/ocr/",
+        "source": "OCR catalog entries"
+      },
+      {
+        "title": "Emotion app and LoRA training pipelines",
+        "kind": "Employment project",
+        "text": "Worked on an Expo app with OpenCV/TensorFlow/scikit-learn and a FastAPI model service; queued LoRA training using Celery and Docker at Dis-Connect.",
+        "url": "/work/emotion-app/",
+        "source": "A2"
+      },
+      {
+        "title": "Behavioural identity runtime",
+        "kind": "Client proof of concept",
+        "text": "Built server-side scoring of phone motion, touch and typing signals using FastAPI and scikit-learn. Follow-on measurement work reports limitations; this is not a validated production biometric product.",
+        "url": "/work/phone-security/",
+        "source": "A7"
+      },
+      {
+        "title": "FaceSearch image and virtual try-on platform",
+        "kind": "Baydot build",
+        "text": "Built a Django/Celery and React platform with generation services, LoRA training, face search and virtual try-on workflows.",
+        "url": "/portfolio/facesearch-ai-image-saas-lora-virtual-try-on/",
+        "source": "O1"
+      }
+    ],
+    "keywords": [
+      "computer vision",
+      "ocr",
+      "opencv",
+      "document extraction",
+      "image recognition",
+      "yolo",
+      "object tracking",
+      "sensor",
+      "machine learning",
+      "ML engineer"
+    ],
+    "proof": [
+      "Paid document-extraction backend work",
+      "Employment-based model and application integration"
+    ],
+    "public_pdf": "/resumes/files/computer-vision-ocr-resume.pdf",
+    "marketplace_pdf": "/resumes/files/computer-vision-ocr-marketplace-resume.pdf",
+    "text_file": "/resumes/files/computer-vision-ocr-resume.md"
+  },
+  {
+    "id": "generative-media",
+    "title": "Generative AI Pipeline Engineer",
+    "band": "Specialist AI",
+    "subtitle": "ComfyUI, diffusion and generation backends",
+    "summary": "Engineer building APIs and job-processing systems around image generation, LoRA training and virtual try-on. Combines paid Stable Diffusion backend work with Baydot image-platform builds and a separately labelled Go workflow experiment.",
+    "use_when": "Use for ComfyUI developer, diffusion backend and generative media pipeline roles.",
+    "check_before_applying": "Avoid presenting image generation as proof of delivered video-model training or production GPU validation for genflow.",
+    "skills": [
+      "Python",
+      "Stable Diffusion",
+      "LoRA",
+      "ComfyUI",
+      "FastAPI",
+      "Celery",
+      "Django",
+      "Docker",
+      "PostgreSQL",
+      "Go project work"
+    ],
+    "projects": [
+      {
+        "title": "Stable Diffusion and LoRA generation API",
+        "kind": "Client work",
+        "text": "Built a Linux backend exposing image generation with client LoRAs and Stable Diffusion settings through an API supporting concurrent requests.",
+        "url": "/portfolio/comfyui-faceid-controlnet-lora-workflows/",
+        "source": "A1"
+      },
+      {
+        "title": "Emotion app and LoRA training pipelines",
+        "kind": "Employment project",
+        "text": "Worked on an Expo app with OpenCV/TensorFlow/scikit-learn and a FastAPI model service; queued LoRA training using Celery and Docker at Dis-Connect.",
+        "url": "/work/emotion-app/",
+        "source": "A2"
+      },
+      {
+        "title": "FaceSearch image and virtual try-on platform",
+        "kind": "Baydot build",
+        "text": "Built a Django/Celery and React platform with generation services, LoRA training, face search and virtual try-on workflows.",
+        "url": "/portfolio/facesearch-ai-image-saas-lora-virtual-try-on/",
+        "source": "O1"
+      },
+      {
+        "title": "genflow durable generation runner",
+        "kind": "Baydot build",
+        "text": "Built a Go/PostgreSQL ComfyUI runner with leases, checkpoints, retry handling and duplicate-submit prevention. Tested with a fake ComfyUI service; not yet validated on a real GPU.",
+        "url": "/work/genflow/",
+        "source": "W3c"
+      }
+    ],
+    "keywords": [
+      "comfyui",
+      "stable diffusion",
+      "lora",
+      "diffusion",
+      "virtual try-on",
+      "image generation",
+      "generative video",
+      "video generation",
+      "gpu"
+    ],
+    "proof": [
+      "Paid LoRA generation API",
+      "Baydot generation platform and durable workflow build"
+    ],
+    "public_pdf": "/resumes/files/generative-media-resume.pdf",
+    "marketplace_pdf": "/resumes/files/generative-media-marketplace-resume.pdf",
+    "text_file": "/resumes/files/generative-media-resume.md"
+  },
+  {
+    "id": "react-native",
+    "title": "React Native Mobile Engineer",
+    "band": "Adjacent delivery",
+    "subtitle": "Mobile apps, native modules and API integration",
+    "summary": "Mobile engineer delivering React Native applications and native iOS/Android functionality, supported by backend and deployment experience. Work includes a live AR travel app, native media processing and production application APIs.",
+    "use_when": "Use for React Native, Expo and mobile integration roles.",
+    "check_before_applying": "Use only when native-module, release or backend scope matches your actual project evidence.",
+    "skills": [
+      "React Native",
+      "Expo",
+      "iOS",
+      "Android",
+      "Mapbox",
+      "Native modules",
+      "MediaCodec",
+      "REST APIs",
+      "Django",
+      "Laravel"
+    ],
+    "projects": [
+      {
+        "title": "Roam Reality AR travel application",
+        "kind": "Client product",
+        "text": "Built the mobile app with Mapbox and AR views, offline handling and a Django/Mapbox admin for region management. Live on iOS and Android.",
+        "url": "https://roamreality.com",
+        "source": "Mobile catalog / PROFILE-HUB"
+      },
+      {
+        "title": "Native video modules for React Native",
+        "kind": "Client work",
+        "text": "Built Android MediaCodec transcoding and native iOS/Android video-overlay functionality for a React Native application.",
+        "url": "/work/app-video/",
+        "source": "Mobile catalog"
+      },
+      {
+        "title": "Doctor and patient application backends",
+        "kind": "Client work",
+        "text": "Built and extended Laravel APIs with authentication and payment integrations across three contracts, 2018–2020.",
+        "url": "/work/doctor-app/",
+        "source": "Backend catalog"
+      },
+      {
+        "title": "Android chat and voice calling",
+        "kind": "Client work",
+        "text": "Built an Android/Java application with Sinch voice calls, Parse messaging, incoming-call controls and push notifications.",
+        "url": "/portfolio/chat-voice-calling-android-app-sinch/",
+        "source": "M5"
+      }
+    ],
+    "keywords": [
+      "react native",
+      "expo",
+      "mobile app",
+      "ios",
+      "android",
+      "native module",
+      "app store"
+    ],
+    "proof": [
+      "Live iOS and Android client application",
+      "Native media modules and mobile backends"
+    ],
+    "public_pdf": "/resumes/files/react-native-resume.pdf",
+    "marketplace_pdf": "/resumes/files/react-native-marketplace-resume.pdf",
+    "text_file": "/resumes/files/react-native-resume.md"
+  }
+]
