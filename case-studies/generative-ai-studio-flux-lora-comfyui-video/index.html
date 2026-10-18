@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads | Shabeeb Hasan</title>
+  <meta name="description" content="LoRA training on FLUX.1 with Ostris AI Toolkit and on SD 1.5/SDXL with kohya_ss, ComfyUI workflows, Wan 2.1 text-to-video and script-to-talking-head video, built and tested in a real product. 10 business problems it solves.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/generative-ai-studio-flux-lora-comfyui-video/">
+  <meta property="og:title" content="Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads | Shabeeb Hasan">
+  <meta property="og:description" content="LoRA training on FLUX.1 with Ostris AI Toolkit and on SD 1.5/SDXL with kohya_ss, ComfyUI workflows, Wan 2.1 text-to-video and script-to-talking-head video, built and tested in a real product. 10 business problems it solves.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/generative-ai-studio-flux-lora-comfyui-video/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/genai/genai-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads",
+      "description": "LoRA training on FLUX.1 with Ostris AI Toolkit and on SD 1.5/SDXL with kohya_ss, ComfyUI workflows, Wan 2.1 text-to-video and script-to-talking-head video, built and tested in a real product. 10 business problems it solves.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/generative-ai-studio-flux-lora-comfyui-video/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a><!--site-nav--><style>
+.site-nav-links{display:flex;gap:22px;align-items:center;margin-left:auto;flex-wrap:wrap}
+.site-nav-links a{color:#334155;font-weight:600;font-size:15px;text-decoration:none}
+.site-nav-links a:hover,.site-nav-links a.on{color:#4338ca}
+.site-nav-links a.cta{background:linear-gradient(90deg,#4f46e5,#0ea5e9);color:#fff;padding:7px 16px;border-radius:999px}
+@media(max-width:640px){.site-nav-links{gap:14px;width:100%;margin:6px 0 2px}.site-nav-links a{font-size:14px}.site-nav-links a.hide-sm{display:none}}
+.site-foot{border-top:1px solid #e2e8f0;background:#f8fafc;padding:34px 0 26px;margin-top:40px;font-size:14px;color:#64748b}
+.site-foot .row-f{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+.site-foot a{color:#334155;text-decoration:none;margin-right:16px;line-height:2}
+.site-foot a:hover{color:#4338ca}
+</style><div class="site-nav-links"><a href="/" class="hide-sm">Home</a><a href="/case-studies/" class="on">Case Studies</a><a href="/blog/">Blog</a><a href="/resumes/" class="hide-sm">CVs</a><a href="/contact/" class="cta">Contact</a></div><!--/site-nav--></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads</h1>
+    <p class="content-excerpt">LoRA training on FLUX.1 with Ostris AI Toolkit and on SD 1.5/SDXL with kohya_ss, ComfyUI workflows, Wan 2.1 text-to-video and script-to-talking-head video, built and tested in a real product. 10 business problems it solves.</p>
+    <div class="tag-row"><span>flux.1</span><span>ai toolkit</span><span>kohya_ss</span><span>lora</span><span>comfyui</span><span>wan 2.1</span><span>text-to-video</span><span>talking head</span></div>
+    <article class="content-article">
+<style>
+.gs-proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+.gs-proof div{border:1px solid #e2e8f0;border-radius:12px;padding:14px;background:#f8fafc}
+.gs-proof b{display:block;font-size:22px;color:#4338ca;line-height:1.2}
+.gs-proof span{font-size:13px;color:#475569}
+.gs-media{display:grid;grid-template-columns:1.6fr 1fr;gap:14px;margin:18px 0}
+.gs-media figure{margin:0}
+.gs-media video{width:100%;border-radius:12px;background:#0b0b1e}
+.gs-media figcaption{color:#64748b;font-size:13px;margin-top:6px}
+@media(max-width:700px){.gs-media{grid-template-columns:1fr}}
+.gs-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 6px}
+.gs-table th,.gs-table td{border-bottom:1px solid #e2e8f0;padding:9px 8px;text-align:left;vertical-align:top}
+.gs-table th{color:#334155;background:#f8fafc}
+.gs-wrap{overflow-x:auto}
+.gs-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+.gs-case{border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 12px;background:#fff}
+.gs-case h3{font-size:17px;margin:0 0 8px;color:#0f172a}
+.gs-case .n{display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;border-radius:999px;padding:1px 9px;font-size:12px;margin-bottom:8px}
+.gs-case p{font-size:14px;margin:0 0 7px;color:#334155}
+.gs-case p b{color:#0f172a}
+.gs-case .on{font-size:13px;color:#64748b}
+.gs-note{border-left:4px solid #0ea5e9;background:#f0f9ff;padding:12px 14px;border-radius:8px;font-size:14px;margin:16px 0}
+.gs-steps{counter-reset:s;list-style:none;padding:0}
+.gs-steps li{counter-increment:s;padding:8px 0 8px 40px;position:relative}
+.gs-steps li:before{content:counter(s);position:absolute;left:0;top:7px;width:28px;height:28px;border-radius:50%;background:#4f46e5;color:#fff;font-weight:700;text-align:center;line-height:28px;font-size:14px}
+</style>
+
+<p><b>Your brand needs product photos, a character or short videos that look the same every time, and stock AI tools keep drifting.</b> I fix that by training a model on your own images (a LoRA), wiring it into ComfyUI or an API your team can call, and running it on GPUs you can afford. Everything on this page comes from a working product I built, FaceSearch, and its GPU engines.</p>
+
+<div class="gs-proof">
+  <div><b>FLUX.1</b><span>LoRA training with Ostris AI Toolkit</span></div>
+  <div><b>126 s</b><span>SD 1.5 LoRA, 150 steps, on a Kaggle T4</span></div>
+  <div><b>SDXL</b><span>LoRA trained and verified on a 16 GB T4</span></div>
+  <div><b>81 frames</b><span>Wan 2.1 text-to-video, 832&times;480, on a T4</span></div>
+  <div><b>12.5 s</b><span>talking-head video from a script: voice + lip sync</span></div>
+</div>
+
+<div class="gs-media">
+  <figure><video src="/assets/videos/genai/genai-wan-text-to-video.mp4" poster="/assets/videos/genai/genai-wan-text-to-video.jpg" controls muted playsinline preload="none"></video>
+    <figcaption>Text to video with Wan 2.1 (1.3B) on a free Kaggle T4. Prompt: "a red fox walking through deep snow, cinematic, slow motion". Unedited output.</figcaption></figure>
+  <figure><video src="/assets/videos/genai/genai-talking-head.mp4" poster="/assets/videos/genai/genai-talking-head.jpg" controls playsinline preload="none"></video>
+    <figcaption>Script to talking head: Kokoro text-to-speech, then LatentSync 1.5 lip sync on my own face. The engine refuses a face without a consent flag.</figcaption></figure>
+</div>
+
+<h2>What I train and run</h2>
+<div class="gs-wrap"><table class="gs-table">
+  <tr><th>Tool</th><th>What I use it for</th><th>Status</th></tr>
+  <tr><td><b>Ostris AI Toolkit</b></td><td>LoRA training on <b>FLUX.1</b> (dev config for 24 GB, quantised, low-VRAM mode), wrapped in a FastAPI engine with a job queue</td><td>Trained FLUX.1 LoRAs</td></tr>
+  <tr><td><b>kohya_ss (sd-scripts)</b></td><td>LoRA training on <b>SD 1.5</b> and <b>SDXL</b> (Realistic Vision 5.1 and others), Colab and Kaggle notebooks, CLIP captions</td><td>Verified on Kaggle T4</td></tr>
+  <tr><td><b>ComfyUI</b></td><td>Graphs with LoRA + IP-Adapter FaceID Plus V2 + OpenPose ControlNet; workflows run as durable API jobs from Go</td><td>Built and tested</td></tr>
+  <tr><td><b>Wan 2.1 T2V</b></td><td>Text-to-video clips for marketing and B-roll</td><td>Verified on Kaggle T4</td></tr>
+  <tr><td><b>LatentSync 1.5 + Kokoro TTS</b></td><td>Talking-head videos from a script and a consented photo</td><td>Verified on Kaggle T4</td></tr>
+  <tr><td><b>FLUX.2 klein 4B, Qwen-Image-Edit</b></td><td>Image editing and generated models for virtual try-on, chosen for commercial licences</td><td>Wired in</td></tr>
+</table></div>
+<p style="font-size:14px;color:#475569">AI Toolkit also trains LoRAs for FLUX.1 Kontext, SD 3.5, Wan 2.1/2.2 video, Qwen-Image, HiDream, Lumina 2 and Chroma. If your project needs one of those, I set it up on the same pipeline.</p>
+
+<h2>10 problems this solves</h2>
+<div class="gs-cases">
+  <div class="gs-case"><span class="n">1</span><h3>Product photos without a photo shoot</h3>
+    <p><b>Problem:</b> every new product or season needs a new shoot.</p>
+    <p><b>What I build:</b> a LoRA trained on 15 to 30 product photos (FLUX.1 or SDXL), then a ComfyUI graph that puts the product in any scene, light or angle.</p>
+    <p class="on">Built on: the FaceSearch LoRA pipeline.</p></div>
+  <div class="gs-case"><span class="n">2</span><h3>The same brand character in every campaign</h3>
+    <p><b>Problem:</b> AI images change the mascot or model's face on every image.</p>
+    <p><b>What I build:</b> a character LoRA plus IP-Adapter FaceID and an OpenPose ControlNet, so identity and pose are both controlled.</p>
+    <p class="on">Built on: <a href="/case-studies/comfyui-faceid-controlnet-lora-workflows/">ComfyUI consistent-face workflows</a>.</p></div>
+  <div class="gs-case"><span class="n">3</span><h3>AI headshots and avatars inside your app</h3>
+    <p><b>Problem:</b> users want professional photos of themselves without a photographer.</p>
+    <p><b>What I build:</b> upload a few selfies, a personal LoRA trains in the background, and the user gets styled headshots. Training jobs are queued and tracked.</p>
+    <p class="on">Built on: <a href="/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/">FaceSearch</a>.</p></div>
+  <div class="gs-case"><span class="n">4</span><h3>Virtual try-on for a fashion store</h3>
+    <p><b>Problem:</b> shoppers can't see how a garment looks on a person, and returns cost money.</p>
+    <p><b>What I build:</b> garment photo + person photo in, try-on image out, with a provider router that falls back when one model fails.</p>
+    <p class="on">Built on: FaceSearch Outfit Studio (demos on the case study).</p></div>
+  <div class="gs-case"><span class="n">5</span><h3>Short marketing clips from a text prompt</h3>
+    <p><b>Problem:</b> social media needs fresh B-roll every week, and stock footage looks like stock.</p>
+    <p><b>What I build:</b> a text-to-video engine (Wan 2.1) behind an API, prompts saved as templates, clips queued and stored.</p>
+    <p class="on">Built on: the video engine above, verified on a T4.</p></div>
+  <div class="gs-case"><span class="n">6</span><h3>A spokesperson video from a script</h3>
+    <p><b>Problem:</b> recording a founder or presenter for every update is slow.</p>
+    <p><b>What I build:</b> type the script, pick a voice, get a lip-synced talking-head video. Only faces with recorded consent are accepted.</p>
+    <p class="on">Built on: the talking-head engine above.</p></div>
+  <div class="gs-case"><span class="n">7</span><h3>Blog posts and case studies turned into videos</h3>
+    <p><b>Problem:</b> good written content never reaches video platforms.</p>
+    <p><b>What I build:</b> a pipeline that cuts a page into short beats, voices them, adds the page's images and renders a captioned video in 9:16, 1:1 or 16:9 plus post text. It only reuses sentences from the page, so it never makes claims you didn't approve.</p>
+    <p class="on">Built on: the marketing module of the same video engine.</p></div>
+  <div class="gs-case"><span class="n">8</span><h3>A ComfyUI workflow your app can call</h3>
+    <p><b>Problem:</b> the designer's ComfyUI graph works on one PC and nowhere else.</p>
+    <p><b>What I build:</b> the graph becomes an API with a job queue, retries and stored results, so your web or mobile app can use it.</p>
+    <p class="on">Built on: <a href="/case-studies/genflow-go-durable-comfyui-generation-jobs/">genflow, durable ComfyUI jobs in Go</a>.</p></div>
+  <div class="gs-case"><span class="n">9</span><h3>GPU costs that don't eat the margin</h3>
+    <p><b>Problem:</b> a GPU server running all month for a few jobs a day.</p>
+    <p><b>What I build:</b> engines that run on rented GPUs, Colab or Kaggle only when there is work, each behind its own token, with training and generation queued.</p>
+    <p class="on">Built on: the FaceSearch GPU engines, tested end to end on Kaggle.</p></div>
+  <div class="gs-case"><span class="n">10</span><h3>Models you can legally sell with</h3>
+    <p><b>Problem:</b> many open models are free to try but not licensed for commercial use.</p>
+    <p><b>What I build:</b> a licence check of every model and every hidden dependency before launch. In FaceSearch this found a non-commercial human-parser inside a "free" try-on model, so paying traffic goes to licensed providers.</p>
+    <p class="on">Built on: the FaceSearch licence review.</p></div>
+</div>
+
+<div class="gs-note"><b>A note on FLUX.1:</b> FLUX.1 [dev] gives the best quality, but its weights have a non-commercial licence. For a product you sell, I plan around FLUX.1 [schnell], FLUX.2 klein 4B or SDXL, or a commercial licence from the model's maker. I tell you which one before any training starts.</div>
+
+<h2>How a project runs</h2>
+<ol class="gs-steps">
+  <li><b>You send 10 to 30 sample images</b> and the shots or clips you need.</li>
+  <li><b>I pick the model and check its licence</b>, and tell you the GPU cost per image or clip.</li>
+  <li><b>First LoRA and test outputs in a few days</b>, so you judge real results before the full build.</li>
+  <li><b>Delivery:</b> a ComfyUI graph, an API, or a page inside your app, with a short guide for your team.</li>
+</ol>
+
+</article>
+    <section class="lead-box"><h2>Want the same for your brand?</h2><p>Send 10 sample images and the shots or clips you need. I will reply with the model, its licence, the GPU cost per image and a first test.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+<!--site-foot--><footer class="site-foot"><div class="container"><div class="row-f">
+<div><strong style="color:#0f172a">Shabeeb Hasan</strong><br>Senior AI and full-stack engineer. 133 Upwork projects, 100% Job Success.</div>
+<div><a href="/case-studies/">Case studies</a><a href="/blog/">Blog</a><a href="/ai-agent-developer/">AI agents</a><a href="/react-native-developer/">React Native</a><a href="/full-stack-ai-developer/">Full-stack AI</a><a href="/contact/">Contact</a></div>
+</div><div style="margin-top:14px">&copy; 2026 Shabeeb Hasan</div></div></footer><!--/site-foot-->
+</body>
+</html>

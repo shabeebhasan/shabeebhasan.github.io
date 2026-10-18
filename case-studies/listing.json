@@ -1,6 +1,13 @@
 {
  "items": [
   {
+   "title": "Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads",
+   "excerpt": "FLUX.1 LoRAs with AI Toolkit, SD/SDXL LoRAs with kohya_ss, ComfyUI graphs, Wan 2.1 text-to-video and talking-head video. 10 business problems, built on a real product.",
+   "image": "/assets/imgs/case-studies/genai/genai-card-sm.jpg",
+   "url": "/case-studies/generative-ai-studio-flux-lora-comfyui-video/",
+   "category": "ai"
+  },
+  {
    "title": "Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA)",
    "excerpt": "Contract work for a US voice AI recruiting startup (NDA): texting from the conversation view, queued sends, delivery status and history, no duplicates, voice session race fixes.",
    "image": "/assets/imgs/case-studies/voice-sms/voice-sms-card.jpg",
