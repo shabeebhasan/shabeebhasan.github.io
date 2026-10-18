@@ -58,7 +58,7 @@
     <div class="tag-row"><span>flux.1</span><span>ai toolkit</span><span>kohya_ss</span><span>lora</span><span>comfyui</span><span>wan 2.1</span><span>text-to-video</span><span>talking head</span></div>
     <article class="content-article">
 <style>
-.gs-proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:12px;margin:22px 0}
+.gs-proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin:22px 0}
 .gs-proof div{border:1px solid #e2e8f0;border-radius:12px;padding:14px;background:#f8fafc}
 .gs-proof b{display:block;font-size:22px;color:#4338ca;line-height:1.2}
 .gs-proof span{font-size:13px;color:#475569}
@@ -92,6 +92,7 @@
   <div><b>SDXL</b><span>LoRA trained and verified on a 16 GB T4</span></div>
   <div><b>81 frames</b><span>Wan 2.1 text-to-video, 832&times;480, on a T4</span></div>
   <div><b>12.5 s</b><span>talking-head video from a script: voice + lip sync</span></div>
+  <div><b>A100</b><span>FLUX LoRA training in bf16 with AI Toolkit</span></div>
 </div>
 
 <div class="gs-media">
@@ -106,7 +107,7 @@
 <style>.gs-vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px;margin:14px 0 6px}.gs-vids figure{margin:0}.gs-vids video{width:100%;border-radius:12px;background:#0b0b1e}.gs-vids figcaption{font-size:13px;color:#64748b;margin-top:6px}</style>
 
 <h2>A promo video, ready for social</h2>
-<div class="gs-promo"><video src="/assets/videos/genai/shabeeb-baydot-promo-1x1.mp4" poster="/assets/videos/genai/shabeeb-baydot-promo-1x1.jpg" controls muted playsinline preload="none"></video><div><p>A 30-second square (1:1) promo for my own studio: a hook, who is behind it, the numbers, and recent work as animated cards. The same approach turns any brand's copy and screenshots into feed-ready videos in 1:1, 9:16 or 16:9.</p></div></div>
+<div class="gs-promo"><video src="/assets/videos/genai/shabeeb-baydot-promo-1x1.mp4" poster="/assets/videos/genai/shabeeb-baydot-promo-1x1.jpg" controls muted playsinline preload="none"></video><div><p>Made with the video engine on this page: a 30-second square (1:1) promo for my own studio: a hook, who is behind it, the numbers, and recent work as animated cards. The same approach turns any brand's copy and screenshots into feed-ready videos in 1:1, 9:16 or 16:9.</p></div></div>
 <style>.gs-promo{display:grid;grid-template-columns:minmax(260px,420px) 1fr;gap:18px;align-items:center;margin:12px 0}.gs-promo video{width:100%;border-radius:12px;background:#0b0b1e}@media(max-width:700px){.gs-promo{grid-template-columns:1fr}}</style>
 <h2>What I train and run</h2>
 <div class="gs-wrap"><table class="gs-table">
@@ -114,11 +115,25 @@
   <tr><td><b>Ostris AI Toolkit</b></td><td>LoRA training on <b>FLUX.1</b> (dev config for 24 GB, quantised, low-VRAM mode), wrapped in a FastAPI engine with a job queue</td><td>Trained FLUX.1 LoRAs</td></tr>
   <tr><td><b>kohya_ss (sd-scripts)</b></td><td>LoRA training on <b>SD 1.5</b> and <b>SDXL</b> (Realistic Vision 5.1 and others), Colab and Kaggle notebooks, CLIP captions</td><td>Verified on Kaggle T4</td></tr>
   <tr><td><b>ComfyUI</b></td><td>Graphs with LoRA + IP-Adapter FaceID Plus V2 + OpenPose ControlNet; workflows run as durable API jobs from Go</td><td>Built and tested</td></tr>
+  <tr><td><b>Ostris AI Toolkit on A100</b></td><td>LoRA training on <b>FLUX.2 klein 4B</b> (Apache-2.0, safe to sell with) in bf16 on a Colab or rented A100; one training module shared by the API and the notebook</td><td>Trained on A100</td></tr>
   <tr><td><b>Wan 2.1 T2V</b></td><td>Text-to-video clips for marketing and B-roll</td><td>Verified on Kaggle T4</td></tr>
-  <tr><td><b>LatentSync 1.5 + Kokoro TTS</b></td><td>Talking-head videos from a script and a consented photo</td><td>Verified on Kaggle T4</td></tr>
+  <tr><td><b>Kokoro TTS</b></td><td>Voice-overs in 5 voices (US and UK, male and female) for presenters and marketing videos</td><td>Verified on Kaggle T4</td></tr>
+  <tr><td><b>LatentSync 1.5</b></td><td>Lip sync for talking-head videos from a script and a consented presenter</td><td>Verified on Kaggle T4</td></tr>
+  <tr><td><b>Marketing pipeline</b></td><td>Case study in, storyboard, voice-over, captioned video in 1:1, 9:16 and 16:9, plus LinkedIn and Facebook post text</td><td>Used for my own promos</td></tr>
   <tr><td><b>FLUX.2 klein 4B, Qwen-Image-Edit</b></td><td>Image editing and generated models for virtual try-on, chosen for commercial licences</td><td>Wired in</td></tr>
 </table></div>
 <p style="font-size:14px;color:#475569">AI Toolkit also trains LoRAs for FLUX.1 Kontext, SD 3.5, Wan 2.1/2.2 video, Qwen-Image, HiDream, Lumina 2 and Chroma. If your project needs one of those, I set it up on the same pipeline.</p>
+
+<h2>Where each job runs</h2>
+<div class="gs-wrap"><table class="gs-table">
+  <tr><th>GPU</th><th>Jobs</th><th>Why</th></tr>
+  <tr><td><b>A100</b> (Colab or rented)</td><td>FLUX LoRA training with AI Toolkit</td><td>FLUX needs about 24 GB and native bf16</td></tr>
+  <tr><td><b>T4, 16 GB</b> (Kaggle, free tier)</td><td>SD 1.5 and SDXL LoRA training with kohya_ss, Wan 2.1 video, voice and lip sync, virtual try-on tests</td><td>Cheap enough to test every engine end to end</td></tr>
+  <tr><td><b>Any CUDA host</b></td><td>The same FastAPI engines in Docker, each behind its own token</td><td>Move to a bigger GPU without changing the app</td></tr>
+</table></div>
+
+<h2>Voice and marketing video</h2>
+<p>The promo above was made with this video engine. Its marketing module reads a case-study page, cuts it into short beats using only sentences from the page, voices each beat with Kokoro, cuts every shot to the length of its own audio so words and picture stay in sync, burns in captions because feeds play muted, and renders 1:1, 9:16 and 16:9 versions. It also writes the LinkedIn and Facebook post and hashtags. Posting stays manual, so a person approves every word.</p>
 
 <h2>10 problems this solves</h2>
 <div class="gs-cases">
