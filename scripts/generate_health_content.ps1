@@ -238,7 +238,7 @@ foreach ($row in $caseRows) {
         <h2>Need a Similar Healthcare AI Build?</h2>
         <p>I can implement this model for your telehealth or clinical operations workflow with measurable KPI targets.</p>
         <div class="lead-actions">
-          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
+          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
           <a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Healthcare%20AI%20Case%20Study%20Implementation">Email for Proposal</a>
         </div>
       </section>
@@ -295,7 +295,7 @@ foreach ($row in $blogRows) {
         <h2>Planning a Healthcare AI Product?</h2>
         <p>I can help you design and launch a clinical communication AI workflow aligned with safety, compliance, and growth goals.</p>
         <div class="lead-actions">
-          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
+          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
           <a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Healthcare%20AI%20Blog%20Consultation">Email for Proposal</a>
         </div>
       </section>
@@ -352,7 +352,7 @@ $caseIndex = @"
         <h2>Need a Healthcare AI Delivery Partner?</h2>
         <p>Share your use case and I will provide a practical roadmap for triage, quality scoring, and supervisor workflows.</p>
         <div class="lead-actions">
-          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
+          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
           <a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Healthcare%20AI%20Case%20Study%20Consultation">Email for Proposal</a>
         </div>
       </section>
@@ -410,7 +410,7 @@ $blogIndex = @"
         <h2>Want More Patient-Safe AI Workflows?</h2>
         <p>I help healthcare teams launch practical AI systems with measurable outcomes and clinician-in-the-loop safety.</p>
         <div class="lead-actions">
-          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
+          <a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a>
           <a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Healthcare%20AI%20Blog%20Consultation">Email for Proposal</a>
         </div>
       </section>

@@ -15,7 +15,7 @@ import re
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 EMAIL = "shabeebhasan@gmail.com"
 PHONE = "+92 (322) 225-4819"
-CALENDLY = "https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan"
+CALENDLY = "https://calendly.com/shabeebhasan-r5ny/30min"
 SKIP_DIRS = (".git", "samples", "contact", "assets", "node_modules", "scripts")
 
 CONTACT_PAGE = """<!DOCTYPE html>

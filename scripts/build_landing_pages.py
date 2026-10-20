@@ -12,7 +12,7 @@ import os, re, json
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://shabeeb.baydot.net"
-CALENDLY = "https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan"
+CALENDLY = "https://calendly.com/shabeebhasan-r5ny/30min"
 
 PROOF_LINE = ("133 completed contracts, 106 five-star reviews and a 100% Job Success Score on Upwork. "
               "71% of that work came from clients who hired me again.")

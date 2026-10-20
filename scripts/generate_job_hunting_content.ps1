@@ -131,7 +131,7 @@ foreach ($c in $caseData) {
       <h2>What This Means for Buyers</h2>
       <p>If you run an agency, outbound team, or SaaS operation, this architecture can reduce prospecting waste and increase qualified conversation volume.</p>
     </article>
-    <section class="lead-box"><h2>Need This Build?</h2><p>I can implement a similar lead engine for your business with clear KPI targets.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Lead%20Gen%20SaaS%20Case%20Study">Email for Proposal</a></div></section>
+    <section class="lead-box"><h2>Need This Build?</h2><p>I can implement a similar lead engine for your business with clear KPI targets.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Lead%20Gen%20SaaS%20Case%20Study">Email for Proposal</a></div></section>
   </div></section>
 </body>
 </html>
@@ -198,7 +198,7 @@ for ($i=0; $i -lt $blogTopics.Count; $i++) {
     <img src="$img" alt="$title" class="hero-image">
     <div class="tag-row"><span>ai lead generation</span><span>lead generation automation</span><span>multi-tenant saas</span><span>nextjs supabase saas</span><span>bullmq automation</span><span>crm sync integration</span></div>
     <article class="content-article">$article</article>
-    <section class="lead-box"><h2>Want This Implemented?</h2><p>I can build this workflow for your agency or SaaS with production-grade architecture and KPI tracking.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan/meeting-with-shabeeb-hasan" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Lead%20Automation%20Blog%20Consultation">Email for Proposal</a></div></section>
+    <section class="lead-box"><h2>Want This Implemented?</h2><p>I can build this workflow for your agency or SaaS with production-grade architecture and KPI tracking.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min" target="_blank" rel="noopener noreferrer">Book Free Strategy Call</a><a class="btn btn-outline-primary btn-rounded" href="mailto:shabeebhasan@gmail.com?subject=Lead%20Automation%20Blog%20Consultation">Email for Proposal</a></div></section>
   </div></section>
 </body>
 </html>
