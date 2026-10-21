@@ -1,333 +1,340 @@
 {
- "items": [
-  {
-   "title": "Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads",
-   "excerpt": "FLUX.1 LoRAs with AI Toolkit, SD/SDXL LoRAs with kohya_ss, ComfyUI graphs, Wan 2.1 text-to-video and talking-head video. 10 business problems, built on a real product.",
-   "image": "/assets/imgs/case-studies/genai/genai-card-sm.jpg",
-   "url": "/case-studies/generative-ai-studio-flux-lora-comfyui-video/",
-   "category": "ai"
-  },
-  {
-   "title": "Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA)",
-   "excerpt": "Contract work for a US voice AI recruiting startup (NDA): texting from the conversation view, queued sends, delivery status and history, no duplicates, voice session race fixes.",
-   "image": "/assets/imgs/case-studies/voice-sms/voice-sms-card.jpg",
-   "url": "/case-studies/two-way-sms-voice-ai-recruiting-platform/",
-   "category": "ai"
-  },
-  {
-   "title": "applymail: Job Post In, Tailored CV and Cover Letter Out, Sent Only on Approval",
-   "excerpt": "Paste a job post or screenshot; a Go service checks the email, picks the best of 24 CVs, writes an honest cover letter and sends from Gmail only after you tap Send. Discord and n8n.",
-   "image": "/assets/imgs/case-studies/applymail/applymail-card.jpg",
-   "url": "/case-studies/applymail-go-job-post-to-tailored-application/",
-   "category": "ai"
-  },
-  {
-   "title": "genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs",
-   "excerpt": "Go job runner for ComfyUI generations: Postgres leases, step checkpoints and an idempotent submit, so a crashed worker's job resumes without a second GPU run. Tested with crashes, restarts and 60 jobs on 8 workers.",
-   "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
-   "url": "/case-studies/genflow-go-durable-comfyui-generation-jobs/",
-   "category": "ai"
-  },
-  {
-   "title": "SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely",
-   "excerpt": "Upload a claims spreadsheet and ask in plain English. Go rewrite of a Next.js + Supabase prototype: read-only SQL guard, READ ONLY transaction, 400,000 rows loaded in 18 s with Postgres COPY.",
-   "image": "/assets/imgs/generated/portfolio/supaquery.svg",
-   "url": "/case-studies/supaquery-go-natural-language-claims-queries/",
-   "category": "ai"
-  },
-  {
-   "title": "Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS",
-   "excerpt": "Finds and qualifies businesses, drafts outreach a person approves, runs an AI receptionist, and learns which proposals win. Next.js, Supabase, BullMQ.",
-   "image": "/assets/imgs/case-studies/jobhunt/jobhunt-poster-card.jpg",
-   "url": "/case-studies/job-hunting-ai-lead-engine-proposal-saas/",
-   "category": "ai"
-  },
-  {
-   "title": "Policy Change Monitor: a Serverless Diff of Public Terms Pages",
-   "excerpt": "Lambda job that watches ~28 policy pages, diffs each change, keeps every version and emails the report.",
-   "image": "/assets/imgs/case-studies/old/policymon-card.jpg",
-   "url": "/case-studies/policy-change-monitor-aws-lambda/",
-   "category": "ai"
-  },
-  {
-   "title": "Voice Explorer: a Talent Showcase App on Android (University Project)",
-   "excerpt": "Record, trim with FFmpeg and upload to YouTube, with an admin app and an AngularJS web app.",
-   "image": "/assets/imgs/case-studies/old/voiceexplorer-card.jpg",
-   "url": "/case-studies/voice-explorer-talent-showcase-android-ffmpeg/",
-   "category": "ai"
-  },
-  {
-   "title": "ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom",
-   "excerpt": "Zoom into detailed line art and colour it with a tap. Swift app around an open-source scanline flood fill.",
-   "image": "/assets/imgs/case-studies/old/colorbook-card.jpg",
-   "url": "/case-studies/colorbook-ios-colouring-app/",
-   "category": "ai"
-  },
-  {
-   "title": "Chat and Voice Calling Android App with Sinch and Parse",
-   "excerpt": "Android messenger with phone login, chat, Sinch voice calls, push and an admin app. Client contract, 2016.",
-   "image": "/assets/imgs/case-studies/old/chat360-card.jpg",
-   "url": "/case-studies/chat-voice-calling-android-app-sinch/",
-   "category": "ai"
-  },
-  {
-   "title": "Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend",
-   "excerpt": "React Native insurance app: open an account from an ID photo, pick covers, claim with photos. Cognito, Lambda, DynamoDB. 2018 to 2019.",
-   "image": "/assets/imgs/case-studies/old/yous-card.jpg",
-   "url": "/case-studies/insurance-wallet-app-react-native-aws-ocr/",
-   "category": "ai"
-  },
-  {
-   "title": "ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA",
-   "excerpt": "ComfyUI graphs that keep a face consistent with a LoRA, IP-Adapter FaceID and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA.",
-   "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
-   "url": "/case-studies/comfyui-faceid-controlnet-lora-workflows/",
-   "category": "ai"
-  },
-  {
-   "title": "FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS",
-   "excerpt": "Face search, AI image generation, LoRA training and virtual try-on in one Django and React SaaS, with GPU jobs on Celery and model licences checked for commercial use.",
-   "image": "/assets/imgs/case-studies/facesearch/facesearch-poster-card.jpg",
-   "url": "/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/",
-   "category": "ai"
-  },
-  {
-   "title": "Food Delivery Platform: Customer App, Driver App, Admin and Django API",
-   "excerpt": "Three sides of a food delivery product: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST API with Stripe Connect payouts. Six milestones, 2020 to 2021.",
-   "image": "/assets/imgs/case-studies/delivery/delivery-card.jpg",
-   "url": "/case-studies/food-delivery-rider-driver-apps-django/",
-   "category": "mobile"
-  },
-  {
-   "title": "Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First",
-   "excerpt": "A Baydot product: Pakistan Stock Exchange portfolio tracking with RSI notices. The rule was tested on five years of data before any alert was built. It did not beat holding the stocks, and the app says so on every page.",
-   "image": "/assets/imgs/case-studies/ishara/ishara-poster-card.jpg",
-   "url": "/case-studies/ishara-psx-portfolio-rsi-alerts/",
-   "category": "ai"
-  },
-  {
-   "title": "Facial Emotion Detection App on Expo, with LoRA Training Pipelines",
-   "excerpt": "The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with OpenCV, TensorFlow/Keras and scikit-learn models, and LoRA fine-tuning pipelines on FastAPI, Celery and Docker.",
-   "image": "/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png",
-   "url": "/case-studies/facial-emotion-detection-expo-app-lora-pipelines/",
-   "category": "ai"
-  },
-  {
-   "title": "Python Microservices for LLM Data Import and Inference (2023)",
-   "excerpt": "A three-week senior backend engagement in July 2023: Python microservices for importing and transforming data for large language models, inference functions, test suites, and deployment on GCP managed services with Docker.",
-   "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
-   "url": "/case-studies/llm-data-import-inference-microservices/",
-   "category": "ai"
-  },
-  {
-   "title": "One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP",
-   "excerpt": "An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.",
-   "image": "/assets/imgs/case-studies/ledger/ledger-card.jpg",
-   "url": "/case-studies/portfolio-ledger-odoo-zoho-sap/",
-   "category": "automation"
-  },
-  {
-   "title": "From Zoho and AWS Lambda to One Odoo Module",
-   "excerpt": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
-   "image": "/assets/imgs/case-studies/odoo/odoo-card.jpg",
-   "url": "/case-studies/zoho-aws-lambda-to-odoo-migration/",
-   "category": "automation"
-  },
-  {
-   "title": "Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix",
-   "excerpt": "A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action, with written findings. Milestone two: the fix. Two contracts, January 2026.",
-   "image": "/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png",
-   "url": "/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/",
-   "category": "ai"
-  },
-  {
-   "title": "Question Answering over Private Documents with GPT-3 (PoC, 2023)",
-   "excerpt": "A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.",
-   "image": "/assets/imgs/generated/case-studies/gpt3-question-answering-private-documents-poc.png",
-   "url": "/case-studies/gpt3-question-answering-private-documents-poc/",
-   "category": "ai"
-  },
-  {
-   "title": "Native iOS and Android Video Modules inside a React Native App",
-   "excerpt": "Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.",
-   "image": "/assets/imgs/generated/case-studies/native-video-modules-react-native-ios-android.png",
-   "url": "/case-studies/native-video-modules-react-native-ios-android/",
-   "category": "ai"
-  },
-  {
-   "title": "Dovia: Healthcare Marketplace Modernization",
-   "excerpt": "One Laravel backend, a React web experience and two React Native clients. Modernizing patient booking, professional workflows and API security, with actual product screenshots and explicit release gates.",
-   "image": "/assets/imgs/case-studies/dovia/00-dovia-cover-original.png",
-   "url": "/case-studies/dovia-healthcare-marketplace/",
-   "category": "health"
-  },
-  {
-   "title": "Medicine Donation Marketplace, Privacy by Design",
-   "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals — with server-enforced prescription and expiry rules and a vision check that fails to human review.",
-   "image": "/assets/imgs/case-studies/medishare/medishare-poster-card.jpg",
-   "url": "/case-studies/medicine-donation-marketplace-privacy-by-design/",
-   "category": "health"
-  },
-  {
-   "title": "Ethos Guard — Responsible Speech Analytics",
-   "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, advisory by design.",
-   "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",
-   "url": "/case-studies/ethos-guard-responsible-speech-analytics/",
-   "category": "ai"
-  },
-  {
-   "title": "Continuous Authentication from Phone Sensors",
-   "excerpt": "Hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring what the sensors actually prove: 0.82 in-session AUC, ~0.78 replicated cross-day.",
-   "image": "/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg",
-   "url": "/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
-   "category": "ai"
-  },
-  {
-   "title": "Low-Latency Bluetooth Audio Relay",
-   "excerpt": "A real-time mic-to-speaker relay with a portable C++ DSP core and a custom GCC-PHAT + NLMS echo canceller for room-length Bluetooth echo paths the platform AEC cannot reach.",
-   "image": "/assets/imgs/case-studies/voicerelay/voicerelay-poster-card.jpg",
-   "url": "/case-studies/low-latency-audio-relay-bluetooth-dsp/",
-   "category": "ai"
-  },
-  {
-   "title": "On-Device Video Compression Pipeline",
-   "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone — one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
-   "image": "/assets/imgs/case-studies/clip-studio/clip-studio-card.jpg",
-   "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
-   "category": "ai"
-  },
-  {
-   "title": "A Referral Rewards SaaS, Built Solo to Production",
-   "excerpt": "francofunrewards.ca, live: a bilingual partner-referral platform for a Canadian tutoring company — React 18 + TypeScript, Django 5/DRF, PostgreSQL and Stripe, architected, built, deployed and maintained by one engineer.",
-   "image": "/assets/imgs/case-studies/franco/franco-card.jpg",
-   "url": "/case-studies/francofun-referral-rewards-platform/",
-   "category": "ai"
-  },
-  {
-   "title": "Video at Serverless Scale: FFmpeg on AWS Lambda",
-   "excerpt": "Six contracts with one client between 2016 and 2018: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
-   "image": "/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg",
-   "url": "/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/",
-   "category": "ai"
-  },
-  {
-   "title": "Document Extraction Backends: Google Vision, Document AI and Passport OCR",
-   "excerpt": "Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.",
-   "image": "/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg",
-   "url": "/case-studies/ocr-document-intelligence-pipeline/",
-   "category": "ai"
-  },
-  {
-   "title": "Laravel and PHP Backends: a Doctor-Patient Platform, AWS and Enterprise SAP",
-   "excerpt": "A Laravel API behind a doctor and patient app pair, built and extended across three contracts from 2018 to 2020, a Laravel deployment on AWS for a long-standing client, and enterprise PHP with SAP integration in Germany.",
-   "image": "/assets/imgs/case-studies/doctor/doctor-card.jpg",
-   "url": "/case-studies/laravel-platform-three-year-engagement/",
-   "category": "ai"
-  },
-  {
-   "title": "Django at Scale: 21 Contracts for One Platform",
-   "excerpt": "Between 2019 and 2025 one platform company hired me 21 separate times for backend and frontend product work on their Django and React platform — parallel client apps, shared standards, and delivery consistent enough to keep earning the next contract.",
-   "image": "/assets/imgs/generated/case-studies/django-at-scale-21-contracts.svg",
-   "url": "/case-studies/django-at-scale-21-contracts/",
-   "category": "ai"
-  },
-  {
-   "title": "AI Lead Generation System for Local Service Businesses",
-   "excerpt": "Case study: AI Lead Generation System for Local Service Businesses. Faster lead pipeline creation with better-fit prospects and reduced manual screening.",
-   "image": "/assets/imgs/generated/job-case-studies/ai-lead-generation-system-for-local-service-businesses.svg",
-   "url": "/case-studies/ai-lead-generation-system-for-local-service-businesses/",
-   "category": "ai"
-  },
-  {
-   "title": "AI Lead Scoring and Qualification for Better Sales Targeting",
-   "excerpt": "Case study: AI Lead Scoring and Qualification for Better Sales Targeting. Higher-quality lead prioritization and better campaign focus.",
-   "image": "/assets/imgs/generated/job-case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting.svg",
-   "url": "/case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting/",
-   "category": "ai"
-  },
-  {
-   "title": "AI Proposal Generation Workflow for Freelancers and Agencies",
-   "excerpt": "Case study: AI Proposal Generation Workflow for Freelancers and Agencies. Quicker proposal turnaround with more consistent positioning.",
-   "image": "/assets/imgs/generated/job-case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies.svg",
-   "url": "/case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies/",
-   "category": "ai"
-  },
-  {
-   "title": "AI Receptionist for Appointment Booking",
-   "excerpt": "Case study: AI Receptionist for Appointment Booking. 24/7 appointment capture workflow and reduced front-desk load.",
-   "image": "/assets/imgs/generated/job-case-studies/ai-receptionist-for-appointment-booking.svg",
-   "url": "/case-studies/ai-receptionist-for-appointment-booking/",
-   "category": "ai"
-  },
-  {
-   "title": "Automated B2B Prospecting Pipeline with BullMQ",
-   "excerpt": "Case study: Automated B2B Prospecting Pipeline with BullMQ. Consistent throughput and reliable retry/backoff behavior for production workloads.",
-   "image": "/assets/imgs/generated/job-case-studies/automated-b2b-prospecting-pipeline-with-bullmq.svg",
-   "url": "/case-studies/automated-b2b-prospecting-pipeline-with-bullmq/",
-   "category": "ai"
-  },
-  {
-   "title": "Cold Email Campaign Automation Platform",
-   "excerpt": "Case study: Cold Email Campaign Automation Platform. Predictable follow-up cadence and improved outbound consistency.",
-   "image": "/assets/imgs/generated/job-case-studies/cold-email-campaign-automation-platform.svg",
-   "url": "/case-studies/cold-email-campaign-automation-platform/",
-   "category": "ai"
-  },
-  {
-   "title": "CRM Integration Layer for HubSpot and GoHighLevel",
-   "excerpt": "Case study: CRM Integration Layer for HubSpot and GoHighLevel. Unified data flow between outbound engine and client CRM systems.",
-   "image": "/assets/imgs/generated/job-case-studies/crm-integration-layer-for-hubspot-and-gohighlevel.svg",
-   "url": "/case-studies/crm-integration-layer-for-hubspot-and-gohighlevel/",
-   "category": "ai"
-  },
-  {
-   "title": "End-to-End Lead-to-Booking Automation Stack",
-   "excerpt": "Case study: End-to-End Lead-to-Booking Automation Stack. Full-funnel automation from prospect capture to booked conversation.",
-   "image": "/assets/imgs/generated/job-case-studies/end-to-end-lead-to-booking-automation-stack.svg",
-   "url": "/case-studies/end-to-end-lead-to-booking-automation-stack/",
-   "category": "ai"
-  },
-  {
-   "title": "MCP-Powered AI Receptionist Tooling for Agent Workflows",
-   "excerpt": "Case study: MCP-Powered AI Receptionist Tooling for Agent Workflows. Cleaner orchestration for AI agents and extensible automation paths.",
-   "image": "/assets/imgs/generated/job-case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows.svg",
-   "url": "/case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows/",
-   "category": "ai"
-  },
-  {
-   "title": "Multi-Tenant Lead Engine for Agencies",
-   "excerpt": "Case study: Multi-Tenant Lead Engine for Agencies. Secure client separation and scalable outbound operations under one platform.",
-   "image": "/assets/imgs/generated/job-case-studies/multi-tenant-lead-engine-for-agencies.svg",
-   "url": "/case-studies/multi-tenant-lead-engine-for-agencies/",
-   "category": "ai"
-  },
-  {
-   "title": "Next.js App Router Dashboard for Lead Operations",
-   "excerpt": "Case study: Next.js App Router Dashboard for Lead Operations. Centralized workflow management and improved operator visibility.",
-   "image": "/assets/imgs/generated/job-case-studies/nextjs-app-router-dashboard-for-lead-operations.svg",
-   "url": "/case-studies/nextjs-app-router-dashboard-for-lead-operations/",
-   "category": "ai"
-  },
-  {
-   "title": "Queue-First Outreach Architecture with Failure Recovery",
-   "excerpt": "Case study: Queue-First Outreach Architecture with Failure Recovery. More resilient outbound execution and clearer operational auditability.",
-   "image": "/assets/imgs/generated/job-case-studies/queue-first-outreach-architecture-with-failure-recovery.svg",
-   "url": "/case-studies/queue-first-outreach-architecture-with-failure-recovery/",
-   "category": "ai"
-  },
-  {
-   "title": "Supabase-Powered SaaS Backend with Tenant Isolation",
-   "excerpt": "Case study: Supabase-Powered SaaS Backend with Tenant Isolation. Production-ready foundation for scaling SaaS workflows safely.",
-   "image": "/assets/imgs/generated/job-case-studies/supabase-powered-saas-backend-with-tenant-isolation.svg",
-   "url": "/case-studies/supabase-powered-saas-backend-with-tenant-isolation/",
-   "category": "ai"
-  },
-  {
-   "title": "Usage-Limit and Plan-Controlled SaaS Monetization",
-   "excerpt": "Case study: Usage-Limit and Plan-Controlled SaaS Monetization. Better cost governance and cleaner pricing-tier enforcement.",
-   "image": "/assets/imgs/generated/job-case-studies/usage-limit-and-plan-controlled-saas-monetization.svg",
-   "url": "/case-studies/usage-limit-and-plan-controlled-saas-monetization/",
-   "category": "ai"
-  }
- ]
+  "items": [
+    {
+      "title": "Claude Mythos 5.1 Security Audits and AI Red-Teaming",
+      "excerpt": "A 48-hour adversarial campaign against a continuous authentication system: 15 of 15 protected actions blocked, evidence for every attempt. Plus 12 audits I run with Claude Mythos 5.1.",
+      "image": "/assets/imgs/case-studies/mythos/mythos-card-sm.png",
+      "url": "/case-studies/claude-mythos-5-1-security-audits-red-teaming/",
+      "category": "ai"
+    },
+    {
+      "title": "Generative AI Studio: FLUX.1 LoRA Training, ComfyUI, AI Video and Talking Heads",
+      "excerpt": "FLUX.1 LoRAs with AI Toolkit, SD/SDXL LoRAs with kohya_ss, ComfyUI graphs, Wan 2.1 text-to-video and talking-head video. 10 business problems, built on a real product.",
+      "image": "/assets/imgs/case-studies/genai/genai-card-sm.jpg",
+      "url": "/case-studies/generative-ai-studio-flux-lora-comfyui-video/",
+      "category": "ai"
+    },
+    {
+      "title": "Two-Way SMS Inside a Voice AI Recruiting Platform (Client Under NDA)",
+      "excerpt": "Contract work for a US voice AI recruiting startup (NDA): texting from the conversation view, queued sends, delivery status and history, no duplicates, voice session race fixes.",
+      "image": "/assets/imgs/case-studies/voice-sms/voice-sms-card.jpg",
+      "url": "/case-studies/two-way-sms-voice-ai-recruiting-platform/",
+      "category": "ai"
+    },
+    {
+      "title": "applymail: Job Post In, Tailored CV and Cover Letter Out, Sent Only on Approval",
+      "excerpt": "Paste a job post or screenshot; a Go service checks the email, picks the best of 24 CVs, writes an honest cover letter and sends from Gmail only after you tap Send. Discord and n8n.",
+      "image": "/assets/imgs/case-studies/applymail/applymail-card.jpg",
+      "url": "/case-studies/applymail-go-job-post-to-tailored-application/",
+      "category": "ai"
+    },
+    {
+      "title": "genflow: Durable ComfyUI Generation Jobs in Go, No Duplicate GPU Runs",
+      "excerpt": "Go job runner for ComfyUI generations: Postgres leases, step checkpoints and an idempotent submit, so a crashed worker's job resumes without a second GPU run. Tested with crashes, restarts and 60 jobs on 8 workers.",
+      "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
+      "url": "/case-studies/genflow-go-durable-comfyui-generation-jobs/",
+      "category": "ai"
+    },
+    {
+      "title": "SupaQuery in Go: Plain-English Questions over 400,000 Claim Rows, Safely",
+      "excerpt": "Upload a claims spreadsheet and ask in plain English. Go rewrite of a Next.js + Supabase prototype: read-only SQL guard, READ ONLY transaction, 400,000 rows loaded in 18 s with Postgres COPY.",
+      "image": "/assets/imgs/generated/portfolio/supaquery.svg",
+      "url": "/case-studies/supaquery-go-natural-language-claims-queries/",
+      "category": "ai"
+    },
+    {
+      "title": "Job-Hunting AI: Lead Engine, Outreach and Proposal Win Tracking in One SaaS",
+      "excerpt": "Finds and qualifies businesses, drafts outreach a person approves, runs an AI receptionist, and learns which proposals win. Next.js, Supabase, BullMQ.",
+      "image": "/assets/imgs/case-studies/jobhunt/jobhunt-poster-card.jpg",
+      "url": "/case-studies/job-hunting-ai-lead-engine-proposal-saas/",
+      "category": "ai"
+    },
+    {
+      "title": "Policy Change Monitor: a Serverless Diff of Public Terms Pages",
+      "excerpt": "Lambda job that watches ~28 policy pages, diffs each change, keeps every version and emails the report.",
+      "image": "/assets/imgs/case-studies/old/policymon-card.jpg",
+      "url": "/case-studies/policy-change-monitor-aws-lambda/",
+      "category": "ai"
+    },
+    {
+      "title": "Voice Explorer: a Talent Showcase App on Android (University Project)",
+      "excerpt": "Record, trim with FFmpeg and upload to YouTube, with an admin app and an AngularJS web app.",
+      "image": "/assets/imgs/case-studies/old/voiceexplorer-card.jpg",
+      "url": "/case-studies/voice-explorer-talent-showcase-android-ffmpeg/",
+      "category": "ai"
+    },
+    {
+      "title": "ColorBook: an iOS Colouring App with Tap-to-Fill and Zoom",
+      "excerpt": "Zoom into detailed line art and colour it with a tap. Swift app around an open-source scanline flood fill.",
+      "image": "/assets/imgs/case-studies/old/colorbook-card.jpg",
+      "url": "/case-studies/colorbook-ios-colouring-app/",
+      "category": "ai"
+    },
+    {
+      "title": "Chat and Voice Calling Android App with Sinch and Parse",
+      "excerpt": "Android messenger with phone login, chat, Sinch voice calls, push and an admin app. Client contract, 2016.",
+      "image": "/assets/imgs/case-studies/old/chat360-card.jpg",
+      "url": "/case-studies/chat-voice-calling-android-app-sinch/",
+      "category": "ai"
+    },
+    {
+      "title": "Insurance Wallet App: React Native, ID Scan OCR and an AWS Backend",
+      "excerpt": "React Native insurance app: open an account from an ID photo, pick covers, claim with photos. Cognito, Lambda, DynamoDB. 2018 to 2019.",
+      "image": "/assets/imgs/case-studies/old/yous-card.jpg",
+      "url": "/case-studies/insurance-wallet-app-react-native-aws-ocr/",
+      "category": "ai"
+    },
+    {
+      "title": "ComfyUI Workflows: Face-Consistent Generation with FaceID, ControlNet and a Trained LoRA",
+      "excerpt": "ComfyUI graphs that keep a face consistent with a LoRA, IP-Adapter FaceID and an OpenPose ControlNet, plus a Colab notebook that trains the LoRA.",
+      "image": "/assets/imgs/case-studies/comfy/comfy-poster-card.jpg",
+      "url": "/case-studies/comfyui-faceid-controlnet-lora-workflows/",
+      "category": "ai"
+    },
+    {
+      "title": "FaceSearch: Face Search, LoRA Training and Virtual Try-On in One SaaS",
+      "excerpt": "Face search, AI image generation, LoRA training and virtual try-on in one Django and React SaaS, with GPU jobs on Celery and model licences checked for commercial use.",
+      "image": "/assets/imgs/case-studies/facesearch/facesearch-poster-card.jpg",
+      "url": "/case-studies/facesearch-ai-image-saas-lora-virtual-try-on/",
+      "category": "ai"
+    },
+    {
+      "title": "Food Delivery Platform: Customer App, Driver App, Admin and Django API",
+      "excerpt": "Three sides of a food delivery product: a React Native customer app, a React Native driver app, a React admin for restaurants, and a Django REST API with Stripe Connect payouts. Six milestones, 2020 to 2021.",
+      "image": "/assets/imgs/case-studies/delivery/delivery-card.jpg",
+      "url": "/case-studies/food-delivery-rider-driver-apps-django/",
+      "category": "mobile"
+    },
+    {
+      "title": "Ishara: A PSX Portfolio Tracker That Tested Its Own Rule First",
+      "excerpt": "A Baydot product: Pakistan Stock Exchange portfolio tracking with RSI notices. The rule was tested on five years of data before any alert was built. It did not beat holding the stocks, and the app says so on every page.",
+      "image": "/assets/imgs/case-studies/ishara/ishara-poster-card.jpg",
+      "url": "/case-studies/ishara-psx-portfolio-rsi-alerts/",
+      "category": "ai"
+    },
+    {
+      "title": "Facial Emotion Detection App on Expo, with LoRA Training Pipelines",
+      "excerpt": "The AI track of a software developer role at a German firm, 2024 to 2026: a facial emotion detection app on Expo (React Native) with OpenCV, TensorFlow/Keras and scikit-learn models, and LoRA fine-tuning pipelines on FastAPI, Celery and Docker.",
+      "image": "/assets/imgs/generated/case-studies/facial-emotion-detection-expo-app-lora-pipelines.png",
+      "url": "/case-studies/facial-emotion-detection-expo-app-lora-pipelines/",
+      "category": "ai"
+    },
+    {
+      "title": "Python Microservices for LLM Data Import and Inference (2023)",
+      "excerpt": "A three-week senior backend engagement in July 2023: Python microservices for importing and transforming data for large language models, inference functions, test suites, and deployment on GCP managed services with Docker.",
+      "image": "/assets/imgs/generated/case-studies/llm-data-import-inference-microservices.png",
+      "url": "/case-studies/llm-data-import-inference-microservices/",
+      "category": "ai"
+    },
+    {
+      "title": "One Accounting Core, Three ERPs: Odoo, Zoho Books and SAP",
+      "excerpt": "An investment ledger where the accounting lives in one framework-free package and each ERP only translates. The same purchase produces the same journal entry in Odoo 18, Zoho Books and SAP Business One, and the arithmetic is tested once. 69 tests on the core, 12 more inside a real Odoo database.",
+      "image": "/assets/imgs/case-studies/ledger/ledger-card.jpg",
+      "url": "/case-studies/portfolio-ledger-odoo-zoho-sap/",
+      "category": "automation"
+    },
+    {
+      "title": "From Zoho and AWS Lambda to One Odoo Module",
+      "excerpt": "A membership business ran its subscriptions, its CRM sync and a 2.9 GB provider directory across seven Lambdas, two Deluge scripts and a pile of CSVs. I rebuilt the whole thing as a single Odoo 17 module, and found nine real defects in the original while doing it.",
+      "image": "/assets/imgs/case-studies/odoo/odoo-card.jpg",
+      "url": "/case-studies/zoho-aws-lambda-to-odoo-migration/",
+      "category": "automation"
+    },
+    {
+      "title": "Stripe to MailerLite Subscription Flow: Two-Day Audit, then the Fix",
+      "excerpt": "A subscription business was sending duplicate and missed onboarding emails after payment. Milestone one: a two-day audit tracing every path from a Stripe event to a MailerLite action, with written findings. Milestone two: the fix. Two contracts, January 2026.",
+      "image": "/assets/imgs/generated/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix.png",
+      "url": "/case-studies/stripe-mailerlite-subscription-flow-audit-and-fix/",
+      "category": "ai"
+    },
+    {
+      "title": "Question Answering over Private Documents with GPT-3 (PoC, 2023)",
+      "excerpt": "A February 2023 proof of concept: index a client's own documents, embed the chunks, retrieve by similarity and let GPT-3 answer from the retrieved passages. The pattern now called RAG, built in plain Python before the tooling existed.",
+      "image": "/assets/imgs/generated/case-studies/gpt3-question-answering-private-documents-poc.png",
+      "url": "/case-studies/gpt3-question-answering-private-documents-poc/",
+      "category": "ai"
+    },
+    {
+      "title": "Native iOS and Android Video Modules inside a React Native App",
+      "excerpt": "Two contracts for the same client, 2025 and 2026: Android MediaCodec transcoding and compression, then native video overlay and baking on iOS and Android, exposed to the app as typed React Native modules.",
+      "image": "/assets/imgs/generated/case-studies/native-video-modules-react-native-ios-android.png",
+      "url": "/case-studies/native-video-modules-react-native-ios-android/",
+      "category": "ai"
+    },
+    {
+      "title": "Dovia: Healthcare Marketplace Modernization",
+      "excerpt": "One Laravel backend, a React web experience and two React Native clients. Modernizing patient booking, professional workflows and API security, with actual product screenshots and explicit release gates.",
+      "image": "/assets/imgs/case-studies/dovia/00-dovia-cover-original.png",
+      "url": "/case-studies/dovia-healthcare-marketplace/",
+      "category": "health"
+    },
+    {
+      "title": "Medicine Donation Marketplace, Privacy by Design",
+      "excerpt": "A bilingual medicine-sharing platform where the donor's exact address and the handover code live behind database policies, not UI conditionals — with server-enforced prescription and expiry rules and a vision check that fails to human review.",
+      "image": "/assets/imgs/case-studies/medishare/medishare-poster-card.jpg",
+      "url": "/case-studies/medicine-donation-marketplace-privacy-by-design/",
+      "category": "health"
+    },
+    {
+      "title": "Ethos Guard — Responsible Speech Analytics",
+      "excerpt": "PhD research prototype: multimodal dashboard flagging hostile language in code-switched Urdu / Roman Urdu / English speech — negation-aware, identity-safe, advisory by design.",
+      "image": "/assets/imgs/case-studies/ethos-guard/ethos-guard-overview.jpg",
+      "url": "/case-studies/ethos-guard-responsible-speech-analytics/",
+      "category": "ai"
+    },
+    {
+      "title": "Continuous Authentication from Phone Sensors",
+      "excerpt": "Hardening a behavioral-biometrics prototype into a defensible continuous authentication system, then measuring what the sensors actually prove: 0.82 in-session AUC, ~0.78 replicated cross-day.",
+      "image": "/assets/imgs/generated/case-studies/behavioral-ai-authentication-mobile-sensor-signals.svg",
+      "url": "/case-studies/behavioral-ai-authentication-mobile-sensor-signals/",
+      "category": "ai"
+    },
+    {
+      "title": "Low-Latency Bluetooth Audio Relay",
+      "excerpt": "A real-time mic-to-speaker relay with a portable C++ DSP core and a custom GCC-PHAT + NLMS echo canceller for room-length Bluetooth echo paths the platform AEC cannot reach.",
+      "image": "/assets/imgs/case-studies/voicerelay/voicerelay-poster-card.jpg",
+      "url": "/case-studies/low-latency-audio-relay-bluetooth-dsp/",
+      "category": "ai"
+    },
+    {
+      "title": "On-Device Video Compression Pipeline",
+      "excerpt": "A React Native video studio that compresses, trims and re-scores footage entirely on the phone — one typed API over Swift and Kotlin, with a measured 59% size reduction and a documented platform-limitation matrix.",
+      "image": "/assets/imgs/case-studies/clip-studio/clip-studio-card.jpg",
+      "url": "/case-studies/on-device-video-compression-mobile-pipeline/",
+      "category": "ai"
+    },
+    {
+      "title": "A Referral Rewards SaaS, Built Solo to Production",
+      "excerpt": "francofunrewards.ca, live: a bilingual partner-referral platform for a Canadian tutoring company — React 18 + TypeScript, Django 5/DRF, PostgreSQL and Stripe, architected, built, deployed and maintained by one engineer.",
+      "image": "/assets/imgs/case-studies/franco/franco-card.jpg",
+      "url": "/case-studies/francofun-referral-rewards-platform/",
+      "category": "ai"
+    },
+    {
+      "title": "Video at Serverless Scale: FFmpeg on AWS Lambda",
+      "excerpt": "Six contracts with one client between 2016 and 2018: FFmpeg encoding pipelines on Lambda, auto-scaling EC2 for the heavy jobs, and the operational discipline to keep media infrastructure boring.",
+      "image": "/assets/imgs/generated/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda.svg",
+      "url": "/case-studies/serverless-video-pipeline-ffmpeg-aws-lambda/",
+      "category": "ai"
+    },
+    {
+      "title": "Document Extraction Backends: Google Vision, Document AI and Passport OCR",
+      "excerpt": "Two document extraction backends: a scanning app on Google Vision and Google Document AI form processing with JSON export, and the server side of a React Native app that captured passports, licences and cards.",
+      "image": "/assets/imgs/generated/case-studies/ocr-document-intelligence-pipeline.svg",
+      "url": "/case-studies/ocr-document-intelligence-pipeline/",
+      "category": "ai"
+    },
+    {
+      "title": "Laravel and PHP Backends: a Doctor-Patient Platform, AWS and Enterprise SAP",
+      "excerpt": "A Laravel API behind a doctor and patient app pair, built and extended across three contracts from 2018 to 2020, a Laravel deployment on AWS for a long-standing client, and enterprise PHP with SAP integration in Germany.",
+      "image": "/assets/imgs/case-studies/doctor/doctor-card.jpg",
+      "url": "/case-studies/laravel-platform-three-year-engagement/",
+      "category": "ai"
+    },
+    {
+      "title": "Django at Scale: 21 Contracts for One Platform",
+      "excerpt": "Between 2019 and 2025 one platform company hired me 21 separate times for backend and frontend product work on their Django and React platform — parallel client apps, shared standards, and delivery consistent enough to keep earning the next contract.",
+      "image": "/assets/imgs/generated/case-studies/django-at-scale-21-contracts.svg",
+      "url": "/case-studies/django-at-scale-21-contracts/",
+      "category": "ai"
+    },
+    {
+      "title": "AI Lead Generation System for Local Service Businesses",
+      "excerpt": "Case study: AI Lead Generation System for Local Service Businesses. Faster lead pipeline creation with better-fit prospects and reduced manual screening.",
+      "image": "/assets/imgs/generated/job-case-studies/ai-lead-generation-system-for-local-service-businesses.svg",
+      "url": "/case-studies/ai-lead-generation-system-for-local-service-businesses/",
+      "category": "ai"
+    },
+    {
+      "title": "AI Lead Scoring and Qualification for Better Sales Targeting",
+      "excerpt": "Case study: AI Lead Scoring and Qualification for Better Sales Targeting. Higher-quality lead prioritization and better campaign focus.",
+      "image": "/assets/imgs/generated/job-case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting.svg",
+      "url": "/case-studies/ai-lead-scoring-and-qualification-for-better-sales-targeting/",
+      "category": "ai"
+    },
+    {
+      "title": "AI Proposal Generation Workflow for Freelancers and Agencies",
+      "excerpt": "Case study: AI Proposal Generation Workflow for Freelancers and Agencies. Quicker proposal turnaround with more consistent positioning.",
+      "image": "/assets/imgs/generated/job-case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies.svg",
+      "url": "/case-studies/ai-proposal-generation-workflow-for-freelancers-and-agencies/",
+      "category": "ai"
+    },
+    {
+      "title": "AI Receptionist for Appointment Booking",
+      "excerpt": "Case study: AI Receptionist for Appointment Booking. 24/7 appointment capture workflow and reduced front-desk load.",
+      "image": "/assets/imgs/generated/job-case-studies/ai-receptionist-for-appointment-booking.svg",
+      "url": "/case-studies/ai-receptionist-for-appointment-booking/",
+      "category": "ai"
+    },
+    {
+      "title": "Automated B2B Prospecting Pipeline with BullMQ",
+      "excerpt": "Case study: Automated B2B Prospecting Pipeline with BullMQ. Consistent throughput and reliable retry/backoff behavior for production workloads.",
+      "image": "/assets/imgs/generated/job-case-studies/automated-b2b-prospecting-pipeline-with-bullmq.svg",
+      "url": "/case-studies/automated-b2b-prospecting-pipeline-with-bullmq/",
+      "category": "ai"
+    },
+    {
+      "title": "Cold Email Campaign Automation Platform",
+      "excerpt": "Case study: Cold Email Campaign Automation Platform. Predictable follow-up cadence and improved outbound consistency.",
+      "image": "/assets/imgs/generated/job-case-studies/cold-email-campaign-automation-platform.svg",
+      "url": "/case-studies/cold-email-campaign-automation-platform/",
+      "category": "ai"
+    },
+    {
+      "title": "CRM Integration Layer for HubSpot and GoHighLevel",
+      "excerpt": "Case study: CRM Integration Layer for HubSpot and GoHighLevel. Unified data flow between outbound engine and client CRM systems.",
+      "image": "/assets/imgs/generated/job-case-studies/crm-integration-layer-for-hubspot-and-gohighlevel.svg",
+      "url": "/case-studies/crm-integration-layer-for-hubspot-and-gohighlevel/",
+      "category": "ai"
+    },
+    {
+      "title": "End-to-End Lead-to-Booking Automation Stack",
+      "excerpt": "Case study: End-to-End Lead-to-Booking Automation Stack. Full-funnel automation from prospect capture to booked conversation.",
+      "image": "/assets/imgs/generated/job-case-studies/end-to-end-lead-to-booking-automation-stack.svg",
+      "url": "/case-studies/end-to-end-lead-to-booking-automation-stack/",
+      "category": "ai"
+    },
+    {
+      "title": "MCP-Powered AI Receptionist Tooling for Agent Workflows",
+      "excerpt": "Case study: MCP-Powered AI Receptionist Tooling for Agent Workflows. Cleaner orchestration for AI agents and extensible automation paths.",
+      "image": "/assets/imgs/generated/job-case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows.svg",
+      "url": "/case-studies/mcp-powered-ai-receptionist-tooling-for-agent-workflows/",
+      "category": "ai"
+    },
+    {
+      "title": "Multi-Tenant Lead Engine for Agencies",
+      "excerpt": "Case study: Multi-Tenant Lead Engine for Agencies. Secure client separation and scalable outbound operations under one platform.",
+      "image": "/assets/imgs/generated/job-case-studies/multi-tenant-lead-engine-for-agencies.svg",
+      "url": "/case-studies/multi-tenant-lead-engine-for-agencies/",
+      "category": "ai"
+    },
+    {
+      "title": "Next.js App Router Dashboard for Lead Operations",
+      "excerpt": "Case study: Next.js App Router Dashboard for Lead Operations. Centralized workflow management and improved operator visibility.",
+      "image": "/assets/imgs/generated/job-case-studies/nextjs-app-router-dashboard-for-lead-operations.svg",
+      "url": "/case-studies/nextjs-app-router-dashboard-for-lead-operations/",
+      "category": "ai"
+    },
+    {
+      "title": "Queue-First Outreach Architecture with Failure Recovery",
+      "excerpt": "Case study: Queue-First Outreach Architecture with Failure Recovery. More resilient outbound execution and clearer operational auditability.",
+      "image": "/assets/imgs/generated/job-case-studies/queue-first-outreach-architecture-with-failure-recovery.svg",
+      "url": "/case-studies/queue-first-outreach-architecture-with-failure-recovery/",
+      "category": "ai"
+    },
+    {
+      "title": "Supabase-Powered SaaS Backend with Tenant Isolation",
+      "excerpt": "Case study: Supabase-Powered SaaS Backend with Tenant Isolation. Production-ready foundation for scaling SaaS workflows safely.",
+      "image": "/assets/imgs/generated/job-case-studies/supabase-powered-saas-backend-with-tenant-isolation.svg",
+      "url": "/case-studies/supabase-powered-saas-backend-with-tenant-isolation/",
+      "category": "ai"
+    },
+    {
+      "title": "Usage-Limit and Plan-Controlled SaaS Monetization",
+      "excerpt": "Case study: Usage-Limit and Plan-Controlled SaaS Monetization. Better cost governance and cleaner pricing-tier enforcement.",
+      "image": "/assets/imgs/generated/job-case-studies/usage-limit-and-plan-controlled-saas-monetization.svg",
+      "url": "/case-studies/usage-limit-and-plan-controlled-saas-monetization/",
+      "category": "ai"
+    }
+  ]
 }
