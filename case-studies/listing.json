@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "PHP2Shell Patch and PHP 8.4 / 8.5 Upgrades for Laravel and WordPress",
+      "excerpt": "PHP2Shell patched on a real Laravel 13 API: PHP 8.4.27, all 110 tests and 19 API checks passing. Plus 10 PHP security and upgrade jobs, from emergency patches to Laravel and WordPress upgrades.",
+      "image": "/assets/imgs/case-studies/php2shell/php2shell-card-sm.png",
+      "url": "/case-studies/php2shell-cve-2026-109618-patch-php-laravel-upgrade/",
+      "category": "web"
+    },
+    {
       "title": "Claude Mythos 5.1 Security Audits and AI Red-Teaming",
       "excerpt": "A 48-hour adversarial campaign against a continuous authentication system: 15 of 15 protected actions blocked, evidence for every attempt. Plus 12 audits I run with Claude Mythos 5.1.",
       "image": "/assets/imgs/case-studies/mythos/mythos-card-sm.png",
