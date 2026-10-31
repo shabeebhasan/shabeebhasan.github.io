@@ -109,5 +109,6 @@
 
 ## Free Tools
 
-- [WhatsApp Chat Viewer](https://chat.baydot.net/): open exported WhatsApp chats with emoji, photos and video, privately in the browser.
-- [SMS Text Viewer](https://sms.baydot.net/): read Android and iPhone SMS backups as conversations, privately in the browser.
+- [WhatsApp Chat Viewer](https://chat.baydot.net/): Open exported WhatsApp chats with emoji, photos and video, privately in the browser.
+- [SMS Text Viewer](https://sms.baydot.net/): Read Android SMS Backup & Restore XML and iPhone CSV backups as conversations.
+- Overview: https://baydot.net/tools/
