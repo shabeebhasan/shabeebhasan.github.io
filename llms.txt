@@ -119,6 +119,7 @@
 - [Position Size Calculator](https://possize.baydot.net/): Size each trade from your risk %, entry and stop-loss — with reward:risk and a simple journal.
 - [Prompt Library](https://prompts.baydot.net/): Save your best AI prompts with {{variables}}, fill the blanks and copy in one tap.
 - [AI Agent Cost Calculator](https://agentcost.baydot.net/): Estimate monthly LLM cost for an AI agent or chatbot — tokens, tool-use steps and caching.
+- [EMI Tracker](https://emitrack.baydot.net/): See every loan EMI on one punch card: what is due, what is late, and when you will be debt-free.
 - [WhatsApp Chat Viewer](https://chat.baydot.net/): Open exported WhatsApp chats with emoji, photos and video, privately in the browser.
 - [SMS Text Viewer](https://sms.baydot.net/): Read Android SMS Backup & Restore XML and iPhone CSV backups as conversations.
 - Overview: https://baydot.net/tools/
