@@ -109,6 +109,9 @@
 
 ## Free Tools
 
+- [Pumpkin Stencil Maker](https://pumpkinlab.baydot.net/): Build a pumpkin face, see it glow by candlelight, and print a true-size carving stencil.
+- [Candy Haul](https://candyhaul.baydot.net/): Count your trick-or-treat candy, set a daily limit, and see the day the jar runs out.
+- [Closet Costume](https://closetcostume.baydot.net/): Tick what is in your closet and find a last-minute Halloween costume you can make tonight.
 - [Dental Cost Estimator](https://dentalcost.baydot.net/): Give patients a clear treatment cost range with insurance share — set your own clinic fees.
 - [Appointment Card Maker](https://dentalcard.baydot.net/): Make dental appointment reminder cards as an image, WhatsApp message or calendar invite.
 - [Ride Fare Splitter](https://faresplit.baydot.net/): Split a shared taxi or ride fare fairly by where each rider gets off — tip and tolls included.
