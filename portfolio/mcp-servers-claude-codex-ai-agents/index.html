@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>MCP Servers and AI Agents for Claude, Codex and Gemini | Shabeeb Hasan</title>
+  <meta name="description" content="An MCP server I wrote with 8 business tools, agents running the same MCP connector on Claude and Codex, and a FaceSearch agent layer that switches between Claude, Gemini and OpenAI.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/mcp-servers-claude-codex-ai-agents/">
+  <meta property="og:title" content="MCP Servers and AI Agents for Claude, Codex and Gemini | Shabeeb Hasan">
+  <meta property="og:description" content="An MCP server I wrote with 8 business tools, agents running the same MCP connector on Claude and Codex, and a FaceSearch agent layer that switches between Claude, Gemini and OpenAI.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/mcp-servers-claude-codex-ai-agents/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/mcp/mcp-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "MCP Servers and AI Agents for Claude, Codex and Gemini",
+      "description": "An MCP server I wrote with 8 business tools, agents running the same MCP connector on Claude and Codex, and a FaceSearch agent layer that switches between Claude, Gemini and OpenAI.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/mcp-servers-claude-codex-ai-agents/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/portfolio/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/portfolio/" class="back-link">Back to portfolio</a>
+    <h1 class="content-title">MCP Servers and AI Agents for Claude, Codex and Gemini</h1>
+    <p class="content-excerpt">An MCP server I wrote with 8 business tools, agents running the same MCP connector on Claude and Codex, and a FaceSearch agent layer that switches between Claude, Gemini and OpenAI.</p>
+    <div class="tag-row"><span>mcp server</span><span>claude</span><span>codex</span><span>gemini api</span><span>ai agents</span><span>typescript</span><span>human in the loop</span></div>
+    <article class="content-article">
+<style>
+.gs-proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin:22px 0}
+.gs-proof div{border:1px solid #e2e8f0;border-radius:12px;padding:14px;background:#f8fafc}
+.gs-proof b{display:block;font-size:22px;color:#4338ca;line-height:1.2}
+.gs-proof span{font-size:13px;color:#475569}
+.gs-media{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0}
+.gs-media figure{margin:0}
+.gs-media video{width:100%;border-radius:12px;background:#0b0b1e}
+.gs-media figcaption{color:#64748b;font-size:13px;margin-top:6px}
+@media(max-width:700px){.gs-media{grid-template-columns:1fr}}
+.gs-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 6px}
+.gs-table th,.gs-table td{border-bottom:1px solid #e2e8f0;padding:9px 8px;text-align:left;vertical-align:top}
+.gs-table th{color:#334155;background:#f8fafc}
+.gs-wrap{overflow-x:auto}
+.gs-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+.gs-case{border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 12px;background:#fff}
+.gs-case h3{font-size:17px;margin:0 0 8px;color:#0f172a}
+.gs-case .n{display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;border-radius:999px;padding:1px 9px;font-size:12px;margin-bottom:8px}
+.gs-case p{font-size:14px;margin:0 0 7px;color:#334155}
+.gs-case p b{color:#0f172a}
+.gs-case .on{font-size:13px;color:#64748b}
+.gs-note{border-left:4px solid #0ea5e9;background:#f0f9ff;padding:12px 14px;border-radius:8px;font-size:14px;margin:16px 0}
+.gs-steps{counter-reset:s;list-style:none;padding:0}
+.gs-steps li{counter-increment:s;padding:8px 0 8px 40px;position:relative}
+.gs-steps li:before{content:counter(s);position:absolute;left:0;top:7px;width:28px;height:28px;border-radius:50%;background:#4f46e5;color:#fff;font-weight:700;text-align:center;line-height:28px;font-size:14px}
+</style>
+<div class="gs-proof">
+  <div><b>8</b><span>tools in the MCP server, with typed inputs</span></div>
+  <div><b>2</b><span>agent runtimes on one MCP connector: Claude and Codex</span></div>
+  <div><b>10</b><span>specialist agents behind a coordinator in FaceSearch</span></div>
+  <div><b>5</b><span>model routes in FaceSearch, including Claude and Gemini</span></div>
+  <div><b>1 tap</b><span>a person approves before anything is sent</span></div>
+</div>
+<figure style="margin:22px 0"><img src="/assets/imgs/case-studies/mcp/mcp-card.jpg" alt="An AI client calls an MCP server, which validates input, scopes it to one tenant and reaches business data" loading="lazy" style="width:100%;border-radius:12px"></figure>
+
+<h2>What this is</h2>
+<p>MCP (Model Context Protocol) lets an AI assistant use your software through a defined set of tools, instead of guessing from text. The work is in deciding what the model may do, checking every input, keeping each customer's data apart, and making sure a person approves anything risky.</p>
+
+<h2>Where each piece is real</h2>
+<div class="gs-wrap"><table class="gs-table">
+<tr><th>Work</th><th>Where</th><th>What it does</th></tr>
+<tr><td><b>Custom MCP server</b></td><td>Job-Hunting AI (TypeScript, official MCP SDK)</td><td>Exposes an AI receptionist as tools an agent can call</td></tr>
+<tr><td><b>Claude + MCP</b></td><td>Job search agent</td><td>Scheduled agent reads an official marketplace MCP connector</td></tr>
+<tr><td><b>Codex + MCP</b></td><td>Same agent</td><td>Same connector on Codex, used when Claude hits a usage limit, with write tools switched off for scanning</td></tr>
+<tr><td><b>Claude + Gemini + OpenAI APIs</b></td><td>FaceSearch SaaS</td><td>The agent layer picks a model provider by configuration</td></tr>
+</table></div>
+
+<h2>Project 1: an MCP server for an AI receptionist</h2>
+<p>Part of Job-Hunting AI, my own SaaS. It runs over stdio, and any MCP client can connect to it.</p>
+<ul>
+  <li><b>Eight tools:</b> get_receptionist_config, get_services, get_business_hours, check_availability, book_appointment, list_appointments, update_appointment_status, qualify_lead.</li>
+  <li><b>Typed inputs:</b> every tool validates its input with Zod, including IDs, dates and times, before anything touches the database.</li>
+  <li><b>Tenant scoping:</b> queries are filtered by tenant, so one business's bookings stay out of another's.</li>
+  <li><b>Clean failures:</b> a tool error goes back as an MCP error the agent can read.</li>
+</ul>
+
+<h2>Project 2: one agent, two runtimes, a person in charge</h2>
+<p>A scheduled agent uses an official MCP connector to find and read job posts, then drafts a reply for review. It normally runs on Claude and moves its scan to Codex when Claude runs out of usage.</p>
+<ul>
+  <li><b>Tools are limited per step:</b> a scan can only read. Write tools are blocked in its configuration.</li>
+  <li><b>Nothing goes out alone:</b> sending takes a preview and then a Confirm button pressed by a person.</li>
+</ul>
+<p><a href="/portfolio/multi-agent-pipeline-with-human-approval/">See the multi-agent pipeline</a></p>
+
+<h2>Project 3: the agent layer inside FaceSearch</h2>
+<p>FaceSearch is my SaaS for face search, LoRA training and virtual try-on. Its agent layer takes a chat or voice message, works out the intent and sends it to one of 10 specialists, such as photobase, LoRA, try-on, video or billing.</p>
+<ul>
+  <li><b>Model choice is configuration:</b> OpenAI, Anthropic Claude, Google Gemini, OpenRouter or any OpenAI-compatible endpoint.</li>
+  <li><b>Everything is on record:</b> each run and tool call is stored per organization.</li>
+  <li><b>Long jobs stay where they belong:</b> GPU work still runs through the existing queue.</li>
+</ul>
+<p><a href="/portfolio/facesearch-ai-image-saas-lora-virtual-try-on/">See FaceSearch</a></p>
+<div class="gs-note"><b>To be exact:</b> FaceSearch talks to Claude and Gemini through their APIs, not through MCP. Its specialists currently report on data in the system and route requests. The same layer is a natural place to add an MCP server, and that is the kind of work described below. I have not shipped a Gemini MCP integration yet.</div>
+
+<h2>What this can do for your product</h2>
+<div class="gs-cases">
+  <div class="gs-case"><h3>Your SaaS inside AI assistants</h3><p><b>Problem:</b> customers want to use your product from Claude or other assistants.</p><p><b>Build:</b> an MCP server over your existing API, with per-customer access.</p></div>
+  <div class="gs-case"><h3>Booking and lead agents</h3><p><b>Problem:</b> an agent gives wrong times because it can't see real availability.</p><p><b>Build:</b> tools for availability, booking and lead qualification.</p></div>
+  <div class="gs-case"><h3>Safe write actions</h3><p><b>Problem:</b> nobody trusts an agent to change real data.</p><p><b>Build:</b> read-only by default, with approval before any write.</p></div>
+  <div class="gs-case"><h3>No lock-in to one model</h3><p><b>Problem:</b> one provider's limit or outage stops your work.</p><p><b>Build:</b> switching by configuration, plus a fallback path.</p></div>
+</div>
+
+<h2>How a project runs</h2>
+<ol class="gs-steps">
+  <li><b>You share your API or database outline</b> and the jobs an assistant should do.</li>
+  <li><b>I list the tools</b> and mark which ones read, which ones write and which need approval.</li>
+  <li><b>A first read-only server,</b> connected to the assistant you use, so you can try it on real questions.</li>
+  <li><b>Write tools and access control,</b> then a short guide for your team.</li>
+</ol>
+<p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>

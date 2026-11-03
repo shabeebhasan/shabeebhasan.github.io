@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "MCP Servers and AI Agents for Claude, Codex and Gemini",
+      "excerpt": "An MCP server I wrote with 8 business tools, agents running the same MCP connector on Claude and Codex, and a FaceSearch agent layer that switches between Claude, Gemini and OpenAI.",
+      "image": "/assets/imgs/case-studies/mcp/mcp-card-sm.jpg",
+      "url": "/case-studies/mcp-servers-claude-codex-ai-agents/",
+      "category": "ai"
+    },
+    {
       "title": "PHP2Shell Patch and PHP 8.4 / 8.5 Upgrades for Laravel and WordPress",
       "excerpt": "PHP2Shell patched on a real Laravel 13 API: PHP 8.4.27, all 110 tests and 19 API checks passing. Plus 10 PHP security and upgrade jobs, from emergency patches to Laravel and WordPress upgrades.",
       "image": "/assets/imgs/case-studies/php2shell/php2shell-card-sm.png",

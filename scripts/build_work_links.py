@@ -18,6 +18,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 BASE = "https://shabeeb.baydot.net"
 
 LINKS = {
+    "mcp": ("mcp-servers-claude-codex-ai-agents", "MCP servers and AI agents for Claude, Codex and Gemini"),
     "voice-sms": ("two-way-sms-voice-ai-recruiting-platform", "Two-way SMS in a voice AI recruiting platform (NDA)"),
     "applymail": ("applymail-go-job-post-to-tailored-application", "applymail: job post to tailored application, sent on approval"),
     "genflow": ("genflow-go-durable-comfyui-generation-jobs", "genflow: durable ComfyUI generation jobs in Go"),
