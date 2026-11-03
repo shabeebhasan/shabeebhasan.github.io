@@ -1,6 +1,13 @@
 {
   "items": [
     {
+      "title": "AI Agents, MCP and Multi-Agent Systems",
+      "excerpt": "Multi-agent systems, MCP servers and AI agents I built, with the real problems that came up and how each one was solved.",
+      "image": "/assets/imgs/case-studies/multiagent/multiagent-poster-card.jpg",
+      "url": "/case-studies/ai-agents-mcp-multi-agent-systems/",
+      "category": "ai"
+    },
+    {
       "title": "MCP Servers and AI Agents for Claude, Codex and Gemini",
       "excerpt": "An MCP server I wrote with 8 business tools, agents running the same MCP connector on Claude and Codex, and a FaceSearch agent layer that switches between Claude, Gemini and OpenAI.",
       "image": "/assets/imgs/case-studies/mcp/mcp-card-sm.jpg",

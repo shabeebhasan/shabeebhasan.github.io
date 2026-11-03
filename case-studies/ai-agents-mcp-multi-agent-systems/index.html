@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>AI Agents, MCP and Multi-Agent Systems | Shabeeb Hasan</title>
+  <meta name="description" content="Multi-agent systems, MCP servers and AI agents I built, with the real problems that came up and how each one was solved.">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/ai-agents-mcp-multi-agent-systems/">
+  <meta property="og:title" content="AI Agents, MCP and Multi-Agent Systems | Shabeeb Hasan">
+  <meta property="og:description" content="Multi-agent systems, MCP servers and AI agents I built, with the real problems that came up and how each one was solved.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/ai-agents-mcp-multi-agent-systems/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/case-studies/multiagent/multiagent-poster-card.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "AI Agents, MCP and Multi-Agent Systems",
+      "description": "Multi-agent systems, MCP servers and AI agents I built, with the real problems that came up and how each one was solved.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/ai-agents-mcp-multi-agent-systems/"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <link href="/assets/css/assistant.css" rel="stylesheet"><script src="/js/lead-events.js" defer></script>
+  <script src="/js/assistant.js" defer></script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/">Shabeeb Hasan</a><!--site-nav--><style>
+.site-nav-links{display:flex;gap:22px;align-items:center;margin-left:auto;flex-wrap:wrap}
+.site-nav-links a{color:#334155;font-weight:600;font-size:15px;text-decoration:none}
+.site-nav-links a:hover,.site-nav-links a.on{color:#4338ca}
+.site-nav-links a.cta{background:linear-gradient(90deg,#4f46e5,#0ea5e9);color:#fff;padding:7px 16px;border-radius:999px}
+@media(max-width:640px){.site-nav-links{gap:14px;width:100%;margin:6px 0 2px}.site-nav-links a{font-size:14px}.site-nav-links a.hide-sm{display:none}}
+.site-foot{border-top:1px solid #e2e8f0;background:#f8fafc;padding:34px 0 26px;margin-top:40px;font-size:14px;color:#64748b}
+.site-foot .row-f{display:flex;flex-wrap:wrap;gap:28px;justify-content:space-between}
+.site-foot a{color:#334155;text-decoration:none;margin-right:16px;line-height:2}
+.site-foot a:hover{color:#4338ca}
+</style><div class="site-nav-links"><a href="/" class="hide-sm">Home</a><a href="/case-studies/" class="on">Case Studies</a><a href="/blog/">Blog</a><a href="/resumes/" class="hide-sm">CVs</a><a href="/contact/" class="cta">Contact</a></div><!--/site-nav--></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/case-studies/" class="back-link">Back to Case Studies</a>
+    <h1 class="content-title">AI Agents, MCP and Multi-Agent Systems</h1>
+    <p class="content-excerpt">Multi-agent systems, MCP servers and AI agents I built, with the real problems that came up and how each one was solved.</p>
+    <div class="tag-row"><span>ai agents</span><span>multi-agent</span><span>mcp server</span><span>claude</span><span>codex</span><span>human in the loop</span><span>problem solving</span></div>
+    <article class="content-article">
+<style>
+.ag-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:12px 0 18px}
+.ag-flow span{border:1px solid #c7d2fe;background:#eef2ff;color:#3730a3;border-radius:10px;padding:7px 11px;font-size:13px;font-weight:600}
+.ag-flow span.human{background:#ecfdf5;border-color:#6ee7b7;color:#065f46}
+.ag-flow i{font-style:normal;color:#64748b}
+.article-prose .ag-flow span{background:rgba(99,102,241,.2);border-color:rgba(165,180,252,.4);color:#e0e7ff}
+.article-prose .ag-flow span.human{background:rgba(16,185,129,.2);border-color:rgba(110,231,183,.5);color:#d1fae5}
+.article-prose .ag-flow i{color:#94a3b8}
+</style>
+<style>
+.gs-proof{display:grid;grid-template-columns:repeat(auto-fit,minmax(112px,1fr));gap:10px;margin:22px 0}
+.gs-proof div{border:1px solid #e2e8f0;border-radius:12px;padding:14px;background:#f8fafc}
+.gs-proof b{display:block;font-size:22px;color:#4338ca;line-height:1.2}
+.gs-proof span{font-size:13px;color:#475569}
+.gs-media{display:grid;grid-template-columns:1fr;gap:14px;margin:18px 0}
+.gs-media figure{margin:0}
+.gs-media video{width:100%;border-radius:12px;background:#0b0b1e}
+.gs-media figcaption{color:#64748b;font-size:13px;margin-top:6px}
+@media(max-width:700px){.gs-media{grid-template-columns:1fr}}
+.gs-table{width:100%;border-collapse:collapse;font-size:14px;margin:12px 0 6px}
+.gs-table th,.gs-table td{border-bottom:1px solid #e2e8f0;padding:9px 8px;text-align:left;vertical-align:top}
+.gs-table th{color:#334155;background:#f8fafc}
+.gs-wrap{overflow-x:auto}
+.gs-cases{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin:16px 0}
+.gs-case{border:1px solid #e2e8f0;border-radius:14px;padding:16px 16px 12px;background:#fff}
+.gs-case h3{font-size:17px;margin:0 0 8px;color:#0f172a}
+.gs-case .n{display:inline-block;background:#eef2ff;color:#4338ca;font-weight:700;border-radius:999px;padding:1px 9px;font-size:12px;margin-bottom:8px}
+.gs-case p{font-size:14px;margin:0 0 7px;color:#334155}
+.gs-case p b{color:#0f172a}
+.gs-case .on{font-size:13px;color:#64748b}
+.gs-note{border-left:4px solid #0ea5e9;background:#f0f9ff;padding:12px 14px;border-radius:8px;font-size:14px;margin:16px 0}
+.gs-steps{counter-reset:s;list-style:none;padding:0}
+.gs-steps li{counter-increment:s;padding:8px 0 8px 40px;position:relative}
+.gs-steps li:before{content:counter(s);position:absolute;left:0;top:7px;width:28px;height:28px;border-radius:50%;background:#4f46e5;color:#fff;font-weight:700;text-align:center;line-height:28px;font-size:14px}
+</style>
+
+<figure style="margin:0 0 22px"><img src="/assets/imgs/case-studies/multiagent/multiagent-poster.jpg" alt="Five agents: scout, writer, reviewer, approver and editor" loading="lazy" style="width:100%;border-radius:12px"><figcaption style="font-size:13px;margin-top:6px">The proposal pipeline, one of the four systems on this page.</figcaption></figure>
+<div class="gs-proof">
+  <div><b>4</b><span>agent systems I built and run or have working</span></div>
+  <div><b>8</b><span>tools in my own MCP server</span></div>
+  <div><b>14</b><span>web tools shipped through the agent pipeline</span></div>
+  <div><b>54</b><span>automated tests passing on Baydot Company</span></div>
+</div>
+
+<p>Most agent demos work until they meet real data, a usage limit or a wrong answer. This page shows what I built, the problems that came up and how each one was solved. The systems are my own products and tools, so I can explain every decision in them.</p>
+
+<h2>Which one do you need?</h2>
+<div class="gs-wrap"><table class="gs-table">
+  <tr><th>Your situation</th><th>What fits</th><th>Where I built it</th></tr>
+  <tr><td>One assistant should use your product or data</td><td><b>MCP server</b></td><td>Receptionist server</td></tr>
+  <tr><td>One repeating job with a clear finish</td><td><b>Single agent with tools</b></td><td>Job agent scan step</td></tr>
+  <tr><td>Quality suffers when one prompt writes and checks</td><td><b>Multiple agents with one job each</b></td><td>Proposal pipeline, Baydot Company</td></tr>
+  <tr><td>Many requests need sending to the right feature</td><td><b>Coordinator and specialists</b></td><td>FaceSearch</td></tr>
+</table></div>
+<p>Plain code is my first choice whenever a rule is enough. A model only gets the steps that need judgment.</p>
+
+<h2>What I built</h2>
+
+<h3>1. Baydot Company: a CEO agent that runs a small team</h3>
+<p>A local workspace where one person talks to a CEO agent, in English or Roman Urdu. For real work it delegates.</p>
+<div class="ag-flow"><span>CEO</span><i>&rarr;</i><span>Researcher</span><i>&rarr;</i><span>Implementer</span><i>&rarr;</i><span>Independent reviewer</span><i>&rarr;</i><span>CEO</span><i>&rarr;</i><span class="human">Owner opens draft PR</span></div>
+<ul>
+  <li>Each role is a separate model call with a validated structured contract.</li>
+  <li>On a GitHub repo, the team works on its own branch and runs the tests. The app can open a draft PR, and it never merges.</li>
+  <li>Runs, evidence, token usage and task history are stored in SQLite. Documents can be searched with local retrieval, and inference can stay local through Ollama.</li>
+</ul>
+<p class="on"><b>Stack:</b> Python, Codex CLI, SQLite, GitHub CLI, Ollama. The repo is private and it is a single-owner tool, so I can walk you through it on a call.</p>
+
+<h3>2. Product Factory: research to live product</h3>
+<p>A pipeline of Claude Code agents that finds real problems and builds small, free browser tools. Nothing gets built until I approve the GitHub issue.</p>
+<div class="ag-flow"><span>Research</span><i>&rarr;</i><span>Plan</span><i>&rarr;</i><span class="human">I approve</span><i>&rarr;</i><span>Design</span><i>&rarr;</i><span>Build</span><i>&rarr;</i><span>QA</span><i>&rarr;</i><span>Publish</span><i>&rarr;</i><span>UX audit</span><i>&rarr;</i><span>Fix</span><i>&rarr;</i><span>Review</span></div>
+<p>Fourteen live tools came through it, including an <a href="https://agentcost.baydot.net/">AI agent cost calculator</a>. They are free tools, so they prove the pipeline works, not that they earn revenue.</p>
+
+<h3>3. Proposal pipeline: five agents and a tap</h3>
+<div class="ag-flow"><span>Scout</span><i>&rarr;</i><span>Writer</span><i>&rarr;</i><span>Reviewer</span><i>&rarr;</i><span class="human">Approver: code plus my tap</span><i>&rarr;</i><span>Editor</span></div>
+<p>It reads jobs through an official MCP connector, drafts from a catalog of real work and waits on my phone. <a href="/case-studies/multi-agent-pipeline-with-human-approval/">Read the full case study</a>.</p>
+
+<h3>4. MCP server and the FaceSearch agent layer</h3>
+<p>I wrote a TypeScript MCP server with the official SDK. Its 8 tools cover availability, booking and lead qualification, with validated inputs. <a href="/case-studies/ai-agents-mcp-multi-agent-systems/">See the MCP details</a>.</p>
+<p>FaceSearch has a coordinator and 10 specialists, with model routes for Claude, Gemini, OpenAI, OpenRouter and custom endpoints. Its specialists currently report on system data and route requests. It uses provider APIs, not MCP.</p>
+
+<h2>Problems I hit and how I solved them</h2>
+<div class="gs-cases">
+  <div class="gs-case"><h3>One prompt did everything badly</h3><p><b>Why:</b> a writer that checks its own work approves its own mistakes.</p><p><b>Fix:</b> split it into agents with one job each, and a reviewer that reads the draft cold.</p></div>
+  <div class="gs-case"><h3>A draft linked to a dead page</h3><p><b>Found by:</b> the reviewer's link check, on a live draft. The page returned 404.</p><p><b>Fix:</b> links are checked by code and only known pages are allowed, before anyone sees the draft.</p></div>
+  <div class="gs-case"><h3>A usage limit stopped the work</h3><p><b>Why:</b> one provider's limit would stall the whole pipeline.</p><p><b>Fix:</b> limit errors are detected, the provider's cooldown is recorded, and each step moves to the other model.</p></div>
+  <div class="gs-case"><h3>A model should not press send</h3><p><b>Why:</b> text from a web page or job post can try to talk a model into things.</p><p><b>Fix:</b> sending is plain code behind a preview and a Confirm tap. Scan steps have write tools blocked.</p></div>
+  <div class="gs-case"><h3>The same project in every draft</h3><p><b>Why:</b> the writer kept reaching for its favourite example.</p><p><b>Fix:</b> code ranks catalog entries by fit to the job, with a small penalty for recent use.</p></div>
+  <div class="gs-case"><h3>Agents can loop and burn money</h3><p><b>Risk:</b> a reviewer and builder can argue forever.</p><p><b>Fix:</b> at most two revision rounds and nine calls per run, plus timeouts. A failed review stays marked needs attention, not done.</p></div>
+  <div class="gs-case"><h3>Code could change after review</h3><p><b>Risk:</b> the reviewed diff is not what gets published.</p><p><b>Fix:</b> before a draft PR, the app verifies that the checkout, branch, remote and reviewed diff are unchanged.</p></div>
+  <div class="gs-case"><h3>A tool read 1/2 as 1</h3><p><b>Found by:</b> the UX audit agent, using the recipe tool as a person would.</p><p><b>Fix:</b> the fixer agent rewrote the parser for fractions and ranges, then a separate agent reviewed it.</p></div>
+  <div class="gs-case"><h3>A model writing SQL on real data</h3><p><b>Risk:</b> one bad query changes or leaks data.</p><p><b>Fix:</b> a guard allows only one SELECT or WITH, in a read-only transaction with a timeout and row cap. <a href="/case-studies/supaquery-go-natural-language-claims-queries/">See SupaQuery</a>.</p></div>
+  <div class="gs-case"><h3>A crash could pay for a GPU job twice</h3><p><b>Risk:</b> a worker dies right after submitting.</p><p><b>Fix:</b> leases, checkpoints and idempotent submit. Tests crash it on purpose and see one submit. <a href="/case-studies/genflow-go-durable-comfyui-generation-jobs/">See genflow</a>.</p></div>
+</div>
+
+<h2>How I decide what an agent may do</h2>
+<ol class="gs-steps">
+  <li><b>Write down the finish line.</b> If nobody can check the result, it isn't ready for an agent.</li>
+  <li><b>Use code for rules</b> and a model only for judgment.</li>
+  <li><b>Give the fewest tools possible,</b> read-only by default.</li>
+  <li><b>Put a person before anything risky:</b> sending, spending or changing real data.</li>
+  <li><b>Set limits and keep records:</b> call caps, timeouts, and a stored trail of each run.</li>
+  <li><b>Test on real failures,</b> then add each one to the checks.</li>
+</ol>
+
+<div class="gs-note"><b>What these projects don't show:</b> these are mainly my own products and tools, so I have no client ROI or win-rate figures to quote for them. They have not served enterprise-scale traffic, and I have not shipped a Gemini MCP. Agents still make mistakes, which is why the checks and approvals exist. On your project, we would set the success measure first and test against it.</div>
+</article>
+    <section class="lead-box"><h2>Have an agent idea or one that keeps failing?</h2><p>Tell me the job and the systems it touches. I will tell you honestly whether it needs an agent, several agents, an MCP server or plain code.</p><div class="lead-actions"><a class="btn btn-primary btn-rounded" href="https://calendly.com/shabeebhasan-r5ny/30min?utm_source=case-study&amp;utm_medium=organic&amp;utm_campaign=ai-agents&amp;utm_content=cta">Book a 30-min call</a> <a class="btn btn-rounded" href="/contact/">Contact Me</a></div></section>
+  </div></section>
+<!--site-foot--><footer class="site-foot"><div class="container"><div class="row-f">
+<div><strong style="color:#0f172a">Shabeeb Hasan</strong><br>Senior AI and full-stack engineer. 133 Upwork projects, 100% Job Success.</div>
+<div><a href="/case-studies/">Case studies</a><a href="/blog/">Blog</a><a href="/ai-agent-developer/">AI agents</a><a href="/react-native-developer/">React Native</a><a href="/full-stack-ai-developer/">Full-stack AI</a><a href="/contact/">Contact</a></div>
+</div><div style="margin-top:14px">&copy; 2026 Shabeeb Hasan</div></div></footer><!--/site-foot-->
+</body>
+</html>

@@ -23,6 +23,7 @@ RENAMED = {"voicerelay-bluetooth-mic-speaker-relay": "low-latency-audio-relay-bl
 BASE = "https://shabeeb.baydot.net"
 
 SLUGS = [
+    "ai-agents-mcp-multi-agent-systems",
     "mcp-servers-claude-codex-ai-agents",
     "two-way-sms-voice-ai-recruiting-platform",
     "applymail-go-job-post-to-tailored-application",
