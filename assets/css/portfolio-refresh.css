@@ -1404,7 +1404,7 @@ a:hover { color: var(--portfolio-primary-dark); }
 
 @media (max-width: 991.98px) {
   .hero-grid { grid-template-columns: 1fr; gap: 36px; }
-  .hero-right { order: -1; }
+  .hero-right { order: 0; }
   .hero-portrait { max-width: 250px; margin: 0 auto; }
   .header .hero-kicker { white-space: normal; }
 }
