@@ -1,9 +1,9 @@
-{
+﻿{
   "items": [
     {
       "category": "ai",
       "excerpt": "Live switch from X25519 to hybrid X25519MLKEM768 on AWS with 0 failed of 3,596 requests, and KMS key changes that only go through while the owner holds their phone.",
-      "image": "/assets/imgs/generated/case-studies/pqc-switchover-results.png",
+      "image": "/assets/imgs/generated/case-studies/pqc-switchover-results.png?v=2",
       "title": "Post-Quantum TLS Switchover on AWS with Owner-Gated KMS",
       "url": "/case-studies/post-quantum-tls-switchover-aws-governed-kms/"
     },
