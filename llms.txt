@@ -91,6 +91,7 @@
 - https://shabeeb.baydot.net/case-studies/laravel-platform-three-year-engagement/ : a Laravel API behind a doctor
   and patient app pair (three contracts, 2018 to 2020), a Laravel deployment on AWS, and enterprise PHP with SAP.
 - https://shabeeb.baydot.net/case-studies/behavioral-ai-authentication-mobile-sensor-signals/ : phone-sensor
+- https://shabeeb.baydot.net/case-studies/post-quantum-tls-switchover-aws-governed-kms/ : live post-quantum TLS switchover (X25519 to X25519MLKEM768) on AWS, 0 failed of 3,596 requests, owner-gated KMS key policy, admin AccessDenied in CloudTrail
   continuous authentication, measured honestly rather than marketed.
 
 ## Notes for accuracy

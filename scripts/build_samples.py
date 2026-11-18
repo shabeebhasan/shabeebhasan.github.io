@@ -41,6 +41,7 @@ SLUGS = [
     "medicine-donation-marketplace-privacy-by-design",
     "zoho-aws-lambda-to-odoo-migration",
     "behavioral-ai-authentication-mobile-sensor-signals",
+    "post-quantum-tls-switchover-aws-governed-kms",
     "ishara-psx-portfolio-rsi-alerts",
     "laravel-platform-three-year-engagement",
     "low-latency-audio-relay-bluetooth-dsp",

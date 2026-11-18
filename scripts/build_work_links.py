@@ -29,6 +29,7 @@ LINKS = {
     "llm-pipeline": ("llm-data-import-inference-microservices", "Python microservices for LLM data and inference"),
     "app-video": ("native-video-modules-react-native-ios-android", "Native iOS and Android video modules"),
     "emotion-app": ("facial-emotion-detection-expo-app-lora-pipelines", "Emotion detection app on Expo, LoRA pipelines"),
+    "pqc": ("post-quantum-tls-switchover-aws-governed-kms", "Post-quantum TLS switchover on AWS, owner-gated KMS"),
     "phone-security": ("behavioral-ai-authentication-mobile-sensor-signals", "Phone behaviour model, server-side decisions"),
     "video-aws": ("serverless-video-pipeline-ffmpeg-aws-lambda", "FFmpeg video encoding on AWS Lambda"),
     "ocr": ("ocr-document-intelligence-pipeline", "Google Vision OCR and Document AI extraction"),

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Post-Quantum TLS Switchover on AWS with Owner-Gated KMS</title>
+  <meta name="description" content="Live switch from X25519 to hybrid X25519MLKEM768 on AWS: 0 failed of 3,596 requests, every handshake in the PCAP, KMS changes gated on the owner's phone.">
+  <meta name="robots" content="noindex, follow">
+  <link rel="canonical" href="https://shabeeb.baydot.net/case-studies/post-quantum-tls-switchover-aws-governed-kms/">
+  <meta property="og:title" content="Post-Quantum TLS Switchover on AWS with Owner-Gated KMS">
+  <meta property="og:description" content="Live switch from X25519 to hybrid X25519MLKEM768 on AWS: 0 failed of 3,596 requests, every handshake in the PCAP, KMS changes gated on the owner's phone.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://shabeeb.baydot.net/case-studies/post-quantum-tls-switchover-aws-governed-kms/">
+  <meta property="og:image" content="https://shabeeb.baydot.net/assets/imgs/generated/case-studies/pqc-switchover-results.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="stylesheet" href="/assets/css/johndoe.css">
+  <link rel="stylesheet" href="/assets/css/portfolio-refresh.css">
+  <link rel="stylesheet" href="/assets/css/content-studio.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "Post-Quantum TLS Switchover on AWS with Owner-Gated KMS",
+      "description": "Live switch from X25519 to hybrid X25519MLKEM768 on AWS: 0 failed of 3,596 requests, every handshake in the PCAP, KMS changes gated on the owner's phone.",
+      "author": { "@type": "Person", "name": "Shabeeb Hasan", "url": "https://shabeeb.baydot.net/" },
+      "publisher": { "@type": "Organization", "name": "Baydot", "url": "https://baydot.net/" },
+      "mainEntityOfPage": "https://shabeeb.baydot.net/case-studies/post-quantum-tls-switchover-aws-governed-kms/",
+      "image": "https://shabeeb.baydot.net/assets/imgs/generated/case-studies/pqc-switchover-results.png"
+    }
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "xr2jrpr9sq");
+  </script>
+  <!-- Google Analytics 4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FLP0DLK81X"></script>
+  <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js",new Date());gtag("config","G-FLP0DLK81X");</script>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-white"><div class="container"><a class="navbar-brand" href="/portfolio/">Shabeeb Hasan</a></div></nav>
+  <section class="section content-page"><div class="container content-wrap">
+    <a href="/portfolio/" class="back-link">Back to portfolio</a>
+    <h1 class="content-title">Post-Quantum TLS Switchover on AWS with Owner-Gated KMS</h1>
+    <p class="content-excerpt">A security startup wanted proof, on real cloud infrastructure, that a gateway can move from classical to post-quantum hybrid key exchange under live traffic without dropping a request, and that privileged key changes only go through while the enrolled owner is holding their phone. I built the test, ran it on AWS and handed over the raw evidence.</p>
+    <img src="/assets/imgs/generated/case-studies/pqc-switchover-architecture.png" alt="Architecture: traffic client, TLS 1.3 gateway and test service on EC2, owner presence scorer and governance gateway controlling the reload and AWS KMS key policy" class="hero-image" width="1600" height="900">
+    <div class="tag-row"><span>post-quantum tls</span><span>aws kms</span><span>cloudtrail</span><span>go</span><span>security engineering</span></div>
+    <article class="content-article">
+      <h2>The Brief</h2>
+      <p>The client had already built continuous authentication: a phone keeps checking that the person holding it is the enrolled owner (see the <a href="/portfolio/behavioral-ai-authentication-mobile-sensor-signals/">earlier case study</a>). Buyers kept asking two questions. Can your gateway move to post-quantum key exchange without an outage? And does your owner check actually stop a privileged change in a real cloud account, even for an administrator?</p>
+      <p>The ask was one live run on AWS that answers both, with evidence a third party can check without trusting me: a traffic counter with zero failed, a packet capture showing the key exchange change, a key policy before and after, CloudTrail events for an approved change and for a refused admin call, a screen recording, and every instance shut down afterwards.</p>
+
+      <h2>What I Built</h2>
+      <ul>
+        <li><strong>A traffic probe in Go</strong> that keeps fresh and persistent TLS connections running, logs every request into a hash-chained file and never retries, so a single dropped request shows up as a failure instead of being hidden.</li>
+        <li><strong>A TLS 1.3 gateway</strong> on EC2 whose key exchange curves move from X25519 to X25519MLKEM768 through a hot config reload, without a restart.</li>
+        <li><strong>A governed switch</strong>: the reload and the KMS key policy update go through one gateway that accepts the request only with a valid credential and only while the live behavioural scorer reports the owner as present.</li>
+        <li><strong>A KMS key policy</strong> with an explicit deny on policy changes for every principal except the governed gateway role and a recovery role. A role with AdministratorAccess cannot change it directly.</li>
+        <li><strong>Evidence tooling</strong>: a PCAP reader that pulls the selected group out of every ServerHello, CloudTrail collection, a verifier for the hash chain, and a report generator that refuses to build if any check fails.</li>
+      </ul>
+
+      <h2>Results From the Run</h2>
+      <div class="metric-grid">
+        <div class="metric"><strong>0 / 3,596</strong><span>failed requests through the switch, over 180 seconds</span></div>
+        <div class="metric"><strong>217 &rarr; 516</strong><span>classical then hybrid handshakes in the capture, none out of order</span></div>
+        <div class="metric"><strong>15 ms</strong><span>from the reload to the first hybrid handshake</span></div>
+        <div class="metric"><strong>AccessDenied</strong><span>in CloudTrail for the administrator's direct KMS call</span></div>
+      </div>
+      <img src="/assets/imgs/generated/case-studies/pqc-switchover-results.png" alt="Results: 3,596 requests, 0 failed, 217 X25519 and 516 X25519MLKEM768 handshakes, governance decisions refused and approved" width="1600" height="900">
+      <table class="cs-table">
+        <thead><tr><th>Step in the run</th><th>Owner state</th><th>Result</th></tr></thead>
+        <tbody>
+          <tr><td>Switch request without a credential</td><td>Present</td><td>Refused</td></tr>
+          <tr><td>Switch request with a credential</td><td>Present</td><td>Approved, reload done under traffic</td></tr>
+          <tr><td>KMS key policy update through the gateway</td><td>Present</td><td>Approved, request ID matches CloudTrail</td></tr>
+          <tr><td>Same update from an AdministratorAccess role, direct CLI</td><td>Not consulted</td><td>AccessDenied in CloudTrail</td></tr>
+          <tr><td>Switch request after the owner stream stopped</td><td>Absent</td><td>Refused, KMS never called</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The Detail That Needed Care</h2>
+      <p>A TLS connection keeps the key exchange it started with. So "connections stayed open through the switch" would have been the wrong claim. What actually happens is that the reload closes idle keep-alive connections and the client reopens them on the hybrid group. The honest claim, and the one the evidence supports, is zero failed requests, with the capture showing every handshake after the switch on the hybrid group.</p>
+      <div class="cs-note"><p>I also caught the gateway writing the authentication header into its own access log during rehearsal. The log filter now drops it, the old logs were redacted and the credential was rotated before the final run. Small, but exactly what a reviewer of the evidence would have found.</p></div>
+
+      <h2>What This Does Not Claim</h2>
+      <p>This shows a live switchover to a standardised hybrid post-quantum key exchange and an owner-gated control path on a real cloud account. It is not a test against a quantum computer, and the owner check is a behavioural signal, not production biometric certification. The report says both.</p>
+
+      <h2>Stack</h2>
+      <p>Go (traffic probe, verifier), Caddy for TLS 1.3 with X25519MLKEM768, Python / FastAPI governance gateway, AWS EC2, KMS, IAM and CloudTrail, tshark for the packet capture, a live behavioural scoring service for owner presence, shell tooling for start, stop and teardown.</p>
+    <p class="samples-note" style="margin:26px 0 0;padding:14px 16px;background:#f1f5f9;border-radius:8px;color:#334155">Message me on the platform where you found this and I will answer there.</p>
+    </article>
+    
+  </div></section>
+</body>
+</html>
